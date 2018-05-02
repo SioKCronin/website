@@ -3,17 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://siokcronin.github.io/website/categories/</loc>
+    <loc>https://siokcronin.github.io/creative/jazz/</loc>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/creative/tempered/</loc>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://siokcronin.github.io/website/</loc>
+    <loc>https://siokcronin.github.io/creative/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://siokcronin.github.io/website/tags/</loc>
+    <loc>https://siokcronin.github.io/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
