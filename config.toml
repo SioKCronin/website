@@ -1,4 +1,4 @@
-baseurl             = "https://siokcronin.github.io/"
+baseurl             = "https://siokcronin.github.io/website/"
 builddrafts         = false
 canonifyurls        = true
 contentdir          = "content"
