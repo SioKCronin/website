@@ -9,9 +9,9 @@ theme               = "cocoa"
 author              = "Siobhan K Cronin"
 title               = "Siobhan K Cronin"
 pygmentsuseclasses  = true
-disqusshortname     = "cocoaexamplesite" # Comment out to disable Disqus.
+# disqusshortname     = "cocoaexamplesite" # Comment out to disable Disqus.
 pluralizelisttitles = false
-googleAnalytics     = "UA-123-45"
+# googleAnalytics     = "UA-123-45"
 
 [permalinks]
 blog  = "blog/:slug/"
@@ -20,7 +20,7 @@ blog  = "blog/:slug/"
 name                   = "About"
 weight                 = -110
 identifier             = "about"
-url                    = "about/bio/"
+url                    = "about/"
 
 [[menu.main]]
 name                   = "ML/AI"
@@ -47,35 +47,15 @@ email                  = "siobhankcronin@gmail.com"
 extracssfiles          = [ "/css/override.css" ]       # In your `static` directory, add/remove files as necessary.
 faviconfile            = "img/leaf.ico"
 github                 = "//github.com/siokcronin"
-# instagram              = "//instagram.com/you"
-# px500                  = "//500px.com/username"
 lang                   = "en"
 linkedin               = "//linkedin.com/in/siobhankcronin"
 medium                 = "//medium.com/@siobhankcronin"
 noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
 selfintro              = ""                            # appears in the site header when set to a non-empty string
 twitter                = "//twitter.com/siokcronin"
-# mastodon               = "//example.com/@you"
-
 highlightjs            = true
-# highlightjslanguages = ["go"]                        # additional languages not included in the "common" set
-# highlightjsStyle     = "darcula"
 
 piwik                  = false                         # If true, Piwik integration is enabled
-# piwik_url            = "//www.example.com/piwik/"    # URL to your Piwik installation. Must End with a slash
-# piwik_id             = 2                             # Id of your site in Piwik
-
-gitalk                 = false
-# if gitalk is true, the following params should be set. These parameters could be retrieved from github OAuth
-gitalk_clientID        = "your client id"
-gitalk_clientSecret    = "your client secret"
-gitalk_repo            = "your repo url"
-gitalk_owner           = "the owner of this repo"
-gitalk_admin           = ['a', 'list', 'of', 'administrator']
+gitalk                 = false                         # if gitalk is true, the following params should be set. These parameters could be retrieved from github OAuth
 
 avatar                 = "img/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
-# gravatar             = ""                # gravatar hash. see https://en.gravatar.com/site/implement/hash/. do not use in the same time as avatar
-
-# The following are DEPRECATED.
-gatracker              = "XYZ" # use googleAnalytics instead
-initials               = "ad"  # displayed on single post page; deprecated in v0.3.0.
