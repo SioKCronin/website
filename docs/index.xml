@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Siobhan K Cronin</title>
-    <link>https://siokcronin.github.io/</link>
+    <link>https://siokcronin.github.io/website/</link>
     <description>Recent content on Siobhan K Cronin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 24 Apr 2018 11:53:47 -0700</lastBuildDate>
     
-	<atom:link href="https://siokcronin.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://siokcronin.github.io/website/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://siokcronin.github.io/about/</link>
+      <link>https://siokcronin.github.io/website/about/</link>
       <pubDate>Tue, 24 Apr 2018 11:53:47 -0700</pubDate>
       
-      <guid>https://siokcronin.github.io/about/</guid>
+      <guid>https://siokcronin.github.io/website/about/</guid>
       <description>Siobhán is a machine learning engineer with a passion for reinforcement learning, optimization, and swarm intelligence.
 She began her career researching how humans learn at Harvard&amp;rsquo;s Lab for Developmental Studies and Harvard Medical School, and now develops tools to help machines and humans learn together. Siobhán is currently an associate researcher at Slow Research Lab, and a contributor to the open source swarm intelligence optimization tool PySwarms.
 Siobhán has published research in Brain &amp;amp; Cognition, Neuroreport, and Model View Culture, and presented at the Conference on Complex Systems, Conference on Cognitive Neuroscience, AlterConf, PyLadies, Metis, and Temple University.</description>
@@ -24,38 +24,38 @@ Siobhán has published research in Brain &amp;amp; Cognition, Neuroreport, and M
     
     <item>
       <title></title>
-      <link>https://siokcronin.github.io/speaking/</link>
+      <link>https://siokcronin.github.io/website/speaking/</link>
       <pubDate>Tue, 24 Apr 2018 11:53:47 -0700</pubDate>
       
-      <guid>https://siokcronin.github.io/speaking/</guid>
+      <guid>https://siokcronin.github.io/website/speaking/</guid>
       <description>Upcoming 5 MAY 2018 &amp;mdash; The Poetics of Swarm Intelligence @ La Casa Naranja (San Francisco, CA) 7 DEC 2018 &amp;mdash; This Fountain of Being @ Center for New Music (San Francisco, CA)
 Past 11 OCT 2017 &amp;mdash; Step by Step @ Metis (San Francisco, CA) video 21 SEP 2016 &amp;mdash; Forms (w/ Carolyn Strauss) @ Conf on Complex Systems (Amsterdam) 9 AUG 2016 &amp;mdash; Form and Movement in Complex Systems @ PyLadies SF 4 JUN 2016 &amp;mdash; On People, Cubes and Snacks @ AlterConf</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://siokcronin.github.io/creative/jazz/</link>
+      <link>https://siokcronin.github.io/website/creative/jazz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siokcronin.github.io/creative/jazz/</guid>
+      <guid>https://siokcronin.github.io/website/creative/jazz/</guid>
       <description> Jazz Sessions  DATE  </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://siokcronin.github.io/creative/tempered/</link>
+      <link>https://siokcronin.github.io/website/creative/tempered/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siokcronin.github.io/creative/tempered/</guid>
+      <guid>https://siokcronin.github.io/website/creative/tempered/</guid>
       <description> Tempered Bach  BWV772 - Invention 1 BWV773 - Invention 2 BWV775 - Invention 4  Mozart  K466 - Piano Concerto 20  </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://siokcronin.github.io/projects/</link>
+      <link>https://siokcronin.github.io/website/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siokcronin.github.io/projects/</guid>
+      <guid>https://siokcronin.github.io/website/projects/</guid>
       <description>Open Source Software PySwarms - Particle Swarm Optimization (PSO) toolkit octohand - Reinforcement Learning environment inspired by the cephalopod community Swarm Intelligence Baselines - Implementation of Swarm Intelligence (SI) algorithms Deep RL Baselines - Implementation of deep RL algorithms
 ML/AI Engineering Uncountable | Software Engineer | Jan-Feb 2018 Avisell | Machine Learning Engineer | May-Sep 2017
 Research Slow Research Lab | 2016-Present Independent research on particle swarm optimization and RL algorithms</description>
