@@ -26,7 +26,7 @@ url                    = "about/"
 name                   = "ML/AI"
 weight                 = -100
 identifier             = "machine learning"
-url                    = "machine_learning/"
+url                    = "ai_notes/"
 
 [[menu.main]]
 name                   = "Speaking"
