@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Siobhan K Cronin">
+<meta name="description" content="Reinforcement Learning Reinforcement Learning: An Introduction (1998). Richard Sutton &amp; Andrew Barto.
+At the onset, I&rsquo;m curious to know how much has changed since this book&rsquo;s publication 20 years ago. That being said, as these are two leaders in the field, I&rsquo;m interested in gaining a sense of their perspective on the history/origin of this subfield, and acclimating to some of the core concepts/constructs.
+Chapter 1 One of the key takeaways from this chapter was the distinction between the value function and rewards function in an RL problem.">
+
+<meta property="og:title" content="" />
+<meta property="og:description" content="Reinforcement Learning Reinforcement Learning: An Introduction (1998). Richard Sutton &amp; Andrew Barto.
+At the onset, I&rsquo;m curious to know how much has changed since this book&rsquo;s publication 20 years ago. That being said, as these are two leaders in the field, I&rsquo;m interested in gaining a sense of their perspective on the history/origin of this subfield, and acclimating to some of the core concepts/constructs.
+Chapter 1 One of the key takeaways from this chapter was the distinction between the value function and rewards function in an RL problem." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://siokcronin.github.io/website/ai_notes/reading_notes/reinforcement_learning/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title>
+
+
+      
+
+</title>
+<link rel="canonical" href="https://siokcronin.github.io/website/ai_notes/reading_notes/reinforcement_learning/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://siokcronin.github.io/website/css/reset.css?t=2018-05-02%2018%3a17%3a08.129074386%20-0700%20PDT%20m%3d%2b0.071726126">
+    <link rel="stylesheet" href="https://siokcronin.github.io/website/css/pygments.css?t=2018-05-02%2018%3a17%3a08.129074386%20-0700%20PDT%20m%3d%2b0.071726126">
+    <link rel="stylesheet" href="https://siokcronin.github.io/website/css/main.css?t=2018-05-02%2018%3a17%3a08.129074386%20-0700%20PDT%20m%3d%2b0.071726126">
+    
+        <link rel="stylesheet" href="https://siokcronin.github.io/website/css/override.css?t=2018-05-02%2018%3a17%3a08.129074386%20-0700%20PDT%20m%3d%2b0.071726126">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://siokcronin.github.io/website/img/leaf.ico"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                
+                <a href="https://siokcronin.github.io/website/"><img class="avatar" src="https://siokcronin.github.io/website/img/profile.png" srcset="https://siokcronin.github.io/website/img/profile.png 1x"></a>
+            
+            <a href="https://siokcronin.github.io/website/"><div class="name">Siobhan K Cronin</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-about"><a href="https://siokcronin.github.io/website/about/"><span>About</span></a></li>
+                    
+                        <li class="nav-machine learning"><a href="https://siokcronin.github.io/website/ai_notes/"><span>ML/AI</span></a></li>
+                    
+                        <li class="nav-speaking"><a href="https://siokcronin.github.io/website/speaking/"><span>Speaking</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/siokcronin" target="_blank" rel="noopener"><img class="icon" src="https://siokcronin.github.io/website/img/github.svg" alt="github" /></a>
+        
+
+        
+            <a href="//twitter.com/siokcronin" target="_blank" rel="noopener"><img class="icon" src="https://siokcronin.github.io/website/img/twitter.svg" alt="twitter" /></a>
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/siobhankcronin" target="_blank" rel="noopener"><img class="icon" src="https://siokcronin.github.io/website/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="mailto:siobhankcronin@gmail.com"><img class="icon" src="https://siokcronin.github.io/website/img/email.svg" alt="email" /></a>
+        
+
+        
+
+        
+        </div>
+    </div>
+</section>
+
+<section class="main">
+    <div class="container">
+        <div class="content">
+            <div class="page-heading">
+
+    
+
+</div>
+
+            <div class="markdown">
+                
+
+<h1 id="reinforcement-learning">Reinforcement Learning</h1>
+
+<p>Reinforcement Learning: An Introduction (1998). Richard Sutton &amp; Andrew Barto.</p>
+
+<p>At the onset, I&rsquo;m curious to know how much has changed since this book&rsquo;s publication 20 years ago. That being said, as these are two leaders in the field, I&rsquo;m interested in gaining a sense of their perspective on the history/origin of this subfield, and acclimating to some of the core concepts/constructs.</p>
+
+<h2 id="chapter-1">Chapter 1</h2>
+
+<p>One of the key takeaways from this chapter was the distinction between the value function and rewards function in an RL problem. The value function is ultimately what we are optimizing for, as this is the total cumulative reward, or rather the reward associated with solving the problem at the highest level. The reward function, but contrast, evaluates awards state by state, and can be thought of as the short-term payoff for entering any given state. I like this distinction, because it opens up the idea of scoping the problem, and ensuring you are indeed building a system that achieves what you set out to achieve. That sounds straightforward enough, but given the nuances of building a policy to reinforce even the simplest of goals, the balance of these functions will undoubtedly become a focus of my work. These are the functions we are learning as we build our RL policy. </p>
+
+<p>There is a treatment of the agent and the environment, as well as a policy and model of the environment. The agent learns while interacting with the environment, which the authors point out is different from evolutionary methods. I&rsquo;m curious about this distinction, as it is pointed out that genetic algorithms (and perhaps swarm algorithms?) can be used to solve RL problems. I&rsquo;m putting a map together of how these various approaches relate. </p>
+
+<p>The distinction between greedy and exploratory moves, and this will come up again in our examination of explore/exploit tradeoffs. This touches upon the balance of reward vs. value function optimization, and also the broader leverage of stochastic process in search problems. The term temporal-difference learning is used, which doesn&rsquo;t seem like much at first blush, but relates in my mind to calculus (derivative, gradient, etc.) - measuring a rate of change between two times (states in these problems).</p>
+
+<h2 id="chapter-2">Chapter 2</h2>
+
+<p>n-armed bandit problems are introduced, where the choice to exploit prior knowledge of known advantageous probabilities is pitted against the choice of probabilities that could be advantageous, yet whose probabilities are unknown or more variable. This uncertainty is important. One of the choices with greater variability could in fact be better than the greedy choice in the long-term. How would we make this choice? I&rsquo;m reminded of simulated annealing. Perhaps policies that take on my risk early on, and then play more conservatively later on?</p>
+
+<p>Incremental implementation involves updating our estimates we go, we we always have an up-to-now vector to reference. </p>
+
+<ul>
+<li>Nonstationary problem tracking can be addressed with exponential recency-weighted average. The formula presented takes an alpha constant which decays exponentially with (1 - alpha)^k for k time steps. </li>
+<li>Optimistic initial values were introduced as method for encouraging exploration (the agent is continually disappointed with evaluations at each time step, as they are never as good as what was initially observed). </li>
+<li>Reinforcement comparison is raised in the context of an agent not knowing the relative size of a reward (is the reward received average? above average? below?). In this model, preference probabilities are increased by an increment calculated from the difference of the observed reward and the reference reward (often the average of previously received rewards). </li>
+<li>Pursuit methods update preference probabilities of each action so as to increase the likelihood of the greedy option (and decrease the other actions). </li>
+<li>A brief introduction to associative search, in which the n-armed bandit problem is presented in a context where the situation changes play to play, and the agent can learn to associate policies with different situations. </li>
+</ul>
+
+<p>Interval estimation methods are also introduced, which estimate a confidence interval for the value of each action. The action selected will be the one with the highest upper limit. Bayes optimization is also introduced, with updated posterior probability distributions of action values resulting from any action. I&rsquo;m curious to see what has grown out of this direction, as posterior probability estimation has seen many recent advances. </p>
+
+<h2 id="chapter-3">Chapter 3</h2>
+
+<p>I keep finding myself circling back to this idea of where we drawing the line between agent and environment. Rather than settling on a specific boundary, can we maintain multiple boundaries at once and allow for these to interact (like we do in multilayer PSO, where each region is the parent region for a system of subregions?). </p>
+
+<p>The crux of this chapter can be summed up by the Bellman optimality equation for optimal state-value function. When I read through it, I had the same question that this poster on Stack did. I found Sean Easter&rsquo;s answer helpful, and the take home intuition is that we are replacing the general case with what happens in the next time step and all steps after that. I hope to walk through this more slowly with some proofwriting in the coming weeks. I also found this article helpful. </p>
+
+<p>Beyond that, I found these statements in the summary to be helpful in &hellip; summarizing!</p>
+
+<ul>
+<li>A policy is a stochastic rule by which the agent selects actions as a function of states</li>
+<li>The agent&rsquo;s objective is to maximize the amount of reward it receives over time</li>
+<li>The discounted formulation is appropriate for continuous tasks (discount rates determine the present value of future rewards)</li>
+<li>An environment satisfies the Markov property if its state signal compactly summarizes the past without degrading the ability to predict the future</li>
+<li>The Bellman optimality equations are special consistency conditions that the optimal value functions must satisfy</li>
+<li>RL adds to Markov Decision Processes a focus on approximation and incomplete information for realistically large problems</li>
+</ul>
+
+<h2 id="chapter-4">Chapter 4</h2>
+
+<p>This chapter focusses on Dynamic Programming, and finds its anchor in generalized policy iteration (GPI). With GPI with interleave policy evaluation with policy improvement, which is a common approach for solving RL problems. Policy evaluation involves making the value function consistent with the current policy. Policy improvement involves making the policy greedy with respect to the value function. And then we iterate. </p>
+
+<p>Another key topic raised in this chapter is policy iteration vs. value iteration. For policy iteration, we use the current policy to find a better policy using V_current_policy, and then calculate V on the new policy to yield a better policy (oh how I wish Squarespace rendered Latex. I know, I know, time to actually build out a better blog). One issue with this approach is that convergence only happens in the limit. </p>
+
+<p>Value iteration, on the other hand, stops policy iteration after one sweep through the space (all states backed up once). A full backup involves replacing the old policy evaluated at s with the old value of the successor states (their rewards) and the one-step transitions possible under the policy we are evaluating. All possible next steps are backed-up, not just a sample, which is what makes it a full backup. </p>
+
+<p>&ldquo;Dynamic programming algorithms are obtained by turning Bellman equations &hellip; into update rules for improving approximations of the desired value functions.&rdquo;</p>
+
+<h2 id="chapter-5">Chapter 5</h2>
+
+<p>This chapter dives into Monte Carlo methods for estimating value functions using only sample sequences of states, actions, and rewards. I found it useful to distinguish on-line learning from simulated learning, as this sets the stage for our building. On-line learning requires no prior knowledge of the environment, while simulated learning requires a model to generate sample transitions. Rather than use a model to compute the value of each state, they simply average many returns that start in that state. </p>
+
+<p>Monte Carlo methods are increment episode by episode (not step by step). Value estimates and policy changes are made at the end of the episode, and it is assume that all episodes terminate no matter what action was taken. The book covers methods that average over complete returns. </p>
+
+<p>I lost the scent of the book when we hit on-policy and off-policy Monte Carlo, and had to go find some other resources to fill in the gaps. Essentially, off-policy has us applying evaluations from one policy to learn about another, while on-policy has us updating the original policy. </p>
+
+<h2 id="chapter-6">Chapter 6</h2>
+
+<p>At long last, we&rsquo;ve arrived at Q-learning (which is where most lectures on Youtube begin). Was it worth the wait? We shall see. </p>
+
+<p>Temporal difference learning (TD) is introduced as the combination of Monte Carlo and DP, so let&rsquo;s see how this fusion behaves. Differences are explored. Whereas Monte Carlo must wait to the end of the episode to determine the V value (as that is when reward is calculated), TD can make this update in the next time step, using the observed reward and V estimate at t+1. TD updates are sample backups, as they are referencing the value of a successive state to compute a backed-up value, and then using it to change the value of the original state. This differs from the full backups of DP, where we take into account the complete distribution for all possible successors. </p>
+
+<p>Updates are made as we go, instead of waiting for the final reward.</p>
+
+<p><em>Sarsa</em> is the on-policy version while <em>Q-learning</em> is the off-policy version (uses max () to get the action, and doesn&rsquo;t rely on the $\pi$. So, what is the difference between on-policy and off-policy. I&rsquo;ve read the sections on this, but this is still not clear, other than we can have the behavior generating policy be something different than the policy for evaluation. There are necessary criteria listed, but not clear what would happen in the case of their violatio</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

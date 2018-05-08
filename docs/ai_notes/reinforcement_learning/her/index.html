@@ -9,12 +9,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
 <meta name="author" content="Siobhan K Cronin">
-<meta name="description" content="Siobhan K Cronin is a machine learning engineer, researcher, and public speaker">
+<meta name="description" content=" Hindsight Experience Replay (HER) This technique has a super clever way of dealing with sparse reward situations. Essentially, it calls misses successes, so that learning can be made even when we miss our target. It can be combined with other off-policy RL algorithms, and I show how to do that in other posts.
+Algorithm algorithm = some_off_policy_RL_algorithm initialize replay buffer M = 10 # Number of episodes for epsisode in range(M): goal, s0 = sampler for t in range(T):  ">
 
-<meta property="og:title" content="Creative" />
-<meta property="og:description" content="Siobhan K Cronin is a machine learning engineer, researcher, and public speaker" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://siokcronin.github.io/website/creative/" />
+<meta property="og:title" content="" />
+<meta property="og:description" content=" Hindsight Experience Replay (HER) This technique has a super clever way of dealing with sparse reward situations. Essentially, it calls misses successes, so that learning can be made even when we miss our target. It can be combined with other off-policy RL algorithms, and I show how to do that in other posts.
+Algorithm algorithm = some_off_policy_RL_algorithm initialize replay buffer M = 10 # Number of episodes for epsisode in range(M): goal, s0 = sampler for t in range(T):  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://siokcronin.github.io/website/ai_notes/reinforcement_learning/her/" />
+
+
 
 
 
@@ -33,10 +37,10 @@
 <title>
 
 
-     Creative 
+      
 
 </title>
-<link rel="canonical" href="https://siokcronin.github.io/website/creative/">
+<link rel="canonical" href="https://siokcronin.github.io/website/ai_notes/reinforcement_learning/her/">
 
 
 
@@ -54,11 +58,11 @@
 
 
     
-    <link rel="stylesheet" href="https://siokcronin.github.io/website/css/reset.css?t=2018-05-02%2018%3a17%3a08.146969064%20-0700%20PDT%20m%3d%2b0.089620267">
-    <link rel="stylesheet" href="https://siokcronin.github.io/website/css/pygments.css?t=2018-05-02%2018%3a17%3a08.146969064%20-0700%20PDT%20m%3d%2b0.089620267">
-    <link rel="stylesheet" href="https://siokcronin.github.io/website/css/main.css?t=2018-05-02%2018%3a17%3a08.146969064%20-0700%20PDT%20m%3d%2b0.089620267">
+    <link rel="stylesheet" href="https://siokcronin.github.io/website/css/reset.css?t=2018-05-02%2018%3a17%3a08.129555827%20-0700%20PDT%20m%3d%2b0.072207552">
+    <link rel="stylesheet" href="https://siokcronin.github.io/website/css/pygments.css?t=2018-05-02%2018%3a17%3a08.129555827%20-0700%20PDT%20m%3d%2b0.072207552">
+    <link rel="stylesheet" href="https://siokcronin.github.io/website/css/main.css?t=2018-05-02%2018%3a17%3a08.129555827%20-0700%20PDT%20m%3d%2b0.072207552">
     
-        <link rel="stylesheet" href="https://siokcronin.github.io/website/css/override.css?t=2018-05-02%2018%3a17%3a08.146969064%20-0700%20PDT%20m%3d%2b0.089620267">
+        <link rel="stylesheet" href="https://siokcronin.github.io/website/css/override.css?t=2018-05-02%2018%3a17%3a08.129555827%20-0700%20PDT%20m%3d%2b0.072207552">
     
 
 
@@ -196,24 +200,30 @@
         <div class="content">
             <div class="page-heading">
 
-    Creative
+    
 
 </div>
 
             <div class="markdown">
                 
+
+<h1 id="hindsight-experience-replay-her">Hindsight Experience Replay (HER)</h1>
+
+<p>This technique has a super clever way of dealing with sparse reward situations. Essentially, it calls misses successes, so that learning can be made even when we miss our target. It can be combined with other off-policy RL algorithms, and I show how to do that in other posts.</p>
+
+<h2 id="algorithm">Algorithm</h2>
+
+<pre><code class="language-python">algorithm = some_off_policy_RL_algorithm
+initialize replay buffer
+M = 10 # Number of episodes
+
+for epsisode in range(M):
+    goal, s0 = sampler
+    for t in range(T):
+        
+</code></pre>
+
             </div>
-            
-            <nav class="section-items">
-                <ul>
-                
-                    <li><a href="https://siokcronin.github.io/website/creative/jazz/"></a></li>
-                
-                    <li><a href="https://siokcronin.github.io/website/creative/tempered/"></a></li>
-                
-                </ul>
-            </nav>
-            
         </div>
     </div>
 </section>
