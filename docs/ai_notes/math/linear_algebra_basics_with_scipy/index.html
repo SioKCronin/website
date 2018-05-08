@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Siobhan K Cronin">
+<meta name="description" content="Basics with Scipy import scipy.linalg as la import numpy as np  Motivating example We are entering three pies into the bakeoff, and want to make sure we win. We&rsquo;ve tried a lot of different ingredients, but ultimatley have found that taste comes down to butter, salt, sugar, and grandma&rsquo;s secret spice blend.
+w = 1 #tbl_of_butter x = 1 #dash_of_salt y = 1 #spoonful_of_sugar z = 1 #undisclosed_measurement_of_spice pie1 = 3*w &#43; 5*x &#43; 30*y &#43; 10*z pie2 = 2*w &#43; 3*x &#43; 40*y &#43; 15*z pie3 = 4*w &#43; 2*x &#43; 10*y &#43; 30*z pie4 = 10*w &#43; 2*x &#43; 10*y &#43; 30*z  A = np.">
+
+<meta property="og:title" content="" />
+<meta property="og:description" content="Basics with Scipy import scipy.linalg as la import numpy as np  Motivating example We are entering three pies into the bakeoff, and want to make sure we win. We&rsquo;ve tried a lot of different ingredients, but ultimatley have found that taste comes down to butter, salt, sugar, and grandma&rsquo;s secret spice blend.
+w = 1 #tbl_of_butter x = 1 #dash_of_salt y = 1 #spoonful_of_sugar z = 1 #undisclosed_measurement_of_spice pie1 = 3*w &#43; 5*x &#43; 30*y &#43; 10*z pie2 = 2*w &#43; 3*x &#43; 40*y &#43; 15*z pie3 = 4*w &#43; 2*x &#43; 10*y &#43; 30*z pie4 = 10*w &#43; 2*x &#43; 10*y &#43; 30*z  A = np." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://siokcronin.github.io/website/ai_notes/math/linear_algebra_basics_with_scipy/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title>
+
+
+      
+
+</title>
+<link rel="canonical" href="https://siokcronin.github.io/website/ai_notes/math/linear_algebra_basics_with_scipy/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://siokcronin.github.io/website/css/reset.css?t=2018-05-02%2018%3a17%3a08.1246882%20-0700%20PDT%20m%3d%2b0.067340071">
+    <link rel="stylesheet" href="https://siokcronin.github.io/website/css/pygments.css?t=2018-05-02%2018%3a17%3a08.1246882%20-0700%20PDT%20m%3d%2b0.067340071">
+    <link rel="stylesheet" href="https://siokcronin.github.io/website/css/main.css?t=2018-05-02%2018%3a17%3a08.1246882%20-0700%20PDT%20m%3d%2b0.067340071">
+    
+        <link rel="stylesheet" href="https://siokcronin.github.io/website/css/override.css?t=2018-05-02%2018%3a17%3a08.1246882%20-0700%20PDT%20m%3d%2b0.067340071">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://siokcronin.github.io/website/img/leaf.ico"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                
+                <a href="https://siokcronin.github.io/website/"><img class="avatar" src="https://siokcronin.github.io/website/img/profile.png" srcset="https://siokcronin.github.io/website/img/profile.png 1x"></a>
+            
+            <a href="https://siokcronin.github.io/website/"><div class="name">Siobhan K Cronin</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-about"><a href="https://siokcronin.github.io/website/about/"><span>About</span></a></li>
+                    
+                        <li class="nav-machine learning"><a href="https://siokcronin.github.io/website/ai_notes/"><span>ML/AI</span></a></li>
+                    
+                        <li class="nav-speaking"><a href="https://siokcronin.github.io/website/speaking/"><span>Speaking</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/siokcronin" target="_blank" rel="noopener"><img class="icon" src="https://siokcronin.github.io/website/img/github.svg" alt="github" /></a>
+        
+
+        
+            <a href="//twitter.com/siokcronin" target="_blank" rel="noopener"><img class="icon" src="https://siokcronin.github.io/website/img/twitter.svg" alt="twitter" /></a>
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/siobhankcronin" target="_blank" rel="noopener"><img class="icon" src="https://siokcronin.github.io/website/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="mailto:siobhankcronin@gmail.com"><img class="icon" src="https://siokcronin.github.io/website/img/email.svg" alt="email" /></a>
+        
+
+        
+
+        
+        </div>
+    </div>
+</section>
+
+<section class="main">
+    <div class="container">
+        <div class="content">
+            <div class="page-heading">
+
+    
+
+</div>
+
+            <div class="markdown">
+                
+
+<h1 id="basics-with-scipy">Basics with Scipy</h1>
+
+<pre><code class="language-python">import scipy.linalg as la
+import numpy as np
+</code></pre>
+
+<h2 id="motivating-example">Motivating example</h2>
+
+<p>We are entering three pies into the bakeoff, and want to make sure we win. We&rsquo;ve tried a lot of different ingredients, but ultimatley have found that taste comes down to <strong>butter</strong>, <strong>salt</strong>, <strong>sugar</strong>, and <strong>grandma&rsquo;s secret spice blend</strong>.</p>
+
+<pre><code class="language-python">w = 1 #tbl_of_butter
+x = 1 #dash_of_salt
+y = 1 #spoonful_of_sugar
+z = 1 #undisclosed_measurement_of_spice
+
+pie1 = 3*w + 5*x + 30*y + 10*z
+pie2 = 2*w + 3*x + 40*y + 15*z
+pie3 = 4*w + 2*x + 10*y + 30*z
+pie4 = 10*w + 2*x + 10*y + 30*z
+</code></pre>
+
+<pre><code class="language-python">A = np.array([[3,5,30,10],[2,3,40,15],[4,2,10,30], [10,2,10,30]])
+</code></pre>
+
+<pre><code class="language-python">A
+</code></pre>
+
+<pre><code>array([[ 3,  5, 30, 10],
+       [ 2,  3, 40, 15],
+       [ 4,  2, 10, 30],
+       [10,  2, 10, 30]])
+</code></pre>
+
+<pre><code class="language-python">inv = la.inv(A)
+</code></pre>
+
+<pre><code class="language-python">
+</code></pre>
+
+<pre><code>array([[ 4.20539024e-19,  3.48136945e-18, -1.66666667e-01,
+         1.66666667e-01],
+       [ 3.55932203e-01, -2.71186441e-01,  1.15819209e-01,
+        -9.88700565e-02],
+       [-2.03389831e-02,  4.40677966e-02, -2.09039548e-02,
+         5.64971751e-03],
+       [-1.69491525e-02,  3.38983051e-03,  5.48022599e-02,
+        -1.75141243e-02]])
+</code></pre>
+
+<h2 id="test">TEST</h2>
+
+<pre><code class="language-python">A = np.array([[2, 3, -1], [1, -1, 0], [0, 5, 2], [3, 2, 1]])
+</code></pre>
+
+<pre><code class="language-python">A
+</code></pre>
+
+<pre><code>array([[ 2,  3, -1],
+       [ 1, -1,  0],
+       [ 0,  5,  2],
+       [ 3,  2,  1]])
+</code></pre>
+
+<pre><code class="language-python">test1 = np.array([2, 3, -7, 3])
+test2 = np.array([0, 0, 0, 0])
+test3 = np.array([1, 1, 1, 1])
+</code></pre>
+
+<pre><code class="language-python">x1 = la.lstsq(A, test1)
+</code></pre>
+
+<pre><code class="language-python">orth = la.orth(A)
+</code></pre>
+
+<pre><code class="language-python">r = np.ptp(A,axis=1)
+</code></pre>
+
+<pre><code class="language-python">r
+</code></pre>
+
+<pre><code>array([4, 2, 5, 2])
+</code></pre>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

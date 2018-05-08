@@ -9,12 +9,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
 <meta name="author" content="Siobhan K Cronin">
-<meta name="description" content="Siobhan K Cronin is a machine learning engineer, researcher, and public speaker">
+<meta name="description" content=" Deep Deterministic Policy Gradients (DDPG) For this model-free RL algorithm for continuous spaces, episodes are generated using a behavioral polcy, which is a noisy version of the target policy. There are two neural networks, an actor and a critic, where the targets for the critic are the actions outputted by the actor. Actor is trained using mini-batch GD on the inverse expected Q value.
+Algorithm algorithm = some_off_policy_RL_algorithm initialize replay buffer M = 10 # Number of episodes for epsisode in range(M):  ">
 
-<meta property="og:title" content="Creative" />
-<meta property="og:description" content="Siobhan K Cronin is a machine learning engineer, researcher, and public speaker" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://siokcronin.github.io/website/creative/" />
+<meta property="og:title" content="" />
+<meta property="og:description" content=" Deep Deterministic Policy Gradients (DDPG) For this model-free RL algorithm for continuous spaces, episodes are generated using a behavioral polcy, which is a noisy version of the target policy. There are two neural networks, an actor and a critic, where the targets for the critic are the actions outputted by the actor. Actor is trained using mini-batch GD on the inverse expected Q value.
+Algorithm algorithm = some_off_policy_RL_algorithm initialize replay buffer M = 10 # Number of episodes for epsisode in range(M):  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://siokcronin.github.io/website/ai_notes/reinforcement_learning/ddpg/" />
+
+
 
 
 
@@ -33,10 +37,10 @@
 <title>
 
 
-     Creative 
+      
 
 </title>
-<link rel="canonical" href="https://siokcronin.github.io/website/creative/">
+<link rel="canonical" href="https://siokcronin.github.io/website/ai_notes/reinforcement_learning/ddpg/">
 
 
 
@@ -54,11 +58,11 @@
 
 
     
-    <link rel="stylesheet" href="https://siokcronin.github.io/website/css/reset.css?t=2018-05-02%2018%3a17%3a08.146969064%20-0700%20PDT%20m%3d%2b0.089620267">
-    <link rel="stylesheet" href="https://siokcronin.github.io/website/css/pygments.css?t=2018-05-02%2018%3a17%3a08.146969064%20-0700%20PDT%20m%3d%2b0.089620267">
-    <link rel="stylesheet" href="https://siokcronin.github.io/website/css/main.css?t=2018-05-02%2018%3a17%3a08.146969064%20-0700%20PDT%20m%3d%2b0.089620267">
+    <link rel="stylesheet" href="https://siokcronin.github.io/website/css/reset.css?t=2018-05-02%2018%3a17%3a08.131899376%20-0700%20PDT%20m%3d%2b0.074551031">
+    <link rel="stylesheet" href="https://siokcronin.github.io/website/css/pygments.css?t=2018-05-02%2018%3a17%3a08.131899376%20-0700%20PDT%20m%3d%2b0.074551031">
+    <link rel="stylesheet" href="https://siokcronin.github.io/website/css/main.css?t=2018-05-02%2018%3a17%3a08.131899376%20-0700%20PDT%20m%3d%2b0.074551031">
     
-        <link rel="stylesheet" href="https://siokcronin.github.io/website/css/override.css?t=2018-05-02%2018%3a17%3a08.146969064%20-0700%20PDT%20m%3d%2b0.089620267">
+        <link rel="stylesheet" href="https://siokcronin.github.io/website/css/override.css?t=2018-05-02%2018%3a17%3a08.131899376%20-0700%20PDT%20m%3d%2b0.074551031">
     
 
 
@@ -196,24 +200,29 @@
         <div class="content">
             <div class="page-heading">
 
-    Creative
+    
 
 </div>
 
             <div class="markdown">
                 
+
+<h1 id="deep-deterministic-policy-gradients-ddpg">Deep Deterministic Policy Gradients (DDPG)</h1>
+
+<p>For this model-free RL algorithm for continuous spaces, episodes are generated using a behavioral polcy, which is a noisy version of the target policy. There are two neural networks, an <em>actor</em> and a <em>critic</em>, where the targets for the critic are the actions outputted by the actor. Actor is trained using mini-batch GD on the inverse expected Q value.</p>
+
+<h1 id="algorithm">Algorithm</h1>
+
+<pre><code class="language-python">algorithm = some_off_policy_RL_algorithm
+initialize replay buffer
+M = 10 # Number of episodes
+
+for epsisode in range(M):
+    
+    
+</code></pre>
+
             </div>
-            
-            <nav class="section-items">
-                <ul>
-                
-                    <li><a href="https://siokcronin.github.io/website/creative/jazz/"></a></li>
-                
-                    <li><a href="https://siokcronin.github.io/website/creative/tempered/"></a></li>
-                
-                </ul>
-            </nav>
-            
         </div>
     </div>
 </section>
