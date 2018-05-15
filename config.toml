@@ -1,61 +1,54 @@
-baseurl             = "https://siokcronin.github.io/website/"
-builddrafts         = false
-canonifyurls        = true
-contentdir          = "content"
-languageCode        = "en-US"
-layoutdir           = "layouts"
-publishdir          = "docs"
-theme               = "cocoa"
-author              = "Siobhan K Cronin"
-title               = "Siobhan K Cronin"
-pygmentsuseclasses  = true
-# disqusshortname     = "cocoaexamplesite" # Comment out to disable Disqus.
-pluralizelisttitles = false
-# googleAnalytics     = "UA-123-45"
+title = "Siobhán K Cronin"
+baseURL = "https://siokcronin.github.io/"
+languageCode = "en-us"
+theme = "ananke"
 
-[permalinks]
-blog  = "blog/:slug/"
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+# SectionPagesMenu = "ai_notes"
+Paginate = 10 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""
+enableRobotsTXT = true
 
-[[menu.main]]
-name                   = "About"
-weight                 = -110
-identifier             = "about"
-url                    = "about/"
-
-[[menu.main]]
-name                   = "ML/AI"
-weight                 = -100
-identifier             = "machine learning"
-url                    = "ai_notes/"
-
-[[menu.main]]
-name                   = "Speaking"
-weight                 = -100
-identifier             = "speaking"
-url                    = "speaking/"
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
 
 [params]
-include_rss            = false                          # include RSS <link> tag in <head> and show RSS icon
-latestpostscount       = 5                             # how many posts to display on the home page
-i18n_flags             = false                         # whether to display small country flags for available translations
-author                 = "Siobhan K Cronin"
-cachebuster            = true                          # add the current unix timestamp in query string for cache busting css assets
-dateform               = "Jan 2, 2006"
-dateformfull           = "Mon Jan 2 2006 15:04:05 MST"
-description            = "Siobhan K Cronin is a machine learning engineer, researcher, and public speaker"
-email                  = "siobhankcronin@gmail.com"
-extracssfiles          = [ "/css/override.css" ]       # In your `static` directory, add/remove files as necessary.
-faviconfile            = "img/leaf.ico"
-github                 = "//github.com/siokcronin"
-lang                   = "en"
-linkedin               = "//linkedin.com/in/siobhankcronin"
-medium                 = "//medium.com/@siobhankcronin"
-noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
-selfintro              = ""                            # appears in the site header when set to a non-empty string
-twitter                = "//twitter.com/siokcronin"
-highlightjs            = true
+  custom_css = ["css/override.css"]
+  highlightjs = true
+  highlightjslanguages = ["python"]
+  mainSections = ["posts"]
+  favicon = ""
+  description = "Siobhán K Cronin is a machine learning engineer, researcher, and public speaker"
+  facebook = ""
+  twitter = "//twitter.com/siokcronin"
+  instagram = ""
+  youtube = ""
+  github = "//github.com/siokcronin"
+  linkedin = "//linkedin.com/in/siobhankcronin"
+  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-yellow"
+  featured_image = false
+  recent_posts_number = 10
 
-piwik                  = false                         # If true, Piwik integration is enabled
-gitalk                 = false                         # if gitalk is true, the following params should be set. These parameters could be retrieved from github OAuth
+[menu]
+    [[menu.main]]
+    identifier = "speaking"
+    name       = "Speaking"
+    url        = "/speaking"
+    weight     = 0
 
-avatar                 = "img/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
+    [[menu.main]]
+    identifier = "projects"
+    name       = "Projects"
+    url        = "/projects"
+    weight     = 1
+
+    [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+    weight     = 2
+
