@@ -1,10 +1,12 @@
-<!-- Google Analytics -->
-{{ template "_internal/google_analytics_async.html" . }}
+{{ $script := .Site.Data.webpack_assets.app }}
+{{ with $script.js }}
+  <script src="{{ absURL (printf "%s%s" "/dist/" .) }}"></script>
+{{ end }}
 
 {{ if .Site.Params.highlightjs }}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   {{ range .Site.Params.highlightjslanguages }}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/{{.}}.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/{{.}}.min.js"></script>
   {{ end }}
 
   <script type="text/javascript">
