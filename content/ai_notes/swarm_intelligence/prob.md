@@ -1,18 +1,18 @@
 ---
 title: Prob
 date: 2018-05-03
-markup: mmark
+menu:
+    ai_notes:
+        parent: Swarm Intelligence
 ---
 
-# Prob
-
 \begin{align}
-\dot{x} & = \sigma(y-x) \\
-\dot{y} & = \rho x - y - xz \\
+\dot{x} & = \sigma(y-x) \\\\\\
+\dot{y} & = \rho x - y - xz \\\\\\
 \dot{z} & = -\beta z + xy
 \end{align}
 
-$\alpha = 1000$
+$$\alpha = 1000$$
 
 
 ```python

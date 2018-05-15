@@ -1,6 +1,10 @@
-
-# Basics with Scipy
-
+---
+title: Basics with Scipy
+date: 2018-05-03
+menu:
+    ai_notes:
+        parent: Math
+---
 
 ```python
 import scipy.linalg as la
