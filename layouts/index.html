@@ -31,12 +31,15 @@
         {{ end }}
       </section>
 
+    {{/* Turned off "more posts" until needed
       {{ with .Site.GetPage "section" $section_name }}
           <h4 class="flex-none">
               <a href="{{ .URL }}">More {{ .Title }}</a>
           </h4>
      {{ end }}
+      */}}
 
+    <h2>Notes on AI/ML</h2>
    
      <!-- menu start -->
     {{ range .Site.Menus.ai_notes }}
