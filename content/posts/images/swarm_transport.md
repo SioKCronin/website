@@ -1,7 +1,7 @@
 ---
 title: "Swarm Intelligence systems for transportation engineering:
-principles and applications"
-
+principles and applications (REVIEW)"
+date: "2017-07-13"
 ---
 
 Dušan Teodorovic. Swarm Intelligence systems for transportation
@@ -14,6 +14,7 @@ multi-agent systems that leverage information sharing models to optimize
 search techniques, and I will recap those here. 
 
 Ant Colony Optimization (ACO)
+
 Ants leave pheromone trails, and an ant will use the strength of the
 signal to weight their choice of path, as well-trod paths traveled by
 ants heading to a food source have a stronger pheromone signal.
