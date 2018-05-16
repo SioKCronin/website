@@ -1,6 +1,6 @@
 ---
 title: "Alignment for Advanced ML Systems (REVIEW)"
-date: "2018-3-29"
+date: "2018-03-29"
 ---
 
 Jessica Taylor, Eliezer Yudkowsky, Patrick LaVictoire, and Andrew
