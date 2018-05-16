@@ -38,13 +38,7 @@ enableRobotsTXT = true
     identifier = "ai_notes"
     name       = "AI Notes"
     url        = "/index.html"
-    weight     = 0
-
-    [[menu.main]]
-    identifier = "speaking"
-    name       = "Speaking"
-    url        = "/speaking"
-    weight     = 1
+    weight     = 3
 
     [[menu.main]]
     identifier = "projects"
@@ -53,8 +47,14 @@ enableRobotsTXT = true
     weight     = 2
 
     [[menu.main]]
+    identifier = "speaking"
+    name       = "Speaking"
+    url        = "/speaking"
+    weight     = 1
+
+    [[menu.main]]
     identifier = "about"
     name       = "About"
     url        = "/about"
-    weight     = 3
+    weight     = 0
 
