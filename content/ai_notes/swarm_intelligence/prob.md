@@ -1,10 +1,5 @@
----
-title: Prob
-date: 2018-05-03
-menu:
-    ai_notes:
-        parent: Swarm Intelligence
----
+
+# Prob
 
 \begin{align}
 \dot{x} & = \sigma(y-x) \\\\\\
@@ -37,3 +32,8 @@ plt.show()
 
 ![png](prob_4_0.png)
 
+
+
+```python
+
+```

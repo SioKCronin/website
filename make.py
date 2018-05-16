@@ -36,27 +36,27 @@ for folder_name in folders:
             if thestring.endswith(ending):
                 return thestring[:-len(ending)]
             return thestring
-        
+
         new_folder_name = rchop(folder_name, '_files')
-        
+
         # try renaming original folder
         try:
             os.rename(folder_name, new_folder_name)
         except OSError:
             existing_base_folder = os.getcwd()+"/"+new_folder_name
             justcreated_base_folder = os.getcwd()+"/"+folder_name
-            
+
             # Get list of all files in the folder
             generated_files = os.listdir(justcreated_base_folder)
-            
+
             # Copy each file in the existing folder
             for generated_file in generated_files:
                 to_copy = justcreated_base_folder+"/"+generated_file
                 shutil.copy(to_copy, existing_base_folder)
-                
+
             # Delete the newly created _files folder
             shutil.rmtree(justcreated_base_folder)
-            
+
 def replaceAll(file, searchExp, replaceExp):
     for line in fileinput.input(file, inplace=1):
         if searchExp in line:
@@ -72,17 +72,17 @@ all_md_files = [os.path.join(root, name)
 for file in all_md_files:
     with open(file, 'r') as f:
         filedata = f.read()
-        
+
         # Find markdown link syntaxes
         md_links = re.findall('!\\[[^\\]]+\\]\\([^)]+\\)', filedata)
-        
+
         for link in md_links:
             # Replace the full file path
             md_image_path = re.search(r'\((.*?)\)', link).group(1)
             md_image_filename = os.path.basename(md_image_path)
             md_image_title = re.search(r'\[(.*?)\]', link).group(1)
-            
+
             new_link = "!["+md_image_title+"]("+md_image_filename+")"
-            
+
             replaceAll(file, link, new_link)
 

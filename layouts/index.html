@@ -16,7 +16,7 @@
       {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
        {{ with .Site.GetPage "section" $section_name }}
           <h2 class="flex-none">
-            Recent {{ .Title }}
+            Lit Reviews {{ .Title }}
           </h2>
         {{ end }}
 
@@ -39,8 +39,8 @@
      {{ end }}
       */}}
 
-    <h2>Notes on AI/ML</h2>
-   
+      <h2>AI Notes</h2>
+
      <!-- menu start -->
     {{ range .Site.Menus.ai_notes }}
         {{ if .HasChildren }}
