@@ -4,24 +4,23 @@ menu:
     ai_notes:
         parent: Software Engineering
 ---
-
  Here are four contenders for measuring the nearness of any two points
  in an n-dimensional real vector space with fixed cartesian coordinates:
 
- ###Euclidean
+ ### Euclidean
  As the name suggests, this is the square root of the sum of squares for
  each corresponding input pair of our points. 
 
- ###Manhattan
+ ### Manhattan
  The sum of the lengths of the projections of the line segment between
  the points onto the coordinate axes. Or, how many "city blocks" (i.e.
  coordinate units) lie between the two points. 
 
- ###Hamming
+ ### Hamming
  The minimum number of substitutions required to change one vector into
  another. Simply tally up how many input position pairs differ.
 
- ###Minkowski
+ ### Minkowski
  This generalizes the Euclidean and Manhattan distance metrics, allowing
  us to to set the sum of distance units (exponent of 1 on differences,
  with 1/1' exponent to norm the sum) or the triangular distance
