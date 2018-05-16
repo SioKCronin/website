@@ -1,5 +1,9 @@
-
-# Hindsight Experience Replay (HER)
+---
+Title: Hindsight Experience Replay (HER)
+menu:
+    ai_notes:
+        parent: Reinforcement Learning
+---
 
 This technique has a super clever way of dealing with sparse reward situations. Essentially, it calls misses successes, so that learning can be made even when we miss our target. It can be combined with other off-policy RL algorithms, and I show how to do that in other posts. 
 

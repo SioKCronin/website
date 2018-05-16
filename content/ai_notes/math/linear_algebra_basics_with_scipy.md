@@ -1,6 +1,5 @@
 ---
-title: Basics with Scipy
-date: 2018-05-03
+title: Linear Algebra Basics with Scipy
 menu:
     ai_notes:
         parent: Math
@@ -127,3 +126,8 @@ r
     array([4, 2, 5, 2])
 
 
+
+
+```python
+
+```

@@ -10,17 +10,15 @@ learning, optimization, and swarm intelligence.
 She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies and Harvard Medical School, and now develops tools
 to help machines and humans learn together. Siobhán is currently an
-associate researcher at Slow Research Lab, and a contributor to the open
-source swarm intelligence optimization tool PySwarms.
+associate researcher at Slow Research Lab, and an open source contributor to PySwarms and Swarm Lab.
 
 Siobhán has published research in Brain & Cognition, Neuroreport, and
 Model View Culture, and presented at the Conference on Complex Systems,
 Conference on Cognitive Neuroscience, AlterConf, PyLadies, Metis, and
 Temple University. She is a member of Bay Area Women in Machine Learning
 and Data Science and IEEE Computational Intelligence Society (CIS), and
-coordinates a series of fireside conversations on robotics and
-transportation called AI Moves.
+a mentor at dev/Mission.
 
-Python, C++, scikit-learn, Tensorflow, PyTorch, Pandas, Numpy, vim, SQL,
-Unity, MuJoCo, git, vim
+Python, C++, scikit-learn, Tensorflow, PyTorch, Pandas, Numpy, SQL,
+MongoDB, git, vim
 

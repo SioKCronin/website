@@ -5,20 +5,20 @@ draft = false
 
 +++
 ### Upcoming
-5 MAY 2018 --- The Poetics of Swarm Intelligence @ La Casa Naranja
-(San Francisco, CA)
-7 DEC 2018 --- This Fountain of Being @ Center for New Music (San
-Francisco, CA)
+* 7.5.2018 --- The Poetics of Swarm Intelligence @ La Casa Naranja
+(SF)
+* 7 DEC 2018 --- This Fountain of Being @ Center for New Music (SF)
 
 ### Past
 
-11 OCT 2017 --- Step by Step @ Metis (San Francisco, CA) video<br/>
-21 SEP 2016 --- Forms (w/ Carolyn Strauss) @ Conf on Complex
-Systems (Amsterdam)<br/>
-9 AUG 2016 --- Form and Movement in Complex Systems @ PyLadies SF<br/>
-4 JUN 2016 --- On People, Cubes and Snacks @ AlterConf
+* 10.11.2017 --- Step by Step @ Metis (SF)<br/>
+* 9.21.2016 --- Forms @ Conference on Complex Systems (Amsterdam)<br/>
+* 8.9.2016 --- Form and Movement in Complex Systems @ PyLadies (SF)<br/>
+* 6.4.2016 --- On People, Cubes and Snacks @ AlterConf (SF)
 
-## The Poetics of Swarm Intelligence
+</br>
+
+### The Poetics of Swarm Intelligence
 
 Swarm intelligence is the collective behavior of decentralized,
 self-organized systems. The whole being other than the sum of its parts.
@@ -33,7 +33,7 @@ my broader commitment to reconnecting with traditions of collective
 ideation and collaboration. Together we will explore how thinking as and
 with the collective avails us to dynamic modes of problem solving.
 
-## Step by Step: When and How To Use Stochastic Optimization
+### Step by Step: When and How To Use Stochastic Optimization
 
 You’ve got your model up and running, and now you’d like to tune your
 hyperparameters. If you’ve gotten to this point in the process, it means

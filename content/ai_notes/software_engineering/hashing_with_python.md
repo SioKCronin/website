@@ -1,5 +1,9 @@
-
-# Hashing Strings with Python
+---
+Title: Hashing Strings with Python
+menu:
+    ai_notes:
+        parent: Software Engineering
+---
 
 Hash functions map sequences of bytes to fixed length sequences. The value returned by a hash function is often called a hash, message digest, hash value, or checksum. 
 
