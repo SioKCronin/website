@@ -1,5 +1,5 @@
 ---
-title: What Comes After Minds?
+title: What Comes After Minds? (REVIEW)
 date: 2016-04-14
 ---
 
