@@ -1,10 +1,10 @@
 <article>
-  <div class="db dark-gray">
+  <div class="f4 db dark-gray">
+      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+        {{- .Date.Format "January 2, 2006" -}}
+      </time>
+      &mdash;
       <a href="{{.URL}}" class="light-purple dim link">
-          <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-            {{- .Date.Format "January 2, 2006" -}}
-          </time>
-          &mdash;
           {{ .Title }}
       </a>
   </div>
