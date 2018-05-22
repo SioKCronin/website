@@ -3,6 +3,7 @@ title: Linear Algebra Basics with Scipy
 menu:
     ai_notes:
         parent: Math, Probability & Statistics
+draft: True
 ---
 
 ```python

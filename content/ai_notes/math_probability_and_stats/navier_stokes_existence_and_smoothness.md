@@ -3,6 +3,7 @@ title: Navier-Stokes Existence and Smoothness Problem
 menu:
    ai_notes:
        parent: Math, Probability & Statistics
+draft: True
 ---
 
 Let me say up front, I have not solved this problem, nor am I in the
