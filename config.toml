@@ -32,7 +32,7 @@ enableRobotsTXT = true
   background_color_class = "bg-sio-yellow"
   body_classes = "avenir bg-white-90"
   featured_image = false
-  recent_posts_number = 10
+  recent_posts_number = 5
 
 [menu]
     [[menu.main]]

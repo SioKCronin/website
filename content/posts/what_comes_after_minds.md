@@ -5,7 +5,7 @@ date: 2016-04-14
 
 What comes after minds? by Marvin Minsky. From The New Humanists: Science at the Edge (2003). Edited by John Brockman. Barnes & Noble Books: New York. 
 
-###Key quotes
+### Key quotes
 
 * "No uniform scheme will leda to machines as resourceful as the human
 brain. Instead, I'm convinced that this will require many different
@@ -15,7 +15,7 @@ use them".
 represent different types and forms of knowledge,..."
 * "I see each emotional state as a distinctly different way to think". 
 
-###Summary
+### Summary
 
 What I like best about this brief introduction to some of Marvin
 Minsky's thinking is his reminder of the value of mind modeling. In the

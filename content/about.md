@@ -4,8 +4,7 @@ date = "2018-04-24T11:53:47-07:00"
 draft = false
 
 +++
-Siobhán is a machine learning engineer with a passion for reinforcement
-learning, optimization, and swarm intelligence.
+Siobhán is a machine learning engineer and researcher with a passion for reinforcement learning and swarm intelligence.
 
 She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies and Harvard Medical School, and now develops tools
@@ -16,8 +15,7 @@ Siobhán has published research in Brain & Cognition, Neuroreport, and
 Model View Culture, and presented at the Conference on Complex Systems,
 Conference on Cognitive Neuroscience, AlterConf, PyLadies, Metis, and
 Temple University. She is a member of Bay Area Women in Machine Learning
-and Data Science and IEEE Computational Intelligence Society (CIS), and
-a mentor at dev/Mission.
+and Data Science and the IEEE Computational Intelligence Society (CIS), and is an engineering mentor at dev/Mission.
 
 Python, C++, scikit-learn, Tensorflow, PyTorch, Pandas, Numpy, SQL,
 MongoDB, git, vim
