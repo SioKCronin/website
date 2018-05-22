@@ -3,6 +3,7 @@ title: Belief Propogation
 menu:
     ai_notes:
          parent: "Math, Probability & Statistics"
+draft: True
 ---
 
 An approximation algorithm that allows us conduct inference on Bayesian
