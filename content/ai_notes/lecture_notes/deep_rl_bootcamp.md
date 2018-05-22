@@ -42,11 +42,11 @@ menu:
 
 (20-30) A walk through the DQN algorithm, which I've pasted below, and some really memorable words about optimization. "Optimization really matters in RL, because how you update your neural network determines which actions you will take, which determines which data you will see. Optimization algorithms affect the dynamics of your agent." To this end, he gave a shout out to RMSProp and Adam, which he and his colleagues have found to be preferable to SGD in many cases. 
 
-![DeepQAlgorithm.png](attachment:DeepQAlgorithm.png)
+![DeepQAlgorithm.png](DeepQAlgorithm.png)
 
 (30-40) Introduces the 49 Atari games they trained on, where they were mapping pixels to Q-values (leading to actions). Convolutional neural networks provided the mapping. In answering a question, here shared this is not a MDP, because we would have to define all the states, and that is not what's happening. I'm including a frame of the architecture below. Scores were best with experience replay and target network stabilization.
 
-![Convolutional_NN-3.png](attachment:Convolutional_NN-3.png)
+![Convolutional_NN-3.png](Convolutional_NN-3.png)
 
 (40-50) Visual exploration of their simulations, with DQN working best on the reactive games. Particular attention placed to the ability to sacrifice immediate rewards for long-term gain.
 

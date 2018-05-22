@@ -1,4 +1,3 @@
-
 # Prob
 
 \begin{align}

@@ -24,7 +24,7 @@ Field, Eugene Wigner), with the group-theoretic leading the charge
 "What are we doing when we 'apply' mathematics to Nature?"
 
 "Other skeptics argue the reverse, that we should expect mathematics to
-be applicable because (unlike what [Eugene] Wigner asserts) the real and
+be applicable because (unlike what Eugene Wigner asserts) the real and
 ultimate source of mathematical concepts is experience; thus, it is not
 at all unreasonable that mathematical concepts should return the favor."
 
@@ -47,7 +47,7 @@ They then move on to group theory, which they explain was not set up to
 describe symmetries in the world, but rather constructed to be applied
 internally to mathematics itself - specifically to algebra (by Galois).
 They claim that Galois, by studying groups of equations in order to
-learn more about the equations, "inaguarate[d] modern mathematics, in
+learn more about the equations, "inaguarated modern mathematics, in
 which the main applications of mathematics are to mathematics itself."
 
 They move into an exploration of group theory in quantum mechanics -
@@ -58,14 +58,14 @@ actually tow different states of the same particle ("today called the
 discussing electrons and nucleons to hadrons. Group theory is further
 supported in Murray Gell-Mann and Yuval Ne'eman's predication of a 10th
 hadron in the SU(3) family and Gell-Mann's theoretical identification of
-"quarks" stemming for a prediction of "existence of the [three pions]
+"quarks" stemming for a prediction of "existence of the three pions
 form the three-dimensional representation." 
 
 And yet the author cautions our reading of group theory's applications
 by saying, "the historical players would mostly have rejected this
 characterization." After centuries of math being used to derive
 quantitative results from phenomena we could also describe
-qualitatively, we now can see our "mathematics [giving] even the
+qualitatively, we now can see our "mathematics giving even the
 qualitative descriptions". 
 
 Gottlob Frege demonstrates that applications can involve concepts (i.e.
