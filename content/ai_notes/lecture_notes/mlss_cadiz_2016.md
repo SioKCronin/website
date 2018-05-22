@@ -55,8 +55,7 @@ that at every time t is maintaining a distribution over parameter
 vectors. It only views the input parameters (\theta) and their reward,
 and views the rest of the MDP as a black box. These work, as he said,
 "embarrassingly" well (I think because we are embarrassed that simple
-works better than complicated?). Implemented here:
-https://github.com/SioKCronin/DeepRL-Baselines
+works better than complicated?). 
 
 #### Part 2
 

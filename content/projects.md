@@ -49,4 +49,3 @@ Affect research with Dr. Lisa Feldman Barrett
 ### Creative
 
 [Tempered](/tempered)</br>
-Proofs
