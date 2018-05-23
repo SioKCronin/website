@@ -217,43 +217,12 @@ Algorithm algorithm = some_off_policy_RL_algorithm initialize replay buffer M = 
         <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
   <div class="bg-white mb1 pa4 gray overflow-hidden">
     <h1 class="f3 near-black">
-      <a href="/ai_notes/reinforcement_learning/her/" class="link black dim">
-        Hindsight Experience Replay (HER)
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-       This technique has a super clever way of dealing with sparse reward situations. Essentially, it calls misses successes, so that learning can be made even when we miss our target. It can be combined with other off-policy RL algorithms, and I show how to do that in other posts.
-Algorithm algorithm = some_off_policy_RL_algorithm initialize replay buffer M = 10 # Number of episodes for epsisode in range(M): goal, s0 = sampler for t in range(T):  
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
       <a href="/ai_notes/reinforcement_learning/lstm/" class="link black dim">
         Long Short Term Memory (LSTM)
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       Grid Long Short-Term Memory (LSTM) Long Short-Term Memory (LSTM) networks are networks of LSTM cells arranged in a grid to facilitate deep and sequential computation. LSTM networks are RNN architectures with an improved ability to store and access memory. The magic is a a gating mechansim that controls access to memory cells. The gating helps preserve signal for longer, and also propogates error for longer than typical RNN structures. The gating helps focus the network on specfic aspects of the input signal, while ignoring other parts.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/reinforcement_learning/ppo/" class="link black dim">
-        Proximal Policy Optimization (PPO)
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      As I continue spelunking into the PSO cave in hopes of finding an algorithm design strain of gold I can follow, I&rsquo;m getting more and more excited about the RL research at OpenAI. In particular, I perked my ears up when I read that Proximal Policy Optimzation became the default RL algorithm at OpenAI last summer. Let&rsquo;s find out why.
-First off, what is it PPO?
-The stage is set by considering policy gradient methods (PG) in using deep neural nets in control problems.
     </div>
   </div>
 </div>

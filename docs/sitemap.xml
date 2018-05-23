@@ -165,12 +165,6 @@
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/reinforcement_learning/her/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://siobhankcronin.com/ai_notes/software_engineering/k_nearest_neighbors/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -214,12 +208,6 @@
   
   <url>
     <loc>http://siobhankcronin.com/ai_notes/lecture_notes/phenomenology_of_perception/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://siobhankcronin.com/ai_notes/reinforcement_learning/ppo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
