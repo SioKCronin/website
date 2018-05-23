@@ -6,7 +6,7 @@
 {{ define "main" }}
   <article class="flex-l flex-wrap justify-between mw8 center">
 
-    <header class="mt4 w-100">
+    <header class="mt4 w-100 w-60-ns">
       <p class="f6 b helvetica tracked">
           {{/*
           CurrentSection allows us to use the section title instead of inferring from the folder.
@@ -23,7 +23,7 @@
       </time>
     </header>
 
-    <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l">
+    <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l">
         {{- .Content -}}
       {{- partial "tags.html" . -}}
       <div class="mt6">
