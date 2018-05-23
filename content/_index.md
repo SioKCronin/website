@@ -1,3 +1,1 @@
-I am a machine learning engineer working at the intersection of data engineering,
-complexity research, and learning algorithm design. I began my career in cognitive neuroscience, and am attracted to projects exploring emergent patterns of form and movement in complex systems. I am currently conducting independent research with Slow
-Research Lab, and on the prowl for my next project.
+I am a machine learning engineer and researcher with a love for building research tools. I began my career in cognitive neuroscience, and have spent the past two years studying machine learning, contracting at startups, and collaborating on open source projects. Here are my study notes and musings. I love collaboration, and as of June 1, 2018 am available for hire, so let's connect!
