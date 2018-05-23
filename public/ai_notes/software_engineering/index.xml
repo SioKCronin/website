@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Engineering on Siobhán K Cronin</title>
+    <link>https://siokcronin.github.io/website/ai_notes/software_engineering/</link>
+    <description>Recent content in Software Engineering on Siobhán K Cronin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://siokcronin.github.io/website/ai_notes/software_engineering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://siokcronin.github.io/website/ai_notes/software_engineering/algorithm_design_manual/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/website/ai_notes/software_engineering/algorithm_design_manual/</guid>
+      <description>Algorithm Design Manual 1. Intro to Algo Design I love the motivation for proof of your algorithm - to confirm that the generalizability of your selected instances (the one&amp;rsquo;s you&amp;rsquo;ve tested) holds.
+We then shift into Robot Tour Optimization. Getting to different paths efficiently on the path could be done with a travelling salesman, which requires some stochastic solve. I looked around at how I&amp;rsquo;d love this, and came back to neural combinatorial optimization with RL.</description>
+    </item>
+    
+    <item>
+      <title>Collections module in Python</title>
+      <link>https://siokcronin.github.io/website/ai_notes/software_engineering/collections_library_in_python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/website/ai_notes/software_engineering/collections_library_in_python/</guid>
+      <description>Incredibly useful Python container datatypes.
+Counter Counter is a dictionary subclass with no restrictions on keys and values.
+from collections import Counter words = [&#39;apples&#39;,&#39;oranges&#39;, &#39;apples&#39;, &#39;apples&#39;] words1 = [&#39;oranges&#39;, &#39;oranges&#39;, &#39;oranges&#39;, &#39;apples&#39;]  # Return (element, count) pairs for n most common Counter(words).most_common()  # Subtract elements from another mapping w = Counter(words) w1 = Counter(words1) w.subract(w1) # subtraction, includes zero and negatives w - w1 # subtraction, only positive counts w &amp;amp; w1 # intersection w | w1 # union w + w1 # adds two counters together  # Some useful patterns c.</description>
+    </item>
+    
+    <item>
+      <title>K-nearest neighbors</title>
+      <link>https://siokcronin.github.io/website/ai_notes/software_engineering/k_nearest_neighbors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/website/ai_notes/software_engineering/k_nearest_neighbors/</guid>
+      <description>Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are four contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates:
+Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.
+$$d(p,q) = \sqrt{\sum_{i=1}^n(q_{i} - p_{i})^2}$$
+Manhattan The sum of the lengths of the projections of the line segment between the points onto the coordinate axes.</description>
+    </item>
+    
+  </channel>
+</rss>

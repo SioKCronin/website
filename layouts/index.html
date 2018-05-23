@@ -33,11 +33,11 @@
         {{ end }}
       </section>
 
-      {{ with .Site.GetPage "section" $section_name }}
+      {{/* {{ with .Site.GetPage "section" $section_name }}
           <h4 class="flex-none">
               <a href="{{ .URL }}">More {{ .Title }}</a>
           </h4>
-     {{ end }}
+      {{ end }} */}}
 
      <!-- menu start -->
     {{ range .Site.Menus.ai_notes }}
