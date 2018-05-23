@@ -242,16 +242,6 @@ This burgeoning research arena, wearing hand-me-downs from theoretical physics a
     </item>
     
     <item>
-      <title>Hindsight Experience Replay (HER)</title>
-      <link>http://siobhankcronin.com/ai_notes/reinforcement_learning/her/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://siobhankcronin.com/ai_notes/reinforcement_learning/her/</guid>
-      <description> This technique has a super clever way of dealing with sparse reward situations. Essentially, it calls misses successes, so that learning can be made even when we miss our target. It can be combined with other off-policy RL algorithms, and I show how to do that in other posts.
-Algorithm algorithm = some_off_policy_RL_algorithm initialize replay buffer M = 10 # Number of episodes for epsisode in range(M): goal, s0 = sampler for t in range(T):  </description>
-    </item>
-    
-    <item>
       <title>K-nearest neighbors</title>
       <link>http://siobhankcronin.com/ai_notes/software_engineering/k_nearest_neighbors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -314,17 +304,6 @@ Proof. Let $P=t_{1}v_{1} + t_{2}v_{2}$ and $Q=t_{1}v_{1} + t_{2}v_{2}$ be points
       <description>Phenomenology of Perception by Maurice Merleau-Ponty.
 Originally printed in 1945 by Editions Gallimard, with English translation published in 1958 by Routledge &amp;amp; Kegan Paul. I am referencing the 2002 Routledge Classics edition.
 Overview There are times in our lives when we notice the apparatus of our perception. Maybe we see a mirage emerge on the horizon, or grow determined to know why our ears are ringing. When we study such visual apparitions and sonic glitches, we align ourselves with generations of philosophers and cognitive scientists who have looked at perception&amp;rsquo;s outliers to help us understand what happens all along without our noticing.</description>
-    </item>
-    
-    <item>
-      <title>Proximal Policy Optimization (PPO)</title>
-      <link>http://siobhankcronin.com/ai_notes/reinforcement_learning/ppo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://siobhankcronin.com/ai_notes/reinforcement_learning/ppo/</guid>
-      <description>As I continue spelunking into the PSO cave in hopes of finding an algorithm design strain of gold I can follow, I&amp;rsquo;m getting more and more excited about the RL research at OpenAI. In particular, I perked my ears up when I read that Proximal Policy Optimzation became the default RL algorithm at OpenAI last summer. Let&amp;rsquo;s find out why.
-First off, what is it PPO?
-The stage is set by considering policy gradient methods (PG) in using deep neural nets in control problems.</description>
     </item>
     
     <item>
