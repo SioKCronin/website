@@ -2,8 +2,8 @@
 title: Stochastic Process
 menu:
     ai_notes:
-        parent: "Math, Probability,& Statistics" 
- draft: True
+        parent: Math, Probability, & Statistics
+draft: True
 ---
 
 One place stochastic process shows up in machine learning is in

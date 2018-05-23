@@ -14,6 +14,16 @@ definitions and some useful examples of their use in practice.
 
 [//]: https://networkx.github.io/
 
+![image](shapes.jpg)
+
+### Ring
+
+This is a bus topology in a closed loop, with data traveling around the
+ring in one direction, passing through each node in turn until it
+arrives where its going. Non-terminal nodes repeat the signal, to give
+it a boost. 
+
+
 ### Mesh
 
 Think of a fully connected neural network. If every node in a layer were
@@ -23,18 +33,21 @@ input layer connected to all nodes of the output layer.
 
 ### Star
 
-
-
-### Ring
-
-
-### Hierarchical
-
-This structure will feel familiar to what we explore in object orientd
-programming. Inheritance of information (or class methods, etc.) comes
-from a defined parent. 
+Everything in a star network passes through the central hub, which
+repeats any signal it receives. All works well unless something happens
+to this central node.
 
 ### Bus
 
 While not necessarily our most efficient, perhaps we can think of the
-redundancy as being an asset. 
+redundancy as being an asset. Each node is connected to a communication
+channel, the bus, with signals eminating from a communicating node in
+both directions along the bus. Similar to the star network, this works
+fine unless something happens to that central bus. 
+
+### Hierarchical
+
+This structure will feel familiar to what we work with in object orientd
+programming - inheritance of information passes from parent to children,
+or from children to parents, but not between children or parents. 
+
