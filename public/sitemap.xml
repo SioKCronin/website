@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/about/</loc>
+    <lastmod>2018-04-24T11:53:47-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/speaking/</loc>
+    <lastmod>2018-04-24T11:53:47-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/posts/miri_alignment/</loc>
+    <lastmod>2018-03-29T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/posts/adam/</loc>
+    <lastmod>2018-01-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/posts/intro_to_gaussian_processes/</loc>
+    <lastmod>2018-01-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/posts/human_out_of_the_loop/</loc>
+    <lastmod>2018-01-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/posts/images/swarm_transport/</loc>
+    <lastmod>2017-07-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/posts/bounded_agents/</loc>
+    <lastmod>2017-03-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/posts/mathematics_application_and_applicability/</loc>
+    <lastmod>2016-04-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/posts/what_comes_after_minds/</loc>
+    <lastmod>2016-04-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/</loc>
+    <lastmod>2018-04-24T11:53:47-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/reinforcement_learning/ddpg/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/reinforcement_learning/inventory_control_theory/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/reinforcement_learning/monte_carlo/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/reinforcement_learning/td/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/software_engineering/algorithm_design_manual/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/swarm_intelligence/prob/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/posts/</loc>
+    <lastmod>2018-03-29T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/projects/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/lecture_notes/deep_rl_bootcamp/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/swarm_intelligence/active_matter/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/categories/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/software_engineering/collections_library_in_python/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/lecture_notes/ccs2016/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/reinforcement_learning/her/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/software_engineering/k_nearest_neighbors/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/lecture_notes/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/reinforcement_learning/lstm/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/lecture_notes/mlss_cadiz_2016/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/swarm_intelligence/network_topology/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/proofs/convex_parrallelogram/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/lecture_notes/phenomenology_of_perception/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/reinforcement_learning/ppo/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/reinforcement_learning/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/lecture_notes/reinforcement_learning/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/software_engineering/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/proofs/proove_sqrt2_is_irrational/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/ai_notes/swarm_intelligence/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siokcronin.github.io/website/tags/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

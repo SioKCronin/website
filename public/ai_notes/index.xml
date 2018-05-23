@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on AI on Siobhán K Cronin</title>
+    <link>https://siokcronin.github.io/website/ai_notes/</link>
+    <description>Recent content in Notes on AI on Siobhán K Cronin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://siokcronin.github.io/website/ai_notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Parrallelogram is convex</title>
+      <link>https://siokcronin.github.io/website/ai_notes/proofs/convex_parrallelogram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/website/ai_notes/proofs/convex_parrallelogram/</guid>
+      <description>Let $S$ be the parallelogram consisting of all linear combinations of $t_{1}v_{1} + t_{2}v_{2}$ with $0 \leq t_{1} \leq $ and $0 \leq t_{2} \leq $, or equivlently $0 \leq t_{i} \leq $.
+We remember that the line segment $PQ$ consists of all points $(1-t)P + tQ$ with $0\leq t \leq 1$, and that $PQ$ exists in vector space $S$ if all points $P, Q$ exist in $S$.
+Proof. Let $P=t_{1}v_{1} + t_{2}v_{2}$ and $Q=t_{1}v_{1} + t_{2}v_{2}$ be points in $S$.</description>
+    </item>
+    
+    <item>
+      <title>Square Root of 2 is Irrational</title>
+      <link>https://siokcronin.github.io/website/ai_notes/proofs/proove_sqrt2_is_irrational/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/website/ai_notes/proofs/proove_sqrt2_is_irrational/</guid>
+      <description>Proof. Assume for contradiction that $\sqrt{2}$ is rational.
+Therefore, there exists $p, q$ such that $\sqrt{2} = \frac{p}{q}$, where $q \neq 0$, and $p, q$ share no common divisors other than 1.
+Squaring both sides gives $2 = \frac{p^2}{q^2}$, so consequently $2q^2 = p^2$.
+If a square of a number is even, then the number is even, so there exists some number $k$ such that $p=2k$. Subsituting this value into the equation yields $2q^2 = 4k^2$, or $q^2 = 2k^2$.</description>
+    </item>
+    
+  </channel>
+</rss>

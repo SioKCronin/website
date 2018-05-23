@@ -1,0 +1,21 @@
+/* override css styles of the main theme here */
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+
+.bg-sio-yellow {
+    background-color: #ffde00;
+}
+
+.facebook, .twitter, .instagram, .youtube, .github, .linkedin, .medium {
+  fill: #555;
+}
+
+.facebook:hover, .twitter:hover, .instagram:hover, .youtube:hover,
+.github:hover, .linkedin:hover, .medium:hover {
+  fill: #777;
+}

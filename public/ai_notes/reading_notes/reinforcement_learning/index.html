@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Siobhán K Cronin </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.40.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="https://siokcronin.github.io/dist/css/app.ab4b67a3ea25990fa8279f3b7ef08b61.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="" />
+<meta property="og:description" content="Reinforcement Learning Reinforcement Learning: An Introduction (1998). Richard Sutton &amp; Andrew Barto.
+At the onset, I&rsquo;m curious to know how much has changed since this book&rsquo;s publication 20 years ago. That being said, as these are two leaders in the field, I&rsquo;m interested in gaining a sense of their perspective on the history/origin of this subfield, and acclimating to some of the core concepts/constructs.
+Chapter 1 One of the key takeaways from this chapter was the distinction between the value function and rewards function in an RL problem." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://siokcronin.github.io/website/ai_notes/reading_notes/reinforcement_learning/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="Reinforcement Learning Reinforcement Learning: An Introduction (1998). Richard Sutton &amp; Andrew Barto.
+At the onset, I&rsquo;m curious to know how much has changed since this book&rsquo;s publication 20 years ago. That being said, as these are two leaders in the field, I&rsquo;m interested in gaining a sense of their perspective on the history/origin of this subfield, and acclimating to some of the core concepts/constructs.
+Chapter 1 One of the key takeaways from this chapter was the distinction between the value function and rewards function in an RL problem.">
+
+
+
+<meta itemprop="wordCount" content="1616">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Reinforcement Learning Reinforcement Learning: An Introduction (1998). Richard Sutton &amp; Andrew Barto.
+At the onset, I&rsquo;m curious to know how much has changed since this book&rsquo;s publication 20 years ago. That being said, as these are two leaders in the field, I&rsquo;m interested in gaining a sense of their perspective on the history/origin of this subfield, and acclimating to some of the core concepts/constructs.
+Chapter 1 One of the key takeaways from this chapter was the distinction between the value function and rewards function in an RL problem."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-yellow">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://siokcronin.github.io/website/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Siobhán K Cronin
+    </a>
+    <div class="flex-l items-center">
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/website/ai_notes/" title="Ai_notes page">
+              Ai_notes
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/website/creative/" title="Creatives page">
+              Creatives
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+  <a href="//twitter.com/siokcronin" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+
+
+  <a href="//linkedin.com/in/siobhankcronin" class="link-transition linkedin link dib z-999 pt3 pt0-l mr2" title="LinkedIn link">
+    <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+  </a>
+
+
+  <a href="//github.com/siokcronin" class="link-transition github link dib z-999 pt3 pt0-l mr2" title="Github link">
+    <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+  </a>
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  <article class="flex-l flex-wrap justify-between mw8 center">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        AI_NOTES
+      </p>
+      <h1 class="f1 athelas mb1"></h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="0001-01-01T00:00:00Z">January 1, 0001</time>
+    </header>
+
+    <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<h1 id="reinforcement-learning">Reinforcement Learning</h1>
+
+<p>Reinforcement Learning: An Introduction (1998). Richard Sutton &amp; Andrew Barto.</p>
+
+<p>At the onset, I&rsquo;m curious to know how much has changed since this book&rsquo;s publication 20 years ago. That being said, as these are two leaders in the field, I&rsquo;m interested in gaining a sense of their perspective on the history/origin of this subfield, and acclimating to some of the core concepts/constructs.</p>
+
+<h2 id="chapter-1">Chapter 1</h2>
+
+<p>One of the key takeaways from this chapter was the distinction between the value function and rewards function in an RL problem. The value function is ultimately what we are optimizing for, as this is the total cumulative reward, or rather the reward associated with solving the problem at the highest level. The reward function, but contrast, evaluates awards state by state, and can be thought of as the short-term payoff for entering any given state. I like this distinction, because it opens up the idea of scoping the problem, and ensuring you are indeed building a system that achieves what you set out to achieve. That sounds straightforward enough, but given the nuances of building a policy to reinforce even the simplest of goals, the balance of these functions will undoubtedly become a focus of my work. These are the functions we are learning as we build our RL policy. </p>
+
+<p>There is a treatment of the agent and the environment, as well as a policy and model of the environment. The agent learns while interacting with the environment, which the authors point out is different from evolutionary methods. I&rsquo;m curious about this distinction, as it is pointed out that genetic algorithms (and perhaps swarm algorithms?) can be used to solve RL problems. I&rsquo;m putting a map together of how these various approaches relate. </p>
+
+<p>The distinction between greedy and exploratory moves, and this will come up again in our examination of explore/exploit tradeoffs. This touches upon the balance of reward vs. value function optimization, and also the broader leverage of stochastic process in search problems. The term temporal-difference learning is used, which doesn&rsquo;t seem like much at first blush, but relates in my mind to calculus (derivative, gradient, etc.) - measuring a rate of change between two times (states in these problems).</p>
+
+<h2 id="chapter-2">Chapter 2</h2>
+
+<p>n-armed bandit problems are introduced, where the choice to exploit prior knowledge of known advantageous probabilities is pitted against the choice of probabilities that could be advantageous, yet whose probabilities are unknown or more variable. This uncertainty is important. One of the choices with greater variability could in fact be better than the greedy choice in the long-term. How would we make this choice? I&rsquo;m reminded of simulated annealing. Perhaps policies that take on my risk early on, and then play more conservatively later on?</p>
+
+<p>Incremental implementation involves updating our estimates we go, we we always have an up-to-now vector to reference. </p>
+
+<ul>
+<li>Nonstationary problem tracking can be addressed with exponential recency-weighted average. The formula presented takes an alpha constant which decays exponentially with (1 - alpha)^k for k time steps. </li>
+<li>Optimistic initial values were introduced as method for encouraging exploration (the agent is continually disappointed with evaluations at each time step, as they are never as good as what was initially observed). </li>
+<li>Reinforcement comparison is raised in the context of an agent not knowing the relative size of a reward (is the reward received average? above average? below?). In this model, preference probabilities are increased by an increment calculated from the difference of the observed reward and the reference reward (often the average of previously received rewards). </li>
+<li>Pursuit methods update preference probabilities of each action so as to increase the likelihood of the greedy option (and decrease the other actions). </li>
+<li>A brief introduction to associative search, in which the n-armed bandit problem is presented in a context where the situation changes play to play, and the agent can learn to associate policies with different situations. </li>
+</ul>
+
+<p>Interval estimation methods are also introduced, which estimate a confidence interval for the value of each action. The action selected will be the one with the highest upper limit. Bayes optimization is also introduced, with updated posterior probability distributions of action values resulting from any action. I&rsquo;m curious to see what has grown out of this direction, as posterior probability estimation has seen many recent advances. </p>
+
+<h2 id="chapter-3">Chapter 3</h2>
+
+<p>I keep finding myself circling back to this idea of where we drawing the line between agent and environment. Rather than settling on a specific boundary, can we maintain multiple boundaries at once and allow for these to interact (like we do in multilayer PSO, where each region is the parent region for a system of subregions?). </p>
+
+<p>The crux of this chapter can be summed up by the Bellman optimality equation for optimal state-value function. When I read through it, I had the same question that this poster on Stack did. I found Sean Easter&rsquo;s answer helpful, and the take home intuition is that we are replacing the general case with what happens in the next time step and all steps after that. I hope to walk through this more slowly with some proofwriting in the coming weeks. I also found this article helpful. </p>
+
+<p>Beyond that, I found these statements in the summary to be helpful in &hellip; summarizing!</p>
+
+<ul>
+<li>A policy is a stochastic rule by which the agent selects actions as a function of states</li>
+<li>The agent&rsquo;s objective is to maximize the amount of reward it receives over time</li>
+<li>The discounted formulation is appropriate for continuous tasks (discount rates determine the present value of future rewards)</li>
+<li>An environment satisfies the Markov property if its state signal compactly summarizes the past without degrading the ability to predict the future</li>
+<li>The Bellman optimality equations are special consistency conditions that the optimal value functions must satisfy</li>
+<li>RL adds to Markov Decision Processes a focus on approximation and incomplete information for realistically large problems</li>
+</ul>
+
+<h2 id="chapter-4">Chapter 4</h2>
+
+<p>This chapter focusses on Dynamic Programming, and finds its anchor in generalized policy iteration (GPI). With GPI with interleave policy evaluation with policy improvement, which is a common approach for solving RL problems. Policy evaluation involves making the value function consistent with the current policy. Policy improvement involves making the policy greedy with respect to the value function. And then we iterate. </p>
+
+<p>Another key topic raised in this chapter is policy iteration vs. value iteration. For policy iteration, we use the current policy to find a better policy using V_current_policy, and then calculate V on the new policy to yield a better policy (oh how I wish Squarespace rendered Latex. I know, I know, time to actually build out a better blog). One issue with this approach is that convergence only happens in the limit. </p>
+
+<p>Value iteration, on the other hand, stops policy iteration after one sweep through the space (all states backed up once). A full backup involves replacing the old policy evaluated at s with the old value of the successor states (their rewards) and the one-step transitions possible under the policy we are evaluating. All possible next steps are backed-up, not just a sample, which is what makes it a full backup. </p>
+
+<p>&ldquo;Dynamic programming algorithms are obtained by turning Bellman equations &hellip; into update rules for improving approximations of the desired value functions.&rdquo;</p>
+
+<h2 id="chapter-5">Chapter 5</h2>
+
+<p>This chapter dives into Monte Carlo methods for estimating value functions using only sample sequences of states, actions, and rewards. I found it useful to distinguish on-line learning from simulated learning, as this sets the stage for our building. On-line learning requires no prior knowledge of the environment, while simulated learning requires a model to generate sample transitions. Rather than use a model to compute the value of each state, they simply average many returns that start in that state. </p>
+
+<p>Monte Carlo methods are increment episode by episode (not step by step). Value estimates and policy changes are made at the end of the episode, and it is assume that all episodes terminate no matter what action was taken. The book covers methods that average over complete returns. </p>
+
+<p>I lost the scent of the book when we hit on-policy and off-policy Monte Carlo, and had to go find some other resources to fill in the gaps. Essentially, off-policy has us applying evaluations from one policy to learn about another, while on-policy has us updating the original policy. </p>
+
+<h2 id="chapter-6">Chapter 6</h2>
+
+<p>At long last, we&rsquo;ve arrived at Q-learning (which is where most lectures on Youtube begin). Was it worth the wait? We shall see. </p>
+
+<p>Temporal difference learning (TD) is introduced as the combination of Monte Carlo and DP, so let&rsquo;s see how this fusion behaves. Differences are explored. Whereas Monte Carlo must wait to the end of the episode to determine the V value (as that is when reward is calculated), TD can make this update in the next time step, using the observed reward and V estimate at t+1. TD updates are sample backups, as they are referencing the value of a successive state to compute a backed-up value, and then using it to change the value of the original state. This differs from the full backups of DP, where we take into account the complete distribution for all possible successors. </p>
+
+<p>Updates are made as we go, instead of waiting for the final reward.</p>
+
+<p><em>Sarsa</em> is the on-policy version while <em>Q-learning</em> is the off-policy version (uses max () to get the action, and doesn&rsquo;t rely on the $\pi$. So, what is the difference between on-policy and off-policy. I&rsquo;ve read the sections on this, but this is still not clear, other than we can have the behavior generating policy be something different than the policy for evaluation. There are necessary criteria listed, but not clear what would happen in the case of their violatio</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </main>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://siokcronin.github.io/website/" >
+    &copy; 2018 Siobhán K Cronin
+  </a>
+  
+
+
+
+  <a href="//twitter.com/siokcronin" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+
+
+  <a href="//linkedin.com/in/siobhankcronin" class="link-transition linkedin link dib z-999 pt3 pt0-l mr2" title="LinkedIn link">
+    <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+  </a>
+
+
+  <a href="//github.com/siokcronin" class="link-transition github link dib z-999 pt3 pt0-l mr2" title="Github link">
+    <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+  </a>
+
+
+  </div>
+</footer>
+
+    
+
+  <script src="https://siokcronin.github.io/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

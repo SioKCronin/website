@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lecture Notes on Siobhán K Cronin</title>
+    <link>https://siokcronin.github.io/website/ai_notes/lecture_notes/</link>
+    <description>Recent content in Lecture Notes on Siobhán K Cronin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://siokcronin.github.io/website/ai_notes/lecture_notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2017 Deep RL Bootcamp</title>
+      <link>https://siokcronin.github.io/website/ai_notes/lecture_notes/deep_rl_bootcamp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/website/ai_notes/lecture_notes/deep_rl_bootcamp/</guid>
+      <description>1: Motivation + Overview + Exact Solution Method VIDEO
+(0 - 10) Starts off with a review of MDPs from Barto, and then sets up a simple grid world with an example of a deterministic policy with infinite horizon.
+(10-20) OMG, talk gets a bit derailed by series of rando questions that don&amp;rsquo;t seem to be clarifying thinking (answerable by the definition of a deterministic policy). Maybe too much coffee?</description>
+    </item>
+    
+    <item>
+      <title>Conference on Complex Systems 2016</title>
+      <link>https://siokcronin.github.io/website/ai_notes/lecture_notes/ccs2016/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/website/ai_notes/lecture_notes/ccs2016/</guid>
+      <description>To paraphrase Dr. Rick Sloot&amp;rsquo;s address at the ceremonial opening of University of Amsterdam&amp;rsquo;s Institute for Advanced Systems - if you put together a philosopher and a theoretical physicist together and ask them to &amp;ldquo;make something&amp;rdquo;, they may not know where to begin.
+That&amp;rsquo;s where complexity science comes in.
+This burgeoning research arena, wearing hand-me-downs from theoretical physics and math (probability, graph theory), has been delightfully uprooting classical theory in economics, neuroscience, and biology (amongst other disciplines) for over a decade, calling all scientists to take a deeper look into how network science might apply to their field.</description>
+    </item>
+    
+    <item>
+      <title>MLSS Cadiz 2016</title>
+      <link>https://siokcronin.github.io/website/ai_notes/lecture_notes/mlss_cadiz_2016/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/website/ai_notes/lecture_notes/mlss_cadiz_2016/</guid>
+      <description>John Shulman Deep RL I found these talks to be super straightforward and helpful. A breath of fresh air.
+Part 1 A brief overview of applications, including robotics, inventory management, resource allocation (queuing), and routing problems (sequential decision making problem).
+Differentiating between policy optimization and dynamic programming. In particular, policy optimization including DFO/Evolutionary algorithms (derivative-free) and Policy Gradients (using gradients, improves with more parameters. Dynamic programming requires discrete finite states, and so must be approximated (for instance, approximating function with neural nets).</description>
+    </item>
+    
+    <item>
+      <title>Phenomenology of Perception (book)</title>
+      <link>https://siokcronin.github.io/website/ai_notes/lecture_notes/phenomenology_of_perception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/website/ai_notes/lecture_notes/phenomenology_of_perception/</guid>
+      <description>Phenomenology of Perception by Maurice Merleau-Ponty.
+Originally printed in 1945 by Editions Gallimard, with English translation published in 1958 by Routledge &amp;amp; Kegan Paul. I am referencing the 2002 Routledge Classics edition.
+Overview There are times in our lives when we notice the apparatus of our perception. Maybe we see a mirage emerge on the horizon, or grow determined to know why our ears are ringing. When we study such visual apparitions and sonic glitches, we align ourselves with generations of philosophers and cognitive scientists who have looked at perception&amp;rsquo;s outliers to help us understand what happens all along without our noticing.</description>
+    </item>
+    
+    <item>
+      <title>Reinforcement Learning (book)</title>
+      <link>https://siokcronin.github.io/website/ai_notes/lecture_notes/reinforcement_learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/website/ai_notes/lecture_notes/reinforcement_learning/</guid>
+      <description>Reinforcement Learning: An Introduction (1998). Richard Sutton &amp;amp; Andrew Barto. At the onset, I&amp;rsquo;m curious to know how much has changed since this book&amp;rsquo;s publication 20 years ago. That being said, as these are two leaders in the field, I&amp;rsquo;m interested in gaining a sense of their perspective on the history/origin of this subfield, and acclimating to some of the core concepts/constructs. CHAPTER 1 One of the key takeaways from this chapter was the distinction between the value function and rewards function in an RL problem.</description>
+    </item>
+    
+  </channel>
+</rss>
