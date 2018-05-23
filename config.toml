@@ -2,6 +2,7 @@ title = "Siobhán K Cronin"
 baseURL = "https://siokcronin.github.io/website"
 languageCode = "en-us"
 theme = "ananke"
+publishDir = "docs"
 
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
