@@ -2,7 +2,7 @@
 title: Intersection of Convex Sets
 menu:
     ai_notes:
-         parent: Proofs
+        parent: Proofs
 ---
 
 Convex sets are interesting in the context of optimization, as they
