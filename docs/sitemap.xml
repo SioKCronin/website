@@ -129,12 +129,6 @@
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://siobhankcronin.com/ai_notes/swarm_intelligence/active_matter/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -160,6 +154,18 @@
   
   <url>
     <loc>http://siobhankcronin.com/contact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://siobhankcronin.com/ai_notes/proofs/intersection_of_convex_sets/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -207,7 +213,13 @@
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/lecture_notes/phenomenology_of_perception/</loc>
+    <loc>http://siobhankcronin.com/ai_notes/books/phenomenology_of_perception/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://siobhankcronin.com/ai_notes/reinforcement_learning/rl_in_process_scheduling/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -219,7 +231,7 @@
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/lecture_notes/reinforcement_learning/</loc>
+    <loc>http://siobhankcronin.com/ai_notes/books/reinforcement_learning/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
