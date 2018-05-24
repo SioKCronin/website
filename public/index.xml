@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siobhán K Cronin</title>
+    <link>https://siokcronin.github.io/</link>
+    <description>Recent content on Siobhán K Cronin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Apr 2018 11:53:47 -0700</lastBuildDate>
+    
+	<atom:link href="https://siokcronin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://siokcronin.github.io/about/</link>
+      <pubDate>Tue, 24 Apr 2018 11:53:47 -0700</pubDate>
+      
+      <guid>https://siokcronin.github.io/about/</guid>
+      <description>Siobhán is a machine learning engineer and researcher with a passion for reinforcement learning and swarm intelligence.
+She began her career researching how humans learn at Harvard&amp;rsquo;s Lab for Developmental Studies and Harvard Medical School, and now develops tools to help machines and humans learn together. Siobhán is currently an associate researcher at Slow Research Lab, and an open source contributor to PySwarms and Swarm Lab.
+Siobhán has published research in Brain &amp;amp; Cognition, Neuroreport, and Model View Culture, and presented at the Conference on Complex Systems, Conference on Cognitive Neuroscience, AlterConf, PyLadies, Metis, and Temple University.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://siokcronin.github.io/speaking/</link>
+      <pubDate>Tue, 24 Apr 2018 11:53:47 -0700</pubDate>
+      
+      <guid>https://siokcronin.github.io/speaking/</guid>
+      <description>Upcoming  7.5.2018 &amp;mdash; The Poetics of Swarms @ La Casa Naranja (SF) 12.7.2018 &amp;mdash; Tempered (meditation for solo piano) @ Center for New Music (SF)  Past  10.11.2017 &amp;mdash; Step by Step @ Metis (SF) 9.21.2016 &amp;mdash; Forms @ Conference on Complex Systems (Amsterdam) 8.9.2016 &amp;mdash; Form and Movement in Complex Systems @ PyLadies (SF) 6.4.2016 &amp;mdash; On People, Cubes and Snacks @ AlterConf (SF)</description>
+    </item>
+    
+    <item>
+      <title>Alignment for Advanced ML Systems (REVIEW)</title>
+      <link>https://siokcronin.github.io/posts/miri_alignment/</link>
+      <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/posts/miri_alignment/</guid>
+      <description>Jessica Taylor, Eliezer Yudkowsky, Patrick LaVictoire, and Andrew Critch. Machine Intelligence Research Institute. Alignment in this context means making sure agents arrive at and optimize objective functions that are in the spirit of what was intended; that is that goals are reached while making sure no one gets hurt. One of the key takeaways from this overview is that our solutions must scale with intelligence, so for any new discovery, how long will it &amp;ldquo;hold&amp;rdquo; in lock step with advances in intelligence?</description>
+    </item>
+    
+    <item>
+      <title>ADAM: A Method for Stochastic Optimization (REVIEW)</title>
+      <link>https://siokcronin.github.io/posts/adam/</link>
+      <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/posts/adam/</guid>
+      <description> Adam: A Method for Stochastic Optimization (2015). Diederik P. Kingma and Jimmy Lei Ba. Conference paper at ICLR 2015.
+Overview  This method computes individual adaptive learning rates for different parameters from estimates of first and second moments of the gradients. Combines AdaGrad (which works well with sparse gradients) and RMSProp (works well in on-line and non-stationary settings.  </description>
+    </item>
+    
+    <item>
+      <title>Introduction to Gaussian Processes (REVIEW)</title>
+      <link>https://siokcronin.github.io/posts/intro_to_gaussian_processes/</link>
+      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/posts/intro_to_gaussian_processes/</guid>
+      <description>Introduction to Gaussian Processes (1998) - David Mackay
+Overview  &amp;ldquo;From a Bayesian perspective, a choice of a neural network model can be viewed as defining a prior probability distribution over non-linear functions, and the neural network&amp;rsquo;s learning process can be interpreted in terms of the posterior probability distribution over the unknown function. (Some learning algorithms search for the function with maximum posterior probability, and other Monte Carlo methods draw samples from this posterior probability).</description>
+    </item>
+    
+    <item>
+      <title>Taking the Human out of the Loop - A Review of Bayesian Optimization (REVIEW)</title>
+      <link>https://siokcronin.github.io/posts/human_out_of_the_loop/</link>
+      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/posts/human_out_of_the_loop/</guid>
+      <description>Taking the Human Out of the Loop: A Review of Bayesian Optimization (2016). Shahriari et al. Proceedings of the IEEE
+Introduction  &amp;ldquo;Mathematically we are considering the problem of finding a global maximizer (or minimizer) of an unknown objective function f, where X is some design space of interest; &amp;hellip;&amp;rdquo; &amp;rdquo;&amp;hellip;in global optimization, X is often a compact subset of R^d but the Bayesian optimization framework can be applied to more unusual search spaces that involve categorical or conditional inputs.</description>
+    </item>
+    
+    <item>
+      <title>Swarm Intelligence systems for transportation engineering: principles and applications (REVIEW)</title>
+      <link>https://siokcronin.github.io/posts/images/swarm_transport/</link>
+      <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/posts/images/swarm_transport/</guid>
+      <description>Dušan Teodorovic. Swarm Intelligence systems for transportation engineering: principles and applications. Transportation Research, 2008.
+This is one of the most comprehensive articles I have found that attempts to connect swarm intelligence heuristics to transportation systems. Most of the article is dedicated to introducing four multi-agent systems that leverage information sharing models to optimize search techniques, and I will recap those here.
+Ant Colony Optimization (ACO)
+Ants leave pheromone trails, and an ant will use the strength of the signal to weight their choice of path, as well-trod paths traveled by ants heading to a food source have a stronger pheromone signal.</description>
+    </item>
+    
+    <item>
+      <title>Learning the Preference of Bounded Agents (REVIEW)</title>
+      <link>https://siokcronin.github.io/posts/bounded_agents/</link>
+      <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/posts/bounded_agents/</guid>
+      <description>This paper applies models of bounded and biased cognition to the creation of a generative model for human choices in decision problems. Perhaps more importantly, the authors attempt to infer preferences (not beliefs) from this model.
+They focus their attention on four types of agents:
+ Hyperbolic-discounting (i.e. my favorite new way of saying procrastinating) Agents using Monte Carlo approximations of expected utility &amp;ldquo;Myopic&amp;rdquo; agents Bounded value-of-information agents  Choice is made in proportion to a softmax function of expected utility:</description>
+    </item>
+    
+    <item>
+      <title>Mathematics - Applications and Applicability (REVIEW)</title>
+      <link>https://siokcronin.github.io/posts/mathematics_application_and_applicability/</link>
+      <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/posts/mathematics_application_and_applicability/</guid>
+      <description>&amp;ldquo;Mathematics - Application and Applicability&amp;rdquo;, by Mark Steiner.
+Included in The Nature of Nature: Examining the Role of Naturalism in Science (2011). Edited by Bruce L. Gordon and William A. Dembski. ISI Books: Wilmington, Deleware.
+Key ideas Canonical applications (theories developed to describe an application) vs. non-canonical (applying mathematics in situations other than those that created them) Distinguishing applications of mathematics from mathematics itself Exploration of individual thinkers and their attempts to reconcile mathematics and the empirical world (including Gottlob Frege, Hartry Field, Eugene Wigner), with the group-theoretic leading the charge</description>
+    </item>
+    
+    <item>
+      <title>What Comes After Minds? (REVIEW)</title>
+      <link>https://siokcronin.github.io/posts/what_comes_after_minds/</link>
+      <pubDate>Thu, 14 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/posts/what_comes_after_minds/</guid>
+      <description>What comes after minds? by Marvin Minsky. From The New Humanists: Science at the Edge (2003). Edited by John Brockman. Barnes &amp;amp; Noble Books: New York.
+Key quotes  &amp;ldquo;No uniform scheme will leda to machines as resourceful as the human brain. Instead, I&amp;rsquo;m convinced that this will require many different &amp;lsquo;ways to think&amp;rsquo; - along with bodies of knowledge about how and when to use them&amp;rdquo;. &amp;ldquo;Computer science has helped us envision a fare wider range of ways to represent different types and forms of knowledge,&amp;hellip;&amp;rdquo; &amp;ldquo;I see each emotional state as a distinctly different way to think&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://siokcronin.github.io/ai_notes/reinforcement_learning/ddpg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/reinforcement_learning/ddpg/</guid>
+      <description> Deep Deterministic Policy Gradients (DDPG) For this model-free RL algorithm for continuous spaces, episodes are generated using a behavioral polcy, which is a noisy version of the target policy. There are two neural networks, an actor and a critic, where the targets for the critic are the actions outputted by the actor. Actor is trained using mini-batch GD on the inverse expected Q value.
+Algorithm algorithm = some_off_policy_RL_algorithm initialize replay buffer M = 10 # Number of episodes for epsisode in range(M):  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://siokcronin.github.io/ai_notes/reinforcement_learning/inventory_control_theory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/reinforcement_learning/inventory_control_theory/</guid>
+      <description> Inventory Control Theory  Just in Time Levalized Production Inventory Depletion Hadley-Within model AHM-model class, lot-size model buy-ahead model Wagner-Within model  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://siokcronin.github.io/ai_notes/reinforcement_learning/monte_carlo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/reinforcement_learning/monte_carlo/</guid>
+      <description> Monte Carlo Examples when Monte Carlo is preferred to TD  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://siokcronin.github.io/ai_notes/reinforcement_learning/td/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/reinforcement_learning/td/</guid>
+      <description> Temporal Difference (TD) Learning Examples when more advantegeous than Monte Carlo  When there is variability early on   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://siokcronin.github.io/ai_notes/software_engineering/algorithm_design_manual/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/software_engineering/algorithm_design_manual/</guid>
+      <description>Algorithm Design Manual 1. Intro to Algo Design I love the motivation for proof of your algorithm - to confirm that the generalizability of your selected instances (the one&amp;rsquo;s you&amp;rsquo;ve tested) holds.
+We then shift into Robot Tour Optimization. Getting to different paths efficiently on the path could be done with a travelling salesman, which requires some stochastic solve. I looked around at how I&amp;rsquo;d love this, and came back to neural combinatorial optimization with RL.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://siokcronin.github.io/ai_notes/swarm_intelligence/prob/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/swarm_intelligence/prob/</guid>
+      <description>Prob \begin{align} \dot{x} &amp;amp; = \sigma(y-x) \\
+\dot{y} &amp;amp; = \rho x - y - xz \\
+\dot{z} &amp;amp; = -\beta z + xy \end{align}
+$$\alpha = 1000$$
+import matplotlib import numpy as np import matplotlib.pyplot as plt %matplotlib inline  /usr/local/lib/python3.6/site-packages/matplotlib/font_manager.py:278: UserWarning: Matplotlib is building the font cache using fc-list. This may take a moment. &#39;Matplotlib is building the font cache using fc-list. &#39;  x = np.linspace(0, 3*np.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://siokcronin.github.io/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/projects/</guid>
+      <description>Open Source Software PySwarms — Particle Swarm Optimization (PSO) toolkit SwarmLab — Implementation of Swarm Intelligence (SI) algorithms
+ML/AI Engineering Uncountable | Software Engineer | Jan-Feb 2018
+Avisell | Machine Learning Engineer | May-Sep 2017
+Research Slow Research Lab | 2016-Present
+Independent research on particle swarm optimization and RL algorithms
+Yerba Buena Center for the Arts | 2016-2017
+Network models of institutionalized oppression with Ray Gilstrap and Pia Zaragoza</description>
+    </item>
+    
+    <item>
+      <title>Active Matter</title>
+      <link>https://siokcronin.github.io/ai_notes/swarm_intelligence/active_matter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/swarm_intelligence/active_matter/</guid>
+      <description>I first caught wind of Active Matter through the work of one of my favorite researchers, Tamas Vicsek, whose intellectual bling includes a fractal bearing his name.
+My understanding of this sprawling sub-domain of physics is that we can study the activity of individuals agents and systems as though studying something like hydrodynamics, kinematics, and non-equilbrium statistical phsyics. Crowds become streams. Flocks become rivers. Networks of agents become oceans.</description>
+    </item>
+    
+    <item>
+      <title>Collections module in Python</title>
+      <link>https://siokcronin.github.io/ai_notes/software_engineering/collections_library_in_python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/software_engineering/collections_library_in_python/</guid>
+      <description>Incredibly useful Python container datatypes.
+Counter Counter is a dictionary subclass with no restrictions on keys and values.
+from collections import Counter words = [&#39;apples&#39;,&#39;oranges&#39;, &#39;apples&#39;, &#39;apples&#39;] words1 = [&#39;oranges&#39;, &#39;oranges&#39;, &#39;oranges&#39;, &#39;apples&#39;]  # Return (element, count) pairs for n most common Counter(words).most_common()  # Subtract elements from another mapping w = Counter(words) w1 = Counter(words1) w.subract(w1) # subtraction, includes zero and negatives w - w1 # subtraction, only positive counts w &amp;amp; w1 # intersection w | w1 # union w + w1 # adds two counters together  # Some useful patterns c.</description>
+    </item>
+    
+    <item>
+      <title>Conference on Complex Systems 2016</title>
+      <link>https://siokcronin.github.io/ai_notes/lecture_notes/ccs2016/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/lecture_notes/ccs2016/</guid>
+      <description>To paraphrase Dr. Rick Sloot&amp;rsquo;s address at the ceremonial opening of University of Amsterdam&amp;rsquo;s Institute for Advanced Systems - if you put together a philosopher and a theoretical physicist together and ask them to &amp;ldquo;make something&amp;rdquo;, they may not know where to begin.
+That&amp;rsquo;s where complexity science comes in.
+This burgeoning research arena, wearing hand-me-downs from theoretical physics and math (probability, graph theory), has been delightfully uprooting classical theory in economics, neuroscience, and biology (amongst other disciplines) for over a decade, calling all scientists to take a deeper look into how network science might apply to their field.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://siokcronin.github.io/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/contact/</guid>
+      <description> Your Name Email Address An email address is required.  Message   </description>
+    </item>
+    
+    <item>
+      <title>Deep RL Bootcamp 2017</title>
+      <link>https://siokcronin.github.io/ai_notes/lecture_notes/deep_rl_bootcamp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/lecture_notes/deep_rl_bootcamp/</guid>
+      <description>1: Motivation + Overview + Exact Solution Method VIDEO
+(0 - 10) Starts off with a review of MDPs from Barto, and then sets up a simple grid world with an example of a deterministic policy with infinite horizon.
+(10-20) OMG, talk gets a bit derailed by series of rando questions that don&amp;rsquo;t seem to be clarifying thinking (answerable by the definition of a deterministic policy). Maybe too much coffee?</description>
+    </item>
+    
+    <item>
+      <title>Intersection of Convex Sets</title>
+      <link>https://siokcronin.github.io/ai_notes/proofs/intersection_of_convex_sets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/proofs/intersection_of_convex_sets/</guid>
+      <description>Convex sets are interesting in the context of optimization, as they represent regions where we know we can find global minima. A convex region is a region where for every pair of points within the region, every point on the line that joins the points is also within the region.
+Fun fact - the intersection of all convex sets containing a given subset A of Euclidean space, is called the convex hull of A, which is the smallest convex set containing A.</description>
+    </item>
+    
+    <item>
+      <title>K-nearest neighbors</title>
+      <link>https://siokcronin.github.io/ai_notes/software_engineering/k_nearest_neighbors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/software_engineering/k_nearest_neighbors/</guid>
+      <description>Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are four contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates:
+Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.
+$$d(p,q) = \sqrt{\sum_{i=1}^n(q_{i} - p_{i})^2}$$
+Manhattan The sum of the lengths of the projections of the line segment between the points onto the coordinate axes.</description>
+    </item>
+    
+    <item>
+      <title>Long Short Term Memory (LSTM)</title>
+      <link>https://siokcronin.github.io/ai_notes/reinforcement_learning/lstm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/reinforcement_learning/lstm/</guid>
+      <description>Grid Long Short-Term Memory (LSTM) Long Short-Term Memory (LSTM) networks are networks of LSTM cells arranged in a grid to facilitate deep and sequential computation. LSTM networks are RNN architectures with an improved ability to store and access memory. The magic is a a gating mechansim that controls access to memory cells. The gating helps preserve signal for longer, and also propogates error for longer than typical RNN structures. The gating helps focus the network on specfic aspects of the input signal, while ignoring other parts.</description>
+    </item>
+    
+    <item>
+      <title>MLSS Cadiz 2016</title>
+      <link>https://siokcronin.github.io/ai_notes/lecture_notes/mlss_cadiz_2016/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/lecture_notes/mlss_cadiz_2016/</guid>
+      <description>John Shulman Deep RL I found these talks to be super straightforward and helpful. A breath of fresh air.
+Part 1 A brief overview of applications, including robotics, inventory management, resource allocation (queuing), and routing problems (sequential decision making problem).
+Differentiating between policy optimization and dynamic programming. In particular, policy optimization including DFO/Evolutionary algorithms (derivative-free) and Policy Gradients (using gradients, improves with more parameters. Dynamic programming requires discrete finite states, and so must be approximated (for instance, approximating function with neural nets).</description>
+    </item>
+    
+    <item>
+      <title>Network Topology</title>
+      <link>https://siokcronin.github.io/ai_notes/swarm_intelligence/network_topology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/swarm_intelligence/network_topology/</guid>
+      <description>What are the advantages of various topogical structures? How can they be combined? Mutate over time? How do swarm systems develop communication topologies?
+First, let&amp;rsquo;s get acclimated with the different structures - their definitions and some useful examples of their use in practice.
+Ring This is a bus topology in a closed loop, with data traveling around the ring in one direction, passing through each node in turn until it arrives where its going.</description>
+    </item>
+    
+    <item>
+      <title>Parrallelogram is convex</title>
+      <link>https://siokcronin.github.io/ai_notes/proofs/convex_parrallelogram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/proofs/convex_parrallelogram/</guid>
+      <description>Let $S$ be the parallelogram consisting of all linear combinations of $t_{1}v_{1} + t_{2}v_{2}$ with $0 \leq t_{1} \leq $ and $0 \leq t_{2} \leq $, or equivlently $0 \leq t_{i} \leq $.
+We remember that the line segment $PQ$ consists of all points $(1-t)P + tQ$ with $0\leq t \leq 1$, and that $PQ$ exists in vector space $S$ if all points $P, Q$ exist in $S$.
+Proof. Let $P=t_{1}v_{1} + t_{2}v_{2}$ and $Q=t_{1}v_{1} + t_{2}v_{2}$ be points in $S$.</description>
+    </item>
+    
+    <item>
+      <title>Phenomenology of Perception - Merleau-Ponty</title>
+      <link>https://siokcronin.github.io/ai_notes/books/phenomenology_of_perception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/books/phenomenology_of_perception/</guid>
+      <description>Phenomenology of Perception by Maurice Merleau-Ponty.
+Originally printed in 1945 by Editions Gallimard, with English translation published in 1958 by Routledge &amp;amp; Kegan Paul. I am referencing the 2002 Routledge Classics edition.
+Overview There are times in our lives when we notice the apparatus of our perception. Maybe we see a mirage emerge on the horizon, or grow determined to know why our ears are ringing. When we study such visual apparitions and sonic glitches, we align ourselves with generations of philosophers and cognitive scientists who have looked at perception&amp;rsquo;s outliers to help us understand what happens all along without our noticing.</description>
+    </item>
+    
+    <item>
+      <title>RL in Process Scheduling</title>
+      <link>https://siokcronin.github.io/ai_notes/reinforcement_learning/rl_in_process_scheduling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/reinforcement_learning/rl_in_process_scheduling/</guid>
+      <description>When I mentioned my interest in this idea to my partner Carl, he encouraged me to pursue it, but highlighted that it may be at least a masters thesis to secure the necessary OS and RL foundations to implement something that works. I like multi-year challenges, so wanted to at least start scoping the problem to see what is required.
+At the onset, I think it would be helpful to identify how processes are currently scheduled (the dominant paradigms), how process scheduling could be framed as a MDP, and how RL could be applied.</description>
+    </item>
+    
+    <item>
+      <title>Reinforcement Learning - Barto</title>
+      <link>https://siokcronin.github.io/ai_notes/books/reinforcement_learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/books/reinforcement_learning/</guid>
+      <description>Reinforcement Learning: An Introduction (1998). Richard Sutton &amp;amp; Andrew Barto. At the onset, I&amp;rsquo;m curious to know how much has changed since this book&amp;rsquo;s publication 20 years ago. That being said, as these are two leaders in the field, I&amp;rsquo;m interested in gaining a sense of their perspective on the history/origin of this subfield, and acclimating to some of the core concepts/constructs. CHAPTER 1 One of the key takeaways from this chapter was the distinction between the value function and rewards function in an RL problem.</description>
+    </item>
+    
+    <item>
+      <title>Square Root of 2 is Irrational</title>
+      <link>https://siokcronin.github.io/ai_notes/proofs/proove_sqrt2_is_irrational/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siokcronin.github.io/ai_notes/proofs/proove_sqrt2_is_irrational/</guid>
+      <description>Proof. Assume for contradiction that $\sqrt{2}$ is rational.
+Therefore, there exists $p, q$ such that $\sqrt{2} = \frac{p}{q}$, where $q \neq 0$, and $p, q$ share no common divisors other than 1.
+Squaring both sides gives $2 = \frac{p^2}{q^2}$, so consequently $2q^2 = p^2$.
+If a square of a number is even, then the number is even, so there exists some number $k$ such that $p=2k$. Subsituting this value into the equation yields $2q^2 = 4k^2$, or $q^2 = 2k^2$.</description>
+    </item>
+    
+  </channel>
+</rss>
