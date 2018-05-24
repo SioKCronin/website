@@ -58,11 +58,14 @@ up the memory modifications across the N-dimensions.
 
 ### Grid LSTM 
 
-The set-up is similar to multidimensional LSTM, in that there the
+The set-up is similar to multidimensional LSTM, in that the
 network receives input from N hidden vectors and N memory vectors, only
 instead of summing them up, the generated output remains separated (so N
-h' and N m'). N transforms are are computed (one for each dimension),
+h' and N m'). N transforms are computed (one for each dimension),
 which is what yields the output vectors, and each of these transforms
 has their own unique weight matrix.
+
+To implement my first LSTM network, I forked starter code from
+[nicodjimenez](https://github.com/nicodjimenez/lstm/blob/master/lstm.py), and began adding more documentation [here](https://github.com/SioKCronin/grid-lstm).  
 
 

@@ -1,5 +1,5 @@
 ---
-Title: 2017 Deep RL Bootcamp 
+Title: "Deep RL Bootcamp 2017" 
 menu:
     ai_notes:
          parent: Lecture Notes

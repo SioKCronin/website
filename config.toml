@@ -1,8 +1,7 @@
 title = "Siobhán K Cronin"
-baseURL = "http://siobhankcronin.com/"
+baseURL = "https://siokcronin.github.io/"
 languageCode = "en-us"
 theme = "ananke"
-publishDir = "docs"
 
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
@@ -33,7 +32,7 @@ enableRobotsTXT = true
   background_color_class = "bg-sio-yellow"
   body_classes = "avenir bg-white-90"
   featured_image = false
-  recent_posts_number = 5
+  recent_posts_number = 10
 
 [menu]
     [[menu.main]]
