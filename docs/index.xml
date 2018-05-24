@@ -190,17 +190,6 @@ Network models of institutionalized oppression with Ray Gilstrap and Pia Zaragoz
     </item>
     
     <item>
-      <title>2017 Deep RL Bootcamp</title>
-      <link>http://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp/</guid>
-      <description>1: Motivation + Overview + Exact Solution Method VIDEO
-(0 - 10) Starts off with a review of MDPs from Barto, and then sets up a simple grid world with an example of a deterministic policy with infinite horizon.
-(10-20) OMG, talk gets a bit derailed by series of rando questions that don&amp;rsquo;t seem to be clarifying thinking (answerable by the definition of a deterministic policy). Maybe too much coffee?</description>
-    </item>
-    
-    <item>
       <title>Active Matter</title>
       <link>http://siobhankcronin.com/ai_notes/swarm_intelligence/active_matter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -239,6 +228,27 @@ This burgeoning research arena, wearing hand-me-downs from theoretical physics a
       
       <guid>http://siobhankcronin.com/contact/</guid>
       <description> Your Name Email Address An email address is required.  Message   </description>
+    </item>
+    
+    <item>
+      <title>Deep RL Bootcamp 2017</title>
+      <link>http://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp/</guid>
+      <description>1: Motivation + Overview + Exact Solution Method VIDEO
+(0 - 10) Starts off with a review of MDPs from Barto, and then sets up a simple grid world with an example of a deterministic policy with infinite horizon.
+(10-20) OMG, talk gets a bit derailed by series of rando questions that don&amp;rsquo;t seem to be clarifying thinking (answerable by the definition of a deterministic policy). Maybe too much coffee?</description>
+    </item>
+    
+    <item>
+      <title>Intersection of Convex Sets</title>
+      <link>http://siobhankcronin.com/ai_notes/proofs/intersection_of_convex_sets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://siobhankcronin.com/ai_notes/proofs/intersection_of_convex_sets/</guid>
+      <description>Convex sets are interesting in the context of optimization, as they represent regions where we know we can find global minima. A convex region is a region where for every pair of points within the region, every point on the line that joins the points is also within the region.
+Fun fact - the intersection of all convex sets containing a given subset A of Euclidean space, is called the convex hull of A, which is the smallest convex set containing A.</description>
     </item>
     
     <item>
@@ -296,22 +306,32 @@ Proof. Let $P=t_{1}v_{1} + t_{2}v_{2}$ and $Q=t_{1}v_{1} + t_{2}v_{2}$ be points
     </item>
     
     <item>
-      <title>Phenomenology of Perception (book)</title>
-      <link>http://siobhankcronin.com/ai_notes/lecture_notes/phenomenology_of_perception/</link>
+      <title>Phenomenology of Perception - Merleau-Ponty</title>
+      <link>http://siobhankcronin.com/ai_notes/books/phenomenology_of_perception/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://siobhankcronin.com/ai_notes/lecture_notes/phenomenology_of_perception/</guid>
+      <guid>http://siobhankcronin.com/ai_notes/books/phenomenology_of_perception/</guid>
       <description>Phenomenology of Perception by Maurice Merleau-Ponty.
 Originally printed in 1945 by Editions Gallimard, with English translation published in 1958 by Routledge &amp;amp; Kegan Paul. I am referencing the 2002 Routledge Classics edition.
 Overview There are times in our lives when we notice the apparatus of our perception. Maybe we see a mirage emerge on the horizon, or grow determined to know why our ears are ringing. When we study such visual apparitions and sonic glitches, we align ourselves with generations of philosophers and cognitive scientists who have looked at perception&amp;rsquo;s outliers to help us understand what happens all along without our noticing.</description>
     </item>
     
     <item>
-      <title>Reinforcement Learning (book)</title>
-      <link>http://siobhankcronin.com/ai_notes/lecture_notes/reinforcement_learning/</link>
+      <title>RL in Process Scheduling</title>
+      <link>http://siobhankcronin.com/ai_notes/reinforcement_learning/rl_in_process_scheduling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://siobhankcronin.com/ai_notes/lecture_notes/reinforcement_learning/</guid>
+      <guid>http://siobhankcronin.com/ai_notes/reinforcement_learning/rl_in_process_scheduling/</guid>
+      <description>When I mentioned my interest in this idea to my partner Carl, he encouraged me to pursue it, but highlighted that it may be at least a masters thesis to secure the necessary OS and RL foundations to implement something that works. I like multi-year challenges, so wanted to at least start scoping the problem to see what is required.
+At the onset, I think it would be helpful to identify how processes are currently scheduled (the dominant paradigms), how process scheduling could be framed as a MDP, and how RL could be applied.</description>
+    </item>
+    
+    <item>
+      <title>Reinforcement Learning - Barto</title>
+      <link>http://siobhankcronin.com/ai_notes/books/reinforcement_learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://siobhankcronin.com/ai_notes/books/reinforcement_learning/</guid>
       <description>Reinforcement Learning: An Introduction (1998). Richard Sutton &amp;amp; Andrew Barto. At the onset, I&amp;rsquo;m curious to know how much has changed since this book&amp;rsquo;s publication 20 years ago. That being said, as these are two leaders in the field, I&amp;rsquo;m interested in gaining a sense of their perspective on the history/origin of this subfield, and acclimating to some of the core concepts/constructs. CHAPTER 1 One of the key takeaways from this chapter was the distinction between the value function and rewards function in an RL problem.</description>
     </item>
     

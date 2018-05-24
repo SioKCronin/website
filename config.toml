@@ -1,5 +1,6 @@
 title = "Siobhán K Cronin"
-baseURL = "https://siokcronin.github.io/"
+baseURL = "http://siobhankcronin.com/"
+publishDir = "docs"
 languageCode = "en-us"
 theme = "ananke"
 

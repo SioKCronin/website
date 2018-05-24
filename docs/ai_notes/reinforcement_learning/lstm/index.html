@@ -9,7 +9,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.40" />
+    <meta name="generator" content="Hugo 0.40.2" />
     
     
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -60,7 +60,7 @@
 
 
 
-<meta itemprop="wordCount" content="475">
+<meta itemprop="wordCount" content="491">
 
 
 
@@ -228,12 +228,15 @@ up the memory modifications across the N-dimensions.</p>
 
 <h3 id="grid-lstm">Grid LSTM</h3>
 
-<p>The set-up is similar to multidimensional LSTM, in that there the
+<p>The set-up is similar to multidimensional LSTM, in that the
 network receives input from N hidden vectors and N memory vectors, only
 instead of summing them up, the generated output remains separated (so N
-h&rsquo; and N m&rsquo;). N transforms are are computed (one for each dimension),
+h&rsquo; and N m&rsquo;). N transforms are computed (one for each dimension),
 which is what yields the output vectors, and each of these transforms
 has their own unique weight matrix.</p>
+
+<p>To implement my first LSTM network, I forked starter code from
+<a href="https://github.com/nicodjimenez/lstm/blob/master/lstm.py">nicodjimenez</a>, and began adding more documentation <a href="https://github.com/SioKCronin/grid-lstm">here</a>.</p>
 <ul class="pa0">
   
 </ul>
