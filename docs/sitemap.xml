@@ -219,12 +219,6 @@
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/software_engineering/multiprocessing_in_python/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://siobhankcronin.com/ai_notes/swarm_intelligence/network_topology/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

@@ -327,16 +327,6 @@ Differentiating between policy optimization and dynamic programming. In particul
     </item>
     
     <item>
-      <title>Multiprocessing in Python</title>
-      <link>http://siobhankcronin.com/ai_notes/software_engineering/multiprocessing_in_python/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://siobhankcronin.com/ai_notes/software_engineering/multiprocessing_in_python/</guid>
-      <description>Multiprocessing opens the door to parallel processing, which can optimize all sorts of processes, from training deep learning architecture to managing server requests. Let&amp;rsquo;s see how Python&amp;rsquo;s multiprocessing package works!
-Global Interpreter Lock (GIL) This is the mechanism that the CPython interpreter uses to ensure that only one thread excutes Python bytecode at a time. The GIL ensures objects are safe from concurrent access. The GIL is released during I/O and in some computationally-intensive tasks like compression and hashing.</description>
-    </item>
-    
-    <item>
       <title>Network Topology</title>
       <link>http://siobhankcronin.com/ai_notes/swarm_intelligence/network_topology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
