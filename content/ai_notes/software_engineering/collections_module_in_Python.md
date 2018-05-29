@@ -119,4 +119,4 @@ OrderedDict([('lion', 3), ('pearl', 2), ('stephen', 1)])
 OrderedDict([('stephen', 1), ('pearl', 2), ('lion', 3)}
 ```
 
-
+Since Python 3.2 you can move specific keys to the head or tail, using the **move_to_end** method.
