@@ -17,8 +17,8 @@
       <pubDate>Tue, 24 Apr 2018 11:53:47 -0700</pubDate>
       
       <guid>http://siobhankcronin.com/about/</guid>
-      <description>Siobhán is a machine learning engineer and researcher with a passion for reinforcement learning and swarm intelligence.
-She began her career researching how humans learn at Harvard&amp;rsquo;s Lab for Developmental Studies and Harvard Medical School, and now develops tools to help machines and humans learn together. Siobhán is currently an associate researcher at Slow Research Lab, and an open source contributor to PySwarms and Swarm Lab.
+      <description>Siobhán is a software engineer and researcher with a passion for reinforcement learning, data engineering, and swarm intelligence.
+She began her career researching how humans learn at Harvard&amp;rsquo;s Lab for Developmental Studies and Harvard Medical School, and now develops tools to help machines and humans learn together. Siobhán is an open source contributor to PySwarms, and the lead developer of SwarmOpt, a swarm intelligence hyperparameter optimizer.
 Siobhán has published research in Brain &amp;amp; Cognition, Neuroreport, and Model View Culture, and presented at the Conference on Complex Systems, Conference on Cognitive Neuroscience, AlterConf, PyLadies, Metis, and Temple University.</description>
     </item>
     
@@ -116,6 +116,27 @@ Key quotes  &amp;ldquo;No uniform scheme will leda to machines as resourceful as
     
     <item>
       <title></title>
+      <link>http://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp/</guid>
+      <description>2017 Deep RL Bootcamp Lecture 1: Motivation + Overview + Exact Solution Method VIDEO
+[0 - 10] Starts off with a review of MDPs from Barto, and then sets up a simple grid world with an example of a deterministic policy with infinite horizon.
+[10-20] OMG, talk gets a bit derailed by series of rando questions that don&amp;rsquo;t seem to be clarifying thinking (answerable by the definition of a deterministic policy).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://siobhankcronin.com/ai_notes/math_probability_and_stats/linear_algebra_basics_with_scipy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://siobhankcronin.com/ai_notes/math_probability_and_stats/linear_algebra_basics_with_scipy/</guid>
+      <description>Basics with Scipy import scipy.linalg as la import numpy as np  Motivating example We are entering three pies into the bakeoff, and want to make sure we win. We&amp;rsquo;ve tried a lot of different ingredients, but ultimatley have found that taste comes down to butter, salt, sugar, and grandma&amp;rsquo;s secret spice blend.
+w = 1 #tbl_of_butter x = 1 #dash_of_salt y = 1 #spoonful_of_sugar z = 1 #undisclosed_measurement_of_spice pie1 = 3*w + 5*x + 30*y + 10*z pie2 = 2*w + 3*x + 40*y + 15*z pie3 = 4*w + 2*x + 10*y + 30*z pie4 = 10*w + 2*x + 10*y + 30*z  A = np.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://siobhankcronin.com/ai_notes/reinforcement_learning/ddpg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -126,11 +147,42 @@ Algorithm algorithm = some_off_policy_RL_algorithm initialize replay buffer M = 
     
     <item>
       <title></title>
+      <link>http://siobhankcronin.com/ai_notes/reinforcement_learning/dqn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://siobhankcronin.com/ai_notes/reinforcement_learning/dqn/</guid>
+      <description>Deep Q-Networks (DQN) This model-free RL algorithm, is like traditional q-learning, only we maintain neural network that approximates $Q*$.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://siobhankcronin.com/ai_notes/reinforcement_learning/her/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://siobhankcronin.com/ai_notes/reinforcement_learning/her/</guid>
+      <description> Hindsight Experience Replay (HER) This technique has a super clever way of dealing with sparse reward situations. Essentially, it calls misses successes, so that learning can be made even when we miss our target. It can be combined with other off-policy RL algorithms, and I show how to do that in other posts.
+Algorithm algorithm = some_off_policy_RL_algorithm initialize replay buffer M = 10 # Number of episodes for epsisode in range(M): goal, s0 = sampler for t in range(T):  </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://siobhankcronin.com/ai_notes/reinforcement_learning/inventory_control_theory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://siobhankcronin.com/ai_notes/reinforcement_learning/inventory_control_theory/</guid>
       <description> Inventory Control Theory  Just in Time Levalized Production Inventory Depletion Hadley-Within model AHM-model class, lot-size model buy-ahead model Wagner-Within model  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://siobhankcronin.com/ai_notes/reinforcement_learning/lstm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://siobhankcronin.com/ai_notes/reinforcement_learning/lstm/</guid>
+      <description> LSTM Recurrent Neural Network (RNN) RNNs are networks with loops so that information can persist.
+Long Short-Term Memory Long Short-Term Memory (LSTM) networks are a specific type of RNN capable of learning long-term dependencies.
+Key steps are a forget gate layer and input gate layer.
+ </description>
     </item>
     
     <item>
@@ -163,6 +215,17 @@ We then shift into Robot Tour Optimization. Getting to different paths efficient
     
     <item>
       <title></title>
+      <link>http://siobhankcronin.com/ai_notes/software_engineering/hashing_with_python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://siobhankcronin.com/ai_notes/software_engineering/hashing_with_python/</guid>
+      <description>Hashing Strings with Python Hash functions map sequences of bytes to fixed length sequences. The value returned by a hash function is often called a hash, message digest, hash value, or checksum.
+MD5 binascii If you&amp;rsquo;re looking to hash a string, you&amp;rsquo;ll need to convert your string to binary.
+# Convert string to binary binary_string = b&#39;abcd&#39; print(binary_string)  b&#39;abcd&#39;  # Generate hexadecimal from binary string import binascii binascii.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://siobhankcronin.com/ai_notes/swarm_intelligence/prob/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -180,11 +243,11 @@ import matplotlib import numpy as np import matplotlib.pyplot as plt %matplotlib
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://siobhankcronin.com/projects/</guid>
-      <description>Open Source Software PySwarms — Particle Swarm Optimization (PSO) toolkit SwarmLab — Implementation of Swarm Intelligence (SI) algorithms
+      <description>Open Source Software PySwarms — Particle Swarm Optimization (PSO) toolkit SwarmOpt — Swarm Intelligence (SI) optimizer for hyperparameter tuning SwarmLab — Implementation of Swarm Intelligence (SI) algorithms
 ML/AI Engineering Uncountable | Software Engineer | Jan-Feb 2018
 Avisell | Machine Learning Engineer | May-Sep 2017
 Research Slow Research Lab | 2016-Present
-Independent research on particle swarm optimization and RL algorithms
+Independent research on particle swarm intelligence and RL.
 Yerba Buena Center for the Arts | 2016-2017
 Network models of institutionalized oppression with Ray Gilstrap and Pia Zaragoza</description>
     </item>
@@ -201,10 +264,10 @@ My understanding of this sprawling sub-domain of physics is that we can study th
     
     <item>
       <title>Collections module in Python</title>
-      <link>http://siobhankcronin.com/ai_notes/software_engineering/collections_library_in_python/</link>
+      <link>http://siobhankcronin.com/ai_notes/software_engineering/collections_module_in_python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://siobhankcronin.com/ai_notes/software_engineering/collections_library_in_python/</guid>
+      <guid>http://siobhankcronin.com/ai_notes/software_engineering/collections_module_in_python/</guid>
       <description>Incredibly useful Python container datatypes.
 Counter Counter is a dictionary subclass with no restrictions on keys and values.
 from collections import Counter words = [&#39;apples&#39;,&#39;oranges&#39;, &#39;apples&#39;, &#39;apples&#39;] words1 = [&#39;oranges&#39;, &#39;oranges&#39;, &#39;oranges&#39;, &#39;apples&#39;]  # Return (element, count) pairs for n most common Counter(words).most_common()  # Subtract elements from another mapping w = Counter(words) w1 = Counter(words1) w.subract(w1) # subtraction, includes zero and negatives w - w1 # subtraction, only positive counts w &amp;amp; w1 # intersection w | w1 # union w + w1 # adds two counters together  # Some useful patterns c.</description>
@@ -231,17 +294,6 @@ This burgeoning research arena, wearing hand-me-downs from theoretical physics a
     </item>
     
     <item>
-      <title>Deep RL Bootcamp 2017</title>
-      <link>http://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp/</guid>
-      <description>1: Motivation + Overview + Exact Solution Method VIDEO
-(0 - 10) Starts off with a review of MDPs from Barto, and then sets up a simple grid world with an example of a deterministic policy with infinite horizon.
-(10-20) OMG, talk gets a bit derailed by series of rando questions that don&amp;rsquo;t seem to be clarifying thinking (answerable by the definition of a deterministic policy). Maybe too much coffee?</description>
-    </item>
-    
-    <item>
       <title>Intersection of Convex Sets</title>
       <link>http://siobhankcronin.com/ai_notes/proofs/intersection_of_convex_sets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -264,15 +316,6 @@ Manhattan The sum of the lengths of the projections of the line segment between 
     </item>
     
     <item>
-      <title>Long Short Term Memory (LSTM)</title>
-      <link>http://siobhankcronin.com/ai_notes/reinforcement_learning/lstm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://siobhankcronin.com/ai_notes/reinforcement_learning/lstm/</guid>
-      <description>Grid Long Short-Term Memory (LSTM) Long Short-Term Memory (LSTM) networks are networks of LSTM cells arranged in a grid to facilitate deep and sequential computation. LSTM networks are RNN architectures with an improved ability to store and access memory. The magic is a a gating mechansim that controls access to memory cells. The gating helps preserve signal for longer, and also propogates error for longer than typical RNN structures. The gating helps focus the network on specfic aspects of the input signal, while ignoring other parts.</description>
-    </item>
-    
-    <item>
       <title>MLSS Cadiz 2016</title>
       <link>http://siobhankcronin.com/ai_notes/lecture_notes/mlss_cadiz_2016/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -281,6 +324,16 @@ Manhattan The sum of the lengths of the projections of the line segment between 
       <description>John Shulman Deep RL I found these talks to be super straightforward and helpful. A breath of fresh air.
 Part 1 A brief overview of applications, including robotics, inventory management, resource allocation (queuing), and routing problems (sequential decision making problem).
 Differentiating between policy optimization and dynamic programming. In particular, policy optimization including DFO/Evolutionary algorithms (derivative-free) and Policy Gradients (using gradients, improves with more parameters. Dynamic programming requires discrete finite states, and so must be approximated (for instance, approximating function with neural nets).</description>
+    </item>
+    
+    <item>
+      <title>Multiprocessing in Python</title>
+      <link>http://siobhankcronin.com/ai_notes/software_engineering/multiprocessing_in_python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://siobhankcronin.com/ai_notes/software_engineering/multiprocessing_in_python/</guid>
+      <description>Multiprocessing opens the door to parallel processing, which can optimize all sorts of processes, from training deep learning architecture to managing server requests. Let&amp;rsquo;s see how Python&amp;rsquo;s multiprocessing package works!
+Global Interpreter Lock (GIL) This is the mechanism that the CPython interpreter uses to ensure that only one thread excutes Python bytecode at a time. The GIL ensures objects are safe from concurrent access. The GIL is released during I/O and in some computationally-intensive tasks like compression and hashing.</description>
     </item>
     
     <item>
@@ -345,6 +398,16 @@ At the onset, I think it would be helpful to identify how processes are currentl
 Therefore, there exists $p, q$ such that $\sqrt{2} = \frac{p}{q}$, where $q \neq 0$, and $p, q$ share no common divisors other than 1.
 Squaring both sides gives $2 = \frac{p^2}{q^2}$, so consequently $2q^2 = p^2$.
 If a square of a number is even, then the number is even, so there exists some number $k$ such that $p=2k$. Subsituting this value into the equation yields $2q^2 = 4k^2$, or $q^2 = 2k^2$.</description>
+    </item>
+    
+    <item>
+      <title>itertools in Python</title>
+      <link>http://siobhankcronin.com/ai_notes/software_engineering/itertools_in_python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://siobhankcronin.com/ai_notes/software_engineering/itertools_in_python/</guid>
+      <description> There are lots of useful iteration tools in this module, and here are some of my favorites. I thought this was a fun intro post for more context.
+accumulate() &amp;gt;&amp;gt;&amp;gt; n_of_marbles = [1, 2, 3] &amp;gt;&amp;gt;&amp;gt; list(accumulate(n_of_marbles, operator.add) [1, 3, 6]  count() &amp;gt;&amp;gt;&amp;gt; [i for i in count(1,1)] [1, 2, 3, ...]  cycle() repeat () filterfalse() groupby() starmap() takewhile() permutations() combinations () and combinations_with_replacement() </description>
     </item>
     
   </channel>

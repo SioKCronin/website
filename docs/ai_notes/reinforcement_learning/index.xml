@@ -22,11 +22,42 @@ Algorithm algorithm = some_off_policy_RL_algorithm initialize replay buffer M = 
     
     <item>
       <title></title>
+      <link>http://siobhankcronin.com/ai_notes/reinforcement_learning/dqn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://siobhankcronin.com/ai_notes/reinforcement_learning/dqn/</guid>
+      <description>Deep Q-Networks (DQN) This model-free RL algorithm, is like traditional q-learning, only we maintain neural network that approximates $Q*$.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://siobhankcronin.com/ai_notes/reinforcement_learning/her/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://siobhankcronin.com/ai_notes/reinforcement_learning/her/</guid>
+      <description> Hindsight Experience Replay (HER) This technique has a super clever way of dealing with sparse reward situations. Essentially, it calls misses successes, so that learning can be made even when we miss our target. It can be combined with other off-policy RL algorithms, and I show how to do that in other posts.
+Algorithm algorithm = some_off_policy_RL_algorithm initialize replay buffer M = 10 # Number of episodes for epsisode in range(M): goal, s0 = sampler for t in range(T):  </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://siobhankcronin.com/ai_notes/reinforcement_learning/inventory_control_theory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://siobhankcronin.com/ai_notes/reinforcement_learning/inventory_control_theory/</guid>
       <description> Inventory Control Theory  Just in Time Levalized Production Inventory Depletion Hadley-Within model AHM-model class, lot-size model buy-ahead model Wagner-Within model  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://siobhankcronin.com/ai_notes/reinforcement_learning/lstm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://siobhankcronin.com/ai_notes/reinforcement_learning/lstm/</guid>
+      <description> LSTM Recurrent Neural Network (RNN) RNNs are networks with loops so that information can persist.
+Long Short-Term Memory Long Short-Term Memory (LSTM) networks are a specific type of RNN capable of learning long-term dependencies.
+Key steps are a forget gate layer and input gate layer.
+ </description>
     </item>
     
     <item>
@@ -45,15 +76,6 @@ Algorithm algorithm = some_off_policy_RL_algorithm initialize replay buffer M = 
       
       <guid>http://siobhankcronin.com/ai_notes/reinforcement_learning/td/</guid>
       <description> Temporal Difference (TD) Learning Examples when more advantegeous than Monte Carlo  When there is variability early on   </description>
-    </item>
-    
-    <item>
-      <title>Long Short Term Memory (LSTM)</title>
-      <link>http://siobhankcronin.com/ai_notes/reinforcement_learning/lstm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://siobhankcronin.com/ai_notes/reinforcement_learning/lstm/</guid>
-      <description>Grid Long Short-Term Memory (LSTM) Long Short-Term Memory (LSTM) networks are networks of LSTM cells arranged in a grid to facilitate deep and sequential computation. LSTM networks are RNN architectures with an improved ability to store and access memory. The magic is a a gating mechansim that controls access to memory cells. The gating helps preserve signal for longer, and also propogates error for longer than typical RNN structures. The gating helps focus the network on specfic aspects of the input signal, while ignoring other parts.</description>
     </item>
     
     <item>

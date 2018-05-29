@@ -18,11 +18,11 @@ procrastinating)
 
 Choice is made in proportion to a softmax function of expected utility:
 
-![softmax](/images/softmax.jpg)
+![softmax](softmax.jpg)
 
 Which relates to simulation of future internal states and choices, where
 U is how the agent computes immediate utility, M is how it predicts its
 future internal states, and h is how it modifies its state when it is
 passed to the choice function.
 
-![future internal](/images/future_internal_state.jpg)
+![future internal](future_internal_state.jpg)
