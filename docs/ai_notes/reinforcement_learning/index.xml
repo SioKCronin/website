@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reinforcement Learning on Siobhán K Cronin</title>
-    <link>//siobhankcronin.com/ai_notes/reinforcement_learning/</link>
+    <link>https://siobhankcronin.com/ai_notes/reinforcement_learning/</link>
     <description>Recent content in Reinforcement Learning on Siobhán K Cronin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="//siobhankcronin.com/ai_notes/reinforcement_learning/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://siobhankcronin.com/ai_notes/reinforcement_learning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>//siobhankcronin.com/ai_notes/reinforcement_learning/ddpg/</link>
+      <link>https://siobhankcronin.com/ai_notes/reinforcement_learning/ddpg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//siobhankcronin.com/ai_notes/reinforcement_learning/ddpg/</guid>
+      <guid>https://siobhankcronin.com/ai_notes/reinforcement_learning/ddpg/</guid>
       <description> Deep Deterministic Policy Gradients (DDPG) For this model-free RL algorithm for continuous spaces, episodes are generated using a behavioral polcy, which is a noisy version of the target policy. There are two neural networks, an actor and a critic, where the targets for the critic are the actions outputted by the actor. Actor is trained using mini-batch GD on the inverse expected Q value.
 Algorithm algorithm = some_off_policy_RL_algorithm initialize replay buffer M = 10 # Number of episodes for epsisode in range(M):  </description>
     </item>
     
     <item>
       <title></title>
-      <link>//siobhankcronin.com/ai_notes/reinforcement_learning/dqn/</link>
+      <link>https://siobhankcronin.com/ai_notes/reinforcement_learning/dqn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//siobhankcronin.com/ai_notes/reinforcement_learning/dqn/</guid>
+      <guid>https://siobhankcronin.com/ai_notes/reinforcement_learning/dqn/</guid>
       <description>Deep Q-Networks (DQN) This model-free RL algorithm, is like traditional q-learning, only we maintain neural network that approximates $Q*$.</description>
     </item>
     
     <item>
       <title></title>
-      <link>//siobhankcronin.com/ai_notes/reinforcement_learning/her/</link>
+      <link>https://siobhankcronin.com/ai_notes/reinforcement_learning/her/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//siobhankcronin.com/ai_notes/reinforcement_learning/her/</guid>
+      <guid>https://siobhankcronin.com/ai_notes/reinforcement_learning/her/</guid>
       <description> Hindsight Experience Replay (HER) This technique has a super clever way of dealing with sparse reward situations. Essentially, it calls misses successes, so that learning can be made even when we miss our target. It can be combined with other off-policy RL algorithms, and I show how to do that in other posts.
 Algorithm algorithm = some_off_policy_RL_algorithm initialize replay buffer M = 10 # Number of episodes for epsisode in range(M): goal, s0 = sampler for t in range(T):  </description>
     </item>
     
     <item>
       <title></title>
-      <link>//siobhankcronin.com/ai_notes/reinforcement_learning/inventory_control_theory/</link>
+      <link>https://siobhankcronin.com/ai_notes/reinforcement_learning/inventory_control_theory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//siobhankcronin.com/ai_notes/reinforcement_learning/inventory_control_theory/</guid>
+      <guid>https://siobhankcronin.com/ai_notes/reinforcement_learning/inventory_control_theory/</guid>
       <description> Inventory Control Theory  Just in Time Levalized Production Inventory Depletion Hadley-Within model AHM-model class, lot-size model buy-ahead model Wagner-Within model  </description>
     </item>
     
     <item>
       <title></title>
-      <link>//siobhankcronin.com/ai_notes/reinforcement_learning/lstm/</link>
+      <link>https://siobhankcronin.com/ai_notes/reinforcement_learning/lstm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//siobhankcronin.com/ai_notes/reinforcement_learning/lstm/</guid>
+      <guid>https://siobhankcronin.com/ai_notes/reinforcement_learning/lstm/</guid>
       <description> LSTM Recurrent Neural Network (RNN) RNNs are networks with loops so that information can persist.
 Long Short-Term Memory Long Short-Term Memory (LSTM) networks are a specific type of RNN capable of learning long-term dependencies.
 Key steps are a forget gate layer and input gate layer.
@@ -62,28 +62,28 @@ Key steps are a forget gate layer and input gate layer.
     
     <item>
       <title></title>
-      <link>//siobhankcronin.com/ai_notes/reinforcement_learning/monte_carlo/</link>
+      <link>https://siobhankcronin.com/ai_notes/reinforcement_learning/monte_carlo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//siobhankcronin.com/ai_notes/reinforcement_learning/monte_carlo/</guid>
+      <guid>https://siobhankcronin.com/ai_notes/reinforcement_learning/monte_carlo/</guid>
       <description> Monte Carlo Examples when Monte Carlo is preferred to TD  </description>
     </item>
     
     <item>
       <title></title>
-      <link>//siobhankcronin.com/ai_notes/reinforcement_learning/td/</link>
+      <link>https://siobhankcronin.com/ai_notes/reinforcement_learning/td/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//siobhankcronin.com/ai_notes/reinforcement_learning/td/</guid>
+      <guid>https://siobhankcronin.com/ai_notes/reinforcement_learning/td/</guid>
       <description> Temporal Difference (TD) Learning Examples when more advantegeous than Monte Carlo  When there is variability early on   </description>
     </item>
     
     <item>
       <title>RL in Process Scheduling</title>
-      <link>//siobhankcronin.com/ai_notes/reinforcement_learning/rl_in_process_scheduling/</link>
+      <link>https://siobhankcronin.com/ai_notes/reinforcement_learning/rl_in_process_scheduling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//siobhankcronin.com/ai_notes/reinforcement_learning/rl_in_process_scheduling/</guid>
+      <guid>https://siobhankcronin.com/ai_notes/reinforcement_learning/rl_in_process_scheduling/</guid>
       <description>When I mentioned my interest in this idea to my partner Carl, he encouraged me to pursue it, but highlighted that it may be at least a masters thesis to secure the necessary OS and RL foundations to implement something that works. I like multi-year challenges, so wanted to at least start scoping the problem to see what is required.
 At the onset, I think it would be helpful to identify how processes are currently scheduled (the dominant paradigms), how process scheduling could be framed as a MDP, and how RL could be applied.</description>
     </item>
