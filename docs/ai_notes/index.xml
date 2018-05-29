@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on AI on Siobhán K Cronin</title>
-    <link>http://siobhankcronin.com/ai_notes/</link>
+    <link>//siobhankcronin.com/ai_notes/</link>
     <description>Recent content in Notes on AI on Siobhán K Cronin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://siobhankcronin.com/ai_notes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//siobhankcronin.com/ai_notes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://siobhankcronin.com/ai_notes/math_probability_and_stats/linear_algebra_basics_with_scipy/</link>
+      <link>//siobhankcronin.com/ai_notes/math_probability_and_stats/linear_algebra_basics_with_scipy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://siobhankcronin.com/ai_notes/math_probability_and_stats/linear_algebra_basics_with_scipy/</guid>
+      <guid>//siobhankcronin.com/ai_notes/math_probability_and_stats/linear_algebra_basics_with_scipy/</guid>
       <description>Basics with Scipy import scipy.linalg as la import numpy as np  Motivating example We are entering three pies into the bakeoff, and want to make sure we win. We&amp;rsquo;ve tried a lot of different ingredients, but ultimatley have found that taste comes down to butter, salt, sugar, and grandma&amp;rsquo;s secret spice blend.
 w = 1 #tbl_of_butter x = 1 #dash_of_salt y = 1 #spoonful_of_sugar z = 1 #undisclosed_measurement_of_spice pie1 = 3*w + 5*x + 30*y + 10*z pie2 = 2*w + 3*x + 40*y + 15*z pie3 = 4*w + 2*x + 10*y + 30*z pie4 = 10*w + 2*x + 10*y + 30*z  A = np.</description>
     </item>
     
     <item>
       <title>Intersection of Convex Sets</title>
-      <link>http://siobhankcronin.com/ai_notes/proofs/intersection_of_convex_sets/</link>
+      <link>//siobhankcronin.com/ai_notes/proofs/intersection_of_convex_sets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://siobhankcronin.com/ai_notes/proofs/intersection_of_convex_sets/</guid>
+      <guid>//siobhankcronin.com/ai_notes/proofs/intersection_of_convex_sets/</guid>
       <description>Convex sets are interesting in the context of optimization, as they represent regions where we know we can find global minima. A convex region is a region where for every pair of points within the region, every point on the line that joins the points is also within the region.
 Fun fact - the intersection of all convex sets containing a given subset A of Euclidean space, is called the convex hull of A, which is the smallest convex set containing A.</description>
     </item>
     
     <item>
       <title>Parrallelogram is convex</title>
-      <link>http://siobhankcronin.com/ai_notes/proofs/convex_parrallelogram/</link>
+      <link>//siobhankcronin.com/ai_notes/proofs/convex_parrallelogram/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://siobhankcronin.com/ai_notes/proofs/convex_parrallelogram/</guid>
+      <guid>//siobhankcronin.com/ai_notes/proofs/convex_parrallelogram/</guid>
       <description>Let $S$ be the parallelogram consisting of all linear combinations of $t_{1}v_{1} + t_{2}v_{2}$ with $0 \leq t_{1} \leq $ and $0 \leq t_{2} \leq $, or equivlently $0 \leq t_{i} \leq $.
 We remember that the line segment $PQ$ consists of all points $(1-t)P + tQ$ with $0\leq t \leq 1$, and that $PQ$ exists in vector space $S$ if all points $P, Q$ exist in $S$.
 Proof. Let $P=t_{1}v_{1} + t_{2}v_{2}$ and $Q=t_{1}v_{1} + t_{2}v_{2}$ be points in $S$.</description>
@@ -43,10 +43,10 @@ Proof. Let $P=t_{1}v_{1} + t_{2}v_{2}$ and $Q=t_{1}v_{1} + t_{2}v_{2}$ be points
     
     <item>
       <title>Phenomenology of Perception - Merleau-Ponty</title>
-      <link>http://siobhankcronin.com/ai_notes/books/phenomenology_of_perception/</link>
+      <link>//siobhankcronin.com/ai_notes/books/phenomenology_of_perception/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://siobhankcronin.com/ai_notes/books/phenomenology_of_perception/</guid>
+      <guid>//siobhankcronin.com/ai_notes/books/phenomenology_of_perception/</guid>
       <description>Phenomenology of Perception by Maurice Merleau-Ponty.
 Originally printed in 1945 by Editions Gallimard, with English translation published in 1958 by Routledge &amp;amp; Kegan Paul. I am referencing the 2002 Routledge Classics edition.
 Overview There are times in our lives when we notice the apparatus of our perception. Maybe we see a mirage emerge on the horizon, or grow determined to know why our ears are ringing. When we study such visual apparitions and sonic glitches, we align ourselves with generations of philosophers and cognitive scientists who have looked at perception&amp;rsquo;s outliers to help us understand what happens all along without our noticing.</description>
@@ -54,19 +54,19 @@ Overview There are times in our lives when we notice the apparatus of our percep
     
     <item>
       <title>Reinforcement Learning - Barto</title>
-      <link>http://siobhankcronin.com/ai_notes/books/reinforcement_learning/</link>
+      <link>//siobhankcronin.com/ai_notes/books/reinforcement_learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://siobhankcronin.com/ai_notes/books/reinforcement_learning/</guid>
+      <guid>//siobhankcronin.com/ai_notes/books/reinforcement_learning/</guid>
       <description>Reinforcement Learning: An Introduction (1998). Richard Sutton &amp;amp; Andrew Barto. At the onset, I&amp;rsquo;m curious to know how much has changed since this book&amp;rsquo;s publication 20 years ago. That being said, as these are two leaders in the field, I&amp;rsquo;m interested in gaining a sense of their perspective on the history/origin of this subfield, and acclimating to some of the core concepts/constructs. CHAPTER 1 One of the key takeaways from this chapter was the distinction between the value function and rewards function in an RL problem.</description>
     </item>
     
     <item>
       <title>Square Root of 2 is Irrational</title>
-      <link>http://siobhankcronin.com/ai_notes/proofs/proove_sqrt2_is_irrational/</link>
+      <link>//siobhankcronin.com/ai_notes/proofs/proove_sqrt2_is_irrational/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://siobhankcronin.com/ai_notes/proofs/proove_sqrt2_is_irrational/</guid>
+      <guid>//siobhankcronin.com/ai_notes/proofs/proove_sqrt2_is_irrational/</guid>
       <description>Proof. Assume for contradiction that $\sqrt{2}$ is rational.
 Therefore, there exists $p, q$ such that $\sqrt{2} = \frac{p}{q}$, where $q \neq 0$, and $p, q$ share no common divisors other than 1.
 Squaring both sides gives $2 = \frac{p^2}{q^2}$, so consequently $2q^2 = p^2$.
