@@ -3,7 +3,7 @@ title: Multiprocessing in Python
 menu:
     ai_notes:
          parent: Software Engineering
-draft: False
+draft: True 
 ---
 
 Multiprocessing opens the door to parallel processing, which can optimize all
