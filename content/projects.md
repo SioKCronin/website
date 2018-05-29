@@ -4,6 +4,7 @@ draft = false
 ### Open Source Software
 
 **[PySwarms](https://github.com/ljvmiranda921/pyswarms)** — Particle Swarm Optimization (PSO) toolkit</br>
+**[SwarmOpt](https://github.com/SioKCronin/SwarmOpt)** — Swarm Intelligence (SI) optimizer for hyperparameter tuning</br>
 **[SwarmLab](https://github.com/SioKCronin/SwarmLab)** — Implementation of Swarm Intelligence (SI) algorithms</br>
 
 ### ML/AI Engineering
@@ -14,7 +15,7 @@ draft = false
 ### Research
 
 **Slow Research Lab | 2016-Present**  
-Independent research on particle swarm optimization and RL algorithms
+Independent research on particle swarm intelligence and RL.
 
 **Yerba Buena Center for the Arts | 2016-2017**  
 Network models of institutionalized oppression with Ray Gilstrap and Pia

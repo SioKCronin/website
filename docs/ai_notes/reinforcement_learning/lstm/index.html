@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Siobhán K Cronin  | Long Short Term Memory (LSTM)</title>
+    <title>Siobhán K Cronin </title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.40.2" />
+    <meta name="generator" content="Hugo 0.40" />
     
     
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -35,8 +35,11 @@
 
     
 
-    <meta property="og:title" content="Long Short Term Memory (LSTM)" />
-<meta property="og:description" content="Grid Long Short-Term Memory (LSTM) Long Short-Term Memory (LSTM) networks are networks of LSTM cells arranged in a grid to facilitate deep and sequential computation. LSTM networks are RNN architectures with an improved ability to store and access memory. The magic is a a gating mechansim that controls access to memory cells. The gating helps preserve signal for longer, and also propogates error for longer than typical RNN structures. The gating helps focus the network on specfic aspects of the input signal, while ignoring other parts." />
+    <meta property="og:title" content="" />
+<meta property="og:description" content=" LSTM Recurrent Neural Network (RNN) RNNs are networks with loops so that information can persist.
+Long Short-Term Memory Long Short-Term Memory (LSTM) networks are a specific type of RNN capable of learning long-term dependencies.
+Key steps are a forget gate layer and input gate layer.
+ " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://siobhankcronin.com/ai_notes/reinforcement_learning/lstm/" />
 
@@ -55,19 +58,25 @@
 
 
 
-<meta itemprop="name" content="Long Short Term Memory (LSTM)">
-<meta itemprop="description" content="Grid Long Short-Term Memory (LSTM) Long Short-Term Memory (LSTM) networks are networks of LSTM cells arranged in a grid to facilitate deep and sequential computation. LSTM networks are RNN architectures with an improved ability to store and access memory. The magic is a a gating mechansim that controls access to memory cells. The gating helps preserve signal for longer, and also propogates error for longer than typical RNN structures. The gating helps focus the network on specfic aspects of the input signal, while ignoring other parts.">
+<meta itemprop="name" content="">
+<meta itemprop="description" content=" LSTM Recurrent Neural Network (RNN) RNNs are networks with loops so that information can persist.
+Long Short-Term Memory Long Short-Term Memory (LSTM) networks are a specific type of RNN capable of learning long-term dependencies.
+Key steps are a forget gate layer and input gate layer.
+ ">
 
 
 
-<meta itemprop="wordCount" content="491">
+<meta itemprop="wordCount" content="45">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Long Short Term Memory (LSTM)"/>
-<meta name="twitter:description" content="Grid Long Short-Term Memory (LSTM) Long Short-Term Memory (LSTM) networks are networks of LSTM cells arranged in a grid to facilitate deep and sequential computation. LSTM networks are RNN architectures with an improved ability to store and access memory. The magic is a a gating mechansim that controls access to memory cells. The gating helps preserve signal for longer, and also propogates error for longer than typical RNN structures. The gating helps focus the network on specfic aspects of the input signal, while ignoring other parts."/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content=" LSTM Recurrent Neural Network (RNN) RNNs are networks with loops so that information can persist.
+Long Short-Term Memory Long Short-Term Memory (LSTM) networks are a specific type of RNN capable of learning long-term dependencies.
+Key steps are a forget gate layer and input gate layer.
+ "/>
 
   </head>
 
@@ -168,75 +177,25 @@
           
         REINFORCEMENT LEARNING
       </p>
-      <h1 class="f1 helvetica mb1">Long Short Term Memory (LSTM)</h1>
+      <h1 class="f1 helvetica mb1"></h1>
     </header>
 
     <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
 
-<h2 id="grid-long-short-term-memory-lstm">Grid Long Short-Term Memory (LSTM)</h2>
+<h1 id="lstm">LSTM</h1>
 
-<p>Long Short-Term Memory (LSTM) networks are networks of LSTM cells
-arranged in a grid to facilitate deep and sequential computation. LSTM
-networks are RNN architectures with an improved ability to store and
-access memory. The magic is a a gating mechansim that controls access to memory cells. The
-gating helps preserve signal for longer, and also propogates error for
-longer than typical RNN structures. The gating helps focus the network
-on specfic aspects of the input signal, while ignoring other parts. An
-LSTM network can identify interdenpendencies separated by windows of
-time (i.e. identifiable significant connections are not restricted to
-adjascent time steps - the <em>vanishing gradient</em> problem).</p>
+<h2 id="recurrent-neural-network-rnn">Recurrent Neural Network (RNN)</h2>
 
-<p>We will explore the differences between the standard LSTM RNN and the
-Stacked and Multidimensional LSTM (referencing the work of Graves et al. 2013). I will then dive into Grid LSTM and what is required for a successful implementation.</p>
+<p>RNNs are networks with loops so that information can persist.</p>
+
+<h2 id="long-short-term-memory">Long Short-Term Memory</h2>
+
+<p>Long Short-Term Memory (LSTM) networks are a specific type of RNN capable of learning long-term dependencies.</p>
 
 <p>Key steps are a <em>forget gate layer</em> and <em>input gate layer</em>.</p>
 
-<h3 id="standard-lstm">Standard LSTM</h3>
-
-<p>The LSTM network processes a sequence of input-target pairs, generating
-an estimated target based on all the input up to that point (which
-determines the network&rsquo;s state, which is made up of a hidden vector and
-a memory vector). The recurrent weight mastrices are derived (describe
-this from Graves 2013). Walk through the gates and h, m.</p>
-
-<ul>
-<li>$g^{f}$ - forget gate can delete parts of the previous memory vector
-($m_{i-1}$)</li>
-<li>$g^{c}$ - can write new content to the new memory $m_i$ modulated by
-by the input gate $g^{u}$</li>
-<li>$g^{o}$ - this output gates controls what is read from the new memory $m_{i}$ onto the hidden vector $h$.</li>
-<li>$m&rsquo;$ - memory vector</li>
-<li>$ h&rsquo;$ - hidden vector</li>
-</ul>
-
-<p>The memory and hidden vectors define the next state of the network. Each memory vector is obtained by a linear transformation of the
-previous memory vector and the gates, so signals are not squashed at
-each time step, and backward error signals do not decay sharpy at each
-step. Salient signals can be attended to across multiple steps.</p>
-
-<h3 id="stacked-lstm">Stacked LSTM</h3>
-
-<p>In a stacked LSTM, the output hidden vector of one LSTM layer is taken
-as the input to the next LSTM layer (so sequential stacking).</p>
-
-<h3 id="multidimensional-lstm">Multidimensional LSTM</h3>
-
-<p>Instead of stacking inputs sequentially, an N-dimensional grid is
-assembled. This can grow quickly and become unstable in larger grids,
-which motivates the need for Grid LSTM. Memory is calculated by summing
-up the memory modifications across the N-dimensions.</p>
-
-<h3 id="grid-lstm">Grid LSTM</h3>
-
-<p>The set-up is similar to multidimensional LSTM, in that the
-network receives input from N hidden vectors and N memory vectors, only
-instead of summing them up, the generated output remains separated (so N
-h&rsquo; and N m&rsquo;). N transforms are computed (one for each dimension),
-which is what yields the output vectors, and each of these transforms
-has their own unique weight matrix.</p>
-
-<p>To implement my first LSTM network, I forked starter code from
-<a href="https://github.com/nicodjimenez/lstm/blob/master/lstm.py">nicodjimenez</a>, and began adding more documentation <a href="https://github.com/SioKCronin/grid-lstm">here</a>.</p>
+<pre><code class="language-python">
+</code></pre>
 <ul class="pa0">
   
 </ul>

@@ -11,6 +11,16 @@
     
     
     <item>
+      <title></title>
+      <link>http://siobhankcronin.com/ai_notes/math_probability_and_stats/linear_algebra_basics_with_scipy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://siobhankcronin.com/ai_notes/math_probability_and_stats/linear_algebra_basics_with_scipy/</guid>
+      <description>Basics with Scipy import scipy.linalg as la import numpy as np  Motivating example We are entering three pies into the bakeoff, and want to make sure we win. We&amp;rsquo;ve tried a lot of different ingredients, but ultimatley have found that taste comes down to butter, salt, sugar, and grandma&amp;rsquo;s secret spice blend.
+w = 1 #tbl_of_butter x = 1 #dash_of_salt y = 1 #spoonful_of_sugar z = 1 #undisclosed_measurement_of_spice pie1 = 3*w + 5*x + 30*y + 10*z pie2 = 2*w + 3*x + 40*y + 15*z pie3 = 4*w + 2*x + 10*y + 30*z pie4 = 10*w + 2*x + 10*y + 30*z  A = np.</description>
+    </item>
+    
+    <item>
       <title>Intersection of Convex Sets</title>
       <link>http://siobhankcronin.com/ai_notes/proofs/intersection_of_convex_sets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
