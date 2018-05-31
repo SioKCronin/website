@@ -3,289 +3,289 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://siobhankcronin.com/about/</loc>
+    <loc>https://siobhankcronin.com/about/</loc>
     <lastmod>2018-04-24T11:53:47-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/speaking/</loc>
+    <loc>https://siobhankcronin.com/speaking/</loc>
     <lastmod>2018-04-24T11:53:47-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/posts/miri_alignment/</loc>
+    <loc>https://siobhankcronin.com/posts/miri_alignment/</loc>
     <lastmod>2018-03-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/posts/adam/</loc>
+    <loc>https://siobhankcronin.com/posts/adam/</loc>
     <lastmod>2018-01-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/posts/intro_to_gaussian_processes/</loc>
+    <loc>https://siobhankcronin.com/posts/intro_to_gaussian_processes/</loc>
     <lastmod>2018-01-16T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/posts/human_out_of_the_loop/</loc>
+    <loc>https://siobhankcronin.com/posts/human_out_of_the_loop/</loc>
     <lastmod>2018-01-16T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/posts/images/swarm_transport/</loc>
+    <loc>https://siobhankcronin.com/posts/images/swarm_transport/</loc>
     <lastmod>2017-07-13T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/posts/bounded_agents/</loc>
+    <loc>https://siobhankcronin.com/posts/bounded_agents/</loc>
     <lastmod>2017-03-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/posts/mathematics_application_and_applicability/</loc>
+    <loc>https://siobhankcronin.com/posts/mathematics_application_and_applicability/</loc>
     <lastmod>2016-04-16T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/posts/what_comes_after_minds/</loc>
+    <loc>https://siobhankcronin.com/posts/what_comes_after_minds/</loc>
     <lastmod>2016-04-14T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/</loc>
+    <loc>https://siobhankcronin.com/</loc>
     <lastmod>2018-04-24T11:53:47-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/math_probability_and_stats/linear_algebra_basics_with_scipy/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/math_probability_and_stats/linear_algebra_basics_with_scipy/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/reinforcement_learning/ddpg/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/reinforcement_learning/ddpg/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/reinforcement_learning/dqn/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/reinforcement_learning/dqn/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/reinforcement_learning/her/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/reinforcement_learning/her/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/reinforcement_learning/inventory_control_theory/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/reinforcement_learning/inventory_control_theory/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/reinforcement_learning/lstm/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/reinforcement_learning/lstm/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/reinforcement_learning/monte_carlo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/reinforcement_learning/monte_carlo/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/reinforcement_learning/td/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/reinforcement_learning/td/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/software_engineering/algorithm_design_manual/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/software_engineering/algorithm_design_manual/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/software_engineering/hashing_with_python/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/software_engineering/hashing_with_python/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/swarm_intelligence/prob/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/swarm_intelligence/prob/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://siobhankcronin.com/posts/</loc>
+    <loc>https://siobhankcronin.com/posts/</loc>
     <lastmod>2018-03-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/projects/</loc>
+    <loc>https://siobhankcronin.com/projects/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/swarm_intelligence/active_matter/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/swarm_intelligence/active_matter/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/categories/</loc>
+    <loc>https://siobhankcronin.com/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/software_engineering/collections_module_in_python/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/software_engineering/collections_module_in_python/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/lecture_notes/ccs2016/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/lecture_notes/ccs2016/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/contact/</loc>
+    <loc>https://siobhankcronin.com/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/proofs/intersection_of_convex_sets/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/software_engineering/k_nearest_neighbors/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/proofs/intersection_of_convex_sets/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/lecture_notes/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/software_engineering/k_nearest_neighbors/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/lecture_notes/mlss_cadiz_2016/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/lecture_notes/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/swarm_intelligence/network_topology/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/lecture_notes/mlss_cadiz_2016/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/swarm_intelligence/network_topology/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/proofs/convex_parrallelogram/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/books/phenomenology_of_perception/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/proofs/convex_parrallelogram/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/reinforcement_learning/rl_in_process_scheduling/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/books/phenomenology_of_perception/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/reinforcement_learning/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/reinforcement_learning/rl_in_process_scheduling/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/books/reinforcement_learning/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/reinforcement_learning/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/software_engineering/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/books/reinforcement_learning/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/proofs/proove_sqrt2_is_irrational/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/software_engineering/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/swarm_intelligence/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/proofs/proove_sqrt2_is_irrational/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/tags/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/swarm_intelligence/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siobhankcronin.com/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://siobhankcronin.com/ai_notes/software_engineering/itertools_in_python/</loc>
+    <loc>https://siobhankcronin.com/ai_notes/software_engineering/itertools_in_python/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
