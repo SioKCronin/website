@@ -1,4 +1,9 @@
-
+---
+title: Deep RL Bootcamp 2017
+menu:
+    ai_notes:
+        parent: Lecture Notes
+---
 # 2017 Deep RL Bootcamp
 
 ## Lecture 1: Motivation + Overview + Exact Solution Method
