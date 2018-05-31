@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Siobhán K Cronin  | Deep RL Bootcamp 2017</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.41" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="https://siobhankcronin.com/dist/css/app.ab4b67a3ea25990fa8279f3b7ef08b61.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="https://siobhankcronin.com/css/override.css">
+    
+
+    
+        <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Deep RL Bootcamp 2017" />
+<meta property="og:description" content="2017 Deep RL Bootcamp Lecture 1: Motivation &#43; Overview &#43; Exact Solution Method VIDEO
+(0 - 10) Starts off with a review of MDPs from Barto, and then sets up a simple grid world with an example of a deterministic policy with infinite horizon.
+(10-20) OMG, talk gets a bit derailed by series of rando questions that don&rsquo;t seem to be clarifying thinking (answerable by the definition of a deterministic policy)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp_2017/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Deep RL Bootcamp 2017">
+<meta itemprop="description" content="2017 Deep RL Bootcamp Lecture 1: Motivation &#43; Overview &#43; Exact Solution Method VIDEO
+(0 - 10) Starts off with a review of MDPs from Barto, and then sets up a simple grid world with an example of a deterministic policy with infinite horizon.
+(10-20) OMG, talk gets a bit derailed by series of rando questions that don&rsquo;t seem to be clarifying thinking (answerable by the definition of a deterministic policy).">
+
+
+
+<meta itemprop="wordCount" content="1168">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Deep RL Bootcamp 2017"/>
+<meta name="twitter:description" content="2017 Deep RL Bootcamp Lecture 1: Motivation &#43; Overview &#43; Exact Solution Method VIDEO
+(0 - 10) Starts off with a review of MDPs from Barto, and then sets up a simple grid world with an example of a deterministic policy with infinite horizon.
+(10-20) OMG, talk gets a bit derailed by series of rando questions that don&rsquo;t seem to be clarifying thinking (answerable by the definition of a deterministic policy)."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-white-90">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-sio-yellow">
+      <nav class="bb bw2 b--mid-gray pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://siobhankcronin.com/" class="f3 fw6 no-underline black dib">
+      Siobhán K Cronin
+    </a>
+    <div class="flex-l items-center">
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw5 dib pr3">
+            <a class="hover-gray no-underline mid-gray" href="/speaking" title="Speaking page">
+              Speaking
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw5 dib pr3">
+            <a class="hover-gray no-underline mid-gray" href="/projects" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw5 dib pr3">
+            <a class="hover-gray no-underline mid-gray" href="/index.html" title="AI Notes page">
+              AI Notes
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw5 dib pr3">
+            <a class="hover-gray no-underline mid-gray" href="/about" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw5 dib pr3">
+            <a class="hover-gray no-underline mid-gray" href="/contact/" title="Contact page">
+              Contact
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+  <a href="//twitter.com/siokcronin" class="link-transition twitter link dib z-999 pt3 pr1 pt0-l mr2" title="Twitter link">
+    <svg height="20px"  width="20px"  aria-labelledby="simpleicons-twitter-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-twitter-icon">Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg>
+
+  </a>
+
+
+
+
+  <a href="//linkedin.com/in/siobhankcronin" class="link-transition linkedin link dib z-999 pt3 pr1 pt0-l mr2" title="LinkedIn link">
+    <svg height="20px"  width="20px"  aria-labelledby="simpleicons-linkedin-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-linkedin-icon">LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+
+  </a>
+
+
+  <a href="//github.com/siokcronin" class="link-transition github link dib z-999 pt3 pr1 pt0-l mr2" title="Github link">
+    <svg height="20px"  width="20px"  aria-labelledby="simpleicons-github-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-github-icon">GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+
+  </a>
+
+
+  <a href="//medium.com/@siobhankcronin" class="link-transition medium link dib z-999 pt3 pt0-l mr2" title="Medium link">
+    <svg height="20px"  width="20px" aria-labelledby="simpleicons-medium-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-medium-icon">Medium icon</title><path d="M2.846 6.36c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403H7.26l5.378 11.795 4.728-11.795H24v.403l-1.917 1.837c-.165.126-.247.333-.213.538v13.5c-.034.204.048.41.213.537l1.87 1.837v.403h-9.41v-.403l1.937-1.882c.19-.19.19-.246.19-.538V7.794l-5.39 13.688h-.727L4.278 7.794v9.174c-.052.386.076.774.347 1.053l2.52 3.06v.402H0v-.403l2.52-3.06c.27-.278.39-.67.326-1.052V6.36z"/></svg>
+
+  </a>
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  <article class="flex-l flex-wrap justify-between center">
+    <header class="pt4 pa3 ph4-ns pb0 w-100 w-60-ns center">
+      <p class="f6 b helvetica tracked">
+          
+        LECTURE NOTES
+      </p>
+      <h1 class="f1 helvetica mb1">Deep RL Bootcamp 2017</h1>
+    </header>
+
+    <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
+
+<h1 id="2017-deep-rl-bootcamp">2017 Deep RL Bootcamp</h1>
+
+<h2 id="lecture-1-motivation-overview-exact-solution-method">Lecture 1: Motivation + Overview + Exact Solution Method</h2>
+
+<p><a href="https://www.youtube.com/watch?v=qaMdN6LS9rA">VIDEO</a></p>
+
+<p><strong>(0 - 10)</strong> Starts off with a review of MDPs from Barto, and then sets up a simple grid world with an example of a deterministic policy with infinite horizon.</p>
+
+<p><strong>(10-20)</strong> OMG, talk gets a bit derailed by series of rando questions that don&rsquo;t seem to be clarifying thinking (answerable by the definition of a deterministic policy). Maybe too much coffee?</p>
+
+<p><strong>(20-30)</strong> Nice introduction to value iteration by showing how, in a stochastic model, it is safer to stay put if it is unlikely movement will yield a successful return. Also, there was a nice set up for the value iteration converging, as additional time will not help an optimal path towards an exit condition once it&rsquo;s been reached.</p>
+
+<p><strong>(30-40)</strong> This helped me solidify why a low gamma would lead us to prioritize immediate rewards,
+while a high gamma leads us to hold out for larger rewards in future steps. He mentioned how Q*
+encodes implicitly the best policy, so it is combo of the V* and \pi* from value iteration (because Q is defined as &ldquo;and thereafter act optimally&rdquo;, which will require the best policy).</p>
+
+<p><strong>(40-50)</strong> Nice introduction to policy evaluation, where we see that \pi(a) gives us the next action as defined by the policy, so we&rsquo;re now working in a linear system. We can add an argmax(a) to the evaluation to get an improvement, as this will be the best a we could select where all future values will be generated optimally. And finally, we can solve iteratively or solve the system of linear equations (woot woot linear algebra). Oh, and a nice example of the geometric series (the gamma coeficient).</p>
+
+<p><strong>(50-60)</strong> A proof sketch for why optimal convergence is reached with policy iteration.</p>
+
+<h2 id="lecture-2-sampling-based-approximations-and-function-fitting">Lecture 2: Sampling-based Approximations and Function Fitting</h2>
+
+<p><a href="https://www.youtube.com/watch?v=qO-HUo0LsO4">Video</a></p>
+
+<p><strong>(0-10)</strong> So&hellip;with Q-learning we have made two big assumptions: 1) the underlying dynamics that give us P(s&rsquo; | s, a), and 2) the states and actions can&rsquo;t be too large because we need to store the probabilities to be able to look them up. We may not always be able to meet these assumptions, so enter sampling-based approximation (starting with tabular Q-learning), where we sample states and keep a running average as our Q-value for a given (s, a).</p>
+
+<p><strong>(10-20)</strong> Diving into model-free methods. I LOVED that he used the term &ldquo;temperature&rdquo; to describe the shift in weighting that we see in something like a simulated annealing algorithm. I&rsquo;m starting to see that a lot in RL (especially with the discount function), and I like this somatic layer of temperature. In this case, we are seeking to balance explore-exploit with an \epsilon-greedy algorithm.</p>
+
+<p><strong>(20-30)</strong> A brief introduction to on-policy learning (where sampling is done based on a policy, and those samples are used to update that policy) vs. off-policy learning where we sample based on one policy, but are ultimately updating (learning about) another policy. The requirements for q-learning are also given, which are: all states and actions are visited infinitely often, learning rate sum equals infinity as we approach infinity and the sum of squares of the learning rate is defined as we approach infinity. Exploration is a core RL challenge, and there may be situations where even epsilon-greedy doesn&rsquo;t converge in a reasonable amount of time.</p>
+
+<p><strong>(30-40)</strong> As long as there is an optimal path pursued towards a rewarded state, we won&rsquo;t need to propagate negative rewards back in time (this was shown in a gridworld example). At some point we converge to the Q-values of each state, so additional iterations won&rsquo;t change their values.</p>
+
+<p><strong>(40-50)</strong> Briefly touched upon Temporal Difference Learning as a way to take samples and not just expected values from the policy evaluation. But the main purpose of this section was drive the story towards deep RL, where we will use neural networks to to approximate Q values without needing to hand-engineer features. To step in this direction, was saw how tabular Q-learning is a special case of approximate Q-learning.</p>
+
+<h2 id="lecture-3-deep-q-networks">Lecture 3: Deep Q-Networks</h2>
+
+<p><a href="https://www.youtube.com/watch?v=fevMOp5TDQs&amp;t=131s">Video</a></p>
+
+<p><strong>(0-10)</strong> Vlad Mnih frames the problem nicely about the moving target we get when when we use neural networks to generate our Q-function. Essentially, the generalization of states in neural networks makes the targets unstable. He proposes a clever solution, which is to create an experience replay buffer, which will, in a sense, create a steady data set that can be sampled from. This will break correlations we would have got in our online gradient updates, delivering us a &ldquo;steadier learning signal&rdquo;. In general, in approaching their 2015 work on the Atari control problem they tried to see how they could frame the problem as a supervised learning problem. </p>
+
+<p><strong>(10-20)</strong> After a series of questions that I could not hear the questions to, Vlad switched gears to extol the virtues of target networks, sharing insight into how they care important or stability. This is particularly important when we might project our increased Q-value from a previous state onto an unsuspecting state that looks similar, yet over time we may be over-increasing. </p>
+
+<p><strong>(20-30)</strong> A walk through the DQN algorithm, which I&rsquo;ve pasted below, and some really memorable words about optimization. &ldquo;Optimization really matters in RL, because how you update your neural network determines which actions you will take, which determines which data you will see. Optimization algorithms affect the dynamics of your agent.&rdquo; To this end, he gave a shout out to RMSProp and Adam, which he and his colleagues have found to be preferable to SGD in many cases. </p>
+
+<p><img src="attachment:DeepQAlgorithm.png" alt="DeepQAlgorithm.png" /></p>
+
+<p><strong>(30-40)</strong> Introduces the 49 Atari games they trained on, where they were mapping pixels to Q-values (leading to actions). Convolutional neural networks provided the mapping. In answering a question, here shared this is not a MDP, because we would have to define all the states, and that is not what&rsquo;s happening. I&rsquo;m including a frame of the architecture below. Scores were best with experience replay and target network stabilization.</p>
+
+<p><img src="attachment:Convolutional_NN-3.png" alt="Convolutional_NN-3.png" /></p>
+
+<p><strong>(40-50)</strong> Visual exploration of their simulations, with DQN working best on the reactive games. Particular attention placed to the ability to sacrifice immediate rewards for long-term gain.</p>
+
+<p><strong>(50-60)</strong> DQN is an adaptation of neural fitted Q iteration (NFQ), where we just train one CNN (as they are expensive to train) and we simulate the fixed network with the experience replay (that we sample from) and the target network. Vlad also shares the improved algorithms that have come out since their paper, including Double DQN, which balances performance across two networks (online and target network), as well as Prioritized Experience Replay, which replays transitions in proportion to the absolute Bellman error &ndash; essentially prioritizing &ldquo;states in which we&rsquo;re currently more wrong&rdquo;. And then finally, dueling DQN. This requires changing the architecture of the CNN to track advantage (q values minus state values), which makes it easier to &ldquo;separate the values of separate actions&rdquo;.</p>
+
+<p>Vlad also mentioned that you can increase exploration by adding noise to the parameters, which makes intuitive sense.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </main>
+  </article>
+
+    </main>
+    <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://siobhankcronin.com/" >
+    &copy; 2018 Siobhán K Cronin
+  </a>
+  </div>
+</footer>
+
+    
+
+  <script src="https://siobhankcronin.com/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+  </body>
+</html>
