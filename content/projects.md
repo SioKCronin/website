@@ -5,7 +5,6 @@ draft = false
 
 **[PySwarms](https://github.com/ljvmiranda921/pyswarms)** — Particle Swarm Optimization (PSO) toolkit</br>
 **[SwarmOpt](https://github.com/SioKCronin/SwarmOpt)** — Swarm Intelligence (SI) optimizer for hyperparameter tuning</br>
-**[SwarmLab](https://github.com/SioKCronin/SwarmLab)** — Implementation of Swarm Intelligence (SI) algorithms</br>
 
 ### ML/AI Engineering
 

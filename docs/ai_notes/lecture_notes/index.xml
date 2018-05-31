@@ -23,13 +23,13 @@ This burgeoning research arena, wearing hand-me-downs from theoretical physics a
     
     <item>
       <title>Deep RL Bootcamp 2017</title>
-      <link>https://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp/</link>
+      <link>https://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp_2017/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp/</guid>
+      <guid>https://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp_2017/</guid>
       <description>2017 Deep RL Bootcamp Lecture 1: Motivation + Overview + Exact Solution Method VIDEO
-[0 - 10] Starts off with a review of MDPs from Barto, and then sets up a simple grid world with an example of a deterministic policy with infinite horizon.
-[10-20] OMG, talk gets a bit derailed by series of rando questions that don&amp;rsquo;t seem to be clarifying thinking (answerable by the definition of a deterministic policy).</description>
+(0 - 10) Starts off with a review of MDPs from Barto, and then sets up a simple grid world with an example of a deterministic policy with infinite horizon.
+(10-20) OMG, talk gets a bit derailed by series of rando questions that don&amp;rsquo;t seem to be clarifying thinking (answerable by the definition of a deterministic policy).</description>
     </item>
     
     <item>
