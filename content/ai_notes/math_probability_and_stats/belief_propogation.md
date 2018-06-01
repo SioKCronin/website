@@ -16,6 +16,8 @@ Any Bayesian network or Markov random field can be represented as
 a factor graph. The algorithm passes real-valued functions, *messages*,
 between variables and factors. The messages carry the information of the
 influence of the variables on one another. The message differs whether
-it is a variable node sending a message to a factor node, or vice versa. The recipient sends as message the constant function equal to 1, the message is the product of all the messages from the neighboring factor nodes. 
+it is a variable node sending a message to a factor node, or vice versa.
+The recipient sends as message the constant function equal to 1, 
+the message is the product of all the messages from the neighboring factor nodes. 
 
 
