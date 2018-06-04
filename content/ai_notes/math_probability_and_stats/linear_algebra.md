@@ -16,17 +16,6 @@ as the change of basis matrix in PCA.
 where A is our input data, and x is the eigenvector: $A x = \lambda x$.
 * **eigen vectors (characteristic vector)**: In a linear transformation, $L(x)$,
 then $x$ is an eigenvalue of $L()$ if $L(x)$ is a scalar multiple of $x$. 
-* **eigen decomposition**: This is when we take a matrix, and define it as a product of
-$Q^{T}DQ$ where $Q$ is an orthogonal matrix, and and $D$ is the diagonal matrix of eigenvalues.
-The magic is that the columns of $Q$ are the principal components of our matrix! The way 
-to think about this is that for the covariance matrix $S\_{x} = \frac{1}{m}X^{T}X$,
-where X is our input matrix, if we transform our matrix to $S\_{y}$, which will be a diagonal 
-matrix where $S\_{y} = \frac{1}{m}Y^TY = P^TS\_{x}P$ (since we can substite Y = XP, 
-where $P$ is our change of basis matrix), and select $Q$ (the orthogonal matrix) as our $P$ 
-(oh so handy!), then we get $S\_{y} = Q^TS\_{x}Q = Q^T(QDQ^T)Q = D$, and the columns of
-$D$ are our principal components because they equal the columns of $S\_{y}$ which is our covariance
-matrix where all feature products are zero except the products of the features and themselves,
-which means we have reduced rudancy of signal to zero!
 * **matrix transformations** include *reflection*, *orthogonal projection*, *rotation*,
 *compression*, and *shearing*. 
 * Because they are so useful, you can choose your eigenvectors as your basis (eigenbasis),
