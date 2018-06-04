@@ -13,4 +13,16 @@ imagination, it will take me many years to capitalize on my potential.
 That being said, the Millenium Prizes are my one of my favorite sporting events, and the
 Navier-Stokes Existence and Smoothness Problem is my home team I'm rooting for to emerge next. 
 
+### Overview
+Taken with the Euler equations, Navier-Stokes describes the motion of a fluid in $R^{n}$ where $(n 2 or 3)$.
+We solve the equations for an unknown **velocity** vector $u(x, t) \in R^n$ and **pressure** p(x, t) \in R^n**,
+defined for some position $x\in R^n$ and $t \geq 0$. 
+
 ### The Equations
+
+
+### References
+
+* Existence and Smoothness of the Navier-Stokes Equation, by Charles Fefferman
+
+
