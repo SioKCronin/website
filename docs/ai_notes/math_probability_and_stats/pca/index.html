@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Siobhán K Cronin  | Linear Algebra Basics</title>
+    <title>Siobhán K Cronin  | Principal Component Analysis</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -35,10 +35,12 @@
 
     
 
-    <meta property="og:title" content="Linear Algebra Basics" />
-<meta property="og:description" content="Useful terms and ideas  diagonal matrix: Matrix with zero values except on the diagonal. change of basis matrix: Taking the product of this matrix provides a new basis, which is helpful to us if that basis transformation sets us up for an operation that requires the matrix to be in a particular form. For instance, a change of basis matrix could diagonalize the matrix, such as the choice of the orthogonal matrix as the change of basis matrix in PCA." />
+    <meta property="og:title" content="Principal Component Analysis" />
+<meta property="og:description" content="Cool Result If we take the product of $Q^{T}DQ$, where $Q$ is an orthogonal matrix and $D$ is the diagonal matrix of eigenvalues, the columns of $Q$ are the principal components of our matrix!
+How does it work? Remember, $Y = XP$, where $P$ is the change of basis matrix.
+First we start with the covariance matrix $S_{x} = \frac{1}{m}X^{T}X$, where X is our input matrix. If every feature was necessary, with no redundancy, we&rsquo;d see a diagonal covariance matrix where the only non-zero values would be lined up on the diagonal." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://siobhankcronin.com/ai_notes/math_probability_and_stats/linear_algebra/" />
+<meta property="og:url" content="https://siobhankcronin.com/ai_notes/math_probability_and_stats/pca/" />
 
 
 
@@ -55,19 +57,23 @@
 
 
 
-<meta itemprop="name" content="Linear Algebra Basics">
-<meta itemprop="description" content="Useful terms and ideas  diagonal matrix: Matrix with zero values except on the diagonal. change of basis matrix: Taking the product of this matrix provides a new basis, which is helpful to us if that basis transformation sets us up for an operation that requires the matrix to be in a particular form. For instance, a change of basis matrix could diagonalize the matrix, such as the choice of the orthogonal matrix as the change of basis matrix in PCA.">
+<meta itemprop="name" content="Principal Component Analysis">
+<meta itemprop="description" content="Cool Result If we take the product of $Q^{T}DQ$, where $Q$ is an orthogonal matrix and $D$ is the diagonal matrix of eigenvalues, the columns of $Q$ are the principal components of our matrix!
+How does it work? Remember, $Y = XP$, where $P$ is the change of basis matrix.
+First we start with the covariance matrix $S_{x} = \frac{1}{m}X^{T}X$, where X is our input matrix. If every feature was necessary, with no redundancy, we&rsquo;d see a diagonal covariance matrix where the only non-zero values would be lined up on the diagonal.">
 
 
 
-<meta itemprop="wordCount" content="386">
+<meta itemprop="wordCount" content="353">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Linear Algebra Basics"/>
-<meta name="twitter:description" content="Useful terms and ideas  diagonal matrix: Matrix with zero values except on the diagonal. change of basis matrix: Taking the product of this matrix provides a new basis, which is helpful to us if that basis transformation sets us up for an operation that requires the matrix to be in a particular form. For instance, a change of basis matrix could diagonalize the matrix, such as the choice of the orthogonal matrix as the change of basis matrix in PCA."/>
+<meta name="twitter:title" content="Principal Component Analysis"/>
+<meta name="twitter:description" content="Cool Result If we take the product of $Q^{T}DQ$, where $Q$ is an orthogonal matrix and $D$ is the diagonal matrix of eigenvalues, the columns of $Q$ are the principal components of our matrix!
+How does it work? Remember, $Y = XP$, where $P$ is the change of basis matrix.
+First we start with the covariance matrix $S_{x} = \frac{1}{m}X^{T}X$, where X is our input matrix. If every feature was necessary, with no redundancy, we&rsquo;d see a diagonal covariance matrix where the only non-zero values would be lined up on the diagonal."/>
 
   </head>
 
@@ -168,110 +174,52 @@
           
         NOTES ON AI
       </p>
-      <h1 class="f1 helvetica mb1">Linear Algebra Basics</h1>
+      <h1 class="f1 helvetica mb1">Principal Component Analysis</h1>
     </header>
 
     <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
 
-<h2 id="useful-terms-and-ideas">Useful terms and ideas</h2>
+<h3 id="cool-result">Cool Result</h3>
+
+<p>If we take the product of $Q^{T}DQ$, where $Q$ is an orthogonal matrix and $D$
+is the diagonal matrix of eigenvalues, the columns of $Q$ are the principal
+components of our matrix!</p>
+
+<h3 id="how-does-it-work">How does it work?</h3>
+
+<p>Remember, $Y = XP$, where $P$ is the change of basis matrix.</p>
+
+<p>First we start with the covariance matrix $S_{x} = \frac{1}{m}X^{T}X$,
+where X is our input matrix. If every feature was necessary, with no redundancy,
+we&rsquo;d see a diagonal covariance matrix where the only non-zero values would be
+lined up on the diagonal. But in many cases we&rsquo;ll need to sift through some
+interactions to see what features stand out as principal components.</p>
+
+<p>Can we find a matrix that can transform our covariance matrix to a
+principal component basis?</p>
+
+<p>Let&rsquo;s start by defining our target matrix as $S_{y}$; a diagonal
+matrix where $S_{y} = \frac{1}{m}Y^TY = \frac{1}{m}(XP)^T(XP) = \frac{1}{m}P^{T}X^{T}XP = P^TS_{x}P$ (since we can substite Y = XP),
+and select $Q$ (the orthogonal matrix) as our $P$. This yields $S_{y} = Q^TS_{x}Q = Q^T(QDQ^T)Q = D$,
+which is what we wanted to find, since we know $D$ is a diagonal matrix of singluar values,
+the columns of which are the principal components of our input matrix. Furtheremore,
+we have shown that this matrix $D$ is our new covariance matrix $S_{y}$
+where all products of feature pairs are zero except the products of the features with themselves,
+which means we have reduced redundancy of signal to zero!</p>
+
+<p>But hey, where did that orthogonal matrix $Q$ come from? One approach for
+determining $Q$ and $D$ from our original matrix is Support Value Decomposition (SVD).
+Here is an outline of the core equation of the decomposition.</p>
 
 <ul>
-<li><strong>diagonal matrix</strong>: Matrix with zero values except on the diagonal.</li>
-<li><strong>change of basis matrix</strong>: Taking the product of this matrix provides a new basis,
-which is helpful to us if that basis transformation sets us up for an operation
-that requires the matrix to be in a particular form. For instance, a change of basis
-matrix could diagonalize the matrix, such as the choice of the orthogonal matrix
-as the change of basis matrix in PCA.</li>
-<li><strong>eigen values</strong>: These are the lambda values that satisfy the following equation
-where A is our input data, and x is the eigenvector: $A x = \lambda x$.</li>
-<li><strong>eigen vectors (characteristic vector)</strong>: In a linear transformation, $L(x)$,
-then $x$ is an eigenvalue of $L()$ if $L(x)$ is a scalar multiple of $x$.</li>
-<li><strong>matrix transformations</strong> include <em>reflection</em>, <em>orthogonal projection</em>, <em>rotation</em>,
-<em>compression</em>, and <em>shearing</em>.</li>
-<li>Because they are so useful, you can choose your eigenvectors as your basis (eigenbasis),
-provided they span your space</li>
-<li>In 1751, Leonhard Euler proved that any body has a principal axis of rotation.</li>
+<li>$A_{m \times n} = U_{m \times m} * \Sigma_{m \times n} * V^T_{n \times n}$</li>
+<li>$U_{m \times m}$: The columns of $U$ are <strong>left singular vectors</strong> of $A$ (the set of
+orthonormal eigenvectors of $AA^T$</li>
+<li>$\Sigma_{m \times n}$: non-square diagonal matrix, where the entries are non-negative
+real numbers (the singular values)</li>
+<li>$V^T_{n \times n}$: The columns of $V$ are <strong>right singular vectors</strong> of $A$ (the set of
+orthonormal eigenvectors of $A^TA$.</li>
 </ul>
-
-<h2 id="scipy-example">Scipy example</h2>
-
-<p>We are entering three pies into the bakeoff, and want to make sure we win.
-We&rsquo;ve tried a lot of different ingredients, but ultimatley have found that taste
-comes down to <strong>butter</strong>, <strong>salt</strong>, <strong>sugar</strong>, and <strong>grandma&rsquo;s secret spice blend</strong>.</p>
-
-<pre><code class="language-python">import scipy.linalg as la
-import numpy as np
-</code></pre>
-
-<pre><code class="language-python">w = 1 #tbl_of_butter
-x = 1 #dash_of_salt
-y = 1 #spoonful_of_sugar
-z = 1 #undisclosed_measurement_of_spice
-
-pie1 = 3*w + 5*x + 30*y + 10*z
-pie2 = 2*w + 3*x + 40*y + 15*z
-pie3 = 4*w + 2*x + 10*y + 30*z
-pie4 = 10*w + 2*x + 10*y + 30*z
-</code></pre>
-
-<pre><code class="language-python">A = np.array([[3,5,30,10],[2,3,40,15],[4,2,10,30], [10,2,10,30]])
-</code></pre>
-
-<pre><code class="language-python">A
-</code></pre>
-
-<pre><code>array([[ 3,  5, 30, 10],
-       [ 2,  3, 40, 15],
-       [ 4,  2, 10, 30],
-       [10,  2, 10, 30]])
-</code></pre>
-
-<pre><code class="language-python">inv = la.inv(A)
-</code></pre>
-
-<pre><code>array([[ 4.20539024e-19,  3.48136945e-18, -1.66666667e-01,
-         1.66666667e-01],
-       [ 3.55932203e-01, -2.71186441e-01,  1.15819209e-01,
-        -9.88700565e-02],
-       [-2.03389831e-02,  4.40677966e-02, -2.09039548e-02,
-         5.64971751e-03],
-       [-1.69491525e-02,  3.38983051e-03,  5.48022599e-02,
-        -1.75141243e-02]])
-</code></pre>
-
-<h2 id="test">TEST</h2>
-
-<pre><code class="language-python">A = np.array([[2, 3, -1], [1, -1, 0], [0, 5, 2], [3, 2, 1]])
-</code></pre>
-
-<pre><code class="language-python">A
-</code></pre>
-
-<pre><code>array([[ 2,  3, -1],
-       [ 1, -1,  0],
-       [ 0,  5,  2],
-       [ 3,  2,  1]])
-</code></pre>
-
-<pre><code class="language-python">test1 = np.array([2, 3, -7, 3])
-test2 = np.array([0, 0, 0, 0])
-test3 = np.array([1, 1, 1, 1])
-</code></pre>
-
-<pre><code class="language-python">x1 = la.lstsq(A, test1)
-</code></pre>
-
-<pre><code class="language-python">orth = la.orth(A)
-</code></pre>
-
-<pre><code class="language-python">r = np.ptp(A,axis=1)
-</code></pre>
-
-<pre><code class="language-python">r
-</code></pre>
-
-<pre><code>array([4, 2, 5, 2])
-</code></pre>
 <ul class="pa0">
   
 </ul>
