@@ -290,10 +290,4 @@
     <priority>0</priority>
   </url>
   
-  <url>
-    <loc>https://siobhankcronin.com/ai_notes/software_engineering/itertools_in_python/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
 </urlset>

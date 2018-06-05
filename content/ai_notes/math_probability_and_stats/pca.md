@@ -7,7 +7,7 @@ menu:
 
 ### Cool Result
 
-If we take the product of $Q^{T}DQ$, where $Q$ is an orthogonal matrix and $D$ 
+Considering the decompostions $A = Q^{T}DQ$, where $Q$ is an orthogonal matrix and $D$ 
 is the diagonal matrix of eigenvalues, the columns of $Q$ are the principal
 components of our matrix! 
 
@@ -34,7 +34,12 @@ where all products of feature pairs are zero except the products of the features
 which means we have reduced redundancy of signal to zero!
 
 But hey, where did that orthogonal matrix $Q$ come from? One approach for 
-determining $Q$ and $D$ from our original matrix is Support Value Decomposition (SVD). 
+determining $Q$ and $D$ from our original matrix is Singular Value Decomposition (SVD).
+Remember, **singular values** are non-negative, real numbers that are the square root
+of the eigenvalues of the self-adjoint operator $T\*$ ($T\*T: X \rightarrow X$), 
+that is mapping from $X$ to itself. The word adjoint in this case is used to 
+generalize the conjugate transpose to infinite-dimensional situations.
+
 Here is an outline of the core equation of the decomposition.  
 
 * $A\_{m \times n} = U\_{m \times m} * \Sigma\_{m \times n} * V^T\_{n \times n}$
@@ -44,6 +49,3 @@ orthonormal eigenvectors of $AA^T$
 real numbers (the singular values)
 * $V^T\_{n \times n}$: The columns of $V$ are **right singular vectors** of $A$ (the set of 
 orthonormal eigenvectors of $A^TA$. 
-
-
-
