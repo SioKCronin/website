@@ -27,7 +27,7 @@ far as to say we have a genetic predisposition to filing out of a
 theater, so why is it we can identify patterns in crowd dynamics? 
 
 The interesting behavior outlined in Vicsek et al's paper **Novel Type
-of Phase Transition in a System of Self-Driven Particles"** is a phase
+of Phase Transition in a System of Self-Driven Particles** is a phase
 transition as agents fall into sync. Just as there is a specific moment,
 a phase transition, from gas to liquid, there is a point of inflection
 in system. There are a lot of assumptions in the model though, including

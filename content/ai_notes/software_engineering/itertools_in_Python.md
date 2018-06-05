@@ -3,6 +3,7 @@ title: itertools in Python
 menu:
     ai_notes:
         parent: Software Engineering
+draft: True
 ---
 
 There are lots of useful iteration tools in this module, and here are

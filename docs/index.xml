@@ -364,7 +364,7 @@ Overview There are times in our lives when we notice the apparatus of our percep
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://siobhankcronin.com/ai_notes/math_probability_and_stats/pca/</guid>
-      <description>Cool Result If we take the product of $Q^{T}DQ$, where $Q$ is an orthogonal matrix and $D$ is the diagonal matrix of eigenvalues, the columns of $Q$ are the principal components of our matrix!
+      <description>Cool Result Considering the decompostions $A = Q^{T}DQ$, where $Q$ is an orthogonal matrix and $D$ is the diagonal matrix of eigenvalues, the columns of $Q$ are the principal components of our matrix!
 How does it work? Remember, $Y = XP$, where $P$ is the change of basis matrix.
 First we start with the covariance matrix $S_{x} = \frac{1}{m}X^{T}X$, where X is our input matrix. If every feature was necessary, with no redundancy, we&amp;rsquo;d see a diagonal covariance matrix where the only non-zero values would be lined up on the diagonal.</description>
     </item>
@@ -398,16 +398,6 @@ At the onset, I think it would be helpful to identify how processes are currentl
 Therefore, there exists $p, q$ such that $\sqrt{2} = \frac{p}{q}$, where $q \neq 0$, and $p, q$ share no common divisors other than 1.
 Squaring both sides gives $2 = \frac{p^2}{q^2}$, so consequently $2q^2 = p^2$.
 If a square of a number is even, then the number is even, so there exists some number $k$ such that $p=2k$. Subsituting this value into the equation yields $2q^2 = 4k^2$, or $q^2 = 2k^2$.</description>
-    </item>
-    
-    <item>
-      <title>itertools in Python</title>
-      <link>https://siobhankcronin.com/ai_notes/software_engineering/itertools_in_python/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://siobhankcronin.com/ai_notes/software_engineering/itertools_in_python/</guid>
-      <description> There are lots of useful iteration tools in this module, and here are some of my favorites. I thought this was a fun intro post for more context.
-accumulate() &amp;gt;&amp;gt;&amp;gt; n_of_marbles = [1, 2, 3] &amp;gt;&amp;gt;&amp;gt; list(accumulate(n_of_marbles, operator.add) [1, 3, 6]  count() &amp;gt;&amp;gt;&amp;gt; [i for i in count(1,1)] [1, 2, 3, ...]  cycle() repeat () filterfalse() groupby() starmap() takewhile() permutations() combinations () and combinations_with_replacement() </description>
     </item>
     
   </channel>
