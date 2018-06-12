@@ -41,4 +41,6 @@ Let's establish a motivating example.
 
 ### pool
 
+### Queing processes
 
+Check out this [link](http://www.learn4master.com/programming-language/python/python-queue-for-multithreading)

@@ -212,10 +212,8 @@ from collections import Counter words = ['apples','oranges', 'apples', 'apples']
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are four contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates:
-Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.
-$$d(p,q) = \sqrt{\sum_{i=1}^n(q_{i} - p_{i})^2}$$
-Manhattan The sum of the lengths of the projections of the line segment between the points onto the coordinate axes.
+      Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates, and strategies for using these distances to calculate neighors:
+Distance Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.
     </div>
   </div>
 </div>

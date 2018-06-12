@@ -28,7 +28,8 @@ Siobhán has published research in Brain &amp;amp; Cognition, Neuroreport, and M
       <pubDate>Tue, 24 Apr 2018 11:53:47 -0700</pubDate>
       
       <guid>https://siobhankcronin.com/speaking/</guid>
-      <description>Upcoming  7.5.2018 &amp;mdash; The Poetics of Swarms @ La Casa Naranja (SF) 12.7.2018 &amp;mdash; Tempered (meditation for solo piano) @ Center for New Music (SF)  Past  10.11.2017 &amp;mdash; Step by Step @ Metis (SF) 9.21.2016 &amp;mdash; Forms @ Conference on Complex Systems (Amsterdam) 8.9.2016 &amp;mdash; Form and Movement in Complex Systems @ PyLadies (SF) 6.4.2016 &amp;mdash; On People, Cubes and Snacks @ AlterConf (SF)</description>
+      <description>Upcoming  7.5.2018 &amp;mdash; The Poetics of Swarms @ La Casa Naranja (SF)  Past  10.11.2017 &amp;mdash; Step by Step @ Metis (SF) 9.21.2016 &amp;mdash; Forms @ Conference on Complex Systems (Amsterdam) 8.9.2016 &amp;mdash; Form and Movement in Complex Systems @ PyLadies (SF) 6.4.2016 &amp;mdash; On People, Cubes and Snacks @ AlterConf (SF)  
+The Poetics of Swarms Swarm intelligence is the collective behavior of decentralized, self-organized systems.</description>
     </item>
     
     <item>
@@ -299,10 +300,8 @@ Fun fact - the intersection of all convex sets containing a given subset A of Eu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://siobhankcronin.com/ai_notes/software_engineering/k_nearest_neighbors/</guid>
-      <description>Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are four contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates:
-Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.
-$$d(p,q) = \sqrt{\sum_{i=1}^n(q_{i} - p_{i})^2}$$
-Manhattan The sum of the lengths of the projections of the line segment between the points onto the coordinate axes.</description>
+      <description>Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates, and strategies for using these distances to calculate neighors:
+Distance Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.</description>
     </item>
     
     <item>
