@@ -7,7 +7,6 @@ draft = false
 ### Upcoming
 * 7.5.2018 --- The Poetics of Swarms @ La Casa Naranja
 (SF)
-* 12.7.2018 --- Tempered (meditation for solo piano) @ Center for New Music (SF)
 
 ### Past
 
@@ -27,9 +26,8 @@ research is becoming more and more rooted in finding real-world
 applications of swarm intelligence algorithms from the evolutionary
 computing tradition, my heritage as an empath makes it
 impossible for me not to be porous to the broader implications. This talk
-is rooted in my ongoing work on Swarm Lab, an open source repository
-of optimization algorithms implemented in Python, and in
-my broader commitment to reconnecting with traditions of collective
+is rooted in my ongoing work on SwarmOpt, an open source optimization tool, 
+and in my broader commitment to reconnecting with traditions of collective
 ideation and collaboration. Together we will explore how thinking as and
 with the collective creates the possbility for dynamic modes of problem solving.
 

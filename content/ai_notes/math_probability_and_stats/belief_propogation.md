@@ -20,4 +20,6 @@ it is a variable node sending a message to a factor node, or vice versa.
 The recipient sends as message the constant function equal to 1, 
 the message is the product of all the messages from the neighboring factor nodes. 
 
+### Low Density Parity Check codes
 
+Here is an example of belief propogation in action.

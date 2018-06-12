@@ -36,10 +36,8 @@
     
 
     <meta property="og:title" content="K-nearest neighbors" />
-<meta property="og:description" content="Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are four contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates:
-Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.
-$$d(p,q) = \sqrt{\sum_{i=1}^n(q_{i} - p_{i})^2}$$
-Manhattan The sum of the lengths of the projections of the line segment between the points onto the coordinate axes." />
+<meta property="og:description" content="Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates, and strategies for using these distances to calculate neighors:
+Distance Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://siobhankcronin.com/ai_notes/software_engineering/k_nearest_neighbors/" />
 
@@ -59,24 +57,20 @@ Manhattan The sum of the lengths of the projections of the line segment between 
 
 
 <meta itemprop="name" content="K-nearest neighbors">
-<meta itemprop="description" content="Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are four contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates:
-Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.
-$$d(p,q) = \sqrt{\sum_{i=1}^n(q_{i} - p_{i})^2}$$
-Manhattan The sum of the lengths of the projections of the line segment between the points onto the coordinate axes.">
+<meta itemprop="description" content="Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates, and strategies for using these distances to calculate neighors:
+Distance Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.">
 
 
 
-<meta itemprop="wordCount" content="215">
+<meta itemprop="wordCount" content="353">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="K-nearest neighbors"/>
-<meta name="twitter:description" content="Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are four contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates:
-Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.
-$$d(p,q) = \sqrt{\sum_{i=1}^n(q_{i} - p_{i})^2}$$
-Manhattan The sum of the lengths of the projections of the line segment between the points onto the coordinate axes."/>
+<meta name="twitter:description" content="Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates, and strategies for using these distances to calculate neighors:
+Distance Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points."/>
 
   </head>
 
@@ -182,18 +176,22 @@ Manhattan The sum of the lengths of the projections of the line segment between 
 
     <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
 
-<p>Sometimes we want to perform an operation on an agent/vector/particle based on what we
-know about its neibhors. Here are four contenders for measuring the nearness of any two points
-in an n-dimensional real vector space with fixed cartesian coordinates:</p>
+<p>Sometimes we want to perform an operation on an agent/vector/particle
+based on what we know about its neibhors. Here are contenders for measuring
+the nearness of any two points in an n-dimensional real vector space
+with fixed cartesian coordinates, and strategies for using these distances
+to calculate neighors:</p>
 
-<h3 id="euclidean">Euclidean</h3>
+<h3 id="distance">Distance</h3>
+
+<h4 id="euclidean">Euclidean</h4>
 
 <p>As the name suggests, this is the square root of the sum of squares for
 each corresponding input pair of our points.</p>
 
 <p>$$d(p,q) = \sqrt{\sum_{i=1}^n(q_{i} - p_{i})^2}$$</p>
 
-<h3 id="manhattan">Manhattan</h3>
+<h4 id="manhattan">Manhattan</h4>
 
 <p>The sum of the lengths of the projections of the line segment between
 the points onto the coordinate axes. Or, how many &ldquo;city blocks&rdquo; (i.e.
@@ -201,7 +199,7 @@ coordinate units) lie between the two points.</p>
 
 <p>$$d(p,q) = \sum_{i=1}^n|q_{i} - p_{i}|$$</p>
 
-<h3 id="hamming">Hamming</h3>
+<h4 id="hamming">Hamming</h4>
 
 <p>The minimum number of substitutions required to change one vector into
 another. Simply tally up how many input position pairs differ.</p>
@@ -212,7 +210,7 @@ another. Simply tally up how many input position pairs differ.</p>
     return sum(el1 != el2 for el1, el2 in zip(s1, s2))
 </code></pre>
 
-<h3 id="minkowski">Minkowski</h3>
+<h4 id="minkowski">Minkowski</h4>
 
 <p>This generalizes the Euclidean and Manhattan distance metrics, allowing
 us to to set the sum of distance units (exponent of 1 on differences,
@@ -221,6 +219,25 @@ with <sup>1</sup>&frasl;<sub>1</sub> exponent to norm the sum) or the &ldquo;tri
 you can toggle between the two to your heart&rsquo;s content.</p>
 
 <p>$$D(X,Y) = (\sum_{i=1}^n|x_{i} - y_{i}|^p)^\frac{1}{p}$$</p>
+
+<h3 id="neighborhoods">Neighborhoods</h3>
+
+<h4 id="ring-neighborhood">Ring Neighborhood</h4>
+
+<p>This is typically the neighborhood structure we think of when we think of
+&ldquo;k nearest neighbors&rdquo;. Given a node $x$, return the $k$ (a specified constant)
+number of nodes that are the closest to $x$. The &ldquo;ring&rdquo; indicated by this name
+can best be visualized if you were to imagine depicting all nodes in the graph
+connected in this way arranged in a ring.</p>
+
+<h4 id="von-neumann-neighborhood">Von Neumann Neighborhood</h4>
+
+<p>In a lattice structure, this would be defined as any node and its
+adjascent nodes. This could be extended further to nodes removes by
+some constant $r$. For instance if we are looking for neighbors of
+node $x$ with a $r=2$, then the neighbors would be all nodes who
+have exactly one node seperating them from $x$.
+are evaluating.</p>
 <ul class="pa0">
   
 </ul>

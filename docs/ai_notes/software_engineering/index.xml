@@ -48,10 +48,8 @@ from collections import Counter words = [&#39;apples&#39;,&#39;oranges&#39;, &#3
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://siobhankcronin.com/ai_notes/software_engineering/k_nearest_neighbors/</guid>
-      <description>Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are four contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates:
-Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.
-$$d(p,q) = \sqrt{\sum_{i=1}^n(q_{i} - p_{i})^2}$$
-Manhattan The sum of the lengths of the projections of the line segment between the points onto the coordinate axes.</description>
+      <description>Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates, and strategies for using these distances to calculate neighors:
+Distance Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.</description>
     </item>
     
   </channel>
