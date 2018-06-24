@@ -3,7 +3,6 @@ draft = false
 +++
 ### Open Source Software
 
-**[PySwarms](https://github.com/ljvmiranda921/pyswarms)** — Particle Swarm Optimization (PSO) toolkit</br>
 **[SwarmOpt](https://github.com/SioKCronin/SwarmOpt)** — Swarm Intelligence (SI) optimizer for hyperparameter tuning</br>
 
 ### ML/AI Engineering
