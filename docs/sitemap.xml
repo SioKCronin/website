@@ -231,6 +231,12 @@
   </url>
   
   <url>
+    <loc>https://siobhankcronin.com/ai_notes/swarm_intelligence/outlier_detection/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://siobhankcronin.com/ai_notes/proofs/convex_parrallelogram/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
