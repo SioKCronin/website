@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Siobhán K Cronin  | Swarm Intelligence</title>
+    <title>Siobhán K Cronin  | Outlier Detection</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -34,14 +34,12 @@
     
 
     
-      <link href="https://siobhankcronin.com/ai_notes/swarm_intelligence/index.xml" rel="alternate" type="application/rss+xml" title="Siobhán K Cronin" />
-      <link href="https://siobhankcronin.com/ai_notes/swarm_intelligence/index.xml" rel="feed" type="application/rss+xml" title="Siobhán K Cronin" />
-    
 
-    <meta property="og:title" content="Swarm Intelligence" />
-<meta property="og:description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://siobhankcronin.com/ai_notes/swarm_intelligence/" />
+    <meta property="og:title" content="Outlier Detection" />
+<meta property="og:description" content="A paper was brought to my attention today (Particle Swarm Optimization for Outlier Detection) presenting a novel application of PSOs in outlier detection, and I wanted to write about it to see if I can find my way to some context in operations intelligence (i.e. possibly anomaly detection in log files?).
+As the authors established the outlier problem, I realized that I carry with me a distance measurement bias when I think about classifying outliers." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://siobhankcronin.com/ai_notes/swarm_intelligence/outlier_detection/" />
 
 
 
@@ -56,18 +54,31 @@
 
 
 
-<meta itemprop="name" content="Swarm Intelligence">
-<meta itemprop="description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker">
 
+
+<meta itemprop="name" content="Outlier Detection">
+<meta itemprop="description" content="A paper was brought to my attention today (Particle Swarm Optimization for Outlier Detection) presenting a novel application of PSOs in outlier detection, and I wanted to write about it to see if I can find my way to some context in operations intelligence (i.e. possibly anomaly detection in log files?).
+As the authors established the outlier problem, I realized that I carry with me a distance measurement bias when I think about classifying outliers.">
+
+
+
+<meta itemprop="wordCount" content="480">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Swarm Intelligence"/>
-<meta name="twitter:description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker"/>
+<meta name="twitter:title" content="Outlier Detection"/>
+<meta name="twitter:description" content="A paper was brought to my attention today (Particle Swarm Optimization for Outlier Detection) presenting a novel application of PSOs in outlier detection, and I wanted to write about it to see if I can find my way to some context in operations intelligence (i.e. possibly anomaly detection in log files?).
+As the authors established the outlier problem, I realized that I carry with me a distance measurement bias when I think about classifying outliers."/>
 
   </head>
 
   <body class="ma0 avenir bg-white-90">
 
     
+   
+  
 
   <header>
     <div class="bg-sio-yellow">
@@ -151,78 +162,64 @@
   </header>
 
 
+
     <main class="pb7" role="main">
       
-  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
-  <main class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></main>
-    <section class="flex-ns flex-wrap justify-around mt1">
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/swarm_intelligence/prob/" class="link black dim">
+  <article class="flex-l flex-wrap justify-between center">
+    <header class="pt4 pa3 ph4-ns pb0 w-100 w-60-ns center">
+      <p class="f6 b helvetica tracked">
+          
+        SWARM INTELLIGENCE
+      </p>
+      <h1 class="f1 helvetica mb1">Outlier Detection</h1>
+    </header>
+
+    <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0"><p>A paper was brought to my attention today (Particle Swarm Optimization for Outlier Detection) presenting
+a novel application of PSOs in outlier detection, and I wanted to write about it to see
+if I can find my way to some context in operations intelligence (i.e. possibly anomaly detection
+in log files?).</p>
+
+<p>As the authors established the outlier problem, I realized that I carry with me a distance
+measurement bias when I think about classifying outliers. The ones far away are from
+the mean are clearly &ldquo;outliers&rdquo;, right? But of course this depends entirely on what we&rsquo;re
+looking for. What are the axes, and what are we interested in finding in the space they define?
+I pressed, I imagine most of us would default to assigning each data point a value
+(distance from the mean, etc.), and then sorting the list to lop off values over some acceptance
+threshold. But, the authors promise, we can do better!</p>
+
+<p>The algorithm uses a distance measurement defined as follows. Suppose we have some field of
+points $P$. Let $p$ be any random point in $P$, and let us establish a circle $O$ with
+origin $p$ and radius $r$. Let $k$ be the number of other points (&ldquo;neighbors&rdquo;)
+contained by $O$, and assign the value of $k/r$ to $p$. Since we selected $p$ at random,
+we can assume now that all points in $P$ now have an associated $k/r$ score. This is where PSO comes in.
+Rather than just guessing what $r$ we need, we can frame the radius settings and the
+observed outcomes as a search space, and send out a swarm of particles to search for optima
+(in this case our $k/r$). The data point with the best value of $r$ that leads to the
+minimum value of the ratio $k/r$ be detected as the top outlier. The particle encoding is
+important for understanding how the algorithm works. Each particle is assigned an ID number,
+and the 3D search space is defined by ($ID$, $r$, $k/r$), so one only needs calculate $k/r$
+for the points selected by the swarm across the epochs.</p>
+
+<p>The authors observe that in clearly distinguishable subgroupings, where one would
+assume the radius to simply be the one used to define an $r$ that was generated from
+the labeled datasets in training. You know which points should be removed,
+so just take the radius setting that excludes them, without false positives from your &ldquo;include&rdquo;
+group. Yet data in the wild does not cooperate, and makes the setting of $r$ tricky.</p>
+
+<p>Once we&rsquo;ve arrived at our optima, one can label neighbors of a certain radius outliers as well.
+This could get tricky with &ldquo;trench-y&rdquo; data (my unofficial word for what we see being
+tested in the <a href="https://en.wikipedia.org/wiki/Test_functions_for_optimization">$Holder table function$</a>.
+Bounds on possible $r$ values are also specified.</p>
+
+<p>I&rsquo;m going to implement the paper, and will report back on what I find!</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
         
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Prob \begin{align} \dot{x} &amp; = \sigma(y-x) \\
-\dot{y} &amp; = \rho x - y - xz \\
-\dot{z} &amp; = -\beta z + xy \end{align}
-$$\alpha = 1000$$
-import matplotlib import numpy as np import matplotlib.pyplot as plt %matplotlib inline  /usr/local/lib/python3.6/site-packages/matplotlib/font_manager.py:278: UserWarning: Matplotlib is building the font cache using fc-list. This may take a moment. 'Matplotlib is building the font cache using fc-list. '  x = np.linspace(0, 3*np.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/swarm_intelligence/active_matter/" class="link black dim">
-        Active Matter
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I first caught wind of Active Matter through the work of one of my favorite researchers, Tamas Vicsek, whose intellectual bling includes a fractal bearing his name.
-My understanding of this sprawling sub-domain of physics is that we can study the activity of individuals agents and systems as though studying something like hydrodynamics, kinematics, and non-equilbrium statistical phsyics. Crowds become streams. Flocks become rivers. Networks of agents become oceans.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/swarm_intelligence/network_topology/" class="link black dim">
-        Network Topology
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      What are the advantages of various topogical structures? How can they be combined? Mutate over time? How do swarm systems develop communication topologies?
-First, let&rsquo;s get acclimated with the different structures - their definitions and some useful examples of their use in practice.
-Ring This is a bus topology in a closed loop, with data traveling around the ring in one direction, passing through each node in turn until it arrives where its going.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/swarm_intelligence/outlier_detection/" class="link black dim">
-        Outlier Detection
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      A paper was brought to my attention today (Particle Swarm Optimization for Outlier Detection) presenting a novel application of PSOs in outlier detection, and I wanted to write about it to see if I can find my way to some context in operations intelligence (i.e. possibly anomaly detection in log files?).
-As the authors established the outlier problem, I realized that I carry with me a distance measurement bias when I think about classifying outliers.
-    </div>
-  </div>
-</div>
-</div>
-      
-    </section>
-</article>
+      </div>
+    </main>
+  </article>
 
     </main>
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">

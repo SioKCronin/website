@@ -338,6 +338,16 @@ Ring This is a bus topology in a closed loop, with data traveling around the rin
     </item>
     
     <item>
+      <title>Outlier Detection</title>
+      <link>https://siobhankcronin.com/ai_notes/swarm_intelligence/outlier_detection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/swarm_intelligence/outlier_detection/</guid>
+      <description>A paper was brought to my attention today (Particle Swarm Optimization for Outlier Detection) presenting a novel application of PSOs in outlier detection, and I wanted to write about it to see if I can find my way to some context in operations intelligence (i.e. possibly anomaly detection in log files?).
+As the authors established the outlier problem, I realized that I carry with me a distance measurement bias when I think about classifying outliers.</description>
+    </item>
+    
+    <item>
       <title>Parrallelogram is convex</title>
       <link>https://siobhankcronin.com/ai_notes/proofs/convex_parrallelogram/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
