@@ -36,7 +36,7 @@
     
 
     <meta property="og:title" content="Outlier Detection" />
-<meta property="og:description" content="A paper was brought to my attention today (Particle Swarm Optimization for Outlier Detection) presenting a novel application of PSOs in outlier detection, and I wanted to write about it to see if I can find my way to some context in operations intelligence (i.e. possibly anomaly detection in log files?).
+<meta property="og:description" content="PSO Approach A paper was brought to my attention today (Particle Swarm Optimization for Outlier Detection) presenting a novel application of PSOs in outlier detection, and I wanted to write about it to see if I can find my way to some context in operations intelligence (i.e. possibly anomaly detection in log files?).
 As the authors established the outlier problem, I realized that I carry with me a distance measurement bias when I think about classifying outliers." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://siobhankcronin.com/ai_notes/swarm_intelligence/outlier_detection/" />
@@ -57,19 +57,19 @@ As the authors established the outlier problem, I realized that I carry with me 
 
 
 <meta itemprop="name" content="Outlier Detection">
-<meta itemprop="description" content="A paper was brought to my attention today (Particle Swarm Optimization for Outlier Detection) presenting a novel application of PSOs in outlier detection, and I wanted to write about it to see if I can find my way to some context in operations intelligence (i.e. possibly anomaly detection in log files?).
+<meta itemprop="description" content="PSO Approach A paper was brought to my attention today (Particle Swarm Optimization for Outlier Detection) presenting a novel application of PSOs in outlier detection, and I wanted to write about it to see if I can find my way to some context in operations intelligence (i.e. possibly anomaly detection in log files?).
 As the authors established the outlier problem, I realized that I carry with me a distance measurement bias when I think about classifying outliers.">
 
 
 
-<meta itemprop="wordCount" content="480">
+<meta itemprop="wordCount" content="468">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Outlier Detection"/>
-<meta name="twitter:description" content="A paper was brought to my attention today (Particle Swarm Optimization for Outlier Detection) presenting a novel application of PSOs in outlier detection, and I wanted to write about it to see if I can find my way to some context in operations intelligence (i.e. possibly anomaly detection in log files?).
+<meta name="twitter:description" content="PSO Approach A paper was brought to my attention today (Particle Swarm Optimization for Outlier Detection) presenting a novel application of PSOs in outlier detection, and I wanted to write about it to see if I can find my way to some context in operations intelligence (i.e. possibly anomaly detection in log files?).
 As the authors established the outlier problem, I realized that I carry with me a distance measurement bias when I think about classifying outliers."/>
 
   </head>
@@ -174,7 +174,11 @@ As the authors established the outlier problem, I realized that I carry with me 
       <h1 class="f1 helvetica mb1">Outlier Detection</h1>
     </header>
 
-    <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0"><p>A paper was brought to my attention today (Particle Swarm Optimization for Outlier Detection) presenting
+    <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
+
+<h3 id="pso-approach">PSO Approach</h3>
+
+<p>A paper was brought to my attention today (Particle Swarm Optimization for Outlier Detection) presenting
 a novel application of PSOs in outlier detection, and I wanted to write about it to see
 if I can find my way to some context in operations intelligence (i.e. possibly anomaly detection
 in log files?).</p>
@@ -208,10 +212,8 @@ group. Yet data in the wild does not cooperate, and makes the setting of $r$ tri
 
 <p>Once we&rsquo;ve arrived at our optima, one can label neighbors of a certain radius outliers as well.
 This could get tricky with &ldquo;trench-y&rdquo; data (my unofficial word for what we see being
-tested in the <a href="https://en.wikipedia.org/wiki/Test_functions_for_optimization">$Holder table function$</a>.
+tested in the <a href="https://en.wikipedia.org/wiki/Test_functions_for_optimization">Holder table function</a>.
 Bounds on possible $r$ values are also specified.</p>
-
-<p>I&rsquo;m going to implement the paper, and will report back on what I find!</p>
 <ul class="pa0">
   
 </ul>

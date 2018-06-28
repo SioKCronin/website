@@ -1,3 +1,10 @@
+---
+title: DQN
+menu:
+    ai_notes:
+        parent: Deep Reinforcement Learning
+draft: True
+---
 
 # Deep Q-Networks (DQN)
 

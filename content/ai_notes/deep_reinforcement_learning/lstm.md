@@ -1,5 +1,10 @@
-
-# LSTM
+---
+title: LSTM
+menu: 
+    ai_notes:
+        parent: Deep Reinforcement Learning
+draft: True
+---
 
 ## Recurrent Neural Network (RNN)
 

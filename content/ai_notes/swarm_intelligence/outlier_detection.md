@@ -6,6 +6,8 @@ menu:
 draft: False
 ---
 
+### PSO Approach
+
 A paper was brought to my attention today (Particle Swarm Optimization for Outlier Detection) presenting 
 a novel application of PSOs in outlier detection, and I wanted to write about it to see 
 if I can find my way to some context in operations intelligence (i.e. possibly anomaly detection
@@ -40,18 +42,6 @@ group. Yet data in the wild does not cooperate, and makes the setting of $r$ tri
 
 Once we've arrived at our optima, one can label neighbors of a certain radius outliers as well.
 This could get tricky with "trench-y" data (my unofficial word for what we see being 
-tested in the [$Holder table function$](https://en.wikipedia.org/wiki/Test_functions_for_optimization).
+tested in the [Holder table function](https://en.wikipedia.org/wiki/Test_functions_for_optimization).
 Bounds on possible $r$ values are also specified.
-
-I'm going to implement the paper, and will report back on what I find!
-
-
-
-
-
-
-
-
-
-
 

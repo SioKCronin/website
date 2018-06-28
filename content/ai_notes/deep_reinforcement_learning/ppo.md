@@ -2,7 +2,7 @@
 title: Proximal Policy Optimization (PPO)
 menu:
     ai_notes:
-         parent: Reinforcement Learning
+         parent: Deep Reinforcement Learning
 draft: True
 ---
 
