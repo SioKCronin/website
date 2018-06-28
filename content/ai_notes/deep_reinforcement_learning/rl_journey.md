@@ -1,9 +1,11 @@
-+++
-title = "My Reinforcement Learning Journey"
-date = "2018-04-24T11:53:47-07:00"
-draft = true
+---
+title: My Deep RL Journey
+menu:
+    ai_notes:
+        parent: Deep Reinforcement Learning
+draft: true
+---
 
-+++
 # My Deep Reinformcent Learning Journey
 
 ## Overview
@@ -40,7 +42,3 @@ The journey begins with these deliverables:
 ### PPO
 ### HER
 ### HER-PPO
-
-## RL industry applications
-
-### StockedAI: RL in Inventory Management

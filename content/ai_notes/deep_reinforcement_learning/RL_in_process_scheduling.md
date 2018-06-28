@@ -2,7 +2,7 @@
 title: RL in Process Scheduling
 menu:
     ai_notes:
-         parent: Reinforcement Learning
+         parent: Deep Reinforcement Learning
 draft: False 
 ---
 

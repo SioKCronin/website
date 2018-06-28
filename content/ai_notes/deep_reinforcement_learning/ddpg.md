@@ -1,3 +1,10 @@
+---
+title: DDPG
+menu: 
+    ai_notes:
+        parent: Deep Reinforcement Learning
+draft: True
+---
 
 # Deep Deterministic Policy Gradients (DDPG)
 

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Siobhán K Cronin  | Principal Component Analysis (PCA)</title>
+    <title>Siobhán K Cronin  | RL in Process Scheduling</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -35,12 +35,11 @@
 
     
 
-    <meta property="og:title" content="Principal Component Analysis (PCA)" />
-<meta property="og:description" content="Cool Result Considering the decompostions $A = Q^{T}DQ$, where $Q$ is an orthogonal matrix and $D$ is the diagonal matrix of eigenvalues, the columns of $Q$ are the principal components of our matrix!
-How does it work? Remember, $Y = XP$, where $P$ is the change of basis matrix.
-First we start with the covariance matrix $S_{x} = \frac{1}{m}X^{T}X$, where X is our input matrix. If every feature was necessary, with no redundancy, we&rsquo;d see a diagonal covariance matrix where the only non-zero values would be lined up on the diagonal." />
+    <meta property="og:title" content="RL in Process Scheduling" />
+<meta property="og:description" content="When I mentioned my interest in this idea to my partner Carl, he encouraged me to pursue it, but highlighted that it may be at least a masters thesis to secure the necessary OS and RL foundations to implement something that works. I like multi-year challenges, so wanted to at least start scoping the problem to see what is required.
+At the onset, I think it would be helpful to identify how processes are currently scheduled (the dominant paradigms), how process scheduling could be framed as a MDP, and how RL could be applied." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://siobhankcronin.com/ai_notes/math_probability_and_stats/pca/" />
+<meta property="og:url" content="https://siobhankcronin.com/ai_notes/deep_reinforcement_learning/rl_in_process_scheduling/" />
 
 
 
@@ -57,23 +56,21 @@ First we start with the covariance matrix $S_{x} = \frac{1}{m}X^{T}X$, where X i
 
 
 
-<meta itemprop="name" content="Principal Component Analysis (PCA)">
-<meta itemprop="description" content="Cool Result Considering the decompostions $A = Q^{T}DQ$, where $Q$ is an orthogonal matrix and $D$ is the diagonal matrix of eigenvalues, the columns of $Q$ are the principal components of our matrix!
-How does it work? Remember, $Y = XP$, where $P$ is the change of basis matrix.
-First we start with the covariance matrix $S_{x} = \frac{1}{m}X^{T}X$, where X is our input matrix. If every feature was necessary, with no redundancy, we&rsquo;d see a diagonal covariance matrix where the only non-zero values would be lined up on the diagonal.">
+<meta itemprop="name" content="RL in Process Scheduling">
+<meta itemprop="description" content="When I mentioned my interest in this idea to my partner Carl, he encouraged me to pursue it, but highlighted that it may be at least a masters thesis to secure the necessary OS and RL foundations to implement something that works. I like multi-year challenges, so wanted to at least start scoping the problem to see what is required.
+At the onset, I think it would be helpful to identify how processes are currently scheduled (the dominant paradigms), how process scheduling could be framed as a MDP, and how RL could be applied.">
 
 
 
-<meta itemprop="wordCount" content="399">
+<meta itemprop="wordCount" content="401">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Principal Component Analysis (PCA)"/>
-<meta name="twitter:description" content="Cool Result Considering the decompostions $A = Q^{T}DQ$, where $Q$ is an orthogonal matrix and $D$ is the diagonal matrix of eigenvalues, the columns of $Q$ are the principal components of our matrix!
-How does it work? Remember, $Y = XP$, where $P$ is the change of basis matrix.
-First we start with the covariance matrix $S_{x} = \frac{1}{m}X^{T}X$, where X is our input matrix. If every feature was necessary, with no redundancy, we&rsquo;d see a diagonal covariance matrix where the only non-zero values would be lined up on the diagonal."/>
+<meta name="twitter:title" content="RL in Process Scheduling"/>
+<meta name="twitter:description" content="When I mentioned my interest in this idea to my partner Carl, he encouraged me to pursue it, but highlighted that it may be at least a masters thesis to secure the necessary OS and RL foundations to implement something that works. I like multi-year challenges, so wanted to at least start scoping the problem to see what is required.
+At the onset, I think it would be helpful to identify how processes are currently scheduled (the dominant paradigms), how process scheduling could be framed as a MDP, and how RL could be applied."/>
 
   </head>
 
@@ -172,59 +169,53 @@ First we start with the covariance matrix $S_{x} = \frac{1}{m}X^{T}X$, where X i
     <header class="pt4 pa3 ph4-ns pb0 w-100 w-60-ns center">
       <p class="f6 b helvetica tracked">
           
-        NOTES ON AI
+        DEEP REINFORCEMENT LEARNING
       </p>
-      <h1 class="f1 helvetica mb1">Principal Component Analysis (PCA)</h1>
+      <h1 class="f1 helvetica mb1">RL in Process Scheduling</h1>
     </header>
 
     <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
 
-<h3 id="cool-result">Cool Result</h3>
+<p>When I mentioned my interest in this idea to my partner Carl, he
+encouraged me to pursue it, but highlighted that it may be at least a
+masters thesis to secure the necessary OS and RL foundations to
+implement something that works. I like multi-year challenges, so wanted
+to at least start scoping the problem to see what is required.</p>
 
-<p>Considering the decompostions $A = Q^{T}DQ$, where $Q$ is an orthogonal matrix and $D$
-is the diagonal matrix of eigenvalues, the columns of $Q$ are the principal
-components of our matrix!</p>
+<p>At the onset, I think it would be helpful to identify how processes are
+currently scheduled (the dominant paradigms), how process scheduling
+could be framed as a MDP, and how RL could be applied.</p>
 
-<h3 id="how-does-it-work">How does it work?</h3>
+<h3 id="overview-of-processes-and-threads">Overview of Processes and Threads</h3>
 
-<p>Remember, $Y = XP$, where $P$ is the change of basis matrix.</p>
+<p>Processes are the execution of computer programs. They can be made of up
+threads that can run one at a time (single-threading) or concurrently (multi-threading), and share memory resources. Multi-threading is what enables parallel execution in multiprocessing systems. This is an exciting area of data engineering for machine learning, as we can reduce computation time for models by optimizing our threading. Multiprocessing will perform differently on different systems, as process scheduling differs between systems, which is why there&rsquo;s potential to move the needle.</p>
 
-<p>First we start with the covariance matrix $S_{x} = \frac{1}{m}X^{T}X$,
-where X is our input matrix. If every feature was necessary, with no redundancy,
-we&rsquo;d see a diagonal covariance matrix where the only non-zero values would be
-lined up on the diagonal. But in many cases we&rsquo;ll need to sift through some
-interactions to see what features stand out as principal components.</p>
+<h3 id="overview-of-process-scheduling">Overview of Process Scheduling</h3>
 
-<p>Can we find a matrix that can transform our covariance matrix to a
-principal component basis?</p>
+<p>A challenge that emerges is resource vying for shared cache. The
+scheduling is decided by a fixed policy, which means the system can not
+adapt to dynamic environments, and can not learn from its experiences.
+This motivates the need for a self-tuning/optimizing scheduler, and my
+goal is to explore how RL could be used in this context.</p>
 
-<p>Let&rsquo;s start by defining our target matrix as $S_{y}$; a diagonal
-matrix where $S_{y} = \frac{1}{m}Y^TY = \frac{1}{m}(XP)^T(XP) = \frac{1}{m}P^{T}X^{T}XP = P^TS_{x}P$ (since we can substite Y = XP),
-and select $Q$ (the orthogonal matrix) as our $P$. This yields $S_{y} = Q^TS_{x}Q = Q^T(QDQ^T)Q = D$,
-which is what we wanted to find, since we know $D$ is a diagonal matrix of singluar values,
-the columns of which are the principal components of our input matrix. Furtheremore,
-we have shown that this matrix $D$ is our new covariance matrix $S_{y}$
-where all products of feature pairs are zero except the products of the features with themselves,
-which means we have reduced redundancy of signal to zero!</p>
+<h3 id="process-scheduling-as-an-mdp">Process scheduling as an MDP</h3>
 
-<p>But hey, where did that orthogonal matrix $Q$ come from? One approach for
-determining $Q$ and $D$ from our original matrix is Singular Value Decomposition (SVD).
-Remember, <strong>singular values</strong> are non-negative, real numbers that are the square root
-of the eigenvalues of the self-adjoint operator $T*$ ($T*T: X \rightarrow X$),
-that is mapping from $X$ to itself. The word adjoint in this case is used to
-generalize the conjugate transpose to infinite-dimensional situations.</p>
+<p>I find that the first key step in applying RL to novel engineering
+challenges is effectively setting up the problem as a Markov Decision
+Process. Our challenge is formluating the MDP of a thread scheduler.
+What are the states in our system? Naim&rsquo;s overview of this topic
+suggests some options - average normalized instructions per cycle,
+average cache affinity, average cache miss rate. The possible actions
+are thread migrations from one core to another, and the reward can be
+defined for each state and each core. That seems trick - what would be
+our prior on this matrix of rewards? How does learning happen in such a
+system?</p>
 
-<p>Here is an outline of the core equation of the decomposition.</p>
-
-<ul>
-<li>$A_{m \times n} = U_{m \times m} * \Sigma_{m \times n} * V^T_{n \times n}$</li>
-<li>$U_{m \times m}$: The columns of $U$ are <strong>left singular vectors</strong> of $A$ (the set of
-orthonormal eigenvectors of $AA^T$</li>
-<li>$\Sigma_{m \times n}$: non-square diagonal matrix, where the entries are non-negative
-real numbers (the singular values)</li>
-<li>$V^T_{n \times n}$: The columns of $V$ are <strong>right singular vectors</strong> of $A$ (the set of
-orthonormal eigenvectors of $A^TA$.</li>
-</ul>
+<p>The goal is to predict the long term rewards of migrating threads on
+particular cores. Data is received every scheduling cycle, so it seems
+as though a system would have ample data to train. So, who is working on
+this and what are the bottlenecks?</p>
 <ul class="pa0">
   
 </ul>
