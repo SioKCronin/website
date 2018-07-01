@@ -13,7 +13,7 @@ draft = false
 ### Research
 
 **Slow Research Lab | 2016-Present**  
-Independent research on particle swarm intelligence and RL.
+Independent research on swarm intelligence and reinforcement learning.
 
 **Yerba Buena Center for the Arts | 2016-2017**  
 Network models of institutionalized oppression with Ray Gilstrap and Pia
