@@ -45,3 +45,7 @@ linguistic detection of plurality with Dr. Sid Kouider
 **Boston College - Department of Psychology | 2000-2001**  
 Affect research with Dr. Lisa Feldman Barrett
 
+### Creative
+
+**Tempered (2018-)**
+Reimagining Mozart piano concertos as sonic memoir.
