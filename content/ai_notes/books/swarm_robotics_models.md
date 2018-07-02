@@ -2,7 +2,7 @@
 title: "Space-Time Continuous Models of Swarm Robotic Systems"
 menu:
     ai_notes:
-        menu: Books
+        parent: Books
 ---
 
 Space-Time Continuous Models of Swarm Robotic Systems: Supporting Global-to-Local Programming, 
