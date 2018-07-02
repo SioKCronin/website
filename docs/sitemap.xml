@@ -243,6 +243,12 @@
   </url>
   
   <url>
+    <loc>https://siobhankcronin.com/ai_notes/books/swarm_robotics_models/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://siobhankcronin.com/ai_notes/proofs/proove_sqrt2_is_irrational/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
