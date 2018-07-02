@@ -290,7 +290,7 @@ Proof. Let $P=t_{1}v_{1} + t_{2}v_{2}$ and $Q=t_{1}v_{1} + t_{2}v_{2}$ be points
     </item>
     
     <item>
-      <title>Phenomenology of Perception - Merleau-Ponty</title>
+      <title>Phenomenology of Perception</title>
       <link>https://siobhankcronin.com/ai_notes/books/phenomenology_of_perception/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -334,12 +334,22 @@ $? = \sqrt{ax + (n + a)^2 + x\sqrt{a(x+n) + (n+a)^2 + (x+n)\sqrt{\dots}}}$.</des
     </item>
     
     <item>
-      <title>Reinforcement Learning - Barto</title>
+      <title>Reinforcement Learning</title>
       <link>https://siobhankcronin.com/ai_notes/books/reinforcement_learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://siobhankcronin.com/ai_notes/books/reinforcement_learning/</guid>
       <description>Reinforcement Learning: An Introduction (1998). Richard Sutton &amp;amp; Andrew Barto. At the onset, I&amp;rsquo;m curious to know how much has changed since this book&amp;rsquo;s publication 20 years ago. That being said, as these are two leaders in the field, I&amp;rsquo;m interested in gaining a sense of their perspective on the history/origin of this subfield, and acclimating to some of the core concepts/constructs. CHAPTER 1 One of the key takeaways from this chapter was the distinction between the value function and rewards function in an RL problem.</description>
+    </item>
+    
+    <item>
+      <title>Space-Time Continuous Models of Swarm Robotic Systems</title>
+      <link>https://siobhankcronin.com/ai_notes/books/swarm_robotics_models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/books/swarm_robotics_models/</guid>
+      <description>Space-Time Continuous Models of Swarm Robotic Systems: Supporting Global-to-Local Programming, by Heiko Hamann
+Fundamentals of Swarm Robotics Multi-robot systems have the ability to show complex behavior, which is one of the features that motivate my study of them. That, and they have the potential to solve classic problems in novel, distributed ways. What I&amp;rsquo;m excited about in this bookis the presentation of how we derive partial differential equations (Fokker-Planck equation) from a stochastic differential equation (Langevin equation), which forms the basis of the Brownian motion model.</description>
     </item>
     
     <item>

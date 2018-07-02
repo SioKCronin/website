@@ -1,5 +1,5 @@
 ---
-title: "Phenomenology of Perception - Merleau-Ponty" 
+title: "Phenomenology of Perception" 
 menu:
     ai_notes:
          parent: Books

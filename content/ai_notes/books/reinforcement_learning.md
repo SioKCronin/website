@@ -1,5 +1,5 @@
 ---
-Title: "Reinforcement Learning - Barto" 
+Title: "Reinforcement Learning" 
 menu:
     ai_notes:
         parent: Books
