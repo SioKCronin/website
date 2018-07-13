@@ -147,12 +147,6 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/ai_notes/machine_learning/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://siobhankcronin.com/ai_notes/proofs/intersection_of_convex_sets/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -178,6 +172,12 @@
   
   <url>
     <loc>https://siobhankcronin.com/ai_notes/lecture_notes/mlss_cadiz_2016/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siobhankcronin.com/ai_notes/machine_learning/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
