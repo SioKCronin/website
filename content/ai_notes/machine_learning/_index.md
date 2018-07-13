@@ -1,4 +1,4 @@
 +++
-title = "Deep Reinforcement Learning"
+title = "Machine Learning"
 menu = "ai_notes"
 +++
