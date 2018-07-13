@@ -45,7 +45,13 @@ linguistic detection of plurality with Dr. Sid Kouider
 **Boston College - Department of Psychology | 2000-2001**  
 Affect research with Dr. Lisa Feldman Barrett
 
-### Creative
+### Music
 
 **Tempered (2018-)**
-Reimagining Mozart piano concertos as sonic memoir.
+Retrofitted Mozart piano concertos as contemporary sonic landscapes.
+
+**Ryujin (2016)**
+String quartet (premiered at the SF Women's Building by Friction Quartet)
+
+**O Pacifica (2014)**
+String quintet. 
