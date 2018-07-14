@@ -2,11 +2,11 @@
 title: Stochastic Process
 menu:
     ai_notes:
-        parent: Math, Probability, & Statistics
+        parent: Math
 draft: True
 ---
 
-One place stochastic process shows up in machine learning is in
+Stochastic process shows up in machine learning is in
 optimizing non-convex solutions of systems of equations. If the solution
 space is convex and tractable, then there are convex optimization
 methods one can use, guarenteeing that any local minima identified will

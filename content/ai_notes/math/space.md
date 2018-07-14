@@ -2,7 +2,7 @@
 title: Space(s)
 menu:
     ai_notes:
-        parent: Math, Probability & Stats
+        parent: Math
 draft: True
 ---
 

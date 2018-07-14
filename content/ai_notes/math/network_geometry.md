@@ -2,7 +2,7 @@
 title: Network Geometry
 menu:
     ai_notes:
-        parent: Math, Probability & Stats
+        parent: Math
 draft: false
 ---
 

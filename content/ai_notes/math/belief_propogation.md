@@ -2,7 +2,7 @@
 title: Belief Propogation
 menu:
     ai_notes:
-         parent: "Math, Probability & Statistics"
+         parent: "Math"
 draft: True
 ---
 
