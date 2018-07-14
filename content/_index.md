@@ -1,6 +1,6 @@
-I am a software engineer with a love for machine learning, data engineering, and 
-swarm intelligence. I began my career in cognitive neuroscience research, and 
+I am a software engineer with a love for machine learning, geometry, data engineering, 
+and swarm intelligence. I began my career in cognitive neuroscience research, and 
 have spent the past two years contracting at startups and collaborating on open 
 source ML projects, including SwarmOpt and PySwarms. Here is a smattering of my 
-musings, including my network geometry and swarm intelligence notes. Drop me a line, 
+musings, including my math and swarm intelligence notes. Drop me a line, 
 and let's nerd out!
