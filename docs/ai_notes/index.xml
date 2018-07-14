@@ -30,6 +30,16 @@ Fun fact - the intersection of all convex sets containing a given subset A of Eu
     </item>
     
     <item>
+      <title>Network Geometry</title>
+      <link>https://siobhankcronin.com/ai_notes/math_probability_and_stats/network_geometry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/math_probability_and_stats/network_geometry/</guid>
+      <description>Network geometry is one of the topics that propelled me towards complexity research and machine learning. If we accept that interactions between agents in a networked system have themselves an impact on the dynamics of a system, it follows that we must investigate the emergence and charactertistics of these interactions. We start to wonder how we might reason about these system &amp;ldquo;overtones&amp;rdquo;.
+I find Mulder &amp;amp; Bicaconi&amp;rsquo;s 2018 paper Network Geometry and Complexity to be a nice primer, so I&amp;rsquo;ll start there.</description>
+    </item>
+    
+    <item>
       <title>Parrallelogram is convex</title>
       <link>https://siobhankcronin.com/ai_notes/proofs/convex_parrallelogram/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
