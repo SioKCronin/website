@@ -2,7 +2,7 @@
 title: Radicals
 menu:
     ai_notes:
-        parent: Math, Probability & Stats
+        parent: Math
 draft: False
 ---
 

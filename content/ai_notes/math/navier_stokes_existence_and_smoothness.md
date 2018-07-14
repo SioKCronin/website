@@ -2,7 +2,7 @@
 title: Navier-Stokes Existence and Smoothness Problem
 menu:
    ai_notes:
-       parent: Math, Probability & Statistics
+       parent: Math
 draft: True
 ---
 

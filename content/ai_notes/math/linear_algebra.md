@@ -2,7 +2,7 @@
 title: Linear Algebra Basics
 menu:
     ai_notes:
-        parent: Math, Probability & Stats
+        parent: Math
 ---
 ## Useful terms and ideas
 
