@@ -5,9 +5,8 @@ draft = false
 
 +++
 
-Siobhán is a software engineer and machine learning researcher with a passion 
-for emergent complex network geometry, reinforcement learning, data engineering, 
-and swarm intelligence.
+Siobhán is a software engineer with a passion for machine learning, geometry,
+data engineering, and swarm intelligence.
 
 She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies and Harvard Medical School, and now develops tools
