@@ -6,10 +6,21 @@
     <description>Recent content on Siobhán K Cronin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Apr 2018 11:53:47 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 16 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siobhankcronin.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DeepLog: Anomaly Detection and Diagnosis from System Logs through Deep Learning</title>
+      <link>https://siobhankcronin.com/posts/deeplog/</link>
+      <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/posts/deeplog/</guid>
+      <description>DeepLog: Anomaly Detection and Diagnosis from System Logs through Deep Learning by Min Du, Feifei Li, Guineng Zheng, &amp;amp; Vivek Srikumar (2017).
+Overview Inspired by natural language modeling, the authors present a deep learning approach to anomaly detection in system logs.
+Key concepts  system logs: A file that records the system states and significant events for debugging software. syslog: The system log standard maintained by Internet Engineering Task Force (IETF).</description>
+    </item>
     
     <item>
       <title></title>
