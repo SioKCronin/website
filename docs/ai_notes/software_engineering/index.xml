@@ -52,5 +52,14 @@ from collections import Counter words = [&#39;apples&#39;,&#39;oranges&#39;, &#3
 Distance Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.</description>
     </item>
     
+    <item>
+      <title>Processor Scheduling</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/processor_scheduling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/processor_scheduling/</guid>
+      <description>I&amp;rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. What happens when. It sparks an otimization bubble over my head &amp;mdash; how do we ensure the most efficient scheduling? The staregy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline.</description>
+    </item>
+    
   </channel>
 </rss>

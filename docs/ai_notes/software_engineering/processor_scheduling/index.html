@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Siobhán K Cronin  | Software Engineering</title>
+    <title>Siobhán K Cronin  | Processor Scheduling</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -34,14 +34,11 @@
     
 
     
-      <link href="https://siobhankcronin.com/ai_notes/software_engineering/index.xml" rel="alternate" type="application/rss+xml" title="Siobhán K Cronin" />
-      <link href="https://siobhankcronin.com/ai_notes/software_engineering/index.xml" rel="feed" type="application/rss+xml" title="Siobhán K Cronin" />
-    
 
-    <meta property="og:title" content="Software Engineering" />
-<meta property="og:description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://siobhankcronin.com/ai_notes/software_engineering/" />
+    <meta property="og:title" content="Processor Scheduling" />
+<meta property="og:description" content="I&rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. What happens when. It sparks an otimization bubble over my head &mdash; how do we ensure the most efficient scheduling? The staregy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://siobhankcronin.com/ai_notes/software_engineering/processor_scheduling/" />
 
 
 
@@ -56,18 +53,29 @@
 
 
 
-<meta itemprop="name" content="Software Engineering">
-<meta itemprop="description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker">
 
+
+<meta itemprop="name" content="Processor Scheduling">
+<meta itemprop="description" content="I&rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. What happens when. It sparks an otimization bubble over my head &mdash; how do we ensure the most efficient scheduling? The staregy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline.">
+
+
+
+<meta itemprop="wordCount" content="585">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Software Engineering"/>
-<meta name="twitter:description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker"/>
+<meta name="twitter:title" content="Processor Scheduling"/>
+<meta name="twitter:description" content="I&rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. What happens when. It sparks an otimization bubble over my head &mdash; how do we ensure the most efficient scheduling? The staregy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline."/>
 
   </head>
 
   <body class="ma0 avenir bg-white-90">
 
     
+   
+  
 
   <header>
     <div class="bg-sio-yellow">
@@ -151,90 +159,96 @@
   </header>
 
 
+
     <main class="pb7" role="main">
       
-  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
-  <main class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></main>
-    <section class="flex-ns flex-wrap justify-around mt1">
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/algorithm_design_manual/" class="link black dim">
+  <article class="flex-l flex-wrap justify-between center">
+    <header class="pt4 pa3 ph4-ns pb0 w-100 w-60-ns center">
+      <p class="f6 b helvetica tracked">
+          
+        SOFTWARE ENGINEERING
+      </p>
+      <h1 class="f1 helvetica mb1">Processor Scheduling</h1>
+    </header>
+
+    <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0"><p>I&rsquo;m not sure why processor scheduling has so captured my imagination, but I think
+because it is so central to computing in general. What happens when. It sparks
+an otimization bubble over my head &mdash; how do we ensure the most efficient scheduling?
+The staregy a system employs is called a processor scheduling policy, or discipline.
+This discipline will aim to balance processor utilization, throughput, latency, and
+ensuring processes complete before their scheduled deadline.</p>
+
+<p>At the highest level, <strong>job scheduling</strong> (or <strong>admission scheduling</strong>) determines
+which jobs are even ellible to compete for system resources. the job scheduling policy
+determines how many processes can be active in a system at a given time (the
+<strong>degree of multiprocessing</strong>). This policy may create a queue to prevent saturation
+of system resources.</p>
+
+<p>The <strong>intermediate-level scheduling</strong> policy determines which processes should
+be allowed to compete for processors, and the <strong>low-level scheduling</strong> policy determines
+which <em>ready</em> processes are assigned to an available processor. We call this low-level
+scheduler the dispatcher.</p>
+
+<p>Before we look at specific algorithms, let&rsquo;s articulate some high-level scheduling objectives:</p>
+
+<ul>
+<li><em>Maximize throughput</em></li>
+<li><em>Maximize the number of interactive processes receiving acceptable response times</em></li>
+<li><em>Maximize resource utilization</em></li>
+<li><em>Avoid indefinite postponement</em></li>
+<li><em>Enforce priorities</em> (the queue prioritization)</li>
+<li><em>Minimize overhead</em></li>
+<li><em>Ensure predictability</em></li>
+</ul>
+
+<p>In the Deitel brothers operating systems book I culled these from they highlight that
+the several approaches we will explore have the following in common:</p>
+
+<ul>
+<li><strong>Fairness</strong>: All like processes are treated similarly.</li>
+<li><strong>Predictability</strong>: A particular process should perform the same under similar system loads.</li>
+<li><strong>Scalability</strong>: Performance should &ldquo;degrade gracefully&rdquo; (perhaps the best CS term
+I have ever heard), which means we shouldn&rsquo;t see any freezing up, but a gradual decline
+in performance as load increases.</li>
+</ul>
+
+<p>On to the scheduling algorithms!</p>
+
+<ul>
+<li><strong>FIFO Scheduling</strong>: This is a straightforward queue for processes (seldom used by itself,
+although FIFO for processes of the same priority is used).</li>
+<li><strong>Round Robin Scheduling</strong>: Processes are assigned a quantum, and if they don&rsquo;t complete
+their task within that time-limit, they&rsquo;re sent to the end of the ready queue. Often
+used as a sub-strategy in a larger master scheme. There&rsquo;s a selfish round robin (SRR)
+variant tha favors older processes (using aging; you can tune the priority rates of the
+active and holding queues to control the flow of contenders into the round robin). It is
+worth noting that careful selection of the quantum size q is necessary to maximize the
+benefit of round robin (if it&rsquo;s too long, then you&rsquo;re just back to FIFO).</li>
+<li><strong>Shortest-Process-First (SPF) Scheduling</strong>: Uses run-time estimates to select next process.</li>
+<li><strong>Highest-Response-Ratio-Next Scheduling</strong>: Uses a priority ratio,
+$\frac{time_waiting+service_time}{service_time}$, to determine next process (once priority
+hits threshold, it is passed to processor where it is processed to completion).</li>
+<li><strong>Shortest-Remaining-Time (SRT) Scheduling</strong>: This is like SPF in that shortest estimated
+runtimes are prioritized, but it goes one step further, so if a new process enters the holding
+queue that is estimated to be fasters than what remains in the active process, the active
+process gets back to the holding queue and the new fastest is processed. It&rsquo;s a dog
+eat dog world.</li>
+<li><strong>Multilevel Feedback Queues</strong>: This is a cool structure of multiple queues. If the
+process doesn&rsquo;t complete before the end of the quantum in the top level, it gets bumped
+to the next level below. This continues until we get to the end where processes are
+completed round robin.</li>
+<li><strong>Fair Share Scheduling</strong>: Group processes in some logical way, and then ensure
+that each group gets a fair crack at the processors.</li>
+<li><strong>Deadline Scheduling</strong>: Set specific deadlines for processes.</li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
         
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Algorithm Design Manual 1. Intro to Algo Design I love the motivation for proof of your algorithm - to confirm that the generalizability of your selected instances (the one&rsquo;s you&rsquo;ve tested) holds.
-We then shift into Robot Tour Optimization. Getting to different paths efficiently on the path could be done with a travelling salesman, which requires some stochastic solve. I looked around at how I&rsquo;d love this, and came back to neural combinatorial optimization with RL.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/hashing_with_python/" class="link black dim">
-        
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Hashing Strings with Python Hash functions map sequences of bytes to fixed length sequences. The value returned by a hash function is often called a hash, message digest, hash value, or checksum.
-MD5 binascii If you&rsquo;re looking to hash a string, you&rsquo;ll need to convert your string to binary.
-# Convert string to binary binary_string = b'abcd' print(binary_string)  b'abcd'  # Generate hexadecimal from binary string import binascii binascii.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/collections_module_in_python/" class="link black dim">
-        Collections module in Python
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Incredibly useful Python container datatypes.
-Counter Counter is a dictionary subclass with no restrictions on keys and values.
-from collections import Counter words = ['apples','oranges', 'apples', 'apples'] words1 = ['oranges', 'oranges', 'oranges', 'apples']  # Return (element, count) pairs for n most common Counter(words).most_common()  # Subtract elements from another mapping w = Counter(words) w1 = Counter(words1) w.subract(w1) # subtraction, includes zero and negatives w - w1 # subtraction, only positive counts w &amp; w1 # intersection w | w1 # union w + w1 # adds two counters together  # Some useful patterns c.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/k_nearest_neighbors/" class="link black dim">
-        K-nearest neighbors
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates, and strategies for using these distances to calculate neighors:
-Distance Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/processor_scheduling/" class="link black dim">
-        Processor Scheduling
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I&rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. What happens when. It sparks an otimization bubble over my head &mdash; how do we ensure the most efficient scheduling? The staregy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline.
-    </div>
-  </div>
-</div>
-</div>
-      
-    </section>
-</article>
+      </div>
+    </main>
+  </article>
 
     </main>
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
