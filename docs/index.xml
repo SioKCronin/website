@@ -334,6 +334,15 @@ First we start with the covariance matrix $S_{x} = \frac{1}{m}X^{T}X$, where X i
     </item>
     
     <item>
+      <title>Processor Scheduling</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/processor_scheduling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/processor_scheduling/</guid>
+      <description>I&amp;rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. What happens when. It sparks an otimization bubble over my head &amp;mdash; how do we ensure the most efficient scheduling? The staregy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline.</description>
+    </item>
+    
+    <item>
       <title>RL in Process Scheduling</title>
       <link>https://siobhankcronin.com/ai_notes/machine_learning/rl_in_process_scheduling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -3,7 +3,7 @@ title: Processor Scheduling
 menu:
     ai_notes:
         parent: Software Engineering
-draft: True
+draft: False
 ---
 
 I'm not sure why processor scheduling has so captured my imagination, but I think
