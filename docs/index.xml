@@ -179,6 +179,16 @@ Phenomenology of non-human movement systems</description>
     </item>
     
     <item>
+      <title>AWS Virtual Private Clouds (VPCs)</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/aws_vpc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/aws_vpc/</guid>
+      <description>Overview As J Cole Morrison puts it, we need Virtual Private Clouds (VPCs) because we need control of security, the organization of our resources, traffic between our services, and the ability to keep differing architectures separate.
+Some terms we&amp;rsquo;ll need: * Subnets: * Route Tables: * Network ACLs: * Internet Gateway: * NAT Gateway: * Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. * Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network).</description>
+    </item>
+    
+    <item>
       <title>Active Matter</title>
       <link>https://siobhankcronin.com/ai_notes/swarm_intelligence/active_matter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Siobhán K Cronin  | Software Engineering</title>
+    <title>Siobhán K Cronin  | AWS Virtual Private Clouds (VPCs)</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -34,14 +34,12 @@
     
 
     
-      <link href="https://siobhankcronin.com/ai_notes/software_engineering/index.xml" rel="alternate" type="application/rss+xml" title="Siobhán K Cronin" />
-      <link href="https://siobhankcronin.com/ai_notes/software_engineering/index.xml" rel="feed" type="application/rss+xml" title="Siobhán K Cronin" />
-    
 
-    <meta property="og:title" content="Software Engineering" />
-<meta property="og:description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://siobhankcronin.com/ai_notes/software_engineering/" />
+    <meta property="og:title" content="AWS Virtual Private Clouds (VPCs)" />
+<meta property="og:description" content="Overview As J Cole Morrison puts it, we need Virtual Private Clouds (VPCs) because we need control of security, the organization of our resources, traffic between our services, and the ability to keep differing architectures separate.
+Some terms we&rsquo;ll need: * Subnets: * Route Tables: * Network ACLs: * Internet Gateway: * NAT Gateway: * Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. * Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://siobhankcronin.com/ai_notes/software_engineering/aws_vpc/" />
 
 
 
@@ -56,18 +54,31 @@
 
 
 
-<meta itemprop="name" content="Software Engineering">
-<meta itemprop="description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker">
 
+
+<meta itemprop="name" content="AWS Virtual Private Clouds (VPCs)">
+<meta itemprop="description" content="Overview As J Cole Morrison puts it, we need Virtual Private Clouds (VPCs) because we need control of security, the organization of our resources, traffic between our services, and the ability to keep differing architectures separate.
+Some terms we&rsquo;ll need: * Subnets: * Route Tables: * Network ACLs: * Internet Gateway: * NAT Gateway: * Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. * Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network).">
+
+
+
+<meta itemprop="wordCount" content="368">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Software Engineering"/>
-<meta name="twitter:description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker"/>
+<meta name="twitter:title" content="AWS Virtual Private Clouds (VPCs)"/>
+<meta name="twitter:description" content="Overview As J Cole Morrison puts it, we need Virtual Private Clouds (VPCs) because we need control of security, the organization of our resources, traffic between our services, and the ability to keep differing architectures separate.
+Some terms we&rsquo;ll need: * Subnets: * Route Tables: * Network ACLs: * Internet Gateway: * NAT Gateway: * Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. * Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network)."/>
 
   </head>
 
   <body class="ma0 avenir bg-white-90">
 
     
+   
+  
 
   <header>
     <div class="bg-sio-yellow">
@@ -151,105 +162,121 @@
   </header>
 
 
+
     <main class="pb7" role="main">
       
-  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
-  <main class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></main>
-    <section class="flex-ns flex-wrap justify-around mt1">
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/algorithm_design_manual/" class="link black dim">
+  <article class="flex-l flex-wrap justify-between center">
+    <header class="pt4 pa3 ph4-ns pb0 w-100 w-60-ns center">
+      <p class="f6 b helvetica tracked">
+          
+        SOFTWARE ENGINEERING
+      </p>
+      <h1 class="f1 helvetica mb1">AWS Virtual Private Clouds (VPCs)</h1>
+    </header>
+
+    <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
+
+<h3 id="overview">Overview</h3>
+
+<p>As J Cole Morrison puts it, we need Virtual Private Clouds (VPCs) because we need control
+of security, the organization of our resources, traffic between our services, and the ability
+to keep differing architectures separate.</p>
+
+<p>Some terms we&rsquo;ll need:
+* <strong>Subnets</strong>:
+* <strong>Route Tables</strong>:
+* <strong>Network ACLs</strong>:
+* <strong>Internet Gateway</strong>:
+* <strong>NAT Gateway</strong>:
+* <strong>Variable-length subnet masking (VLSM)</strong>: Allows you to specify arbitrary-lenght prefixes.
+* <strong>Classless Inter-Domain Routing (CIDR) block notation</strong>: IP addresses consiste
+of two groups of bits; the most significant bits are the network prefix (identifies a
+whole network or subnet) and the least significant set forms the <em>host identifier</em>
+(specifies a particular interface of a host on that network). This notation includes
+a suffix indidcating the number of bits of the prefix.</p>
+
+<p>We first define a range of IP addresses for our VPC to sketch out the space we&rsquo;ll be building.</p>
+
+<h3 id="services">Services</h3>
+
+<p>It&rsquo;s a big world of AWS services, so let&rsquo;s apply some cartography.</p>
+
+<h4 id="ec2">EC2</h4>
+
+<ul>
+<li><strong>compute optimized</strong></li>
+<li><strong>memory optimized</strong></li>
+<li><strong>storage optimized</strong></li>
+</ul>
+
+<h4 id="s3-simple-storage-services">S3 (Simple Storage Services)</h4>
+
+<ul>
+<li><strong>Standard Storage</strong>: Frequently accessed. Charged by the gibabyte used and
+number of requests to access, delete, list, copy or loading data in S3. Less
+than 1hr of downtime/yr.</li>
+<li><strong>Infrequent Access Storage</strong>: Less than 9hrs of downtime/year.</li>
+<li><strong>Glacier</strong>: Deep storage. Can take hours to retrieve. Much cheaper than standard.
+Redundant data sites.</li>
+<li><strong>Reduced Redundancy Storage</strong>:</li>
+</ul>
+
+<h4 id="elastic-load-balancer-elb">Elastic Load Balancer (ELB)</h4>
+
+<ul>
+<li>Send client requests to appropriate server.</li>
+<li>Avoid server hotspots.</li>
+<li><strong>Classic Load Balancing</strong>: Ensures fault tolerance int he event of an EC2 instance failure.</li>
+<li><strong>Application Load Balancing</strong>: Looks at content request and routes accordingly.</li>
+</ul>
+
+<h4 id="cloudfront">CloudFront</h4>
+
+<ul>
+<li>Global content delivery system</li>
+</ul>
+
+<h4 id="elastic-block-store-ebs">Elastic Block Store (EBS)</h4>
+
+<ul>
+<li>Low-latency instance access</li>
+<li>Access high speed Solid State Drive (SSD) storage.</li>
+<li>Layer security with Access Control Lists and encryption.</li>
+</ul>
+
+<h3 id="amazon-route-53">Amazon Route 53</h3>
+
+<ul>
+<li>Domain Name System (DNS) routing.</li>
+</ul>
+
+<h3 id="cloudwatch">Cloudwatch</h3>
+
+<ul>
+<li>Gather logs and monitor metrics.</li>
+</ul>
+
+<h3 id="other">Other</h3>
+
+<ul>
+<li><strong>Lambda</strong>: Abstracts AWS infrastructure.</li>
+<li><strong>AWS Config</strong>: Infrastructure management.</li>
+<li><strong>Elastic Beanstalk</strong>: App development.</li>
+<li><strong>CloudTrail</strong>: API transaction analytics.</li>
+<li><strong>Elastic File System (EFS)</strong>: Grow and shrink file storage system. Can mount one file system
+to multiple EC2 instances to share common data.</li>
+<li><strong>Kinesis</strong>: Loading and analyzing streaming data. <em>Kinesis Firehose</em> ingests data.
+<em>Kinesis Analytics</em> collects data with SQL queries. <em>Kinesis Streams</em> transform data into
+dashboard or generate alerts.</li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
         
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Algorithm Design Manual 1. Intro to Algo Design I love the motivation for proof of your algorithm - to confirm that the generalizability of your selected instances (the one&rsquo;s you&rsquo;ve tested) holds.
-We then shift into Robot Tour Optimization. Getting to different paths efficiently on the path could be done with a travelling salesman, which requires some stochastic solve. I looked around at how I&rsquo;d love this, and came back to neural combinatorial optimization with RL.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/hashing_with_python/" class="link black dim">
-        
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Hashing Strings with Python Hash functions map sequences of bytes to fixed length sequences. The value returned by a hash function is often called a hash, message digest, hash value, or checksum.
-MD5 binascii If you&rsquo;re looking to hash a string, you&rsquo;ll need to convert your string to binary.
-# Convert string to binary binary_string = b'abcd' print(binary_string)  b'abcd'  # Generate hexadecimal from binary string import binascii binascii.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/aws_vpc/" class="link black dim">
-        AWS Virtual Private Clouds (VPCs)
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Overview As J Cole Morrison puts it, we need Virtual Private Clouds (VPCs) because we need control of security, the organization of our resources, traffic between our services, and the ability to keep differing architectures separate.
-Some terms we&rsquo;ll need: * Subnets: * Route Tables: * Network ACLs: * Internet Gateway: * NAT Gateway: * Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. * Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network).
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/collections_module_in_python/" class="link black dim">
-        Collections module in Python
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Incredibly useful Python container datatypes.
-Counter Counter is a dictionary subclass with no restrictions on keys and values.
-from collections import Counter words = ['apples','oranges', 'apples', 'apples'] words1 = ['oranges', 'oranges', 'oranges', 'apples']  # Return (element, count) pairs for n most common Counter(words).most_common()  # Subtract elements from another mapping w = Counter(words) w1 = Counter(words1) w.subract(w1) # subtraction, includes zero and negatives w - w1 # subtraction, only positive counts w &amp; w1 # intersection w | w1 # union w + w1 # adds two counters together  # Some useful patterns c.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/k_nearest_neighbors/" class="link black dim">
-        K-nearest neighbors
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates, and strategies for using these distances to calculate neighors:
-Distance Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/processor_scheduling/" class="link black dim">
-        Processor Scheduling
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I&rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. What happens when. It sparks an otimization bubble over my head &mdash; how do we ensure the most efficient scheduling? The staregy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline.
-    </div>
-  </div>
-</div>
-</div>
-      
-    </section>
-</article>
+      </div>
+    </main>
+  </article>
 
     </main>
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
