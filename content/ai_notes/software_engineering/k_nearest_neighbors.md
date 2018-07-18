@@ -58,9 +58,7 @@ connected in this way arranged in a ring.
 #### Von Neumann Neighborhood
 
 In a lattice structure, this would be defined as any node and its 
-adjascent nodes. This could be extended further to nodes removes by 
+adjascent nodes. This could be extended further to nodes removed by 
 some constant $r$. For instance if we are looking for neighbors of 
 node $x$ with a $r=2$, then the neighbors would be all nodes who 
-have exactly one node seperating them from $x$.
-are evaluating. 
-
+have exactly one node seperating them from $x$. 
