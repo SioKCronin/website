@@ -39,8 +39,9 @@ Siobhán has published research in Brain &amp;amp; Cognition, Neuroreport, and M
       <pubDate>Tue, 24 Apr 2018 11:53:47 -0700</pubDate>
       
       <guid>https://siobhankcronin.com/speaking/</guid>
-      <description>Upcoming  7.5.2018 &amp;mdash; The Poetics of Swarms @ La Casa Naranja (SF)  Past  10.11.2017 &amp;mdash; Step by Step @ Metis (SF) 9.21.2016 &amp;mdash; Forms @ Conference on Complex Systems (Amsterdam) 8.9.2016 &amp;mdash; Form and Movement in Complex Systems @ PyLadies (SF) 6.4.2016 &amp;mdash; On People, Cubes and Snacks @ AlterConf (SF)  
-The Poetics of Swarms Swarm intelligence is the collective behavior of decentralized, self-organized systems.</description>
+      <description>Upcoming Stay tuned!
+Past  10.11.2017 &amp;mdash; Step by Step @ Metis (SF) 9.21.2016 &amp;mdash; Forms @ Conference on Complex Systems (Amsterdam) 8.9.2016 &amp;mdash; Form and Movement in Complex Systems @ PyLadies (SF) 6.4.2016 &amp;mdash; On People, Cubes and Snacks @ AlterConf (SF)  
+The Poetics of Swarms Swarm intelligence is the collective behavior of decentralized, self-organized systems. The whole being other than the sum of its parts. Many human traditions have described swarm intelligence, and while my research is becoming more and more rooted in finding real-world applications of swarm intelligence algorithms from the evolutionary computing tradition, my heritage as an empath makes it impossible for me not to be porous to the broader implications.</description>
     </item>
     
     <item>
@@ -185,6 +186,16 @@ Phenomenology of non-human movement systems</description>
       <guid>https://siobhankcronin.com/ai_notes/swarm_intelligence/active_matter/</guid>
       <description>I first caught wind of Active Matter through the work of one of my favorite researchers, Tamas Vicsek, whose intellectual bling includes a fractal bearing his name.
 My understanding of this sprawling sub-domain of physics is that we can study the activity of individuals agents and systems as though studying something like hydrodynamics, kinematics, and non-equilbrium statistical phsyics. Crowds become streams. Flocks become rivers. Networks of agents become oceans.</description>
+    </item>
+    
+    <item>
+      <title>CS75</title>
+      <link>https://siobhankcronin.com/ai_notes/lecture_notes/cs75/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/lecture_notes/cs75/</guid>
+      <description>Ah, David Malan, we meet again. Many months have passed since I waded through your hyper-caffeinated orations in CS50, and now I find you building dynamic websites in the summer of 2012. I accept your challenge.
+9. Scalability Begins with a brief recap on what we look for from a web host, including confirming FSTP (vs. FTP) to ensure security and deciding how fast we think we might scale (so we&amp;rsquo;re not pushed out by other users on a shared system).</description>
     </item>
     
     <item>

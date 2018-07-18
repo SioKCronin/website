@@ -5,8 +5,7 @@ draft = false
 
 +++
 ### Upcoming
-* 7.5.2018 --- The Poetics of Swarms @ La Casa Naranja
-(SF)
+Stay tuned!
 
 ### Past
 
