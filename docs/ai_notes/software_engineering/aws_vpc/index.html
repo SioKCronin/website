@@ -37,7 +37,8 @@
 
     <meta property="og:title" content="AWS Virtual Private Clouds (VPCs)" />
 <meta property="og:description" content="Overview As J Cole Morrison puts it, we need Virtual Private Clouds (VPCs) because we need control of security, the organization of our resources, traffic between our services, and the ability to keep differing architectures separate.
-Some terms we&rsquo;ll need: * Subnets: * Route Tables: * Network ACLs: * Internet Gateway: * NAT Gateway: * Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. * Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network)." />
+Some terms we&rsquo;ll need:
+ Subnets: Route Tables: Network ACLs: Internet Gateway: NAT Gateway: Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://siobhankcronin.com/ai_notes/software_engineering/aws_vpc/" />
 
@@ -58,11 +59,12 @@ Some terms we&rsquo;ll need: * Subnets: * Route Tables: * Network ACLs: * Intern
 
 <meta itemprop="name" content="AWS Virtual Private Clouds (VPCs)">
 <meta itemprop="description" content="Overview As J Cole Morrison puts it, we need Virtual Private Clouds (VPCs) because we need control of security, the organization of our resources, traffic between our services, and the ability to keep differing architectures separate.
-Some terms we&rsquo;ll need: * Subnets: * Route Tables: * Network ACLs: * Internet Gateway: * NAT Gateway: * Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. * Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network).">
+Some terms we&rsquo;ll need:
+ Subnets: Route Tables: Network ACLs: Internet Gateway: NAT Gateway: Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network).">
 
 
 
-<meta itemprop="wordCount" content="368">
+<meta itemprop="wordCount" content="361">
 
 
 
@@ -70,7 +72,8 @@ Some terms we&rsquo;ll need: * Subnets: * Route Tables: * Network ACLs: * Intern
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="AWS Virtual Private Clouds (VPCs)"/>
 <meta name="twitter:description" content="Overview As J Cole Morrison puts it, we need Virtual Private Clouds (VPCs) because we need control of security, the organization of our resources, traffic between our services, and the ability to keep differing architectures separate.
-Some terms we&rsquo;ll need: * Subnets: * Route Tables: * Network ACLs: * Internet Gateway: * NAT Gateway: * Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. * Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network)."/>
+Some terms we&rsquo;ll need:
+ Subnets: Route Tables: Network ACLs: Internet Gateway: NAT Gateway: Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network)."/>
 
   </head>
 
@@ -182,18 +185,21 @@ Some terms we&rsquo;ll need: * Subnets: * Route Tables: * Network ACLs: * Intern
 of security, the organization of our resources, traffic between our services, and the ability
 to keep differing architectures separate.</p>
 
-<p>Some terms we&rsquo;ll need:
-* <strong>Subnets</strong>:
-* <strong>Route Tables</strong>:
-* <strong>Network ACLs</strong>:
-* <strong>Internet Gateway</strong>:
-* <strong>NAT Gateway</strong>:
-* <strong>Variable-length subnet masking (VLSM)</strong>: Allows you to specify arbitrary-lenght prefixes.
-* <strong>Classless Inter-Domain Routing (CIDR) block notation</strong>: IP addresses consiste
+<p>Some terms we&rsquo;ll need:</p>
+
+<ul>
+<li><strong>Subnets</strong>:</li>
+<li><strong>Route Tables</strong>:</li>
+<li><strong>Network ACLs</strong>:</li>
+<li><strong>Internet Gateway</strong>:</li>
+<li><strong>NAT Gateway</strong>:</li>
+<li><strong>Variable-length subnet masking (VLSM)</strong>: Allows you to specify arbitrary-lenght prefixes.</li>
+<li><strong>Classless Inter-Domain Routing (CIDR) block notation</strong>: IP addresses consiste
 of two groups of bits; the most significant bits are the network prefix (identifies a
 whole network or subnet) and the least significant set forms the <em>host identifier</em>
 (specifies a particular interface of a host on that network). This notation includes
-a suffix indidcating the number of bits of the prefix.</p>
+a suffix indidcating the number of bits of the prefix.</li>
+</ul>
 
 <p>We first define a range of IP addresses for our VPC to sketch out the space we&rsquo;ll be building.</p>
 

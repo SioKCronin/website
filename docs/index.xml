@@ -185,7 +185,8 @@ Phenomenology of non-human movement systems</description>
       
       <guid>https://siobhankcronin.com/ai_notes/software_engineering/aws_vpc/</guid>
       <description>Overview As J Cole Morrison puts it, we need Virtual Private Clouds (VPCs) because we need control of security, the organization of our resources, traffic between our services, and the ability to keep differing architectures separate.
-Some terms we&amp;rsquo;ll need: * Subnets: * Route Tables: * Network ACLs: * Internet Gateway: * NAT Gateway: * Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. * Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network).</description>
+Some terms we&amp;rsquo;ll need:
+ Subnets: Route Tables: Network ACLs: Internet Gateway: NAT Gateway: Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network).</description>
     </item>
     
     <item>
@@ -291,6 +292,15 @@ Differentiating between policy optimization and dynamic programming. In particul
     </item>
     
     <item>
+      <title>Navier-Stokes Existence and Smoothness Problem</title>
+      <link>https://siobhankcronin.com/ai_notes/math/navier_stokes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/math/navier_stokes/</guid>
+      <description>Let me say up front, I have not solved this problem, nor am I in the running. I came to math late in 2016 after a lifetime of music study, and while I am building a solid trellis upon which to grow my imagination, it will take me many years to capitalize on my potential. That being said, the Millenium Prizes are my one of my favorite sporting events, and the Navier-Stokes Existence and Smoothness Problem is my home team I&amp;rsquo;m rooting for to emerge next.</description>
+    </item>
+    
+    <item>
       <title>Network Geometry</title>
       <link>https://siobhankcronin.com/ai_notes/math/network_geometry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -309,6 +319,15 @@ I find Mulder &amp;amp; Bicaconi&amp;rsquo;s 2018 paper Network Geometry and Com
       <description>What are the advantages of various topogical structures? How can they be combined? Mutate over time? How do swarm systems develop communication topologies?
 First, let&amp;rsquo;s get acclimated with the different structures - their definitions and some useful examples of their use in practice.
 Ring This is a bus topology in a closed loop, with data traveling around the ring in one direction, passing through each node in turn until it arrives where its going.</description>
+    </item>
+    
+    <item>
+      <title>Networking</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/networking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/networking/</guid>
+      <description>Terms  Connection: Built before data transfer (following protocol) and deconstructed after. Packet: The envelopes that carry your data (in pieces) from one point to the next. Includes header that includes source and destination, timestamps, network hops, plus the main portion which is the data being transfered (also called body, or payload). Network Interface: Software interface to your networking hardware. Local Area Network (LAN): A network or portion of network not publically accessible to the greater internet.</description>
     </item>
     
     <item>
@@ -414,6 +433,16 @@ Fundamentals of Swarm Robotics Multi-robot systems have the ability to show comp
 Therefore, there exists $p, q$ such that $\sqrt{2} = \frac{p}{q}$, where $q \neq 0$, and $p, q$ share no common divisors other than 1.
 Squaring both sides gives $2 = \frac{p^2}{q^2}$, so consequently $2q^2 = p^2$.
 If a square of a number is even, then the number is even, so there exists some number $k$ such that $p=2k$. Subsituting this value into the equation yields $2q^2 = 4k^2$, or $q^2 = 2k^2$.</description>
+    </item>
+    
+    <item>
+      <title>System Design</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/system_design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/system_design/</guid>
+      <description>Some terms:
+ Uniform Resource Identifier (URI): Most common is URL, but also Uniform Resource Name (URN). Representational State Transfer (REST)ful API: Access and manipulate textual representations of web resources by using a uniform and predefined set of stateless operations. Payload will be formatted in HTML, Extensible Markup Language (XML) or JSON. Single Object Access Protocol (SOAP): Uses XML. Message negotiation and transmission by Hypertext Transfer Protocol (HTTP) and Simple Mail Transfer Protocol (SMTP)  When approaching system design, we bare in mind the goals and constraints of the service we are providing.</description>
     </item>
     
   </channel>

@@ -4,7 +4,7 @@ menu:
     ai_notes:
         parent: Software Engineering
 draft: False
---
+---
 ### Terms
 
 * **Connection**: Built before data transfer (following protocol) and deconstructed after.
