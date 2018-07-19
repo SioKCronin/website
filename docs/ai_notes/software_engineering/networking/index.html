@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Siobhán K Cronin </title>
+    <title>Siobhán K Cronin  | Networking</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -35,10 +35,10 @@
 
     
 
-    <meta property="og:title" content="404 Page not found" />
-<meta property="og:description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="" />
+    <meta property="og:title" content="Networking" />
+<meta property="og:description" content="Terms  Connection: Built before data transfer (following protocol) and deconstructed after. Packet: The envelopes that carry your data (in pieces) from one point to the next. Includes header that includes source and destination, timestamps, network hops, plus the main portion which is the data being transfered (also called body, or payload). Network Interface: Software interface to your networking hardware. Local Area Network (LAN): A network or portion of network not publically accessible to the greater internet." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://siobhankcronin.com/ai_notes/software_engineering/networking/" />
 
 
 
@@ -53,18 +53,29 @@
 
 
 
-<meta itemprop="name" content="404 Page not found">
-<meta itemprop="description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker">
 
+
+<meta itemprop="name" content="Networking">
+<meta itemprop="description" content="Terms  Connection: Built before data transfer (following protocol) and deconstructed after. Packet: The envelopes that carry your data (in pieces) from one point to the next. Includes header that includes source and destination, timestamps, network hops, plus the main portion which is the data being transfered (also called body, or payload). Network Interface: Software interface to your networking hardware. Local Area Network (LAN): A network or portion of network not publically accessible to the greater internet.">
+
+
+
+<meta itemprop="wordCount" content="339">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="404 Page not found"/>
-<meta name="twitter:description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker"/>
+<meta name="twitter:title" content="Networking"/>
+<meta name="twitter:description" content="Terms  Connection: Built before data transfer (following protocol) and deconstructed after. Packet: The envelopes that carry your data (in pieces) from one point to the next. Includes header that includes source and destination, timestamps, network hops, plus the main portion which is the data being transfered (also called body, or payload). Network Interface: Software interface to your networking hardware. Local Area Network (LAN): A network or portion of network not publically accessible to the greater internet."/>
 
   </head>
 
   <body class="ma0 avenir bg-white-90">
 
     
+   
+  
 
   <header>
     <div class="bg-sio-yellow">
@@ -148,13 +159,94 @@
   </header>
 
 
+
     <main class="pb7" role="main">
       
-    <article class="center cf pv5 measure-wide-l">
-      <h1>
-        This is not the page you were looking for
-      </h1>
-    </article>
+  <article class="flex-l flex-wrap justify-between center">
+    <header class="pt4 pa3 ph4-ns pb0 w-100 w-60-ns center">
+      <p class="f6 b helvetica tracked">
+          
+        SOFTWARE ENGINEERING
+      </p>
+      <h1 class="f1 helvetica mb1">Networking</h1>
+    </header>
+
+    <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
+
+<h3 id="terms">Terms</h3>
+
+<ul>
+<li><strong>Connection</strong>: Built before data transfer (following protocol) and deconstructed after.</li>
+<li><strong>Packet</strong>: The envelopes that carry your data (in pieces) from one point to the next. Includes
+header that includes source and destination, timestamps, network hops, plus the main portion which
+is the data being transfered (also called body, or payload).</li>
+<li><strong>Network Interface</strong>: Software interface to your networking hardware.</li>
+<li><strong>Local Area Network (LAN)</strong>: A network or portion of network not publically accessible
+to the greater internet.</li>
+<li><strong>Wide Area Network (WAN)</strong> More extensive than a LAN (typically means internet as a whole).</li>
+<li><strong>Port</strong>: Address on a single machine that can be tied to a specific piece of software.</li>
+<li><strong>Firewall</strong>: Should traffic coming in or going out be allowed. Decides which type of traffic
+is acceptable on which ports.</li>
+<li><strong>Network Address Translation (NAT)</strong>: Translates incoming requests to a routing server
+to the devices/servers it knows about in the LAN.</li>
+<li><strong>Virtual Private Network (VPN)</strong>: Connecting multiple LANs through the internet, while
+maintaining privacy (as if they were on a local network).</li>
+</ul>
+
+<h3 id="protocols">Protocols</h3>
+
+<ul>
+<li><strong>Media Access Control (MAC)</strong></li>
+<li><strong>TCP</strong>:</li>
+<li><strong>UDP</strong>:</li>
+<li><strong>DNS</strong>:</li>
+<li><strong>IP</strong>:</li>
+<li><strong>ICMP</strong>:</li>
+<li><strong>HTTP</strong>:</li>
+<li><strong>SSH</strong>: <a href="https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys">Useful guide</a></li>
+<li><strong>TLS/SSL</strong>:</li>
+<li><strong>FTP</strong>:</li>
+</ul>
+
+<h3 id="network-layers">Network Layers</h3>
+
+<h4 id="open-systems-interconnect-osi-model">Open Systems Interconnect (OSI) Model</h4>
+
+<p>This model has <strong>seven</strong> layers:</p>
+
+<ul>
+<li><em>Application</em>: Users interaction. Considerations include availability of resources,
+partners to communicate with, and data synchronization.</li>
+<li><em>Presentation</em>: Mapping resources and creating context. Translates lower level networking
+data into app-ready data.</li>
+<li><em>Session</em>: Creates, maintains, and destroys connections between nodes.</li>
+<li><em>Transport</em>: Providing reliable connection to the above layers. Can resend dropped data.
+Can acknowledge data receive to remote computers.</li>
+<li><em>Network</em>: Route data between nondes on the network, using addresses.</li>
+<li><em>Data Link</em>: Establish and maintain reliable links between nodes on a network.</li>
+<li><em>Physical</em>: The software that manages physical connections and hardware.</li>
+</ul>
+
+<h3 id="tcp-ip-model">TCP/IP model</h3>
+
+<p>This model has <strong>four</strong> layers:</p>
+
+<ul>
+<li><em>Application</em>: Creating and transmitting user data between applications.</li>
+<li><em>Transport</em>: Commnication between processes. Ports address different services.</li>
+<li><em>Internet</em>: Transport data from node to node in a network. IP addresses are defined
+in this layer.</li>
+<li><em>Link</em>: Implements the topology of the local network. Creates connections between
+neighboring nodes to send data.</li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </main>
+  </article>
 
     </main>
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
