@@ -54,6 +54,15 @@ from collections import Counter words = [&#39;apples&#39;,&#39;oranges&#39;, &#3
     </item>
     
     <item>
+      <title>DE stack</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/de_stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/de_stack/</guid>
+      <description>Ingestion  Kafka Sqoop  Processing/Buffering  AWS lambda Apache Storm  Caching/Storage  Memcached: Apache Cassandra: Better than Redis on fault tolerance. Has support for HiveQL. Useful for when you are writing more than reading. Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Hive HBase Scribe MongoDB DynamoDB CouchDB Redshift  Viz  Flask  Other  Capistrano: OSS framework for building automated deployment scriopts (Ruby).</description>
+    </item>
+    
+    <item>
       <title>K-nearest neighbors</title>
       <link>https://siobhankcronin.com/ai_notes/software_engineering/k_nearest_neighbors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -79,6 +88,15 @@ Distance Euclidean As the name suggests, this is the square root of the sum of s
       
       <guid>https://siobhankcronin.com/ai_notes/software_engineering/processor_scheduling/</guid>
       <description>I&amp;rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. What happens when. It sparks an otimization bubble over my head &amp;mdash; how do we ensure the most efficient scheduling? The staregy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline.</description>
+    </item>
+    
+    <item>
+      <title>Scaling</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/scaling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/scaling/</guid>
+      <description>Key ideas  Vertical scaling: Throw more power at the problem (faster processors, more cores, more RAM) Horizontal scaling: Distributed solution. Caching: Session states need to be stored on an external database or an external persisten cache, like Redis. Load balancing: How many load balancers do we need and where should they be positioned in the topoogy? Database replication: How are preparing for system failure? Database partitioning: Can we shunt requests to different branches?</description>
     </item>
     
     <item>

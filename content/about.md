@@ -5,7 +5,7 @@ draft = false
 
 +++
 
-Siobhán is a software engineer with a passion for machine learning, geometry,
+Siobhán is a software engineer with a passion for machine learning,
 data engineering, and swarm intelligence.
 
 She began her career researching how humans learn at Harvard's Lab for
