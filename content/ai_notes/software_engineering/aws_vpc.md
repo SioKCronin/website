@@ -12,6 +12,7 @@ of security, the organization of our resources, traffic between our services, an
 to keep differing architectures separate. 
 
 Some terms we'll need:
+
 * **Subnets**:
 * **Route Tables**:
 * **Network ACLs**:
