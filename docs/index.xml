@@ -28,7 +28,7 @@ Key concepts  system logs: A file that records the system states and significant
       <pubDate>Tue, 24 Apr 2018 11:53:47 -0700</pubDate>
       
       <guid>https://siobhankcronin.com/about/</guid>
-      <description>Siobhán is a software engineer with a passion for machine learning, geometry, data engineering, and swarm intelligence.
+      <description>Siobhán is a software engineer with a passion for machine learning, data engineering, and swarm intelligence.
 She began her career researching how humans learn at Harvard&amp;rsquo;s Lab for Developmental Studies and Harvard Medical School, and now develops tools to help machines and humans collaborate and learn together. Siobhán is a contributor to PySwarms, and the lead developer of SwarmOpt, a swarm intelligence hyperparameter optimizer.
 Siobhán has published research in Brain &amp;amp; Cognition, Neuroreport, and Model View Culture, and presented at the Conference on Complex Systems, Conference on Cognitive Neuroscience, AlterConf, PyLadies, Metis, and Temple University.</description>
     </item>
@@ -241,6 +241,15 @@ This burgeoning research arena, wearing hand-me-downs from theoretical physics a
     </item>
     
     <item>
+      <title>DE stack</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/de_stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/de_stack/</guid>
+      <description>Ingestion  Kafka Sqoop  Processing/Buffering  AWS lambda Apache Storm  Caching/Storage  Memcached: Apache Cassandra: Better than Redis on fault tolerance. Has support for HiveQL. Useful for when you are writing more than reading. Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Hive HBase Scribe MongoDB DynamoDB CouchDB Redshift  Viz  Flask  Other  Capistrano: OSS framework for building automated deployment scriopts (Ruby).</description>
+    </item>
+    
+    <item>
       <title>Deep RL Bootcamp 2017</title>
       <link>https://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp_2017/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -411,6 +420,15 @@ $? = \sqrt{ax + (n + a)^2 + x\sqrt{a(x+n) + (n+a)^2 + (x+n)\sqrt{\dots}}}$.</des
       
       <guid>https://siobhankcronin.com/ai_notes/books/reinforcement_learning/</guid>
       <description>Reinforcement Learning: An Introduction (1998). Richard Sutton &amp;amp; Andrew Barto. At the onset, I&amp;rsquo;m curious to know how much has changed since this book&amp;rsquo;s publication 20 years ago. That being said, as these are two leaders in the field, I&amp;rsquo;m interested in gaining a sense of their perspective on the history/origin of this subfield, and acclimating to some of the core concepts/constructs. CHAPTER 1 One of the key takeaways from this chapter was the distinction between the value function and rewards function in an RL problem.</description>
+    </item>
+    
+    <item>
+      <title>Scaling</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/scaling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/scaling/</guid>
+      <description>Key ideas  Vertical scaling: Throw more power at the problem (faster processors, more cores, more RAM) Horizontal scaling: Distributed solution. Caching: Session states need to be stored on an external database or an external persisten cache, like Redis. Load balancing: How many load balancers do we need and where should they be positioned in the topoogy? Database replication: How are preparing for system failure? Database partitioning: Can we shunt requests to different branches?</description>
     </item>
     
     <item>

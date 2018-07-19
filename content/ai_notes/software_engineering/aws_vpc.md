@@ -71,6 +71,10 @@ Redundant data sites.
 
 * Gather logs and monitor metrics.
 
+### Elasticache
+
+* Like Memcached or Redis
+
 ### Other
 
 * **Lambda**: Abstracts AWS infrastructure. 

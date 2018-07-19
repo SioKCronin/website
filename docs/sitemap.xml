@@ -160,6 +160,12 @@
   </url>
   
   <url>
+    <loc>https://siobhankcronin.com/ai_notes/software_engineering/de_stack/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://siobhankcronin.com/ai_notes/lecture_notes/deep_rl_bootcamp_2017/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -275,6 +281,12 @@
   
   <url>
     <loc>https://siobhankcronin.com/ai_notes/books/reinforcement_learning/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siobhankcronin.com/ai_notes/software_engineering/scaling/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
