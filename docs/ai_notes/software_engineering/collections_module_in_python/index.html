@@ -9,10 +9,10 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.41" />
+    <meta name="generator" content="Hugo 0.44" />
     
     
-      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
     
 
     
@@ -75,6 +75,8 @@ from collections import Counter words = [&#39;apples&#39;,&#39;oranges&#39;, &#3
 Counter Counter is a dictionary subclass with no restrictions on keys and values.
 from collections import Counter words = [&#39;apples&#39;,&#39;oranges&#39;, &#39;apples&#39;, &#39;apples&#39;] words1 = [&#39;oranges&#39;, &#39;oranges&#39;, &#39;oranges&#39;, &#39;apples&#39;]  # Return (element, count) pairs for n most common Counter(words).most_common()  # Subtract elements from another mapping w = Counter(words) w1 = Counter(words1) w.subract(w1) # subtraction, includes zero and negatives w - w1 # subtraction, only positive counts w &amp; w1 # intersection w | w1 # union w &#43; w1 # adds two counters together  # Some useful patterns c."/>
 
+      
+    
   </head>
 
   <body class="ma0 avenir bg-white-90">
