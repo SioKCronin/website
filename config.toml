@@ -17,6 +17,7 @@ enableRobotsTXT = false
   filename = "sitemap.xml"
 
 [params]
+  env = "production"
   custom_css = ["css/override.css"]
   highlightjs = true
   highlightjslanguages = ["python"]
