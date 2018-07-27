@@ -292,6 +292,12 @@
   </url>
   
   <url>
+    <loc>https://siobhankcronin.com/ai_notes/software_engineering/serving_ml_models/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://siobhankcronin.com/ai_notes/software_engineering/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -305,6 +311,12 @@
   
   <url>
     <loc>https://siobhankcronin.com/ai_notes/proofs/proove_sqrt2_is_irrational/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siobhankcronin.com/ai_notes/data_engineering/stream_architecture/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

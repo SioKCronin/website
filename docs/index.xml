@@ -241,12 +241,12 @@ This burgeoning research arena, wearing hand-me-downs from theoretical physics a
     </item>
     
     <item>
-      <title>DE stack</title>
+      <title>Data Engineering Pipeline</title>
       <link>https://siobhankcronin.com/ai_notes/software_engineering/de_stack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://siobhankcronin.com/ai_notes/software_engineering/de_stack/</guid>
-      <description>Ingestion  Kafka Sqoop  Processing/Buffering  AWS lambda Apache Storm  Caching/Storage  Memcached: Apache Cassandra: Better than Redis on fault tolerance. Has support for HiveQL. Useful for when you are writing more than reading. Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Hive HBase Scribe MongoDB DynamoDB CouchDB Redshift  Viz  Flask  Other  Capistrano: OSS framework for building automated deployment scriopts (Ruby).</description>
+      <description>Ingestion File System (block storage of raw data)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Streaming  Kafka AWS Kinesis GCP Pub/Sub Logstash RabbitMQ Sqoop  Processing Batch Processing  AWS lambda Apache Storm  Unified Processing  Flink  Stream Processing  Spark Streaming Storm Kafka Streams  Data Store Cache  Redis: OSS in-memory data structure storage, used as a database, cache, and message broker.</description>
     </item>
     
     <item>
@@ -432,6 +432,15 @@ $? = \sqrt{ax + (n + a)^2 + x\sqrt{a(x+n) + (n+a)^2 + (x+n)\sqrt{\dots}}}$.</des
     </item>
     
     <item>
+      <title>Serving ML Models</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/serving_ml_models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/serving_ml_models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Space-Time Continuous Models of Swarm Robotic Systems</title>
       <link>https://siobhankcronin.com/ai_notes/books/swarm_robotics_models/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -451,6 +460,16 @@ Fundamentals of Swarm Robotics Multi-robot systems have the ability to show comp
 Therefore, there exists $p, q$ such that $\sqrt{2} = \frac{p}{q}$, where $q \neq 0$, and $p, q$ share no common divisors other than 1.
 Squaring both sides gives $2 = \frac{p^2}{q^2}$, so consequently $2q^2 = p^2$.
 If a square of a number is even, then the number is even, so there exists some number $k$ such that $p=2k$. Subsituting this value into the equation yields $2q^2 = 4k^2$, or $q^2 = 2k^2$.</description>
+    </item>
+    
+    <item>
+      <title>Stream Architecture</title>
+      <link>https://siobhankcronin.com/ai_notes/data_engineering/stream_architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/data_engineering/stream_architecture/</guid>
+      <description>How can you a persistent message queue that scales to millions of messages/second?
+For example, today&amp;rsquo;s cars are equipped with a data storage device, the EDR (event data recorder), which stores all the sensor data for the vehicle. Such data could be used for routing, dashboard analytics, or mechanical operation (cruise control, lane correction, auto parking, etc). This is just one of many use cases in the IoT universe, all requiring connectivity to control centers and real-time processing of data streams.</description>
     </item>
     
     <item>
