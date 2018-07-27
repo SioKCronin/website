@@ -95,7 +95,3 @@ This model has **four** layers:
 in this layer. 
 * *Link*: Implements the topology of the local network. Creates connections between 
 neighboring nodes to send data.
-
-
-
-

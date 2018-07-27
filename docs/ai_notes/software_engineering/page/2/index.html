@@ -160,146 +160,13 @@
         <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
   <div class="bg-white mb1 pa4 gray overflow-hidden">
     <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/algorithm_design_manual/" class="link black dim">
-        
+      <a href="/ai_notes/software_engineering/system_design/" class="link black dim">
+        System Design
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Algorithm Design Manual 1. Intro to Algo Design I love the motivation for proof of your algorithm - to confirm that the generalizability of your selected instances (the one&rsquo;s you&rsquo;ve tested) holds.
-We then shift into Robot Tour Optimization. Getting to different paths efficiently on the path could be done with a travelling salesman, which requires some stochastic solve. I looked around at how I&rsquo;d love this, and came back to neural combinatorial optimization with RL.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/hashing_with_python/" class="link black dim">
-        
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Hashing Strings with Python Hash functions map sequences of bytes to fixed length sequences. The value returned by a hash function is often called a hash, message digest, hash value, or checksum.
-MD5 binascii If you&rsquo;re looking to hash a string, you&rsquo;ll need to convert your string to binary.
-# Convert string to binary binary_string = b'abcd' print(binary_string)  b'abcd'  # Generate hexadecimal from binary string import binascii binascii.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/aws_vpc/" class="link black dim">
-        AWS Virtual Private Clouds (VPCs)
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Overview As J Cole Morrison puts it, we need Virtual Private Clouds (VPCs) because we need control of security, the organization of our resources, traffic between our services, and the ability to keep differing architectures separate.
-Some terms we&rsquo;ll need:
- Subnets: Route Tables: Network ACLs: Internet Gateway: NAT Gateway: Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network).
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/collections_module_in_python/" class="link black dim">
-        Collections module in Python
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Incredibly useful Python container datatypes.
-Counter Counter is a dictionary subclass with no restrictions on keys and values.
-from collections import Counter words = ['apples','oranges', 'apples', 'apples'] words1 = ['oranges', 'oranges', 'oranges', 'apples']  # Return (element, count) pairs for n most common Counter(words).most_common()  # Subtract elements from another mapping w = Counter(words) w1 = Counter(words1) w.subract(w1) # subtraction, includes zero and negatives w - w1 # subtraction, only positive counts w &amp; w1 # intersection w | w1 # union w + w1 # adds two counters together  # Some useful patterns c.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/de_stack/" class="link black dim">
-        Data Engineering Pipeline
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Ingestion File System (block storage of raw data)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Streaming  Kafka AWS Kinesis GCP Pub/Sub Logstash RabbitMQ Sqoop  Processing Batch Processing  AWS lambda Apache Storm  Unified Processing  Flink  Stream Processing  Spark Streaming Storm Kafka Streams  Data Store Cache  Redis: OSS in-memory data structure storage, used as a database, cache, and message broker.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/k_nearest_neighbors/" class="link black dim">
-        K-nearest neighbors
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates, and strategies for using these distances to calculate neighors:
-Distance Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/networking/" class="link black dim">
-        Networking
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Terms  Connection: Built before data transfer (following protocol) and deconstructed after. Packet: The envelopes that carry your data (in pieces) from one point to the next. Includes header that includes source and destination, timestamps, network hops, plus the main portion which is the data being transfered (also called body, or payload). Network Interface: Software interface to your networking hardware. Local Area Network (LAN): A network or portion of network not publically accessible to the greater internet.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/processor_scheduling/" class="link black dim">
-        Processor Scheduling
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I&rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. What happens when. It sparks an otimization bubble over my head &mdash; how do we ensure the most efficient scheduling? The staregy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/scaling/" class="link black dim">
-        Scaling
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Key ideas  Vertical scaling: Throw more power at the problem (faster processors, more cores, more RAM) Horizontal scaling: Distributed solution. Caching: Session states need to be stored on an external database or an external persisten cache, like Redis. Load balancing: How many load balancers do we need and where should they be positioned in the topoogy? Database replication: How are preparing for system failure? Database partitioning: Can we shunt requests to different branches?
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/serving_ml_models/" class="link black dim">
-        Serving ML Models
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      
+      Some terms:
+ Uniform Resource Identifier (URI): Most common is URL, but also Uniform Resource Name (URN). Representational State Transfer (REST)ful API: Access and manipulate textual representations of web resources by using a uniform and predefined set of stateless operations. Payload will be formatted in HTML, Extensible Markup Language (XML) or JSON. Single Object Access Protocol (SOAP): Uses XML. Message negotiation and transmission by Hypertext Transfer Protocol (HTTP) and Simple Mail Transfer Protocol (SMTP)  When approaching system design, we bare in mind the goals and constraints of the service we are providing.
     </div>
   </div>
 </div>
@@ -314,8 +181,8 @@ Distance Euclidean As the name suggests, this is the square root of the sum of s
     </li>
     
     <li
-    class="disabled">
-    <a href="" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    >
+    <a href="/ai_notes/software_engineering/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
     </li>
     
     
@@ -328,7 +195,7 @@ Distance Euclidean As the name suggests, this is the square root of the sum of s
     
     
     <li
-    class="active"><a href="/ai_notes/software_engineering/">1</a></li>
+    ><a href="/ai_notes/software_engineering/">1</a></li>
     
     
     
@@ -340,12 +207,12 @@ Distance Euclidean As the name suggests, this is the square root of the sum of s
     
     
     <li
-    ><a href="/ai_notes/software_engineering/page/2/">2</a></li>
+    class="active"><a href="/ai_notes/software_engineering/page/2/">2</a></li>
     
     
     <li
-    >
-    <a href="/ai_notes/software_engineering/page/2/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    class="disabled">
+    <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
     </li>
     
     <li>

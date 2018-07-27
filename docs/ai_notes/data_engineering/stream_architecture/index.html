@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Siobhán K Cronin  | Navier-Stokes Existence and Smoothness Problem</title>
+    <title>Siobhán K Cronin  | Stream Architecture</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -35,10 +35,11 @@
 
     
 
-    <meta property="og:title" content="Navier-Stokes Existence and Smoothness Problem" />
-<meta property="og:description" content="Let me say up front, I have not solved this problem, nor am I in the running. I came to math late in 2016 after a lifetime of music study, and while I am building a solid trellis upon which to grow my imagination, it will take me many years to capitalize on my potential. That being said, the Millenium Prizes are my one of my favorite sporting events, and the Navier-Stokes Existence and Smoothness Problem is my home team I&rsquo;m rooting for to emerge next." />
+    <meta property="og:title" content="Stream Architecture" />
+<meta property="og:description" content="How can you a persistent message queue that scales to millions of messages/second?
+For example, today&rsquo;s cars are equipped with a data storage device, the EDR (event data recorder), which stores all the sensor data for the vehicle. Such data could be used for routing, dashboard analytics, or mechanical operation (cruise control, lane correction, auto parking, etc). This is just one of many use cases in the IoT universe, all requiring connectivity to control centers and real-time processing of data streams." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://siobhankcronin.com/ai_notes/math/navier_stokes/" />
+<meta property="og:url" content="https://siobhankcronin.com/ai_notes/data_engineering/stream_architecture/" />
 
 
 
@@ -55,19 +56,21 @@
 
 
 
-<meta itemprop="name" content="Navier-Stokes Existence and Smoothness Problem">
-<meta itemprop="description" content="Let me say up front, I have not solved this problem, nor am I in the running. I came to math late in 2016 after a lifetime of music study, and while I am building a solid trellis upon which to grow my imagination, it will take me many years to capitalize on my potential. That being said, the Millenium Prizes are my one of my favorite sporting events, and the Navier-Stokes Existence and Smoothness Problem is my home team I&rsquo;m rooting for to emerge next.">
+<meta itemprop="name" content="Stream Architecture">
+<meta itemprop="description" content="How can you a persistent message queue that scales to millions of messages/second?
+For example, today&rsquo;s cars are equipped with a data storage device, the EDR (event data recorder), which stores all the sensor data for the vehicle. Such data could be used for routing, dashboard analytics, or mechanical operation (cruise control, lane correction, auto parking, etc). This is just one of many use cases in the IoT universe, all requiring connectivity to control centers and real-time processing of data streams.">
 
 
 
-<meta itemprop="wordCount" content="272">
+<meta itemprop="wordCount" content="626">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Navier-Stokes Existence and Smoothness Problem"/>
-<meta name="twitter:description" content="Let me say up front, I have not solved this problem, nor am I in the running. I came to math late in 2016 after a lifetime of music study, and while I am building a solid trellis upon which to grow my imagination, it will take me many years to capitalize on my potential. That being said, the Millenium Prizes are my one of my favorite sporting events, and the Navier-Stokes Existence and Smoothness Problem is my home team I&rsquo;m rooting for to emerge next."/>
+<meta name="twitter:title" content="Stream Architecture"/>
+<meta name="twitter:description" content="How can you a persistent message queue that scales to millions of messages/second?
+For example, today&rsquo;s cars are equipped with a data storage device, the EDR (event data recorder), which stores all the sensor data for the vehicle. Such data could be used for routing, dashboard analytics, or mechanical operation (cruise control, lane correction, auto parking, etc). This is just one of many use cases in the IoT universe, all requiring connectivity to control centers and real-time processing of data streams."/>
 
   </head>
 
@@ -168,52 +171,104 @@
           
         NOTES ON AI
       </p>
-      <h1 class="f1 helvetica mb1">Navier-Stokes Existence and Smoothness Problem</h1>
+      <h1 class="f1 helvetica mb1">Stream Architecture</h1>
     </header>
 
     <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
 
-<p>Let me say up front, I have not solved this problem, nor am I in the
-running. I came to math late in 2016 after a lifetime of music study,
-and while I am building a solid trellis upon which to grow my
-imagination, it will take me many years to capitalize on my potential.
-That being said, the Millenium Prizes are my one of my favorite sporting events, and the
-Navier-Stokes Existence and Smoothness Problem is my home team I&rsquo;m rooting for to emerge next.</p>
+<p>How can you a persistent message queue that scales to millions of messages/second?</p>
 
-<h3 id="overview">Overview</h3>
+<p>For example, today&rsquo;s cars are equipped with a data storage device, the EDR (event
+data recorder), which stores all the sensor data for the vehicle. Such data could
+be used for routing, dashboard analytics, or mechanical operation (cruise control,
+lane correction, auto parking, etc). This is just one of many use cases in the IoT
+universe, all requiring connectivity to control centers and real-time processing of data streams.
+In many real-world use cases, batch processing does not effectively match reality,
+and real-time processing is required, with a new data maxim, &ldquo;use it and lose it&rdquo;.</p>
 
-<p>Taken with the Euler equations, Navier-Stokes describes the motion of a fluid in
-$R^{n}$ where $n$ = 2 or 3. We solve the equations for an unknown <strong>velocity</strong>
-vector $u(x, t) \in R^n$ and <strong>pressure</strong> p(x, t) \in R^n**, defined for some
-position $x\in R^n$ and $t \geq 0$.</p>
-
-<h3 id="terms">Terms</h3>
-
-<p><img src="mohr.png" alt="image" /></p>
+<p>How do we architect such a system? The answer proposed by Dunning &amp; Friedman&rsquo;s book
+<strong>Streaming Arhitecture</strong> is that we use data streams throughout our entire architecture.
+We can refer to this as Universal Stream-based Architecture. In this structure data
+is used immediately upon ingestion, but still need durability in case processess downstream
+aren&rsquo;t ready to process the stream (the data should persist in some way, and be processed
+when the stream is flowing again). Another key idea of this architecture is to decouple
+data sources from data consumers. Data may flow to an archive, to an aggregator in a
+batch process, and towards stream processing. The point is, each of these consumers
+can perform their respective tasks, although their needs from the data are different.
+This design is flexible. Features can be added as they emerge in business development,
+without disrupting other existing processes.</p>
 
 <ul>
-<li><strong>Mohr&rsquo;s Circle</strong>: 2D graphic of the transformation law of the Cauchy stress tensor.</li>
-<li><strong>Galillean relativity</strong>: The laws of motion are the same in all inertial frames.</li>
-<li><strong>Cauchy stress tensor</strong>: Represented as a matrix of nine datapoints completely defining the
-state of stress at a point in a material.</li>
-<li><strong>isotropic</strong>: Uniformity in all directions.</li>
-<li><strong>Newton&rsquo;s Second Law (re: a particle)</strong>: (mass)(acceleration) = sum of forces
-$$m\vec{a} = \sigma\vec{F}$$
-$$m/V\frac{d\vec{v}}{dt} = \sigma\vec{F}/V$$</li>
-<li><strong>Continuum Hypothesis (CH)</strong>: &ldquo;There is no set whose cardinality is strictly between
-that of the integers and the real numbers&rdquo; (proposed by Georg Cantor in 1878, and proved
-by Paul Cohen in 1963, building on Godel&rsquo;s 1940 work).</li>
+<li><strong>producer/publisher</strong>: The data source that sends data to the messaging system.</li>
+<li><strong>consumer/subscriber</strong>: The processes that use the data provided by the producer.</li>
 </ul>
 
-<h3 id="the-equations">The Equations</h3>
-
-<p>Stokes stress constitutive equation: $\tau = 2\mu\epsilon$ with $\epsilon=0.5(\nabla u + \nabla u^T)$</p>
-
-<h3 id="references">References</h3>
+<p>Here are some essential characteristics we will expect from our messaging system:</p>
 
 <ul>
-<li>Existence and Smoothness of the Navier-Stokes Equation, by Charles Fefferman</li>
-<li>Wikipedia</li>
+<li><em>Fuller independence of the producer and consumer</em></li>
+<li><em>Persistence</em> (as mentioned above, we need to be prepared for a hold up in the stream)</li>
+<li><em>High rates of messages/second</em></li>
+<li><em>Naming of topics</em> (so consumers can subscribe to what they need)</li>
+<li><em>A replayable sequence with strong ordering</em> (useful for picking up the stream and replaying
+at any point)</li>
+<li><em>Fault tolerance</em></li>
+<li><em>Geo-distributed replication</em> (if your service needs to work on all regions, this is required)</li>
+</ul>
+
+<p>Messaging services like Kafka and Map R persist all messages while still handling over 1GB
+of message traffic per second per server.</p>
+
+<p>Distributed system guarentees:
+* <strong>at-least-once</strong>: Every record is processed, but some may be processed more than once.
+* <strong>at-most-once</strong>: No record will be processed more than once, but some records may be lost.
+* <strong>exactly-once</strong></p>
+
+<h3 id="apache-storm">Apache Storm</h3>
+
+<ul>
+<li>real-time processing of unbounded streams</li>
+<li>represented by Java objects that are constructed as messages are read</li>
+<li>excels as low-latency, real-time analytics</li>
+<li>the first on the scene, so longer history of documentation</li>
+<li>does not support windowing (time period over which aggregations are made in stream processing)</li>
+</ul>
+
+<h3 id="apache-spark-streaming">Apache Spark Streaming</h3>
+
+<ul>
+<li>relies on Resilient Distributed Dataset (RDD), where if jobs are too big for in-memory,
+Spark spills to disk</li>
+<li>requires a distributed storage system (like Cassandra)</li>
+<li>works with Java, Python, and Scala</li>
+</ul>
+
+<h3 id="apache-flink">Apache Flink</h3>
+
+<ul>
+<li>low latency streaming, as well as batch</li>
+<li>treats all batches as a special case of streaming</li>
+<li>like Spark or Storm, requires a distributed storage system</li>
+</ul>
+
+<h3 id="kafka-transport">Kafka transport</h3>
+
+<ul>
+<li>asynchronous, message-based, and persistant</li>
+<li>decouple the producer from the consumer</li>
+<li>require all messages to be acknowledged in order</li>
+<li>sets up oersistence that can last for days or weeks (&ldquo;surely they&rsquo;re done with that message by now&rdquo;)</li>
+<li>producers send messages to a Kafka broker, which stores and forward messages for many topics</li>
+<li>persistence of messages is unconditional</li>
+<li>offers compaction (retain a message if no later message has been received with the same key), otherwise deleted</li>
+</ul>
+
+<h3 id="apache-apex">Apache Apex</h3>
+
+<ul>
+<li>both batch and low-latency processing</li>
+<li>runs as a YARN as a application (Yet Another Resource Negotiator &mdash; the resource management layer
+of the Hadoop ecosystem)</li>
 </ul>
 <ul class="pa0">
   

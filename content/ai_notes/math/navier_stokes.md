@@ -28,6 +28,12 @@ position $x\in R^n$ and $t \geq 0$.
 * **Cauchy stress tensor**: Represented as a matrix of nine datapoints completely defining the
 state of stress at a point in a material.
 * **isotropic**: Uniformity in all directions.
+* **Newton's Second Law (re: a particle)**: (mass)(acceleration) = sum of forces
+$$m\vec{a} = \sigma\vec{F}$$
+$$m/V\frac{d\vec{v}}{dt} = \sigma\vec{F}/V$$
+* **Continuum Hypothesis (CH)**: "There is no set whose cardinality is strictly between
+that of the integers and the real numbers" (proposed by Georg Cantor in 1878, and proved
+by Paul Cohen in 1963, building on Godel's 1940 work). 
 
 ### The Equations
 

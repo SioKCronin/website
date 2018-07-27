@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Siobhán K Cronin  | DE stack</title>
+    <title>Siobhán K Cronin  | Data Engineering Pipeline</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -35,8 +35,8 @@
 
     
 
-    <meta property="og:title" content="DE stack" />
-<meta property="og:description" content="Ingestion  Kafka Sqoop  Processing/Buffering  AWS lambda Apache Storm  Caching/Storage  Memcached: Apache Cassandra: Better than Redis on fault tolerance. Has support for HiveQL. Useful for when you are writing more than reading. Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Hive HBase Scribe MongoDB DynamoDB CouchDB Redshift  Viz  Flask  Other  Capistrano: OSS framework for building automated deployment scriopts (Ruby)." />
+    <meta property="og:title" content="Data Engineering Pipeline" />
+<meta property="og:description" content="Ingestion File System (block storage of raw data)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Streaming  Kafka AWS Kinesis GCP Pub/Sub Logstash RabbitMQ Sqoop  Processing Batch Processing  AWS lambda Apache Storm  Unified Processing  Flink  Stream Processing  Spark Streaming Storm Kafka Streams  Data Store Cache  Redis: OSS in-memory data structure storage, used as a database, cache, and message broker." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://siobhankcronin.com/ai_notes/software_engineering/de_stack/" />
 
@@ -55,19 +55,19 @@
 
 
 
-<meta itemprop="name" content="DE stack">
-<meta itemprop="description" content="Ingestion  Kafka Sqoop  Processing/Buffering  AWS lambda Apache Storm  Caching/Storage  Memcached: Apache Cassandra: Better than Redis on fault tolerance. Has support for HiveQL. Useful for when you are writing more than reading. Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Hive HBase Scribe MongoDB DynamoDB CouchDB Redshift  Viz  Flask  Other  Capistrano: OSS framework for building automated deployment scriopts (Ruby).">
+<meta itemprop="name" content="Data Engineering Pipeline">
+<meta itemprop="description" content="Ingestion File System (block storage of raw data)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Streaming  Kafka AWS Kinesis GCP Pub/Sub Logstash RabbitMQ Sqoop  Processing Batch Processing  AWS lambda Apache Storm  Unified Processing  Flink  Stream Processing  Spark Streaming Storm Kafka Streams  Data Store Cache  Redis: OSS in-memory data structure storage, used as a database, cache, and message broker.">
 
 
 
-<meta itemprop="wordCount" content="68">
+<meta itemprop="wordCount" content="180">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="DE stack"/>
-<meta name="twitter:description" content="Ingestion  Kafka Sqoop  Processing/Buffering  AWS lambda Apache Storm  Caching/Storage  Memcached: Apache Cassandra: Better than Redis on fault tolerance. Has support for HiveQL. Useful for when you are writing more than reading. Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Hive HBase Scribe MongoDB DynamoDB CouchDB Redshift  Viz  Flask  Other  Capistrano: OSS framework for building automated deployment scriopts (Ruby)."/>
+<meta name="twitter:title" content="Data Engineering Pipeline"/>
+<meta name="twitter:description" content="Ingestion File System (block storage of raw data)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Streaming  Kafka AWS Kinesis GCP Pub/Sub Logstash RabbitMQ Sqoop  Processing Batch Processing  AWS lambda Apache Storm  Unified Processing  Flink  Stream Processing  Spark Streaming Storm Kafka Streams  Data Store Cache  Redis: OSS in-memory data structure storage, used as a database, cache, and message broker."/>
 
   </head>
 
@@ -168,35 +168,98 @@
           
         SOFTWARE ENGINEERING
       </p>
-      <h1 class="f1 helvetica mb1">DE stack</h1>
+      <h1 class="f1 helvetica mb1">Data Engineering Pipeline</h1>
     </header>
 
     <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
 
 <h3 id="ingestion">Ingestion</h3>
 
+<h4 id="file-system-block-storage-of-raw-data">File System (block storage of raw data)</h4>
+
+<ul>
+<li><strong>HDFS</strong></li>
+<li><strong>AWS S3</strong></li>
+<li><strong>Azure Blob Storage</strong></li>
+<li><strong>Alluxio</strong></li>
+<li><strong>Ceph</strong></li>
+</ul>
+
+<h4 id="streaming">Streaming</h4>
+
 <ul>
 <li><strong>Kafka</strong></li>
+<li><strong>AWS Kinesis</strong></li>
+<li><strong>GCP Pub/Sub</strong></li>
+<li><strong>Logstash</strong></li>
+<li><strong>RabbitMQ</strong></li>
 <li><strong>Sqoop</strong></li>
 </ul>
 
-<h3 id="processing-buffering">Processing/Buffering</h3>
+<h3 id="processing">Processing</h3>
+
+<h4 id="batch-processing">Batch Processing</h4>
 
 <ul>
 <li><strong>AWS lambda</strong></li>
 <li><strong>Apache Storm</strong></li>
 </ul>
 
-<h3 id="caching-storage">Caching/Storage</h3>
+<h4 id="unified-processing">Unified Processing</h4>
 
 <ul>
-<li><strong>Memcached</strong>:</li>
-<li><strong>Apache Cassandra</strong>: Better than Redis on fault tolerance. Has support for HiveQL. Useful
-for when you are writing more than reading.</li>
+<li><strong>Flink</strong></li>
+</ul>
+
+<h4 id="stream-processing">Stream Processing</h4>
+
+<ul>
+<li><strong>Spark Streaming</strong></li>
+<li><strong>Storm</strong></li>
+<li><strong>Kafka Streams</strong></li>
+</ul>
+
+<h3 id="data-store">Data Store</h3>
+
+<h4 id="cache">Cache</h4>
+
+<ul>
 <li><strong>Redis</strong>: OSS in-memory data structure storage, used as a database, cache, and
 message broker. Key-value based database system.</li>
-<li><strong>Hive</strong></li>
-<li><strong>HBase</strong></li>
+<li><strong>Memcached</strong></li>
+<li><strong>Hazelcast</strong></li>
+</ul>
+
+<h4 id="time-series">Time Series</h4>
+
+<ul>
+<li><strong>Apache Cassandra</strong>: Better than Redis on fault tolerance. Has support for HiveQL. Useful
+for when you are writing more than reading.</li>
+<li><strong>Cassandra</strong></li>
+<li><strong>Druid</strong></li>
+<li><strong>InfluxDB</strong></li>
+</ul>
+
+<h4 id="geospatial">Geospatial</h4>
+
+<ul>
+<li>**PostgreSQL</li>
+<li>**Azure Cosmos DB</li>
+</ul>
+
+<h4 id="textsearch">TextSearch</h4>
+
+<ul>
+<li><strong>ElasticSearch</strong></li>
+</ul>
+
+<h4 id="other">Other</h4>
+
+<ul>
+<li><strong>Hive</strong>: Data wharehouse built on top of Hadoop. SQL queries must be written in the
+MapReduce Java api.</li>
+<li><strong>HBase</strong>: Non-relational distributed database written in Java (part of Hadoop), and runs
+on top of HDFS.</li>
 <li><strong>Scribe</strong></li>
 <li><strong>MongoDB</strong></li>
 <li><strong>DynamoDB</strong></li>
@@ -204,15 +267,24 @@ message broker. Key-value based database system.</li>
 <li><strong>Redshift</strong></li>
 </ul>
 
-<h3 id="viz">Viz</h3>
+<h3 id="web-app-frameworks">Web app frameworks</h3>
 
 <ul>
-<li><strong>Flask</strong></li>
+<li><strong>Flask</strong>: Web platform for Python</li>
 </ul>
 
-<h3 id="other">Other</h3>
+<h3 id="orchestrators-workflow-management">Orchestrators (workflow management)</h3>
 
 <ul>
+<li><strong>Airflow</strong>: Author workflows as DAGs.</li>
+</ul>
+
+<h3 id="other-1">Other</h3>
+
+<ul>
+<li><strong>Ballerina</strong>: <a href="https://ballerina.io/philosophy/">Cloud Native Programming Language</a></li>
+<li><strong>Hadoop</strong>: OSS utilties orchestrating distributed problem solving.</li>
+<li><strong>Spark</strong>: Unified analytics engine.</li>
 <li><strong>Capistrano</strong>: OSS framework for building automated deployment scriopts (Ruby).</li>
 </ul>
 <ul class="pa0">

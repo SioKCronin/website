@@ -124,5 +124,15 @@ Squaring both sides gives $2 = \frac{p^2}{q^2}$, so consequently $2q^2 = p^2$.
 If a square of a number is even, then the number is even, so there exists some number $k$ such that $p=2k$. Subsituting this value into the equation yields $2q^2 = 4k^2$, or $q^2 = 2k^2$.</description>
     </item>
     
+    <item>
+      <title>Stream Architecture</title>
+      <link>https://siobhankcronin.com/ai_notes/data_engineering/stream_architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/data_engineering/stream_architecture/</guid>
+      <description>How can you a persistent message queue that scales to millions of messages/second?
+For example, today&amp;rsquo;s cars are equipped with a data storage device, the EDR (event data recorder), which stores all the sensor data for the vehicle. Such data could be used for routing, dashboard analytics, or mechanical operation (cruise control, lane correction, auto parking, etc). This is just one of many use cases in the IoT universe, all requiring connectivity to control centers and real-time processing of data streams.</description>
+    </item>
+    
   </channel>
 </rss>
