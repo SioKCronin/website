@@ -100,15 +100,6 @@ Distance Euclidean As the name suggests, this is the square root of the sum of s
     </item>
     
     <item>
-      <title>Serving ML Models</title>
-      <link>https://siobhankcronin.com/ai_notes/software_engineering/serving_ml_models/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://siobhankcronin.com/ai_notes/software_engineering/serving_ml_models/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>System Design</title>
       <link>https://siobhankcronin.com/ai_notes/software_engineering/system_design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
