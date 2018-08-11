@@ -100,10 +100,10 @@ a record that can be navigated in the event of error detection and diagnosis.
 
 * **batch processing**: generate views based on all available data in a read-only database, 
 where updates completely replace existing precomputed views (e.g. Hadoop).
-* **real-time(speed) processing: provides views based on the most recent data, filling
+* **real-time(speed) processing**: provides views based on the most recent data, filling
 in the gaps in the batch processing views. May not be as accurate or complete as batch layer,
 but available in real-time (e.g. Storm).
-* **serving layer (respond to queries): build views from the processed data (e.g. data stores
+* **serving layer (respond to queries)**: build views from the processed data (e.g. data stores
 like Cassandra or MongoDB, or Elasticsearch for querying output).
 
 

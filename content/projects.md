@@ -3,17 +3,19 @@ draft = false
 +++
 ### Open Source Software
 
+**[Alluvium](https://github.com/SioKCronin/alluvium)** - Realtime streaming search with Kafka and Apache Storm</br>
 **[SwarmOpt](https://github.com/SioKCronin/SwarmOpt)** — Swarm Intelligence (SI) optimizer for hyperparameter tuning</br>
 
 ### ML/AI Engineering
 
+**Insight** | Data Engineering Fellowship | Jul 2018 - Present
 **Uncountable** | Software Engineer | Jan-Feb 2018  
 **Avisell** | Machine Learning Engineer | May-Sep 2017  
 
 ### Research
 
 **Slow Research Lab | 2016-Present**  
-Independent research on swarm intelligence and reinforcement learning.
+Independent research on swarm intelligence algorithms.
 
 **Yerba Buena Center for the Arts | 2016-2017**  
 Network models of institutionalized oppression with Ray Gilstrap and Pia
@@ -48,10 +50,13 @@ Affect research with Dr. Lisa Feldman Barrett
 ### Music
 
 **Tempered (2018-)**
-Retrofitted Mozart piano concertos as contemporary sonic landscapes.
+Four cathedrals of sound collide on the Gallilean mooons of Jupiter, their shards becoming lanscape, 
+playthings and cultural totems of emerging and receding forms of life. A four-year meditation on multispecies
+thriving.
 
 **Ryujin (2016)**
-String quartet (premiered at the SF Women's Building by Friction Quartet)
+String quartet (premiered at the SF Women's Building by Friction Quartet, sponsored by 
+the San Francisco Arts Commission).
 
 **O Pacifica (2014)**
-String quintet. 
+String quintet (sponsored by the Center for Cultural Innovation). 
