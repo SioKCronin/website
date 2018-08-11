@@ -36,7 +36,7 @@
     
 
     <meta property="og:title" content="Stream Architecture" />
-<meta property="og:description" content="How can you a persistent message queue that scales to millions of messages/second?
+<meta property="og:description" content="How can we build a persistent message queue that scales to millions of messages/second?
 For example, today&rsquo;s cars are equipped with a data storage device, the EDR (event data recorder), which stores all the sensor data for the vehicle. Such data could be used for routing, dashboard analytics, or mechanical operation (cruise control, lane correction, auto parking, etc). This is just one of many use cases in the IoT universe, all requiring connectivity to control centers and real-time processing of data streams." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://siobhankcronin.com/ai_notes/data_engineering/stream_architecture/" />
@@ -57,19 +57,19 @@ For example, today&rsquo;s cars are equipped with a data storage device, the EDR
 
 
 <meta itemprop="name" content="Stream Architecture">
-<meta itemprop="description" content="How can you a persistent message queue that scales to millions of messages/second?
+<meta itemprop="description" content="How can we build a persistent message queue that scales to millions of messages/second?
 For example, today&rsquo;s cars are equipped with a data storage device, the EDR (event data recorder), which stores all the sensor data for the vehicle. Such data could be used for routing, dashboard analytics, or mechanical operation (cruise control, lane correction, auto parking, etc). This is just one of many use cases in the IoT universe, all requiring connectivity to control centers and real-time processing of data streams.">
 
 
 
-<meta itemprop="wordCount" content="626">
+<meta itemprop="wordCount" content="792">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Stream Architecture"/>
-<meta name="twitter:description" content="How can you a persistent message queue that scales to millions of messages/second?
+<meta name="twitter:description" content="How can we build a persistent message queue that scales to millions of messages/second?
 For example, today&rsquo;s cars are equipped with a data storage device, the EDR (event data recorder), which stores all the sensor data for the vehicle. Such data could be used for routing, dashboard analytics, or mechanical operation (cruise control, lane correction, auto parking, etc). This is just one of many use cases in the IoT universe, all requiring connectivity to control centers and real-time processing of data streams."/>
 
       
@@ -178,7 +178,7 @@ For example, today&rsquo;s cars are equipped with a data storage device, the EDR
 
     <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
 
-<p>How can you a persistent message queue that scales to millions of messages/second?</p>
+<p>How can we build a persistent message queue that scales to millions of messages/second?</p>
 
 <p>For example, today&rsquo;s cars are equipped with a data storage device, the EDR (event
 data recorder), which stores all the sensor data for the vehicle. Such data could
@@ -189,9 +189,9 @@ In many real-world use cases, batch processing does not effectively match realit
 and real-time processing is required, with a new data maxim, &ldquo;use it and lose it&rdquo;.</p>
 
 <p>How do we architect such a system? The answer proposed by Dunning &amp; Friedman&rsquo;s book
-<strong>Streaming Arhitecture</strong> is that we use data streams throughout our entire architecture.
+<strong>Streaming Architecture</strong> is that we use data streams throughout our entire architecture.
 We can refer to this as Universal Stream-based Architecture. In this structure data
-is used immediately upon ingestion, but still need durability in case processess downstream
+is used immediately upon ingestion, but we still need durability in case processess downstream
 aren&rsquo;t ready to process the stream (the data should persist in some way, and be processed
 when the stream is flowing again). Another key idea of this architecture is to decouple
 data sources from data consumers. Data may flow to an archive, to an aggregator in a
@@ -221,10 +221,13 @@ at any point)</li>
 <p>Messaging services like Kafka and Map R persist all messages while still handling over 1GB
 of message traffic per second per server.</p>
 
-<p>Distributed system guarentees:
-* <strong>at-least-once</strong>: Every record is processed, but some may be processed more than once.
-* <strong>at-most-once</strong>: No record will be processed more than once, but some records may be lost.
-* <strong>exactly-once</strong></p>
+<p>Distributed system guarentees:</p>
+
+<ul>
+<li><strong>at-least-once</strong>: Every record is processed, but some may be processed more than once.</li>
+<li><strong>at-most-once</strong>: No record will be processed more than once, but some records may be lost.</li>
+<li><strong>exactly-once</strong>: Every record will be processed exactly once.</li>
+</ul>
 
 <h3 id="apache-storm">Apache Storm</h3>
 
@@ -271,6 +274,27 @@ Spark spills to disk</li>
 <li>both batch and low-latency processing</li>
 <li>runs as a YARN as a application (Yet Another Resource Negotiator &mdash; the resource management layer
 of the Hadoop ecosystem)</li>
+</ul>
+
+<h2 id="lambda-architecture">Lambda Architecture</h2>
+
+<p>Blends the best of batch processing with stream processing to balance latency,
+throughput, and fault-tolerance. This structure requires an append-long, immutable
+data source. Every record is timestamped and is true (as it indeed records what
+entered at that point in time). There&rsquo;s a whole tangent conversation regarding
+human error in such a system, and yet the persistence of the data source provides
+a record that can be navigated in the event of error detection and diagnosis.</p>
+
+<h3 id="three-layers">Three layers:</h3>
+
+<ul>
+<li><strong>batch processing</strong>: generate views based on all available data in a read-only database,
+where updates completely replace existing precomputed views (e.g. Hadoop).</li>
+<li>**real-time(speed) processing: provides views based on the most recent data, filling
+in the gaps in the batch processing views. May not be as accurate or complete as batch layer,
+but available in real-time (e.g. Storm).</li>
+<li>**serving layer (respond to queries): build views from the processed data (e.g. data stores
+like Cassandra or MongoDB, or Elasticsearch for querying output).</li>
 </ul>
 <ul class="pa0">
   

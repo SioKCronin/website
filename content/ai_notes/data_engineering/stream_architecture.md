@@ -5,7 +5,7 @@ menu:
         parent: Data Engineering
 ---
 
-How can you a persistent message queue that scales to millions of messages/second?
+How can we build a persistent message queue that scales to millions of messages/second?
 
 For example, today's cars are equipped with a data storage device, the EDR (event
 data recorder), which stores all the sensor data for the vehicle. Such data could 
@@ -16,9 +16,9 @@ In many real-world use cases, batch processing does not effectively match realit
 and real-time processing is required, with a new data maxim, "use it and lose it". 
 
 How do we architect such a system? The answer proposed by Dunning & Friedman's book
-**Streaming Arhitecture** is that we use data streams throughout our entire architecture.
+**Streaming Architecture** is that we use data streams throughout our entire architecture.
 We can refer to this as Universal Stream-based Architecture. In this structure data
-is used immediately upon ingestion, but still need durability in case processess downstream
+is used immediately upon ingestion, but we still need durability in case processess downstream
 aren't ready to process the stream (the data should persist in some way, and be processed
 when the stream is flowing again). Another key idea of this architecture is to decouple
 data sources from data consumers. Data may flow to an archive, to an aggregator in a 
@@ -45,9 +45,10 @@ Messaging services like Kafka and Map R persist all messages while still handlin
 of message traffic per second per server. 
 
 Distributed system guarentees:
+
 * **at-least-once**: Every record is processed, but some may be processed more than once. 
 * **at-most-once**: No record will be processed more than once, but some records may be lost.
-* **exactly-once** 
+* **exactly-once**: Every record will be processed exactly once. 
 
 ### Apache Storm
 
@@ -86,6 +87,24 @@ Spark spills to disk
 * runs as a YARN as a application (Yet Another Resource Negotiator --- the resource management layer
 of the Hadoop ecosystem)
 
+## Lambda Architecture
+
+Blends the best of batch processing with stream processing to balance latency,
+throughput, and fault-tolerance. This structure requires an append-long, immutable
+data source. Every record is timestamped and is true (as it indeed records what 
+entered at that point in time). There's a whole tangent conversation regarding
+human error in such a system, and yet the persistence of the data source provides
+a record that can be navigated in the event of error detection and diagnosis.
+
+### Three layers:
+
+* **batch processing**: generate views based on all available data in a read-only database, 
+where updates completely replace existing precomputed views (e.g. Hadoop).
+* **real-time(speed) processing: provides views based on the most recent data, filling
+in the gaps in the batch processing views. May not be as accurate or complete as batch layer,
+but available in real-time (e.g. Storm).
+* **serving layer (respond to queries): build views from the processed data (e.g. data stores
+like Cassandra or MongoDB, or Elasticsearch for querying output).
 
 
 
