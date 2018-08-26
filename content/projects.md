@@ -8,9 +8,9 @@ draft = false
 
 ### ML/AI Engineering
 
-**Insight** | Data Engineering Fellowship | Jul 2018 - Present
-**Uncountable** | Software Engineer | Jan-Feb 2018  
-**Avisell** | Machine Learning Engineer | May-Sep 2017  
+* **Insight** | Data Engineering Fellowship | Jul 2018 - Present
+* **Uncountable** | Software Engineer | Jan-Feb 2018  
+* **Avisell** | Machine Learning Engineer | May-Sep 2017  
 
 ### Research
 
@@ -49,10 +49,8 @@ Affect research with Dr. Lisa Feldman Barrett
 
 ### Music
 
-**Tempered (2018-)**
-Four cathedrals of sound collide on the Gallilean mooons of Jupiter, their shards becoming lanscape, 
-playthings and cultural totems of emerging and receding forms of life. A four-year meditation on multispecies
-thriving.
+**Tempered (2018-2022)**
+A four-year meditation on multispecies thriving.
 
 **Ryujin (2016)**
 String quartet (premiered at the SF Women's Building by Friction Quartet, sponsored by 

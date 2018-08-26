@@ -53,5 +53,15 @@ Part 1 A brief overview of applications, including robotics, inventory managemen
 Differentiating between policy optimization and dynamic programming. In particular, policy optimization including DFO/Evolutionary algorithms (derivative-free) and Policy Gradients (using gradients, improves with more parameters. Dynamic programming requires discrete finite states, and so must be approximated (for instance, approximating function with neural nets).</description>
     </item>
     
+    <item>
+      <title>Yelp Realtime Streaming Data Infrastructure</title>
+      <link>https://siobhankcronin.com/ai_notes/lecture_notes/yelp_realtime_streaming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/lecture_notes/yelp_realtime_streaming/</guid>
+      <description>Fast Order Search Using Yelp&amp;rsquo;s Data Pipeline and Elasticsearch Yelp was experiencing drag on their food order history page due to database lookups. Each lookup required a join across four tables. They found they needed both a relational data store and a key-value store for lantency-sensitive, high-traffic contexts. They also wanted to support full-text search across their data. After weighing their options, they chose Elasticsearch.
+Deciding on their schema took some planning, as they wanted to prevent the number of joins of common operations (that was the situation that led to the change in the first place!</description>
+    </item>
+    
   </channel>
 </rss>
