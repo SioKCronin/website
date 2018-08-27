@@ -62,7 +62,7 @@ Deciding on their schema took some planning, as they wanted to prevent the numbe
 
 
 
-<meta itemprop="wordCount" content="345">
+<meta itemprop="wordCount" content="971">
 
 
 
@@ -212,6 +212,74 @@ They developed their own auditing algorithm to ensure Elasticpipe was performing
 way they expected. This algorithm retrieves, sorts, and dedupes all document ids
 that should exist in Elasticsearch by scanning the Kafka topic, and then scan Elasticsearch
 for possible missing documents using binary search.</p>
+
+<h2 id="billions-of-messages-a-day">Billions of Messages a Day</h2>
+
+<p>In 2011, Yelp transitioned to a service oriented architecture (SOA), which scaled
+to 150 production services by 2014. Here&rsquo;s a fun factoid shared in the blog. Metcale&rsquo;s
+Law that the effect of a telecommunications network is proportional to the square
+of the number of users connected to the system. This is a shorthand way of characterizing
+network effects in complex systems. We can compare this to the services in a SOA.
+Ideally we have the effect of all those possible pathways through the system. However,
+if we use RESTFul HTTP connections between all pairs of services this will be difficult
+to scale.</p>
+
+<p>Since 2016, Yelp has had over 100 million reviews, which raises some unique challenges.
+&ldquo;Bulk data applications become service scalability problems&rdquo;. For instance, how would
+we handle joins across services? Won&rsquo;t we need to make N service calls for the
+<strong><a href="https://secure.phabricator.com/book/phabcontrib/article/n_plus_one/">N+1 Query Problem</a></strong>?</p>
+
+<p>The solution Yelp came up with lies in a message bus and standardized data formatting.
+For the bus, Kafka does the heavy lifting, shifting the complexity from $n^2$ to $n$.
+They exploit Kafka&rsquo;s log compaction feature, which prunes topics down, and retains
+only the most recent message for every key. For formatting, they chose Avro, a
+space-efficient binary serialization format that integreates nicely with dynamic languages.
+What they exploited in their stream architecture was Avro&rsquo;s schema evolution, which
+means that reader and writer applications can use different schema versions, provided
+they are compatible. This is very cool! Producers can iterate on their schema, without
+effecting consumer applications. Schemas are catalogued in an HTTP schema store called
+the &ldquo;Schematizer&rdquo;, so that data can be transported without schemas. Schemas are retrieved
+and data is decoded at runtime.</p>
+
+<p>So, with a set of Kafka topics regulated by a Schematizer, Yelp&rsquo;s realtime data pipeline
+can provide some important guarentees:
+* <strong>format</strong> (registered schema are immutable)
+* <strong>compatability</strong> (every active schema assigned to a topic is guarenteed
+to be compatible with every other active schema assigned to the same topic)
+* <strong>registration</strong> (producers and consumers register whenever they produce or consume
+data with a schema, so there is a log of which users are using which schema at what
+frequency)
+* <strong>data ownership</strong> (all schema require documentation, and a team assignment, which
+is exposed through an interface called Watson)
+* <strong>data availability</strong> (database change capture can reconstruct a complete snapshot)</p>
+
+<h2 id="using-services-to-break-down-monoliths">Using Services to Break Down Monoliths</h2>
+
+<p>I was remarking to a colleague that I&rsquo;ve entered the field of data engineering
+at the height of service oriented architecture, and that I actually need to back up
+and learn more about the monoliths from which such systems came. What I&rsquo;ve been enjoying
+about the Yelp blog is that they share the points of inflection in their systems.</p>
+
+<p>Here are some of the tools/practices they&rsquo;re using at Yelp to keep their services
+humming (and growing):</p>
+
+<ul>
+<li><strong>Swagger</strong> documents the interface of HHTP/JSON services. <em>swagger-py</em> will
+automatically create a Python client given a Swagger specification, and <em>Swagger UI</em>
+provides a centralized directory for all service interfaces.</li>
+<li><strong>Docker containers</strong> are used to spin up test instances for services, creating
+images that can be pulled in as dependencies by other service authors who wish
+to acceptance test the service.</li>
+<li><strong>Pyramid</strong> is used as the service stack&rsquo;s web framework, which is a Python
+package that &ldquo;makes it easy to write web applications&rdquo;.</li>
+<li><strong>gevent</strong> is a coroutine-based Python networking library providing a high-level
+synchronous API</li>
+<li><strong>SmartStack</strong> backs the service discovery system, with each client host running
+an HAProxy instance bound to a localhost. A client contacts a service by connecting
+to its localhost load balancer which then proxies the request to a service instance.</li>
+<li><strong>SQLAlchemy</strong> is used as the database access layer.</li>
+<li><strong>uWSGI</strong> is used behind all the hosting services.</li>
+</ul>
 <ul class="pa0">
   
 </ul>
