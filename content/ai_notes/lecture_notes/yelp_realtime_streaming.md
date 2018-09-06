@@ -104,3 +104,52 @@ an HAProxy instance bound to a localhost. A client contacts a service by connect
 to its localhost load balancer which then proxies the request to a service instance.
 * **SQLAlchemy** is used as the database access layer.
 * **uWSGI** is used behind all the hosting services. 
+
+## More than Just a Schema Store
+
+Being out in front of the curve has its advantages, but in tech that can sometimes
+mean you are building and maintaining software that will one day be a big fancy
+open source project others can plug and play with. Such was the case when Yelp
+tackled its schema management. There wasn't a product on the market suited to their 
+needs, so they built their own solution, the Schematizer (which is the closest
+to a data engineering superhero name I've ever heard). 
+
+In the world of NoSQL databases, schemas can get a bad rap. But as Storm's founder
+Nathan Marz puts it, schemas force us to deal with exceptions at the time the data
+is added, when the context is the most rich as to what might be wrong, as opposed 
+to handling such misisng or incorrectly formatted data downstream, where the context
+is the weakest. When used well, schemas can reduce serious debugging headaches
+and ensure consumers receive data in the form they expect. 
+
+Yelp uses Avro to represent their schemas, which are defined with JSON. If you're interested
+in exploring this landscape, be sure to check out Thrift as well. One of the Avro
+features highlighted in this article is schema evolution, which handles what happens
+when when Avro schema are changed after data has been written to the data store
+using an older version. Here's more [info](https://docs.oracle.com/database/nosql-11.2.2.0/GettingStartedGuide/schemaevolution.html) on schema evolution from Oracle. At Yelp, each
+schema that strams through the pipeline is serialized with an Avro schema. The message
+itself contains a schema ID, so when it reaches the consumer the consumer can retrieve
+the appropriate schema from the Schematizer and deserialize the message. Having 
+all the schemas in one place creates a "single point of truth". 
+
+An interesting case worth considering is what happens when an upstream producer
+changes the schema of the data it passes to the pipeline. How will this affect 
+consumers downstream? This is addressed by the Schematizer, which determines
+topics that can safely be assigned to the new schema based on schema compatibility.
+This compatibility is determined by Avro resolution roles, which you can read more
+about [here](http://avro.apache.org/docs/1.8.0/spec.html#Schema+Resolution). If you
+look through the resolution steps, they're pretty intuitive - the schemas have to 
+define compatible data structures (i.e. "maps whose value types match", or "have
+the same primitive type"). Values from the writer can be "promoted" to what the 
+reader expects. For example, **int** is promotable to **long, float** or **double**. 
+
+The primary key fields of the schemas in the Schematizer are used for log compaction,
+which is useful for restoring state after a crash. Log compaction retains the last 
+update for each key, and a log compacted Kafka topic log contains a full snapshot
+of final record values for every record key. Log compaction allows consumers to restore
+their state from the log compacted topic. You can learn more about how log compaction works
+[here](http://cloudurable.com/blog/kafka-architecture-log-compaction/index.html). 
+
+It's also worth mentioning, that when personally identifiable information (PII) fields
+are added to a schema that previously only had non-PII fields, the two schema are 
+flagged as incompatible, and the Schematizer creates a new topic for the new schema.
+This is great feature for controlling access to private information.
