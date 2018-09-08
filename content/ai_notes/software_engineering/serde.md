@@ -2,7 +2,7 @@
 title: Serialization & Deserialization
 menu:
     ai_notes:
-        parent: Data Engineering
+        parent: Software Engineering
 draft: True
 ---
 So we all appreciate serialization and desearialiaztion, as we wouldn't have data
