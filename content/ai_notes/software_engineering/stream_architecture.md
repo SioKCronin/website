@@ -2,9 +2,8 @@
 title: Stream Architecture
 menu:
     ai_notes:
-        parent: Data Engineering
+        parent: Software Engineering
 ---
-
 How can we build a persistent message queue that scales to millions of messages/second?
 
 For example, today's cars are equipped with a data storage device, the EDR (event
