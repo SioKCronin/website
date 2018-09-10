@@ -5,7 +5,7 @@ draft = false
 
 +++
 Siobhán is a software engineer with a passion for machine learning,
-data engineering, HCI, and data experience design.
+data engineering, and data experience design.
 
 She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies and Harvard Medical School, and now develops tools
