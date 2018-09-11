@@ -14,7 +14,7 @@ draft = false
 
 ### Research
 
-**Insight | 2018-Present
+**Insight | 2018-Present**
 Distributed computing (scalable streaming data architecture)
 
 **Slow Research Lab | 2016-Present**  
