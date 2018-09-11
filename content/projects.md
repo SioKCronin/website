@@ -14,8 +14,11 @@ draft = false
 
 ### Research
 
+**Insight | 2018-Present
+Distributed computing (scalable streaming data architecture)
+
 **Slow Research Lab | 2016-Present**  
-Independent research on swarm intelligence algorithms.
+Independent algorithm and data experience design research.
 
 **Yerba Buena Center for the Arts | 2016-2017**  
 Network models of institutionalized oppression with Ray Gilstrap and Pia
