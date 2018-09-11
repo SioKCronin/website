@@ -47,7 +47,7 @@ linguistic detection of plurality with Dr. Sid Kouider
 **Boston College - Department of Psychology | 2000-2001**  
 Affect research with Dr. Lisa Feldman Barrett
 
-### Music
+### Art
 
 **Tempered (2018-2022)**
 A four-year meditation on multispecies thriving.
