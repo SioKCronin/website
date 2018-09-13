@@ -73,6 +73,17 @@ Distance Euclidean As the name suggests, this is the square root of the sum of s
     </item>
     
     <item>
+      <title>Load Balancing Algorithms</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/load_balancer_algorithms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/load_balancer_algorithms/</guid>
+      <description>First of all, the load balancer has to keep track of which servers are healthy by routinely pinging them and recording if they respond. If a server fails a health check, it is removed from the viable server list, and will only be added again if it passes a later health check.
+Algorithms Least Connection Method LB directs traffic to the server with the fewest active connections
+Least Response Time Method LB directs traffic to the server with the fewest active connections and the lowest average response time.</description>
+    </item>
+    
+    <item>
       <title>Networking</title>
       <link>https://siobhankcronin.com/ai_notes/software_engineering/networking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
