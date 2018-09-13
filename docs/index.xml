@@ -168,11 +168,9 @@ import matplotlib import numpy as np import matplotlib.pyplot as plt %matplotlib
       
       <guid>https://siobhankcronin.com/projects/</guid>
       <description>Open Source Software Alluvium - Realtime streaming search with Kafka and Apache Storm SwarmOpt — Swarm Intelligence (SI) optimizer for hyperparameter tuning
-ML/AI Engineering  Insight | Data Engineering Fellowship | Jul 2018 - Present Uncountable | Software Engineer | Jan-Feb 2018
- Avisell | Machine Learning Engineer | May-Sep 2017
-  Research Insight | 2018-Present Distributed computing (scalable streaming data architecture)
-Slow Research Lab | 2016-Present
-Independent algorithm and data experience design research.</description>
+ML/AI Engineering Insight | Data Engineering Fellowship | Jul 2018 - Present Uncountable | Software Engineer | Jan-Feb 2018 Avisell | Machine Learning Engineer | May-Sep 2017
+Research Insight | 2018-Present Distributed computing (scalable streaming data architecture)
+Slow Research Lab | 2016-Present Independent algorithm and data experience design research.</description>
     </item>
     
     <item>
@@ -284,6 +282,17 @@ Distance Euclidean As the name suggests, this is the square root of the sum of s
       
       <guid>https://siobhankcronin.com/ai_notes/math/linear_algebra/</guid>
       <description>Useful terms and ideas  diagonal matrix: Matrix with zero values except on the diagonal. change of basis matrix: Taking the product of this matrix provides a new basis, which is helpful to us if that basis transformation sets us up for an operation that requires the matrix to be in a particular form. For instance, a change of basis matrix could diagonalize the matrix, such as the choice of the orthogonal matrix as the change of basis matrix in PCA.</description>
+    </item>
+    
+    <item>
+      <title>Load Balancing Algorithms</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/load_balancer_algorithms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/load_balancer_algorithms/</guid>
+      <description>First of all, the load balancer has to keep track of which servers are healthy by routinely pinging them and recording if they respond. If a server fails a health check, it is removed from the viable server list, and will only be added again if it passes a later health check.
+Algorithms Least Connection Method LB directs traffic to the server with the fewest active connections
+Least Response Time Method LB directs traffic to the server with the fewest active connections and the lowest average response time.</description>
     </item>
     
     <item>

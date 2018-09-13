@@ -196,6 +196,12 @@
   </url>
   
   <url>
+    <loc>https://siobhankcronin.com/ai_notes/software_engineering/load_balancer_algorithms/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://siobhankcronin.com/ai_notes/lecture_notes/mlss_cadiz_2016/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
