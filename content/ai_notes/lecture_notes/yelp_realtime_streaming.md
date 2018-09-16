@@ -153,3 +153,8 @@ It's also worth mentioning, that when personally identifiable information (PII) 
 are added to a schema that previously only had non-PII fields, the two schema are 
 flagged as incompatible, and the Schematizer creates a new topic for the new schema.
 This is great feature for controlling access to private information.
+
+Producers and Consumers are also tracked by the Schematizer. If something needs
+attention, this information can be used to contact the appropriate teams. Interestingly,
+this data is also available on its own Kafka topic, using [Yelp Kafka](https://github.com/Yelp/yelp_kafka)
+which has a host of handy features.

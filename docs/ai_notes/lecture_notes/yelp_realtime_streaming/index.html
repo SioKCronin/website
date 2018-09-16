@@ -62,7 +62,7 @@ Deciding on their schema took some planning, as they wanted to prevent the numbe
 
 
 
-<meta itemprop="wordCount" content="1511">
+<meta itemprop="wordCount" content="1555">
 
 
 
@@ -329,6 +329,11 @@ their state from the log compacted topic. You can learn more about how log compa
 are added to a schema that previously only had non-PII fields, the two schema are
 flagged as incompatible, and the Schematizer creates a new topic for the new schema.
 This is great feature for controlling access to private information.</p>
+
+<p>Producers and Consumers are also tracked by the Schematizer. If something needs
+attention, this information can be used to contact the appropriate teams. Interestingly,
+this data is also available on its own Kafka topic, using <a href="https://github.com/Yelp/yelp_kafka">Yelp Kafka</a>
+which has a host of handy features.</p>
 <ul class="pa0">
   
 </ul>

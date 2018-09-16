@@ -11,6 +11,19 @@
     
     
     <item>
+      <title>Binet&#39;s Formula</title>
+      <link>https://siobhankcronin.com/ai_notes/proofs/binets_formula/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/proofs/binets_formula/</guid>
+      <description>This proof was shared with me by my friend Chuck Larrieu Casias, and I liked it so much I wanted to write it up here.
+Suppose we have two similar rectangles, $A$ and $B$. Let $A$ have sides $a$ and $b$, and $B$ have corresponding sides $b$ and $a+b$.
+Then $\frac{b}{a} = \frac{a+b}{b}$. Also, $\frac{b}{a} = \frac{a}{b} + 1$.
+Call $\phi = \frac{b}{a}$. Then $\phi = \frac{1}{\phi} + 1$.
+Multiply both sides by $\phi$ to get $\phi^2 = \phi + 1$.</description>
+    </item>
+    
+    <item>
       <title>Intersection of Convex Sets</title>
       <link>https://siobhankcronin.com/ai_notes/proofs/intersection_of_convex_sets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
