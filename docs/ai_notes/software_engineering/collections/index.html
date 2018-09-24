@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Siobhán K Cronin  | Software Engineering</title>
+    <title>Siobhán K Cronin  | Collections module in Python</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -34,15 +34,13 @@
     
 
     
-      <link href="https://siobhankcronin.com/ai_notes/software_engineering/index.xml" rel="alternate" type="application/rss+xml" title="Siobhán K Cronin" />
-      <link href="https://siobhankcronin.com/ai_notes/software_engineering/index.xml" rel="feed" type="application/rss+xml" title="Siobhán K Cronin" />
-    
 
-    <meta property="og:title" content="Software Engineering" />
-<meta property="og:description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://siobhankcronin.com/ai_notes/software_engineering/" />
-
+    <meta property="og:title" content="Collections module in Python" />
+<meta property="og:description" content="Incredibly useful Python container datatypes.
+Counter Counter is a dictionary subclass with no restrictions on keys and values.
+from collections import Counter words = [&#39;apples&#39;,&#39;oranges&#39;, &#39;apples&#39;, &#39;apples&#39;] words1 = [&#39;oranges&#39;, &#39;oranges&#39;, &#39;oranges&#39;, &#39;apples&#39;]  # Return (element, count) pairs for n most common Counter(words).most_common()  # Subtract elements from another mapping w = Counter(words) w1 = Counter(words1) w.subract(w1) # subtraction, includes zero and negatives w - w1 # subtraction, only positive counts w &amp; w1 # intersection w | w1 # union w &#43; w1 # adds two counters together  # Some useful patterns c." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://siobhankcronin.com/ai_notes/software_engineering/collections/" />
 
 
 
@@ -56,12 +54,26 @@
 
 
 
-<meta itemprop="name" content="Software Engineering">
-<meta itemprop="description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker">
 
+
+
+<meta itemprop="name" content="Collections module in Python">
+<meta itemprop="description" content="Incredibly useful Python container datatypes.
+Counter Counter is a dictionary subclass with no restrictions on keys and values.
+from collections import Counter words = [&#39;apples&#39;,&#39;oranges&#39;, &#39;apples&#39;, &#39;apples&#39;] words1 = [&#39;oranges&#39;, &#39;oranges&#39;, &#39;oranges&#39;, &#39;apples&#39;]  # Return (element, count) pairs for n most common Counter(words).most_common()  # Subtract elements from another mapping w = Counter(words) w1 = Counter(words1) w.subract(w1) # subtraction, includes zero and negatives w - w1 # subtraction, only positive counts w &amp; w1 # intersection w | w1 # union w &#43; w1 # adds two counters together  # Some useful patterns c.">
+
+
+
+<meta itemprop="wordCount" content="407">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Software Engineering"/>
-<meta name="twitter:description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker"/>
+<meta name="twitter:title" content="Collections module in Python"/>
+<meta name="twitter:description" content="Incredibly useful Python container datatypes.
+Counter Counter is a dictionary subclass with no restrictions on keys and values.
+from collections import Counter words = [&#39;apples&#39;,&#39;oranges&#39;, &#39;apples&#39;, &#39;apples&#39;] words1 = [&#39;oranges&#39;, &#39;oranges&#39;, &#39;oranges&#39;, &#39;apples&#39;]  # Return (element, count) pairs for n most common Counter(words).most_common()  # Subtract elements from another mapping w = Counter(words) w1 = Counter(words1) w.subract(w1) # subtraction, includes zero and negatives w - w1 # subtraction, only positive counts w &amp; w1 # intersection w | w1 # union w &#43; w1 # adds two counters together  # Some useful patterns c."/>
 
       
     
@@ -70,6 +82,8 @@
   <body class="ma0 avenir bg-white-90">
 
     
+   
+  
 
   <header>
     <div class="bg-sio-yellow">
@@ -153,90 +167,139 @@
   </header>
 
 
+
     <main class="pb7" role="main">
       
-  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
-  <main class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></main>
-    <section class="flex-ns flex-wrap justify-around mt1">
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/scaling/" class="link black dim">
-        Scaling
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Key ideas  Vertical scaling: Throw more power at the problem (faster processors, more cores, more RAM) Horizontal scaling: Distributed solution. Caching: Session states need to be stored on an external database or an external persisten cache, like Redis. Load balancing: How many load balancers do we need and where should they be positioned in the topoogy? Database replication: How are preparing for system failure? Database partitioning: Can we shunt requests to different branches?
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/stream_architecture/" class="link black dim">
-        Stream Architecture
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      How can we build a persistent message queue that scales to millions of messages/second?
-For example, today&rsquo;s cars are equipped with a data storage device, the EDR (event data recorder), which stores all the sensor data for the vehicle. Such data could be used for routing, dashboard analytics, or mechanical operation (cruise control, lane correction, auto parking, etc). This is just one of many use cases in the IoT universe, all requiring connectivity to control centers and real-time processing of data streams.
-    </div>
-  </div>
-</div>
-</div>
-      
-    </section>
+  <article class="flex-l flex-wrap justify-between center">
+    <header class="pt4 pa3 ph4-ns pb0 w-100 w-60-ns center">
+      <p class="f6 b helvetica tracked">
+          
+        SOFTWARE ENGINEERING
+      </p>
+      <h1 class="f1 helvetica mb1">Collections module in Python</h1>
+    </header>
 
-<ul class="pagination">
-    
-    <li>
-        <a href="/ai_notes/software_engineering/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
-    
-    <li
-    >
-    <a href="/ai_notes/software_engineering/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li
-    ><a href="/ai_notes/software_engineering/">1</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li
-    class="active"><a href="/ai_notes/software_engineering/page/2/">2</a></li>
-    
-    
-    <li
-    class="disabled">
-    <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li>
-        <a href="/ai_notes/software_engineering/page/2/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
-    
+    <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
+
+<p>Incredibly useful Python container datatypes.</p>
+
+<h3 id="counter">Counter</h3>
+
+<p>Counter is a dictionary subclass with no restrictions on keys and
+values.</p>
+
+<pre><code class="language-python">from collections import Counter
+words = ['apples','oranges', 'apples', 'apples']
+words1 = ['oranges', 'oranges', 'oranges', 'apples']
+</code></pre>
+
+<pre><code class="language-python"># Return (element, count) pairs for n most common
+Counter(words).most_common()
+</code></pre>
+
+<pre><code class="language-python"># Subtract elements from another mapping
+w = Counter(words)
+w1 = Counter(words1)
+w.subract(w1) # subtraction, includes zero and negatives
+w - w1 # subtraction, only positive counts
+w &amp; w1 # intersection
+w | w1 # union
+w + w1 # adds two counters together
+</code></pre>
+
+<pre><code class="language-python"># Some useful patterns
+c.clear() # reset all counts
+dict(c) # convert to a dictionary
+c.items() # convert to a list of (element, count) pairs
+Counter(dict(list_of_pairs)) # convert from a list of (element, count)
+pairs
+c.most_common()[:-n-1:-1] # n least common elements
+c += Counter() # remove zero and negative counts
+</code></pre>
+
+<h3 id="deque">deque</h3>
+
+<p>Deques are generalizations of stacks and queues that supports appends and pops
+from either side of the deque.</p>
+
+<pre><code class="language-python">d = deque('hi')
+append('gh') # append 'gh' to the right of the deque
+appendleft('t') # append 't' to the left of the deque
+rotate(1) # right rotation, everything shifts 1 to the right
+rotate(-1) # left rotation, everythign shifts 1 to the left
+d.pop() # remove the rightmost item, 'h'
+d.popleft() # remove the leftmost item, 't'
+new = deque(reversed(d)) # make a new deque in reverse order
+d.extendleft('abc') # reverses the input order, similar to append('cba')
+</code></pre>
+
+<pre><code class="language-python"># Here's a fun example from the Python docs showing how to slice an index
+def delete_nth(d, n):
+    d.rotate(-n)
+    d.popleft()
+    d.rotate(n)
+</code></pre>
+
+<h3 id="defaultdict">defaultdict</h3>
+
+<p>Returns a dictionary-like object.</p>
+
+<pre><code class="language-python">s = 'useful'
+d = defaultdict(int)
+for k in s:
+    d[k] += 1
+
+&gt;&gt;&gt;d.items()
+[('u', 2), ('s', 1), ('e', 1), ('f', 1), ('l', 1)]
+</code></pre>
+
+<h3 id="namedtuple">namedtuple()</h3>
+
+<p>The fields of the tuple are referenceable by name</p>
+
+<pre><code class="language-python">&gt;&gt;&gt;score = namedtuple('score', ['stephen', 'pearl'])
+&gt;&gt;&gt;s = score(10, pearl=10)
+&gt;&gt;&gt;p.stephen
+10
+
+&gt;&gt;&gt;s = score('stephen'=10, 'pearl'=10)
+&gt;&gt;&gt;s._asdict()
+OrderedDict([('stephen', 10), ('pearl', 10)])
+
+&gt;&gt;&gt;s._fields
+('stephen', 'pearl')
+
+# Convert dicts to namedtuple
+&gt;&gt;&gt;d = {'stephen':10, 'pearl':10}
+&gt;&gt;&gt;score(**d)
+score(stephen=10, pearl=10)
+</code></pre>
+
+<h3 id="ordereddict">OrderedDict</h3>
+
+<p>OrderedDicts are dictionaries that remember the order items were
+inserted (items are returned in the order their keys were added).</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; d = {'stephen': 1,'pearl': 2, 'lion': 3}
+
+# Sort value by key
+&gt;&gt;&gt; OrderedDict(sorted(d.items(), key=lambda t: t[0]))
+OrderedDict([('lion', 3), ('pearl', 2), ('stephen', 1)])
+
+# Sort value by value
+&gt;&gt;&gt; OrderedDict(sorted(d.items(), key=lambda t: t[1]))
+OrderedDict([('stephen', 1), ('pearl', 2), ('lion', 3)}
+</code></pre>
+
+<p>Since Python 3.2 you can move specific keys to the head or tail, using the <strong>move_to_end</strong> method.</p>
+<ul class="pa0">
+  
 </ul>
-</article>
+<div class="mt6">
+        
+      </div>
+    </main>
+  </article>
 
     </main>
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">

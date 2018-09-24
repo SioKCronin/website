@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Siobhán K Cronin  | Software Engineering</title>
+    <title>Siobhán K Cronin  | Hashing</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -34,14 +34,12 @@
     
 
     
-      <link href="https://siobhankcronin.com/ai_notes/software_engineering/index.xml" rel="alternate" type="application/rss+xml" title="Siobhán K Cronin" />
-      <link href="https://siobhankcronin.com/ai_notes/software_engineering/index.xml" rel="feed" type="application/rss+xml" title="Siobhán K Cronin" />
-    
 
-    <meta property="og:title" content="Software Engineering" />
-<meta property="og:description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://siobhankcronin.com/ai_notes/software_engineering/" />
+    <meta property="og:title" content="Hashing" />
+<meta property="og:description" content="Hashing Hash functions map sequences of bytes to fixed length sequences. The value returned by a hash function is often called a hash, message digest, hash value, or checksum.
+Underlying a hash table is a large array of length $N$, where most of the slots are empty. To resolve collisions (which happen when we go to enter a value at a particular position, and there is already a value there), we can either implement chaining (where we turn each slot into a linked list) or open addressing where we place the value in the next empty slot." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://siobhankcronin.com/ai_notes/software_engineering/hashing/" />
 
 
 
@@ -56,12 +54,23 @@
 
 
 
-<meta itemprop="name" content="Software Engineering">
-<meta itemprop="description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker">
 
+
+<meta itemprop="name" content="Hashing">
+<meta itemprop="description" content="Hashing Hash functions map sequences of bytes to fixed length sequences. The value returned by a hash function is often called a hash, message digest, hash value, or checksum.
+Underlying a hash table is a large array of length $N$, where most of the slots are empty. To resolve collisions (which happen when we go to enter a value at a particular position, and there is already a value there), we can either implement chaining (where we turn each slot into a linked list) or open addressing where we place the value in the next empty slot.">
+
+
+
+<meta itemprop="wordCount" content="288">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Software Engineering"/>
-<meta name="twitter:description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker"/>
+<meta name="twitter:title" content="Hashing"/>
+<meta name="twitter:description" content="Hashing Hash functions map sequences of bytes to fixed length sequences. The value returned by a hash function is often called a hash, message digest, hash value, or checksum.
+Underlying a hash table is a large array of length $N$, where most of the slots are empty. To resolve collisions (which happen when we go to enter a value at a particular position, and there is already a value there), we can either implement chaining (where we turn each slot into a linked list) or open addressing where we place the value in the next empty slot."/>
 
       
     
@@ -70,6 +79,8 @@
   <body class="ma0 avenir bg-white-90">
 
     
+   
+  
 
   <header>
     <div class="bg-sio-yellow">
@@ -153,90 +164,84 @@
   </header>
 
 
+
     <main class="pb7" role="main">
       
-  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
-  <main class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></main>
-    <section class="flex-ns flex-wrap justify-around mt1">
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/scaling/" class="link black dim">
-        Scaling
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Key ideas  Vertical scaling: Throw more power at the problem (faster processors, more cores, more RAM) Horizontal scaling: Distributed solution. Caching: Session states need to be stored on an external database or an external persisten cache, like Redis. Load balancing: How many load balancers do we need and where should they be positioned in the topoogy? Database replication: How are preparing for system failure? Database partitioning: Can we shunt requests to different branches?
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/stream_architecture/" class="link black dim">
-        Stream Architecture
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      How can we build a persistent message queue that scales to millions of messages/second?
-For example, today&rsquo;s cars are equipped with a data storage device, the EDR (event data recorder), which stores all the sensor data for the vehicle. Such data could be used for routing, dashboard analytics, or mechanical operation (cruise control, lane correction, auto parking, etc). This is just one of many use cases in the IoT universe, all requiring connectivity to control centers and real-time processing of data streams.
-    </div>
-  </div>
-</div>
-</div>
-      
-    </section>
+  <article class="flex-l flex-wrap justify-between center">
+    <header class="pt4 pa3 ph4-ns pb0 w-100 w-60-ns center">
+      <p class="f6 b helvetica tracked">
+          
+        SOFTWARE ENGINEERING
+      </p>
+      <h1 class="f1 helvetica mb1">Hashing</h1>
+    </header>
 
-<ul class="pagination">
-    
-    <li>
-        <a href="/ai_notes/software_engineering/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
-    
-    <li
-    >
-    <a href="/ai_notes/software_engineering/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li
-    ><a href="/ai_notes/software_engineering/">1</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li
-    class="active"><a href="/ai_notes/software_engineering/page/2/">2</a></li>
-    
-    
-    <li
-    class="disabled">
-    <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li>
-        <a href="/ai_notes/software_engineering/page/2/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
-    
+    <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
+
+<h1 id="hashing">Hashing</h1>
+
+<p>Hash functions map sequences of bytes to fixed length sequences. The value returned
+by a hash function is often called a hash, message digest, hash value, or checksum.</p>
+
+<p>Underlying a hash table is a large array of length $N$, where most of the slots are
+empty. To resolve collisions (which happen when we go to enter a value at a particular position,
+and there is already a value there), we can either implement chaining (where we turn
+each slot into a linked list) or open addressing where we place the value in the next empty
+slot. If we use chaining, we&rsquo;ll have to tack on a 32 or 64 bit pointer to our space bill
+for each element in our linked list. And if we use open addressing and do not keep a
+spacious amount of space (storing a lot of empty slots) our clever hash table will
+devolve to a structure with $O(n)$ traversal. Tradeoffs to consider!</p>
+
+<h2 id="md5">MD5</h2>
+
+<h2 id="binascii">binascii</h2>
+
+<p>If you&rsquo;re looking to hash a string, you&rsquo;ll need to convert your string to binary.</p>
+
+<pre><code class="language-python"># Convert string to binary
+binary_string = b'abcd'
+print(binary_string)
+
+&gt;&gt;&gt;
+b'abcd'
+</code></pre>
+
+<pre><code class="language-python"># Generate hexadecimal from binary string
+import binascii
+binascii.hexlify(binary_string)
+
+&gt;&gt;&gt;
+b'61626364'
+</code></pre>
+
+<h2 id="hashlib">hashlib</h2>
+
+<pre><code class="language-python">import hashlib
+m = hashlib.md5()
+m.update(binary_string)
+m.hexdigest()
+
+&gt;&gt;&gt;
+'e2fc714c4727ee9395f324cd2e7f331f'
+</code></pre>
+
+<h2 id="sparsehash">sparsehash</h2>
+
+<p>Before you get to thinking that these Python built-ins are all there is to know
+in the world of hash functions, let me dazzle before your eyes Google&rsquo;s
+<a href="https://github.com/sparsehash/sparsehash">sparsehash</a>, which offers one of the
+most space efficient hashmap implementations known to humankind, requiring a mere
+2 bits of overhead per entry. It does, however, clock up to 2 to 3 times slower
+than the implementations explored above, but if space is your concern, I suggest
+you check it out.</p>
+<ul class="pa0">
+  
 </ul>
-</article>
+<div class="mt6">
+        
+      </div>
+    </main>
+  </article>
 
     </main>
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
