@@ -104,6 +104,3 @@ in the gaps in the batch processing views. May not be as accurate or complete as
 but available in real-time (e.g. Storm).
 * **serving layer (respond to queries)**: build views from the processed data (e.g. data stores
 like Cassandra or MongoDB, or Elasticsearch for querying output).
-
-
-
