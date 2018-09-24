@@ -21,17 +21,6 @@ We then shift into Robot Tour Optimization. Getting to different paths efficient
     </item>
     
     <item>
-      <title></title>
-      <link>https://siobhankcronin.com/ai_notes/software_engineering/hashing_with_python/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://siobhankcronin.com/ai_notes/software_engineering/hashing_with_python/</guid>
-      <description>Hashing Strings with Python Hash functions map sequences of bytes to fixed length sequences. The value returned by a hash function is often called a hash, message digest, hash value, or checksum.
-MD5 binascii If you&amp;rsquo;re looking to hash a string, you&amp;rsquo;ll need to convert your string to binary.
-# Convert string to binary binary_string = b&#39;abcd&#39; print(binary_string)  b&#39;abcd&#39;  # Generate hexadecimal from binary string import binascii binascii.</description>
-    </item>
-    
-    <item>
       <title>AWS Virtual Private Clouds (VPCs)</title>
       <link>https://siobhankcronin.com/ai_notes/software_engineering/aws_vpc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -44,10 +33,10 @@ Some terms we&amp;rsquo;ll need:
     
     <item>
       <title>Collections module in Python</title>
-      <link>https://siobhankcronin.com/ai_notes/software_engineering/collections_module_in_python/</link>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/collections/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/ai_notes/software_engineering/collections_module_in_python/</guid>
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/collections/</guid>
       <description>Incredibly useful Python container datatypes.
 Counter Counter is a dictionary subclass with no restrictions on keys and values.
 from collections import Counter words = [&#39;apples&#39;,&#39;oranges&#39;, &#39;apples&#39;, &#39;apples&#39;] words1 = [&#39;oranges&#39;, &#39;oranges&#39;, &#39;oranges&#39;, &#39;apples&#39;]  # Return (element, count) pairs for n most common Counter(words).most_common()  # Subtract elements from another mapping w = Counter(words) w1 = Counter(words1) w.subract(w1) # subtraction, includes zero and negatives w - w1 # subtraction, only positive counts w &amp;amp; w1 # intersection w | w1 # union w + w1 # adds two counters together  # Some useful patterns c.</description>
@@ -60,6 +49,25 @@ from collections import Counter words = [&#39;apples&#39;,&#39;oranges&#39;, &#3
       
       <guid>https://siobhankcronin.com/ai_notes/software_engineering/de_stack/</guid>
       <description>Ingestion File System (block storage of raw data)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Streaming  Kafka AWS Kinesis GCP Pub/Sub Logstash RabbitMQ Sqoop  Processing Batch Processing  AWS lambda Apache Storm  Unified Processing  Flink  Stream Processing  Spark Streaming Storm Kafka Streams  Data Store Cache  Redis: OSS in-memory data structure storage, used as a database, cache, and message broker.</description>
+    </item>
+    
+    <item>
+      <title>Distributed Lock Manager</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/distributed_lock_manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/distributed_lock_manager/</guid>
+      <description> Distributed Lock Manager </description>
+    </item>
+    
+    <item>
+      <title>Hashing</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/hashing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/hashing/</guid>
+      <description>Hashing Hash functions map sequences of bytes to fixed length sequences. The value returned by a hash function is often called a hash, message digest, hash value, or checksum.
+Underlying a hash table is a large array of length $N$, where most of the slots are empty. To resolve collisions (which happen when we go to enter a value at a particular position, and there is already a value there), we can either implement chaining (where we turn each slot into a linked list) or open addressing where we place the value in the next empty slot.</description>
     </item>
     
     <item>
@@ -118,16 +126,6 @@ Least Response Time Method LB directs traffic to the server with the fewest acti
       <guid>https://siobhankcronin.com/ai_notes/software_engineering/stream_architecture/</guid>
       <description>How can we build a persistent message queue that scales to millions of messages/second?
 For example, today&amp;rsquo;s cars are equipped with a data storage device, the EDR (event data recorder), which stores all the sensor data for the vehicle. Such data could be used for routing, dashboard analytics, or mechanical operation (cruise control, lane correction, auto parking, etc). This is just one of many use cases in the IoT universe, all requiring connectivity to control centers and real-time processing of data streams.</description>
-    </item>
-    
-    <item>
-      <title>System Design</title>
-      <link>https://siobhankcronin.com/ai_notes/software_engineering/system_design/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://siobhankcronin.com/ai_notes/software_engineering/system_design/</guid>
-      <description>Some terms:
- Uniform Resource Identifier (URI): Most common is URL, but also Uniform Resource Name (URN). Representational State Transfer (REST)ful API: Access and manipulate textual representations of web resources by using a uniform and predefined set of stateless operations. Payload will be formatted in HTML, Extensible Markup Language (XML) or JSON. Single Object Access Protocol (SOAP): Uses XML. Message negotiation and transmission by Hypertext Transfer Protocol (HTTP) and Simple Mail Transfer Protocol (SMTP)  When approaching system design, we bare in mind the goals and constraints of the service we are providing.</description>
     </item>
     
   </channel>

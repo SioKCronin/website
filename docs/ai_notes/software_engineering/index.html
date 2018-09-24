@@ -177,22 +177,6 @@ We then shift into Robot Tour Optimization. Getting to different paths efficient
         <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
   <div class="bg-white mb1 pa4 gray overflow-hidden">
     <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/hashing_with_python/" class="link black dim">
-        
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Hashing Strings with Python Hash functions map sequences of bytes to fixed length sequences. The value returned by a hash function is often called a hash, message digest, hash value, or checksum.
-MD5 binascii If you&rsquo;re looking to hash a string, you&rsquo;ll need to convert your string to binary.
-# Convert string to binary binary_string = b'abcd' print(binary_string)  b'abcd'  # Generate hexadecimal from binary string import binascii binascii.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
       <a href="/ai_notes/software_engineering/aws_vpc/" class="link black dim">
         AWS Virtual Private Clouds (VPCs)
       </a>
@@ -209,7 +193,7 @@ Some terms we&rsquo;ll need:
         <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
   <div class="bg-white mb1 pa4 gray overflow-hidden">
     <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/collections_module_in_python/" class="link black dim">
+      <a href="/ai_notes/software_engineering/collections/" class="link black dim">
         Collections module in Python
       </a>
     </h1>
@@ -231,6 +215,35 @@ from collections import Counter words = ['apples','oranges', 'apples', 'apples']
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       Ingestion File System (block storage of raw data)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Streaming  Kafka AWS Kinesis GCP Pub/Sub Logstash RabbitMQ Sqoop  Processing Batch Processing  AWS lambda Apache Storm  Unified Processing  Flink  Stream Processing  Spark Streaming Storm Kafka Streams  Data Store Cache  Redis: OSS in-memory data structure storage, used as a database, cache, and message broker.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
+  <div class="bg-white mb1 pa4 gray overflow-hidden">
+    <h1 class="f3 near-black">
+      <a href="/ai_notes/software_engineering/distributed_lock_manager/" class="link black dim">
+        Distributed Lock Manager
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+       Distributed Lock Manager 
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
+  <div class="bg-white mb1 pa4 gray overflow-hidden">
+    <h1 class="f3 near-black">
+      <a href="/ai_notes/software_engineering/hashing/" class="link black dim">
+        Hashing
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Hashing Hash functions map sequences of bytes to fixed length sequences. The value returned by a hash function is often called a hash, message digest, hash value, or checksum.
+Underlying a hash table is a large array of length $N$, where most of the slots are empty. To resolve collisions (which happen when we go to enter a value at a particular position, and there is already a value there), we can either implement chaining (where we turn each slot into a linked list) or open addressing where we place the value in the next empty slot.
     </div>
   </div>
 </div>
@@ -290,20 +303,6 @@ Least Response Time Method LB directs traffic to the server with the fewest acti
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       I&rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. What happens when. It sparks an otimization bubble over my head &mdash; how do we ensure the most efficient scheduling? The staregy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/scaling/" class="link black dim">
-        Scaling
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Key ideas  Vertical scaling: Throw more power at the problem (faster processors, more cores, more RAM) Horizontal scaling: Distributed solution. Caching: Session states need to be stored on an external database or an external persisten cache, like Redis. Load balancing: How many load balancers do we need and where should they be positioned in the topoogy? Database replication: How are preparing for system failure? Database partitioning: Can we shunt requests to different branches?
     </div>
   </div>
 </div>
