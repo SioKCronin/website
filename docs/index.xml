@@ -227,12 +227,13 @@ This burgeoning research arena, wearing hand-me-downs from theoretical physics a
     </item>
     
     <item>
-      <title>Data Engineering Pipeline</title>
-      <link>https://siobhankcronin.com/ai_notes/software_engineering/de_stack/</link>
+      <title>Databases</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/databases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/ai_notes/software_engineering/de_stack/</guid>
-      <description>Ingestion File System (block storage of raw data)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Streaming  Kafka AWS Kinesis GCP Pub/Sub Logstash RabbitMQ Sqoop  Processing Batch Processing  AWS lambda Apache Storm  Unified Processing  Flink  Stream Processing  Spark Streaming Storm Kafka Streams  Data Store Cache  Redis: OSS in-memory data structure storage, used as a database, cache, and message broker.</description>
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/databases/</guid>
+      <description>I&amp;rsquo;d first like to explore the differences between software in the data ecology, and then dive deeper into key topics affecting their use.
+File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Cache  Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array. Hazelcast  Time Series  Apache Cassandra: Open-source distibuted NoSQL disk database.</description>
     </item>
     
     <item>
