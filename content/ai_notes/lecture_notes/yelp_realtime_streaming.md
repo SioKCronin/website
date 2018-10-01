@@ -69,6 +69,7 @@ and data is decoded at runtime.
 
 So, with a set of Kafka topics regulated by a Schematizer, Yelp's realtime data pipeline
 can provide some important guarentees:
+
 * **format** (registered schema are immutable)
 * **compatability** (every active schema assigned to a topic is guarenteed
 to be compatible with every other active schema assigned to the same topic)
@@ -158,3 +159,77 @@ Producers and Consumers are also tracked by the Schematizer. If something needs
 attention, this information can be used to contact the appropriate teams. Interestingly,
 this data is also available on its own Kafka topic, using [Yelp Kafka](https://github.com/Yelp/yelp_kafka)
 which has a host of handy features.
+
+## Introducing PaaSTA: An Open, Distributed PaaS
+
+PaaSTA allows developers to define the build, deployment, routing, and monitoring of their
+code through the setting of config files. PaaSTA helps developers at Yelp ship their
+code. It achieves this by integrating open-source components, including **Docker**,
+**Mesos**, **Mesosphere Marathon**, **Chronos**, **SmartStack**, **Sensu**, and **Jenkins**.
+It is this spirit of assembling existing tools that allows PaaSTA to leverage the 
+best of what's out there, with clear perforations around software so that new components
+can be swapped in as needed. 
+
+The process requires a Docker image for their repo, which includes the project's 
+dependencies. From there, developers define the number of instances needed, and PaaSTA 
+spins up the cluster using Mesos, Marathon, and Chronos. SmartStack is used for service discovery,
+and Sensu routes alerts with PaaSTA monitoring the entire deployment suite.
+
+## PaaStorm: A Streaming Processor
+
+One of the things I like most about Yelp is that over the years they've open-sourced
+several tools, including MRJob which supports MapReduce jobs in AWS. The team then
+noticed that the need for scheduling multiple MRJobs in a real-time context required additional
+support, and ideally they wanted this support to come from PaaSTA, Yelp's PaaS that
+deploys services. That's how PaaStorm came to be.
+
+PaaStorm transformed data mostly writes to Kafka, although there are other endpoints,
+which allows all interested parties to register as a consumer of the transformed data.
+PaaStorm runs Spolts, which define a set of incoming messages (like a Spout) and
+the process to transform those messages (like a Bolt). The Spolt definition doesn't 
+directly reference Kafka. PaaStorm takes care of stitching up the Spolot to the source
+topic it needs, and publishing transformed data to the correct output Kafka topic.
+
+The solution described here for failure discovery is actually pretty clever. They 
+inject the Kafka offset for the next raw message into the last transformed message (downstream),
+which in turn emits the offset back to a callback in the producer. That way the system
+always knows the offset of what the Spolt was working on when the system last had a 
+succcessful transformed message, and get rewind to that point.
+
+In terms of monitoring, PaaStorm keeps track of the number of messages consumed
+and the number published. These can be compared to identify bottlenecks. 
+
+## Hybrid Cloud using Mesos and Docker
+
+While not on the Yelp Engineering Blog, I found [this article](https://mesosphere.com/blog/containers-clouds-and-code-how-yelp-built-a-hybrid-cloud-using-mesos-and-docker/)
+helpful in understanding how Mesos was integrated into Yelp's infastructure.
+
+They used the Marathon PaaS framework to schedule and orchestrate jobs. The Docker-based
+microservice PaaSTA sits on top of this. PaaSTA takes core resource discovery and 
+and launching of the containers, so the developers just have to focus on configuring
+their Docker containers and complying with the PaaSTA platform contract. PaaSTA 
+allows for automatic provisioning and migrations of services across in-house
+and AWS hardware.
+
+Yelps testing platform, Seagull, also uses Mesosphere (commercial package), combining
+Mesos with a custom scheduler to parallelize and accelerate unit tests. The estimate 
+in this article is that Yelp runs about 17 million individual tests every day, all 
+managed by Mesos. The company was reported to also be launching 1 million Docker 
+containers per day. That's a lot for Mesos to coordinate!
+
+A nice side benefit is that they could spot bid on instances, since Mesos would 
+be able to pick up where things left off if the instance disappeared during a job
+run. This way the job keeps going, and money is saved. 
+
+## Making 30x performance improvements on Yelp's MySQLStreamer
+
+MySQLStreamer streams data from Yelp's MySQL clusters into Kafka. To imagine the scope,
+MySQL databases at Yelp receive hundreds of millions of data manipulation requests per day,
+and tens of thousands of queries per second. It's worth noting that one way they've 
+met the demands of this volume is by running processes on PyPy (instead of Python's 
+usual implementation in CPython). 
+
+They used a cool platform called [VMProf](https://vmprof.readthedocs.io/en/latest/) 
+that can help teams "understand and resolve performance bottlenecks" in their codebase.
+This platform samples Python stack traces and then generates a visualization that shows
+the percentage of time each function took relative to other functions.

@@ -7,14 +7,14 @@ draft: False
 ---
 
 I'm not sure why processor scheduling has so captured my imagination, but I think
-because it is so central to computing in general. What happens when. It sparks
-an otimization bubble over my head --- how do we ensure the most efficient scheduling?
-The staregy a system employs is called a processor scheduling policy, or discipline.
+because it is so central to computing in general. It's about deciding what happens when. 
+It sparks an optimization bubble over my head --- how do we ensure the most efficient scheduling?
+The strategy a system employs is called a processor scheduling policy, or discipline.
 This discipline will aim to balance processor utilization, throughput, latency, and 
 ensuring processes complete before their scheduled deadline. 
 
 At the highest level, **job scheduling** (or **admission scheduling**) determines 
-which jobs are even ellible to compete for system resources. the job scheduling policy
+which jobs are even elligible to compete for system resources. The job scheduling policy
 determines how many processes can be active in a system at a given time (the 
 **degree of multiprocessing**). This policy may create a queue to prevent saturation
 of system resources.
@@ -34,7 +34,7 @@ Before we look at specific algorithms, let's articulate some high-level scheduli
 * *Minimize overhead*
 * *Ensure predictability*
 
-In the Deitel brothers operating systems book I culled these from they highlight that
+In the Deitel brothers operating systems book I culled these from, they highlight that
 the several approaches we will explore have the following in common:
 
 * **Fairness**: All like processes are treated similarly. 

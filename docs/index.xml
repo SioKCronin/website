@@ -148,7 +148,7 @@ import matplotlib import numpy as np import matplotlib.pyplot as plt %matplotlib
       <description>Open Source Software Alluvium - Realtime streaming search with Kafka and Apache Storm SwarmOpt — Swarm Intelligence (SI) optimizer for hyperparameter tuning
 ML/AI Engineering Insight | Data Engineering Fellowship | Jul 2018 - Present Uncountable | Software Engineer | Jan-Feb 2018 Avisell | Machine Learning Engineer | May-Sep 2017
 Research Insight | 2018-Present Distributed computing (scalable streaming data architecture)
-Slow Research Lab | 2016-Present Independent algorithm and data experience design research.</description>
+Slow Research Lab | 2016-Present Independent research on quadrivium pedagogy.</description>
     </item>
     
     <item>
@@ -405,7 +405,7 @@ First we start with the covariance matrix $S_{x} = \frac{1}{m}X^{T}X$, where X i
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://siobhankcronin.com/ai_notes/software_engineering/processor_scheduling/</guid>
-      <description>I&amp;rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. What happens when. It sparks an otimization bubble over my head &amp;mdash; how do we ensure the most efficient scheduling? The staregy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline.</description>
+      <description>I&amp;rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. It&amp;rsquo;s about deciding what happens when. It sparks an optimization bubble over my head &amp;mdash; how do we ensure the most efficient scheduling? The strategy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline.</description>
     </item>
     
     <item>
