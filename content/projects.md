@@ -18,7 +18,7 @@ draft = false
 Distributed computing (scalable streaming data architecture)
 
 **Slow Research Lab | 2016-Present**</br> 
-Independent algorithm and data experience design research.
+Independent research on quadrivium pedagogy.
 
 **Yerba Buena Center for the Arts | 2016-2017**</br>
 Network models of institutionalized oppression with Ray Gilstrap and Pia
@@ -52,8 +52,8 @@ Affect research with Dr. Lisa Feldman Barrett.
 
 ### Music
 
-**Tempered (2018-2022)**</br>
-A four-year meditation on the Galilean moons.
+**Tempered (2018-Present)**</br>
+Ongoing performance meditation on the Galilean moons.
 
 **Ryujin (2016)**</br>
 String quartet (premiered at the SF Women's Building by Friction Quartet, sponsored by 
