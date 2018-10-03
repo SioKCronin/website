@@ -15,8 +15,9 @@ and then dive deeper into key topics affecting their use.
 * **Alluxio**
 * **Ceph**
 
-### Cache
+### Key-Value Cache
 
+* **Apache Ignite**: Cache for Cassandra clusters
 * **Redis**: OSS in-memory data structure storage, used as a database, cache, and
 message broker. Key-value based database system.
 * **Memcached**: distributed memory cacheing system. Key-value associative array. 
@@ -41,6 +42,18 @@ message broker. Key-value based database system.
 
 * **ElasticSearch**
 
+### Dynamo
+
+* **DynamoDB**
+* **Riak**
+* **Cassandra**
+
+### Document Store
+
+* **MongoDB**
+* **RethinkDB**
+* **CouchDB**
+
 ### Other
 
 * **Hive**: Data wharehouse built on top of Hadoop. SQL queries must be written in the 
@@ -48,12 +61,9 @@ MapReduce Java api.
 * **HBase**: Non-relational distributed database written in Java (part of Hadoop), and runs
 on top of HDFS.
 * **Scribe**
-* **MongoDB**
-* **DynamoDB**
-* **CouchDB**
-* **Redshift**
-* **Riak**
-* **RethinkDB**
+
+### Cloud
+* **AWS Redshift**
 
 ## Topics
 

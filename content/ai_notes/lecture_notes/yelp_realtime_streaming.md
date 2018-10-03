@@ -227,9 +227,101 @@ MySQLStreamer streams data from Yelp's MySQL clusters into Kafka. To imagine the
 MySQL databases at Yelp receive hundreds of millions of data manipulation requests per day,
 and tens of thousands of queries per second. It's worth noting that one way they've 
 met the demands of this volume is by running processes on PyPy (instead of Python's 
-usual implementation in CPython). 
+CPython compiler). 
 
 They used a cool platform called [VMProf](https://vmprof.readthedocs.io/en/latest/) 
 that can help teams "understand and resolve performance bottlenecks" in their codebase.
 This platform samples Python stack traces and then generates a visualization that shows
 the percentage of time each function took relative to other functions.
+
+## Streaming MySQL tables in real-time with Kafka
+
+Yelp built MySQLStreamer to monitor database changes and alert all subscribing services
+about them. A "change data capture and publish system", which essentially bundles
+up all changes into messages and publishes them to Kafka. This relates to the concept 
+of stream-table duality, which means a stream can be viewed as a table (replaying
+every chang to reconstruct the table) and a table can be viewed as a stream (iterating
+over every change in a table to create a stream). 
+
+To process replication across the cluster, events on the master database are first 
+written to a binary log, which is read by each replica. 
+
+![image](1.jpg)
+
+The two types of replication in MySQL are **statement-based-replication (SBR)** and 
+**row-based replication (RBR)**. For SBR, the master writes events to the binary log, 
+and the replica's SQL thread replays these statements on the replica. This approach
+has challenges, as the statements may generate different results on the master and replica
+(for instance, if RAND or NOW are used in the statements). The safer bet is RBR, which is 
+what Yelp uses for their MySQLStreamer. Each event shows how the row of the table 
+has been modified. We don't care about the statement that generated the changes,
+we care about the changes themselves. 
+
+The two types of changes the MySQLStreamer is concerned with are DDL (Data Definition Language)
+which modify the database structure or schema and DML (Data Manipulation Language)
+which manipulate data within the specified schema. The MySQLStreamer handles both kinds
+of events, and publishes DML events to Kafka topics. In particular, there are four 
+kinds of events that are processed: *INSERT*, *UPDATE*, *DELETE*, and *REFRESH*. 
+
+There are three databases involved in the MySQLStreamer process:
+
+* **Source DB** stores change events from the upstream data
+* **State DB** stores the MySQLStreamer's internal states in three tables
+(**DATA_EVENT_CHECKPOINT** - each topic's info and last known published offset, 
+**GLOBAL_EVENT_STATE** - stores position, **MYSQL_DUMPS** - not quite sure how
+this is used other than in resotring after a failure)
+* **Schema Tracker DB** - stores the Avro schemas created by the Schematizer. 
+
+![image1](2.jpg)
+
+## Replication integrity between MySQL and Redshift
+
+Write-ahead logging? Two-phase commit? Fuzz testing? Monkey testing? Black-box auditing?
+
+OK, our friend Jacob has just laid out a bevy of interesting topics worthy of their own
+brief mention before diving in further.
+
+* **Write-ahead logging (WAL)** systems write all modifications to the log before they
+are applied. The idea is that if something goes wrong, you can compare what output happened
+with what is written in the last log to see if the modification completed or was still
+being processed when the failure happened. This provides durability to the system, and also
+atomicity, as the log keeps track of each unit, and we know precisely which unit did or 
+did not complete. This topic also brushes up against [Algorithms for Recovery and 
+Isolation Exploiting Semantics (ARIES)](https://en.wikipedia.org/wiki/Algorithms_for_Recovery_and_Isolation_Exploiting_Semantics). 
+* **Two-phase commit** protocol is a type of **atomic commitment protocol (ATP)**, which
+"applies a set of distinct changes as a single operation" (thus sayeth Wikipedia). So
+atomic. It is a distributed algorithm that coordinates all the processes in a distributed
+transaction as to whether to commit or abort and roll back to an earlier state. There are
+two key phases involved, the *voting phase* and the *completion phase*. In the *voting phase*, 
+the coordinator sends a **query to commit** message to all cohorts processing in the 
+distributed transaction, and they respond with either a thumbs up or thumbs down 
+(an *agreement* message or an *abort* message). If the coordinator receives agreement
+messages from all cohorts, then a **commit message** is sent to all cohorts, and life moves on.
+Otherwise, the coordinator sends a **rollback message**. 
+* **Fuzz testing** tests edge cases by sending invalid, random, or unexpected inputs
+to a system to test performance in such situations.
+* **Monkey testing** is often implemented as random, automated unit tests.
+
+Now back to the task at hand - verifying end-to-end replication integrity between 
+MySQL and AWS Redshift. For this we will turn our attention to black-box auditing, 
+which essentially means we can test the functionality of a black box without knowing
+anything about what's actually in the black box.
+
+To verify their data is eventually consistent, systems like Cassandra and Riak 
+uase a process called anti-entropy repair that leverages Merkle trees ([hash trees](https://en.wikipedia.org/wiki/Merkle_tree))
+to verify and/or update all replicas. The [anti-entropy process](https://en.wikipedia.org/wiki/Error_detection_and_correction)
+can be implemented several ways, yet the general idea is that you take a snapshot of your
+replicas, partition them, create hash trees for each, and repair each inconsistent partition.
+This gets tricky for Dynamo systems, which are eventually consistent. How would we ensure
+that partitions are indeed inconsistent when we know there is inherent propogation delay?
+
+This is the problem the Yelp team tackled, and their solution sprung from the recognition
+that one could expand the notion of equality to partition similarity (feels akin to 
+conditional probabilities in the Bayesian revolution). The algorithm they came up with
+is similiar to the traditional anti-entropy repair, only it adds similarity testing into the mix.
+
+To implement their similarity testing, they used MinHash which can calculate the
+Jacard similarity coefficient between two sets. Yelp's implementation is expressed
+in SQL. This has the benefit of using Redshift's built-in distributed query 
+execution engine, which leverages a parallelized a MapReduce job to produce
+speedy results. 
