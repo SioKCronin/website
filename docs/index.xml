@@ -233,7 +233,7 @@ This burgeoning research arena, wearing hand-me-downs from theoretical physics a
       
       <guid>https://siobhankcronin.com/ai_notes/software_engineering/databases/</guid>
       <description>I&amp;rsquo;d first like to explore the differences between software in the data ecology, and then dive deeper into key topics affecting their use.
-File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Cache  Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array. Hazelcast  Time Series  Apache Cassandra: Open-source distibuted NoSQL disk database.</description>
+File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Key-Value Cache  Apache Ignite: Cache for Cassandra clusters Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array.</description>
     </item>
     
     <item>
@@ -284,6 +284,17 @@ Fun fact - the intersection of all convex sets containing a given subset A of Eu
       <guid>https://siobhankcronin.com/ai_notes/software_engineering/k_nearest_neighbors/</guid>
       <description>Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates, and strategies for using these distances to calculate neighors:
 Distance Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.</description>
+    </item>
+    
+    <item>
+      <title>Kafka</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/kafka/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/kafka/</guid>
+      <description>Oh Kafka, where have you been all my life.
+In Dunning &amp;amp; Friedman&amp;rsquo;s book Streaming Architecture, they state &amp;ldquo;a big difference between stream-based and traditional design &amp;hellip; is that messaging layer plays a much more prominent role.&amp;rdquo;
+Language-support &amp;amp; Installation Before we go to far, let&amp;rsquo;s get real about language-support. When I first used Kafka, I worked with a Python client called kafka-python, and there&amp;rsquo;s also Parsely&amp;rsquo;s pykakfa, amongst others.</description>
     </item>
     
     <item>
@@ -478,6 +489,16 @@ If a square of a number is even, then the number is even, so there exists some n
       <guid>https://siobhankcronin.com/ai_notes/software_engineering/stream_architecture/</guid>
       <description>How can we build a persistent message queue that scales to millions of messages/second?
 For example, today&amp;rsquo;s cars are equipped with a data storage device, the EDR (event data recorder), which stores all the sensor data for the vehicle. Such data could be used for routing, dashboard analytics, or mechanical operation (cruise control, lane correction, auto parking, etc). This is just one of many use cases in the IoT universe, all requiring connectivity to control centers and real-time processing of data streams.</description>
+    </item>
+    
+    <item>
+      <title>System design challenge</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/github_take_home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/github_take_home/</guid>
+      <description>Question 1 What properties of the CAP theorem would you prioritize for a cloud storage service (e.g. Amazon S3, Google Cloud Storage)? What tradeoffs would you have to make?
+I approach the consistency vs. accessibility trade-off as an opportunity to clarify how our system might best serve our business goals. For example, in systems where it is mission-critical that all users see exactly the same records, such as systems serving critical care patient medical records, then I would prioritize consistency.</description>
     </item>
     
     <item>

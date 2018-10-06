@@ -215,7 +215,7 @@ from collections import Counter words = ['apples','oranges', 'apples', 'apples']
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       I&rsquo;d first like to explore the differences between software in the data ecology, and then dive deeper into key topics affecting their use.
-File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Cache  Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array. Hazelcast  Time Series  Apache Cassandra: Open-source distibuted NoSQL disk database.
+File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Key-Value Cache  Apache Ignite: Cache for Cassandra clusters Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array.
     </div>
   </div>
 </div>
@@ -268,6 +268,22 @@ Distance Euclidean As the name suggests, this is the square root of the sum of s
         <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
   <div class="bg-white mb1 pa4 gray overflow-hidden">
     <h1 class="f3 near-black">
+      <a href="/ai_notes/software_engineering/kafka/" class="link black dim">
+        Kafka
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Oh Kafka, where have you been all my life.
+In Dunning &amp; Friedman&rsquo;s book Streaming Architecture, they state &ldquo;a big difference between stream-based and traditional design &hellip; is that messaging layer plays a much more prominent role.&rdquo;
+Language-support &amp; Installation Before we go to far, let&rsquo;s get real about language-support. When I first used Kafka, I worked with a Python client called kafka-python, and there&rsquo;s also Parsely&rsquo;s pykakfa, amongst others.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
+  <div class="bg-white mb1 pa4 gray overflow-hidden">
+    <h1 class="f3 near-black">
       <a href="/ai_notes/software_engineering/load_balancer_algorithms/" class="link black dim">
         Load Balancing Algorithms
       </a>
@@ -290,20 +306,6 @@ Least Response Time Method LB directs traffic to the server with the fewest acti
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       Terms  Connection: Built before data transfer (following protocol) and deconstructed after. Packet: The envelopes that carry your data (in pieces) from one point to the next. Includes header that includes source and destination, timestamps, network hops, plus the main portion which is the data being transfered (also called body, or payload). Network Interface: Software interface to your networking hardware. Local Area Network (LAN): A network or portion of network not publically accessible to the greater internet.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/processor_scheduling/" class="link black dim">
-        Processor Scheduling
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I&rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. It&rsquo;s about deciding what happens when. It sparks an optimization bubble over my head &mdash; how do we ensure the most efficient scheduling? The strategy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline.
     </div>
   </div>
 </div>
