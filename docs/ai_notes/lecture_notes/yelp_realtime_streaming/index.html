@@ -62,7 +62,7 @@ Deciding on their schema took some planning, as they wanted to prevent the numbe
 
 
 
-<meta itemprop="wordCount" content="2235">
+<meta itemprop="wordCount" content="3120">
 
 
 
@@ -405,12 +405,108 @@ run. This way the job keeps going, and money is saved.</p>
 MySQL databases at Yelp receive hundreds of millions of data manipulation requests per day,
 and tens of thousands of queries per second. It&rsquo;s worth noting that one way they&rsquo;ve
 met the demands of this volume is by running processes on PyPy (instead of Python&rsquo;s
-usual implementation in CPython).</p>
+CPython compiler).</p>
 
 <p>They used a cool platform called <a href="https://vmprof.readthedocs.io/en/latest/">VMProf</a>
 that can help teams &ldquo;understand and resolve performance bottlenecks&rdquo; in their codebase.
 This platform samples Python stack traces and then generates a visualization that shows
 the percentage of time each function took relative to other functions.</p>
+
+<h2 id="streaming-mysql-tables-in-real-time-with-kafka">Streaming MySQL tables in real-time with Kafka</h2>
+
+<p>Yelp built MySQLStreamer to monitor database changes and alert all subscribing services
+about them. A &ldquo;change data capture and publish system&rdquo;, which essentially bundles
+up all changes into messages and publishes them to Kafka. This relates to the concept
+of stream-table duality, which means a stream can be viewed as a table (replaying
+every chang to reconstruct the table) and a table can be viewed as a stream (iterating
+over every change in a table to create a stream).</p>
+
+<p>To process replication across the cluster, events on the master database are first
+written to a binary log, which is read by each replica.</p>
+
+<p><img src="1.jpg" alt="image" /></p>
+
+<p>The two types of replication in MySQL are <strong>statement-based-replication (SBR)</strong> and
+<strong>row-based replication (RBR)</strong>. For SBR, the master writes events to the binary log,
+and the replica&rsquo;s SQL thread replays these statements on the replica. This approach
+has challenges, as the statements may generate different results on the master and replica
+(for instance, if RAND or NOW are used in the statements). The safer bet is RBR, which is
+what Yelp uses for their MySQLStreamer. Each event shows how the row of the table
+has been modified. We don&rsquo;t care about the statement that generated the changes,
+we care about the changes themselves.</p>
+
+<p>The two types of changes the MySQLStreamer is concerned with are DDL (Data Definition Language)
+which modify the database structure or schema and DML (Data Manipulation Language)
+which manipulate data within the specified schema. The MySQLStreamer handles both kinds
+of events, and publishes DML events to Kafka topics. In particular, there are four
+kinds of events that are processed: <em>INSERT</em>, <em>UPDATE</em>, <em>DELETE</em>, and <em>REFRESH</em>.</p>
+
+<p>There are three databases involved in the MySQLStreamer process:</p>
+
+<ul>
+<li><strong>Source DB</strong> stores change events from the upstream data</li>
+<li><strong>State DB</strong> stores the MySQLStreamer&rsquo;s internal states in three tables
+(<strong>DATA_EVENT_CHECKPOINT</strong> - each topic&rsquo;s info and last known published offset,
+<strong>GLOBAL_EVENT_STATE</strong> - stores position, <strong>MYSQL_DUMPS</strong> - not quite sure how
+this is used other than in resotring after a failure)</li>
+<li><strong>Schema Tracker DB</strong> - stores the Avro schemas created by the Schematizer.</li>
+</ul>
+
+<p><img src="2.jpg" alt="image1" /></p>
+
+<h2 id="replication-integrity-between-mysql-and-redshift">Replication integrity between MySQL and Redshift</h2>
+
+<p>Write-ahead logging? Two-phase commit? Fuzz testing? Monkey testing? Black-box auditing?</p>
+
+<p>OK, our friend Jacob has just laid out a bevy of interesting topics worthy of their own
+brief mention before diving in further.</p>
+
+<ul>
+<li><strong>Write-ahead logging (WAL)</strong> systems write all modifications to the log before they
+are applied. The idea is that if something goes wrong, you can compare what output happened
+with what is written in the last log to see if the modification completed or was still
+being processed when the failure happened. This provides durability to the system, and also
+atomicity, as the log keeps track of each unit, and we know precisely which unit did or
+did not complete. This topic also brushes up against <a href="https://en.wikipedia.org/wiki/Algorithms_for_Recovery_and_Isolation_Exploiting_Semantics">Algorithms for Recovery and
+Isolation Exploiting Semantics (ARIES)</a>.</li>
+<li><strong>Two-phase commit</strong> protocol is a type of <strong>atomic commitment protocol (ATP)</strong>, which
+&ldquo;applies a set of distinct changes as a single operation&rdquo; (thus sayeth Wikipedia). So
+atomic. It is a distributed algorithm that coordinates all the processes in a distributed
+transaction as to whether to commit or abort and roll back to an earlier state. There are
+two key phases involved, the <em>voting phase</em> and the <em>completion phase</em>. In the <em>voting phase</em>,
+the coordinator sends a <strong>query to commit</strong> message to all cohorts processing in the
+distributed transaction, and they respond with either a thumbs up or thumbs down
+(an <em>agreement</em> message or an <em>abort</em> message). If the coordinator receives agreement
+messages from all cohorts, then a <strong>commit message</strong> is sent to all cohorts, and life moves on.
+Otherwise, the coordinator sends a <strong>rollback message</strong>.</li>
+<li><strong>Fuzz testing</strong> tests edge cases by sending invalid, random, or unexpected inputs
+to a system to test performance in such situations.</li>
+<li><strong>Monkey testing</strong> is often implemented as random, automated unit tests.</li>
+</ul>
+
+<p>Now back to the task at hand - verifying end-to-end replication integrity between
+MySQL and AWS Redshift. For this we will turn our attention to black-box auditing,
+which essentially means we can test the functionality of a black box without knowing
+anything about what&rsquo;s actually in the black box.</p>
+
+<p>To verify their data is eventually consistent, systems like Cassandra and Riak
+uase a process called anti-entropy repair that leverages Merkle trees (<a href="https://en.wikipedia.org/wiki/Merkle_tree">hash trees</a>)
+to verify and/or update all replicas. The <a href="https://en.wikipedia.org/wiki/Error_detection_and_correction">anti-entropy process</a>
+can be implemented several ways, yet the general idea is that you take a snapshot of your
+replicas, partition them, create hash trees for each, and repair each inconsistent partition.
+This gets tricky for Dynamo systems, which are eventually consistent. How would we ensure
+that partitions are indeed inconsistent when we know there is inherent propogation delay?</p>
+
+<p>This is the problem the Yelp team tackled, and their solution sprung from the recognition
+that one could expand the notion of equality to partition similarity (feels akin to
+conditional probabilities in the Bayesian revolution). The algorithm they came up with
+is similiar to the traditional anti-entropy repair, only it adds similarity testing into the mix.</p>
+
+<p>To implement their similarity testing, they used MinHash which can calculate the
+Jacard similarity coefficient between two sets. Yelp&rsquo;s implementation is expressed
+in SQL. This has the benefit of using Redshift&rsquo;s built-in distributed query
+execution engine, which leverages a parallelized a MapReduce job to produce
+speedy results.</p>
 <ul class="pa0">
   
 </ul>

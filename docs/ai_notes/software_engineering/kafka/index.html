@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Siobhán K Cronin  | Software Engineering</title>
+    <title>Siobhán K Cronin  | Kafka</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -34,15 +34,13 @@
     
 
     
-      <link href="https://siobhankcronin.com/ai_notes/software_engineering/index.xml" rel="alternate" type="application/rss+xml" title="Siobhán K Cronin" />
-      <link href="https://siobhankcronin.com/ai_notes/software_engineering/index.xml" rel="feed" type="application/rss+xml" title="Siobhán K Cronin" />
-    
 
-    <meta property="og:title" content="Software Engineering" />
-<meta property="og:description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://siobhankcronin.com/ai_notes/software_engineering/" />
-
+    <meta property="og:title" content="Kafka" />
+<meta property="og:description" content="Oh Kafka, where have you been all my life.
+In Dunning &amp; Friedman&rsquo;s book Streaming Architecture, they state &ldquo;a big difference between stream-based and traditional design &hellip; is that messaging layer plays a much more prominent role.&rdquo;
+Language-support &amp; Installation Before we go to far, let&rsquo;s get real about language-support. When I first used Kafka, I worked with a Python client called kafka-python, and there&rsquo;s also Parsely&rsquo;s pykakfa, amongst others." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://siobhankcronin.com/ai_notes/software_engineering/kafka/" />
 
 
 
@@ -56,12 +54,26 @@
 
 
 
-<meta itemprop="name" content="Software Engineering">
-<meta itemprop="description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker">
 
+
+
+<meta itemprop="name" content="Kafka">
+<meta itemprop="description" content="Oh Kafka, where have you been all my life.
+In Dunning &amp; Friedman&rsquo;s book Streaming Architecture, they state &ldquo;a big difference between stream-based and traditional design &hellip; is that messaging layer plays a much more prominent role.&rdquo;
+Language-support &amp; Installation Before we go to far, let&rsquo;s get real about language-support. When I first used Kafka, I worked with a Python client called kafka-python, and there&rsquo;s also Parsely&rsquo;s pykakfa, amongst others.">
+
+
+
+<meta itemprop="wordCount" content="210">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Software Engineering"/>
-<meta name="twitter:description" content="Siobhán K Cronin is a machine learning engineer, researcher, and public speaker"/>
+<meta name="twitter:title" content="Kafka"/>
+<meta name="twitter:description" content="Oh Kafka, where have you been all my life.
+In Dunning &amp; Friedman&rsquo;s book Streaming Architecture, they state &ldquo;a big difference between stream-based and traditional design &hellip; is that messaging layer plays a much more prominent role.&rdquo;
+Language-support &amp; Installation Before we go to far, let&rsquo;s get real about language-support. When I first used Kafka, I worked with a Python client called kafka-python, and there&rsquo;s also Parsely&rsquo;s pykakfa, amongst others."/>
 
       
     
@@ -70,6 +82,8 @@
   <body class="ma0 avenir bg-white-90">
 
     
+   
+  
 
   <header>
     <div class="bg-sio-yellow">
@@ -153,119 +167,57 @@
   </header>
 
 
+
     <main class="pb7" role="main">
       
-  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
-  <main class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></main>
-    <section class="flex-ns flex-wrap justify-around mt1">
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/processor_scheduling/" class="link black dim">
-        Processor Scheduling
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I&rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. It&rsquo;s about deciding what happens when. It sparks an optimization bubble over my head &mdash; how do we ensure the most efficient scheduling? The strategy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/scaling/" class="link black dim">
-        Scaling
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Key ideas  Vertical scaling: Throw more power at the problem (faster processors, more cores, more RAM) Horizontal scaling: Distributed solution. Caching: Session states need to be stored on an external database or an external persisten cache, like Redis. Load balancing: How many load balancers do we need and where should they be positioned in the topoogy? Database replication: How are preparing for system failure? Database partitioning: Can we shunt requests to different branches?
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/stream_architecture/" class="link black dim">
-        Stream Architecture
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      How can we build a persistent message queue that scales to millions of messages/second?
-For example, today&rsquo;s cars are equipped with a data storage device, the EDR (event data recorder), which stores all the sensor data for the vehicle. Such data could be used for routing, dashboard analytics, or mechanical operation (cruise control, lane correction, auto parking, etc). This is just one of many use cases in the IoT universe, all requiring connectivity to control centers and real-time processing of data streams.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/ai_notes/software_engineering/github_take_home/" class="link black dim">
-        System design challenge
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Question 1 What properties of the CAP theorem would you prioritize for a cloud storage service (e.g. Amazon S3, Google Cloud Storage)? What tradeoffs would you have to make?
-I approach the consistency vs. accessibility trade-off as an opportunity to clarify how our system might best serve our business goals. For example, in systems where it is mission-critical that all users see exactly the same records, such as systems serving critical care patient medical records, then I would prioritize consistency.
-    </div>
-  </div>
-</div>
-</div>
-      
-    </section>
+  <article class="flex-l flex-wrap justify-between center">
+    <header class="pt4 pa3 ph4-ns pb0 w-100 w-60-ns center">
+      <p class="f6 b helvetica tracked">
+          
+        SOFTWARE ENGINEERING
+      </p>
+      <h1 class="f1 helvetica mb1">Kafka</h1>
+    </header>
 
-<ul class="pagination">
-    
-    <li>
-        <a href="/ai_notes/software_engineering/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
-    
-    <li
-    >
-    <a href="/ai_notes/software_engineering/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li
-    ><a href="/ai_notes/software_engineering/">1</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li
-    class="active"><a href="/ai_notes/software_engineering/page/2/">2</a></li>
-    
-    
-    <li
-    class="disabled">
-    <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li>
-        <a href="/ai_notes/software_engineering/page/2/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
-    
+    <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
+
+<p>Oh Kafka, where have you been all my life.</p>
+
+<p>In Dunning &amp; Friedman&rsquo;s book <strong>Streaming Architecture</strong>, they state &ldquo;a big
+difference between stream-based and traditional design &hellip; is that messaging
+layer plays a much more prominent role.&rdquo;</p>
+
+<h2 id="language-support-installation">Language-support &amp; Installation</h2>
+
+<p>Before we go to far, let&rsquo;s get real about language-support. When I first used Kafka,
+I worked with a Python client called <a href="https://github.com/dpkp/kafka-python">kafka-python</a>,
+and there&rsquo;s also Parsely&rsquo;s <a href="https://github.com/Parsely/pykafka">pykakfa</a>, amongst others.
+The being said, you will quickly follow the documentation breadcumbs back to their
+source, and see that Kafka is written in Scala and Java, and the best documentation
+on the block (written by <a href="https://www.confluent.io/product/confluent-open-source/">Confluent</a>)
+assumes you are developing in Scala or Java. Even if you plan to work with a Python client,
+I encourage you install the Confluent platform so you can follow along with their support
+documentation.</p>
+
+<h2 id="replay">Replay</h2>
+
+<p>Replaying a kafka topic from a given offset (the unique identifier of a record
+in a paritition) is one of the great features that shows of Kafka&rsquo;s persistance.
+But how do we do it?</p>
+
+<h2 id="kafka-streams">Kafka Streams</h2>
+
+<p>A whole world of opportunities open up with Kafka Stream, as the duality of streams
+and tables (one being able to transform into the other) creates many possibilities
+for creating streams with enriched, processe data.</p>
+<ul class="pa0">
+  
 </ul>
-</article>
+<div class="mt6">
+        
+      </div>
+    </main>
+  </article>
 
     </main>
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">

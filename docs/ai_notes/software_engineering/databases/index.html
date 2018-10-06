@@ -37,7 +37,7 @@
 
     <meta property="og:title" content="Databases" />
 <meta property="og:description" content="I&rsquo;d first like to explore the differences between software in the data ecology, and then dive deeper into key topics affecting their use.
-File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Cache  Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array. Hazelcast  Time Series  Apache Cassandra: Open-source distibuted NoSQL disk database." />
+File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Key-Value Cache  Apache Ignite: Cache for Cassandra clusters Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://siobhankcronin.com/ai_notes/software_engineering/databases/" />
 
@@ -58,11 +58,11 @@ File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Cache 
 
 <meta itemprop="name" content="Databases">
 <meta itemprop="description" content="I&rsquo;d first like to explore the differences between software in the data ecology, and then dive deeper into key topics affecting their use.
-File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Cache  Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array. Hazelcast  Time Series  Apache Cassandra: Open-source distibuted NoSQL disk database.">
+File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Key-Value Cache  Apache Ignite: Cache for Cassandra clusters Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array.">
 
 
 
-<meta itemprop="wordCount" content="800">
+<meta itemprop="wordCount" content="813">
 
 
 
@@ -70,7 +70,7 @@ File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Cache 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Databases"/>
 <meta name="twitter:description" content="I&rsquo;d first like to explore the differences between software in the data ecology, and then dive deeper into key topics affecting their use.
-File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Cache  Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array. Hazelcast  Time Series  Apache Cassandra: Open-source distibuted NoSQL disk database."/>
+File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Key-Value Cache  Apache Ignite: Cache for Cassandra clusters Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array."/>
 
       
     
@@ -191,9 +191,10 @@ and then dive deeper into key topics affecting their use.</p>
 <li><strong>Ceph</strong></li>
 </ul>
 
-<h3 id="cache">Cache</h3>
+<h3 id="key-value-cache">Key-Value Cache</h3>
 
 <ul>
+<li><strong>Apache Ignite</strong>: Cache for Cassandra clusters</li>
 <li><strong>Redis</strong>: OSS in-memory data structure storage, used as a database, cache, and
 message broker. Key-value based database system.</li>
 <li><strong>Memcached</strong>: distributed memory cacheing system. Key-value associative array.</li>
@@ -228,6 +229,22 @@ message broker. Key-value based database system.</li>
 <li><strong>ElasticSearch</strong></li>
 </ul>
 
+<h3 id="dynamo">Dynamo</h3>
+
+<ul>
+<li><strong>DynamoDB</strong></li>
+<li><strong>Riak</strong></li>
+<li><strong>Cassandra</strong></li>
+</ul>
+
+<h3 id="document-store">Document Store</h3>
+
+<ul>
+<li><strong>MongoDB</strong></li>
+<li><strong>RethinkDB</strong></li>
+<li><strong>CouchDB</strong></li>
+</ul>
+
 <h3 id="other">Other</h3>
 
 <ul>
@@ -236,12 +253,12 @@ MapReduce Java api.</li>
 <li><strong>HBase</strong>: Non-relational distributed database written in Java (part of Hadoop), and runs
 on top of HDFS.</li>
 <li><strong>Scribe</strong></li>
-<li><strong>MongoDB</strong></li>
-<li><strong>DynamoDB</strong></li>
-<li><strong>CouchDB</strong></li>
-<li><strong>Redshift</strong></li>
-<li><strong>Riak</strong></li>
-<li><strong>RethinkDB</strong></li>
+</ul>
+
+<h3 id="cloud">Cloud</h3>
+
+<ul>
+<li><strong>AWS Redshift</strong></li>
 </ul>
 
 <h2 id="topics">Topics</h2>
