@@ -498,7 +498,7 @@ For example, today&amp;rsquo;s cars are equipped with a data storage device, the
       
       <guid>https://siobhankcronin.com/ai_notes/software_engineering/github_take_home/</guid>
       <description>Question 1 What properties of the CAP theorem would you prioritize for a cloud storage service (e.g. Amazon S3, Google Cloud Storage)? What tradeoffs would you have to make?
-I approach the consistency vs. accessibility trade-off as an opportunity to clarify how our system might best serve our business goals. For example, in systems where it is mission-critical that all users see exactly the same records, such as systems serving critical care patient medical records, then I would prioritize consistency.</description>
+I approach the consistency vs. availability trade-off as an opportunity to clarify how our system might best serve our business goals. For example, in systems where it is mission-critical that all users see exactly the same data, such as systems serving critical-care patient medical records, then I would prioritize consistency.</description>
     </item>
     
     <item>
