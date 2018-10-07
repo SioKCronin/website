@@ -18,12 +18,21 @@ However, in services where users expect real-time access to information, such as
 restaurant recommendations, I would prioritize accessibility.
 
 It is wroth mentioning that the the venn diagram often used to depict 
-the CAP theorem can sometimes be a bit misleading. The need to 
-prioritize either consistency or availability emerges when we partition our data across
+the CAP theorem can sometimes be a bit misleading when it comes to vetting distributed solutions.
+The need to prioritize either consistency or availability emerges when we partition our data across
 servers. You can imagine if you were updating and accessing data from a single database 
 on a single server, the conversation of consitency and availability would become
 less pressing, as you would assume locking protocols would ensure consistency and
 that the availability you had would be what you had. 
+
+I find Martin Klepperman's writing in this area to be particularly illuminating. 
+
+
+Estimating query plans - DB caches the query plans
+But there may be moments when the structure of the DB changes, and there needs 
+to be a new query plan 
+
+
 
 ## Question 2 
 **You are part of a team that is responsible for a large, distributed web application. 
@@ -31,27 +40,37 @@ Assume the architecture consists of multiple services running on Kubernetes, usi
 primarily MySQL for persistence, and some form of API and user-facing frontend. 
 Make whatever other assumptions about the system you wish.**
 
-Let's assume there is a table for users in our MySQL database, and that writes 
-are processed by our master nodes and written and replicated to our replicas. Reads
-can happen from any node. 
+Frontend with load balancers.
 
-Let's also assume we are using a messaging service like Kafka to coordinate communication
-acros our microservices. 
+We will use CDN cacheing for all commonly requested content, with Least Recently Used (LRU) eviction strategy. 
 
-There are many aspects of our system we could explore, but in order to set up 
-question 3 well, let's address the following: 
+Our data model will be a MySQL table for user information and tables for all the other
+amazing things our system does. Writes in our datbase cluster will be processed by our 
+master nodes and written and replicated to our replicas. Reads can happen from any node. 
+MySQL Workbench will be set up for DB monitoring. We will enable our slow-log by 
+setting the appropriate paramters in our $my.cng$ file. Our user table will be indexed
+to ensure speedy lookup during log-in verification.
+
+We will use Docker as our container service and Kubernetes 
+
+Depending on what our service does, there are many aspects of our system we could explore, 
+but in order to set up question 3 well, let's address the following: 
 
 #### Log-in system
 
 Perhaps the most important system design specification we need to understand in order
-to address this triage challenge is log-in. Users manually enter their username or password,
+to address our triage challenge in Q3 is log-in. Users manually enter their username or password,
 or it is populated by a service like 1-Password, or they have a session active in the cache.
 
-The steps of login are, generacially, identify if the user is in the user database
-and if their submitted password matches the stored valid password. 
+The steps of login are, generacially, if the user is in the user database
+and if the hash of their submitted password matches the stored value of their 
+hashed password, then they are validated and a session is created. For the hashing
+we would use some form of cryptographic hashing function (i.e. Argon2), that is deterministic,
+quick to compute, and infeasible to generate the original password from the hash.
+This hashed password is what will be stored in our user table, and compared
+against the hash of the password used at login.
 
-For this challenge, let's assume our login request processing layer receives
-a JSON file like this
+So, we can assume our login request processing layer receives a JSON file like this
 ```
 { timestamp: '1000-01-01 00:00:00', 
   IP: '127.0.0.1/32',
@@ -60,13 +79,44 @@ a JSON file like this
 }
 ```
 
-The API might look something like this:
+If we were working with a single local MySQL instance, the API might look something like:
 
 ```
-SELECT IF( EXISTS(
-             SELECT *
-             FROM users
-             WHERE `user` =  username AND 'password' = password), 1, 0)
+import argon2
+import mysql.connector
+
+user, password = RETRIEVE FROM SERVER CALL QUEUE
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="yourusername",
+  passwd="yourpassword",
+  database="mydatabase"
+)
+
+password = argon2.argon2_hash("IHeartData")
+
+mycursor = mydb.cursor()
+
+mycursor.execute("SELECT *
+                  FROM users
+                  WHERE `user` =  {} 
+                  AND 'hashed_password' = {},
+                  LIMIT = 1), 1, 0)".format(user, password)
+                )
+
+myresult = mycursor.fetchall()
+
+if myresult:
+    pass
+    ```
+    Validate and initialize session
+    ```
+else:
+    pass
+    ```
+    Raise error
+    ```
 ```
 
 #### Traffic volume
@@ -76,8 +126,8 @@ layer consists of primarily MySQL clusters backed up to Redshift, and they
 also orchestrate their deployment of Docker containers with Kubernetes (combined with Mesos
 in their in-house system, PaaSTA). 
 
-Yelp sees an average of 32 million unique visitors a month on their mobile app.
-If we estimate that 20% of Yelp's users stay logged into the app, these means
+Yelp sees an average of 100 million unique mobile users a month. If we estimate 
+that 20% of Yelp's users stay logged into the app, these means
 there are approximately 26 million users who log in through the app each month.
 If we assume the distribution of log ins is constant across the entire day, that 
 would mean an average of 10 logins/second. While Yelp is used globally, the lioshare
@@ -96,50 +146,39 @@ Since we are using Kubernetes, our system is self-healing. If we have nodes down
 this will point us either to our Kubernetes configuration itself or a problem with our cloud host. 
 We will not need to investigate individual nodes, except in our cluster logs to see why they failed.
 
-#### Monitoring
+#### Cloud Hosting and Monitoring
 
-Let's assume we are using a monitoring service like Prometheus, so we have realtime data
-on how our clusters are doing.
+Let's assume we are using AWS, with a monitoring service like Prometheus for our cluster maintenance. 
+We will set up a VPN with security groups based on the product ownership areas and 
+restrictions of our team. 
 
 ## Question 3
 
 **Users have recently begun complaining of slowness when logging in. Normally 
 logins take tens of milliseconds but many users are now seeing logins take 
 multiple seconds. Given full access to all the necessary systems, what are 
-your initial steps to investigate? Please include what questions you would ask, 
-which systems you'd investigate first, which metrics you'd look at, what commands 
-you might run, etc. Make sure to explain your reasoning.**
+your initial steps to investigate?** 
 
 There are three overarching questions I would like to tackle: 
 
 * what happened?
 * how can we fix it?
-* how can we detect this issue sooner in the future? 
+* how can we detect it sooner in the future? 
 
 ### What happened?
 
-What follows is a cascading list of questions to ask and issues to address, but 
-I find it useful to allow one's creativity to at least take a 60 second stab at 
-what the major culprits might be. Set a timer, and get the intuitive guesses on
-to the table so we can triage from there more dispationately. 
+Before diving in, here are three possibilities I want to make sure are at least
+considered, given they were what my gut came up with first (and I find it useful 
+to capture intuitive respones at the onset of a triage session):
 
-For me these include:
-
-* Perhaps what users are experiencing is isolated, and related to their specific networking environment.
-* Perhaps what users are experiencing is browser related, and tied to a recent upgrade.
-* Perhaps our database has reached a tipping point that we didn't anticipate in our load testing.
-* Perhaps there is another bug we can't quickly identify, and we should rollback our revisions until it is addressed.
-
-This not an exhaustive list, but more like a moment of ventilation to ensure first thoughts
-do not vie for attention while a more systematic triage takes place. 
+* has something changed in our code relating to how we process log-in?
+* has a table in DB reached a tipping point?
+* is a malicious user exploiting some aspect of our system, thereby slowing down login for other users? 
 
 **Which users have been affected?** 
 
-One of the critical pieces of information we have here is that users are successfully
-logging in, it is just taking much longer. This rules out a host of directions we 
-would need to investigate if users were being denied log-in, or somehow their log-in 
-credentials were not accepted in the first place on the front-end (for instance, username
-and password input fields not responding).
+It is imortant to note that so far users are reporting they are successfully
+logging in, it is just taking much longer. 
 
 How many users have reported this issue, and what do they have in common? Geography? 
 Similar user names? Similiar log-in times? Android, IOS, desktop)? If similarities 
@@ -148,25 +187,42 @@ to our DB is sharded, thereby possibly indicating a problem in our load balancin
 in particular nodes in our cluster? Does the regionality of the issue point to possible
 issues in our cloud hosting for that region?
 
-**Does our internal testing replicate what the users are experiencing?**
+To start investigating, we'll want to look at the slow-log we enabled for our MySQL cluster. 
 
-Now that we have cornered the problem. 
+```python
+mysqldumpslow
+```
 
-Namely, do our tests show what the user is experiencing, and we just overlooked it, 
-or does this issue we are triaging exhibit a novel situation we have not covered
-with our tests? Can we see a record of this kind of activity in our integration testing?
+This will give us a view of all recent slow queries, which, depending on the scope of the problem,
+will most likely needed to be filtered further. We can do so by adding a few more flags,
+such as **-i** for specific instances (if we identified any) or return only a select number **-t**.
+
+We can also tag on an $EXPLAIN$ to our query, and run it in our dev environment to 
+check out our query plan. This will give an estimated cost for how long the query 
+will take and how many rows will need to be scanned. Our login query is rather simple, 
+so this may not yield anything, but it will be good to rule out an inefficient query plan.
 
 **What is the state of our clusters?**
 
-Are any nodes down? We have set them up to self-heal, so if they are down, what 
-would be preventing them from firing up? One situation might be...
+Have any nodes been down for any significant portion of time? Our system is configured 
+to self-heal, so if nodes are down, what would be preventing them from firing up?
 
-**Has the system experienced any unusual spikes in traffic, and if so, what parts 
-of the system do we know this puts pressure on? How are those parts of our system 
-responding?**
+**Traffic surges?**
 
-Can our load balancers serving our client requests handle this traffic? Are our SQL
-queries optimized to perform well under such system strain?
+Did our system experience any spikes in traffic? If so, does this surge in traffic 
+correlate with a known event (PR push, etc), or is this a possible sign of an attack?
+
+We can check traffic spikes by looking at our server dashboard [WHICH ONE].
+
+We are interested in looking at the logs for recent activity for the users who experienced the lag (or
+any demographics we feel may have experienced this, based on our analysis above). 
+From there, we can hone in on time windows we can use to assess spikes. If we're using 
+the MySQL Workbench, which logs key performance indicators relevant to this triage,
+including **client timing**, **network latency**, **server execution timing**, **index usage**, 
+and **number of rows scanned**.
+
+If we find there is a natural pattern of increased log-in that leads to bottlenecks, 
+how can our load balancers and MySQL cluster provisioning be redesigned to handle such traffic?
 
 **Was something recently deployed that correlates with this phenomena?**
 
@@ -182,16 +238,17 @@ We can start but running a diff on the container itself
 ```
 Docker diff CONTAINER_ID
 ```
+which will indicate which directories in our code base changed in the container. 
+If we see that log-in might have changed in some wayt  we can dive in further to 
+diff those files in particular. Maybe there's a straighforward bug? 
 
 ### How we can we resolve this issue?
 
-This will of course depend on what we discovered above. If we found a bug in the code,
-we could manually roll back to a previous version, but we must ask ourselves if restoring 
-the previous low latency log-in for these users is more important than the added benefit
-of whatever else was included in our last revision (which will be undone if we rollback).
-If so, we may choose to live with these low-latencies while we develop a revision
-that will solve the problem at hand. Otherwise, it if we choose to rollback, here's
-how we might proceed. 
+Let's say we found a bug that was introduced in a recent revsion. We could manually 
+roll back to a previous version, but we must ask ourselves if restoring 
+the previous low latency log-in for these users is more important than the benefits 
+provided by other feautures included in our last revision (which will be undone if we rollback).
+If we choose to rollback, here's how we might proceed. 
 
 Like 'git reset --hard commitID' in git version control, let's say we want to be 
 able to rollback to a specific previous revision in the deployment history.
@@ -207,20 +264,21 @@ kubectl rollout undo deployment/nginx-deployment --to-revision=2
 deployment.extensions/nginx-deployment
 ```
 
-This will pull the bug out of production, but doesn't answer our question.
+This will pull the bug out of production, and will allow us to deploy a functional 
+version of our system while we address the next section (improving testing!).
 
-To address whether a table reached a tipping point suspcicion, we will need to... 
+### How might we test for such issues going forward? 
 
-### How might we detect such issues sooner going forward? 
-
-The alarming aspect of this problem is that we did not catch it sooner. 
+What is perhaps most alarming about this problem is that we did not catch it sooner. 
 We had to wait until our users complained, which is much too late. 
 
 It is possible our triage inspection will yield the results we are looking for, and the bug
 can be fixed in short order. However, it may also be the case that the problem is more 
 complex, and will require further troubleshooting. In either case we are going to want
 more rigourous test coverage that replicates the conditions that led to the slow 
-log-in our users experienced.
+log-in our users experienced. For load balancing, we may wish to work with a tool 
+like [Iago](https://github.com/twitter/iago), which excels at accurately replicating 
+production traffic. 
 
 Once we feel we have solved the problem and it passes our tests, including load testing, 
 then we can set up a canary testing rollout to our nodes. This will requires us to 
@@ -231,9 +289,3 @@ most common activity within a 24 hour timeframe, or perhaps within an hour or mi
 These rollouts can be timed based on the frequency of the processing they most directly 
 address, or if the revision is more broad-reaching, than a typical range of user behaviors
 should transpire during the monitoring phase.
-
-And finally, we may find it worthwile to explore what researchers at Twitter have found to 
-be successful, which is to train an ML model to predict production success based 
-on performance in the testing environment. This layer is to listen to signals that 
-aren't detected by our test coverage, but that have historically predicted poor perfmance
-in production. 
