@@ -36,7 +36,8 @@
     
 
     <meta property="og:title" content="System design challenge" />
-<meta property="og:description" content="Question 1 What properties of the CAP theorem would you prioritize for a cloud storage service (e.g. Amazon S3, Google Cloud Storage)? What tradeoffs would you have to make?
+<meta property="og:description" content="Infrastructure Software Engineer The following questions were answerd by Siobhan K Cronin.
+Question 1 What properties of the CAP theorem would you prioritize for a cloud storage service (e.g. Amazon S3, Google Cloud Storage)? What tradeoffs would you have to make?
 I approach the consistency vs. availability trade-off as an opportunity to clarify how our system might best serve our business goals. For example, in systems where it is mission-critical that all users see exactly the same data, such as systems serving critical-care patient medical records, then I would prioritize consistency." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://siobhankcronin.com/ai_notes/software_engineering/github_take_home/" />
@@ -57,19 +58,21 @@ I approach the consistency vs. availability trade-off as an opportunity to clari
 
 
 <meta itemprop="name" content="System design challenge">
-<meta itemprop="description" content="Question 1 What properties of the CAP theorem would you prioritize for a cloud storage service (e.g. Amazon S3, Google Cloud Storage)? What tradeoffs would you have to make?
+<meta itemprop="description" content="Infrastructure Software Engineer The following questions were answerd by Siobhan K Cronin.
+Question 1 What properties of the CAP theorem would you prioritize for a cloud storage service (e.g. Amazon S3, Google Cloud Storage)? What tradeoffs would you have to make?
 I approach the consistency vs. availability trade-off as an opportunity to clarify how our system might best serve our business goals. For example, in systems where it is mission-critical that all users see exactly the same data, such as systems serving critical-care patient medical records, then I would prioritize consistency.">
 
 
 
-<meta itemprop="wordCount" content="2334">
+<meta itemprop="wordCount" content="2345">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="System design challenge"/>
-<meta name="twitter:description" content="Question 1 What properties of the CAP theorem would you prioritize for a cloud storage service (e.g. Amazon S3, Google Cloud Storage)? What tradeoffs would you have to make?
+<meta name="twitter:description" content="Infrastructure Software Engineer The following questions were answerd by Siobhan K Cronin.
+Question 1 What properties of the CAP theorem would you prioritize for a cloud storage service (e.g. Amazon S3, Google Cloud Storage)? What tradeoffs would you have to make?
 I approach the consistency vs. availability trade-off as an opportunity to clarify how our system might best serve our business goals. For example, in systems where it is mission-critical that all users see exactly the same data, such as systems serving critical-care patient medical records, then I would prioritize consistency."/>
 
       
@@ -177,6 +180,10 @@ I approach the consistency vs. availability trade-off as an opportunity to clari
     </header>
 
     <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
+
+<h1 id="infrastructure-software-engineer">Infrastructure Software Engineer</h1>
+
+<p>The following questions were answerd by Siobhan K Cronin.</p>
 
 <h2 id="question-1">Question 1</h2>
 
@@ -300,7 +307,7 @@ mycursor.execute(&quot;SELECT *
                   FROM users
                   WHERE `user` =  {} 
                   AND 'hashed_password' = {},
-                  LIMIT = 1), 1, 0)&quot;.format(user, password)
+                  LIMIT = 1&quot;.format(user, password)
                 )
 
 myresult = mycursor.fetchall()
@@ -328,7 +335,7 @@ in their in-house system, PaaSTA).</p>
 that 20% of Yelp&rsquo;s users stay logged into the app, these means
 there are approximately 80 million users who log in each month.
 If we assume the distribution of logins is constant across the entire day, that
-would mean an average of 925 logins/second. While Yelp is used globally, the lioshare
+would mean an average of 925 logins/second. While Yelp is used globally, the lionshare
 of its users are in the United States, and they most likely have observed hours of peak
 usage, so it would be safe to assume the number of logins per second could excede
 this initial estimate, perhaps extending up to tens of thousands of logins per econd.</p>
@@ -424,7 +431,7 @@ did this change begin in order to debug it. Have we recently our code for handli
 
 <p>We can start but running a diff on the container itself</p>
 
-<pre><code>Docker diff CONTAINER_ID
+<pre><code>docker diff CONTAINER_ID
 </code></pre>
 
 <p>which will indicate which directories in our code base changed in the container.
@@ -439,10 +446,10 @@ the previous low latency login is more important than the benefits
 provided by other feautures included in our last revision (which will be undone if we rollback).
 If we choose to rollback, here&rsquo;s how we might proceed.</p>
 
-<p>Like &lsquo;git reset &ndash;hard commitID&rsquo; in git version control, we can roll back
+<p>Like <em>git reset &ndash;hard commitID</em> in git version control, we can roll back
 to a specific previous revision in the deployment history.</p>
 
-<p>We can first examine the history to obtain the number,</p>
+<p>We can first examine the history to obtain the version number,</p>
 
 <pre><code>kubectl rollout history deployment/nginx-deployment deployments &quot;nginx-deployment&quot;
 </code></pre>
