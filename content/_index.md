@@ -1,6 +1,11 @@
 I am a software engineer with a love for machine learning, data engineering, 
-and data experience design. I began my career in cognitive neuroscience research, 
-and have spent the past three years contracting at startups and collaborating on 
-open source ML projects, including SwarmOpt and PySwarms. Here is a smattering 
-of my musings, including my math, engineering, and design notes. Drop me a line, 
-and let's nerd out!
+and mathematics. One of the greatest joys in my life has been the cultivation of a 
+robust and dynamic intellectual garden that bares the traces of my passions, 
+values, ponderings, and dialogues with so many others. This site is my attempt 
+to document my favorite paths through my garden. 
+I began my career in cognitive neuroscience research, and after several years 
+working as a contemoprary dancer and composer, I had an epiphany that led me to 
+pure math, software engineering, and humanitarian projects. I have since 
+contracted at startups and collaborated on open source 
+swarm intelligence projects, including SwarmOpt and PySwarms. 
+Drop me a line, and let's nerd out!
