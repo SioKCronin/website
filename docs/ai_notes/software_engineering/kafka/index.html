@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Siobhán K Cronin  | Kafka</title>
+    <title>Siobhán K Cronin  | Kafka &amp; Kinesis</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -35,10 +35,9 @@
 
     
 
-    <meta property="og:title" content="Kafka" />
-<meta property="og:description" content="Oh Kafka, where have you been all my life.
-In Dunning &amp; Friedman&rsquo;s book Streaming Architecture, they state &ldquo;a big difference between stream-based and traditional design &hellip; is that messaging layer plays a much more prominent role.&rdquo;
-Language-support &amp; Installation Before we go to far, let&rsquo;s get real about language-support. When I first used Kafka, I worked with a Python client called kafka-python, and there&rsquo;s also Parsely&rsquo;s pykakfa, amongst others." />
+    <meta property="og:title" content="Kafka &amp; Kinesis" />
+<meta property="og:description" content="In Dunning &amp; Friedman&rsquo;s book Streaming Architecture, they state &ldquo;a big difference between stream-based and traditional design &hellip; is that messaging layer plays a much more prominent role.&rdquo;
+I am streaming architecture&rsquo;s biggest fan. So many possibilities open up when you de-couple producers from consumers, and let your messaging layer do the heavy lifting on persisting events. To get at some of the finer points I thought it could be fun to compare the open source project Apache Kafka with AWS&rsquo; pay-to-play Kinesis." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://siobhankcronin.com/ai_notes/software_engineering/kafka/" />
 
@@ -57,23 +56,21 @@ Language-support &amp; Installation Before we go to far, let&rsquo;s get real ab
 
 
 
-<meta itemprop="name" content="Kafka">
-<meta itemprop="description" content="Oh Kafka, where have you been all my life.
-In Dunning &amp; Friedman&rsquo;s book Streaming Architecture, they state &ldquo;a big difference between stream-based and traditional design &hellip; is that messaging layer plays a much more prominent role.&rdquo;
-Language-support &amp; Installation Before we go to far, let&rsquo;s get real about language-support. When I first used Kafka, I worked with a Python client called kafka-python, and there&rsquo;s also Parsely&rsquo;s pykakfa, amongst others.">
+<meta itemprop="name" content="Kafka &amp; Kinesis">
+<meta itemprop="description" content="In Dunning &amp; Friedman&rsquo;s book Streaming Architecture, they state &ldquo;a big difference between stream-based and traditional design &hellip; is that messaging layer plays a much more prominent role.&rdquo;
+I am streaming architecture&rsquo;s biggest fan. So many possibilities open up when you de-couple producers from consumers, and let your messaging layer do the heavy lifting on persisting events. To get at some of the finer points I thought it could be fun to compare the open source project Apache Kafka with AWS&rsquo; pay-to-play Kinesis.">
 
 
 
-<meta itemprop="wordCount" content="210">
+<meta itemprop="wordCount" content="347">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Kafka"/>
-<meta name="twitter:description" content="Oh Kafka, where have you been all my life.
-In Dunning &amp; Friedman&rsquo;s book Streaming Architecture, they state &ldquo;a big difference between stream-based and traditional design &hellip; is that messaging layer plays a much more prominent role.&rdquo;
-Language-support &amp; Installation Before we go to far, let&rsquo;s get real about language-support. When I first used Kafka, I worked with a Python client called kafka-python, and there&rsquo;s also Parsely&rsquo;s pykakfa, amongst others."/>
+<meta name="twitter:title" content="Kafka &amp; Kinesis"/>
+<meta name="twitter:description" content="In Dunning &amp; Friedman&rsquo;s book Streaming Architecture, they state &ldquo;a big difference between stream-based and traditional design &hellip; is that messaging layer plays a much more prominent role.&rdquo;
+I am streaming architecture&rsquo;s biggest fan. So many possibilities open up when you de-couple producers from consumers, and let your messaging layer do the heavy lifting on persisting events. To get at some of the finer points I thought it could be fun to compare the open source project Apache Kafka with AWS&rsquo; pay-to-play Kinesis."/>
 
       
     
@@ -176,18 +173,26 @@ Language-support &amp; Installation Before we go to far, let&rsquo;s get real ab
           
         SOFTWARE ENGINEERING
       </p>
-      <h1 class="f1 helvetica mb1">Kafka</h1>
+      <h1 class="f1 helvetica mb1">Kafka &amp; Kinesis</h1>
     </header>
 
     <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
-
-<p>Oh Kafka, where have you been all my life.</p>
 
 <p>In Dunning &amp; Friedman&rsquo;s book <strong>Streaming Architecture</strong>, they state &ldquo;a big
 difference between stream-based and traditional design &hellip; is that messaging
 layer plays a much more prominent role.&rdquo;</p>
 
-<h2 id="language-support-installation">Language-support &amp; Installation</h2>
+<p>I am streaming architecture&rsquo;s biggest fan. So many possibilities open up when
+you de-couple producers from consumers, and let your messaging layer do the heavy
+lifting on persisting events. To get at some of the finer points
+I thought it could be fun to compare the open source project Apache Kafka
+with AWS&rsquo; pay-to-play Kinesis. Rather than put a firm barrier between the two,
+I&rsquo;d like to move back and forth between them as we build a clearer picture of
+streaming architecture in action. But first, some facts about each.</p>
+
+<h2 id="kafka">Kafka</h2>
+
+<h3 id="language-support-installation-for-kafka">Language-support &amp; Installation for Kafka</h3>
 
 <p>Before we go to far, let&rsquo;s get real about language-support. When I first used Kafka,
 I worked with a Python client called <a href="https://github.com/dpkp/kafka-python">kafka-python</a>,
@@ -199,17 +204,26 @@ assumes you are developing in Scala or Java. Even if you plan to work with a Pyt
 I encourage you install the Confluent platform so you can follow along with their support
 documentation.</p>
 
-<h2 id="replay">Replay</h2>
+<h3 id="replay">Replay</h3>
 
 <p>Replaying a kafka topic from a given offset (the unique identifier of a record
 in a paritition) is one of the great features that shows of Kafka&rsquo;s persistance.
 But how do we do it?</p>
 
-<h2 id="kafka-streams">Kafka Streams</h2>
+<h3 id="kafka-streams">Kafka Streams</h3>
 
 <p>A whole world of opportunities open up with Kafka Stream, as the duality of streams
 and tables (one being able to transform into the other) creates many possibilities
 for creating streams with enriched, processe data.</p>
+
+<h2 id="kinesis">Kinesis</h2>
+
+<h3 id="terminology">Terminology</h3>
+
+<p>Perhaps the biggest terminology is that Kinesis has <strong>streams</strong>, where Kafka has <strong>topics</strong>.
+Kinesis streams can be partitioned into <strong>shards</strong>, and each shared has it&rsquo;s own unique
+<strong>partition key</strong>. Shards are composed of <strong>data records</strong>, and each data record is
+composed of a unique <strong>sequence number</strong>, <strong>partition key</strong>, and <strong>data blob</strong>.</p>
 <ul class="pa0">
   
 </ul>
