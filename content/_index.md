@@ -8,5 +8,5 @@ Insight Data Engineering Fellow.
 
 One of the greatest joys in my life has been the cultivation of a 
 robust and dynamic intellectual garden that bares the traces of my passions, 
-values, ponderings, and dialogues many bright folks. This site is my attempt 
+values, ponderings, and dialogues with many bright folks. This site is my attempt 
 to document my favorite paths through that garden. Drop me a line, and let's nerd out!
