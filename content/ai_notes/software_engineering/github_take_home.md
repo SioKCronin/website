@@ -4,6 +4,9 @@ menu:
     ai_notes:
         parent: Software Engineering
 ---
+# Infrastructure Software Engineer
+
+The following questions were answerd by Siobhan K Cronin. 
 
 ## Question 1
 
@@ -127,7 +130,7 @@ mycursor.execute("SELECT *
                   FROM users
                   WHERE `user` =  {} 
                   AND 'hashed_password' = {},
-                  LIMIT = 1), 1, 0)".format(user, password)
+                  LIMIT = 1".format(user, password)
                 )
 
 myresult = mycursor.fetchall()
@@ -155,7 +158,7 @@ Yelp sees an average of 100 million unique mobile users a month. If we estimate
 that 20% of Yelp's users stay logged into the app, these means
 there are approximately 80 million users who log in each month.
 If we assume the distribution of logins is constant across the entire day, that 
-would mean an average of 925 logins/second. While Yelp is used globally, the lioshare
+would mean an average of 925 logins/second. While Yelp is used globally, the lionshare
 of its users are in the United States, and they most likely have observed hours of peak 
 usage, so it would be safe to assume the number of logins per second could excede 
 this initial estimate, perhaps extending up to tens of thousands of logins per econd. 
@@ -251,7 +254,7 @@ did this change begin in order to debug it. Have we recently our code for handli
 We can start but running a diff on the container itself
 
 ```
-Docker diff CONTAINER_ID
+docker diff CONTAINER_ID
 ```
 which will indicate which directories in our code base changed in the container. 
 If we see that login might have changed in some way, we can dive in further to 
@@ -265,10 +268,10 @@ the previous low latency login is more important than the benefits
 provided by other feautures included in our last revision (which will be undone if we rollback).
 If we choose to rollback, here's how we might proceed. 
 
-Like 'git reset --hard commitID' in git version control, we can roll back
+Like *git reset --hard commitID* in git version control, we can roll back
 to a specific previous revision in the deployment history.
 
-We can first examine the history to obtain the number,
+We can first examine the history to obtain the version number,
 ```
 kubectl rollout history deployment/nginx-deployment deployments "nginx-deployment"
 ```
