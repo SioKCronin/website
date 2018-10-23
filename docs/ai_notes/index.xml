@@ -122,7 +122,7 @@ $? = \sqrt{ax + (n + a)^2 + x\sqrt{a(x+n) + (n+a)^2 + (x+n)\sqrt{\dots}}}$.</des
       
       <guid>https://siobhankcronin.com/ai_notes/books/swarm_robotics_models/</guid>
       <description>Space-Time Continuous Models of Swarm Robotic Systems: Supporting Global-to-Local Programming, by Heiko Hamann
-Fundamentals of Swarm Robotics Multi-robot systems have the ability to show complex behavior, which is one of the features that motivate my study of them. That, and they have the potential to solve classic problems in novel, distributed ways. What I&amp;rsquo;m excited about in this bookis the presentation of how we derive partial differential equations (Fokker-Planck equation) from a stochastic differential equation (Langevin equation), which forms the basis of the Brownian motion model.</description>
+Fundamentals of Swarm Robotics Multi-robot systems have the ability to show complex behavior, which is one of the features that motivate my study of them. They also have the potential to solve classic problems in novel, distributed ways. What I&amp;rsquo;m excited about in this book is the presentation of how we derive partial differential equations (Fokker-Planck equation) from a stochastic differential equation (Langevin equation), which forms the basis of the Brownian motion model.</description>
     </item>
     
     <item>
