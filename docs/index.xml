@@ -113,7 +113,7 @@ Key ideas Canonical applications (theories developed to describe an application)
       
       <guid>https://siobhankcronin.com/posts/what_comes_after_minds/</guid>
       <description>What comes after minds? by Marvin Minsky. From The New Humanists: Science at the Edge (2003). Edited by John Brockman. Barnes &amp;amp; Noble Books: New York.
-Key quotes  &amp;ldquo;No uniform scheme will leda to machines as resourceful as the human brain. Instead, I&amp;rsquo;m convinced that this will require many different &amp;lsquo;ways to think&amp;rsquo; - along with bodies of knowledge about how and when to use them&amp;rdquo;. &amp;ldquo;Computer science has helped us envision a fare wider range of ways to represent different types and forms of knowledge,&amp;hellip;&amp;rdquo; &amp;ldquo;I see each emotional state as a distinctly different way to think&amp;rdquo;.</description>
+Key quotes  &amp;ldquo;No uniform scheme will lead to machines as resourceful as the human brain. Instead, I&amp;rsquo;m convinced that this will require many different &amp;lsquo;ways to think&amp;rsquo; - along with bodies of knowledge about how and when to use them&amp;rdquo;. &amp;ldquo;Computer science has helped us envision a far wider range of ways to represent different types and forms of knowledge,&amp;hellip;&amp;rdquo; &amp;ldquo;I see each emotional state as a distinctly different way to think&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -465,7 +465,7 @@ $? = \sqrt{ax + (n + a)^2 + x\sqrt{a(x+n) + (n+a)^2 + (x+n)\sqrt{\dots}}}$.</des
       
       <guid>https://siobhankcronin.com/ai_notes/books/swarm_robotics_models/</guid>
       <description>Space-Time Continuous Models of Swarm Robotic Systems: Supporting Global-to-Local Programming, by Heiko Hamann
-Fundamentals of Swarm Robotics Multi-robot systems have the ability to show complex behavior, which is one of the features that motivate my study of them. That, and they have the potential to solve classic problems in novel, distributed ways. What I&amp;rsquo;m excited about in this bookis the presentation of how we derive partial differential equations (Fokker-Planck equation) from a stochastic differential equation (Langevin equation), which forms the basis of the Brownian motion model.</description>
+Fundamentals of Swarm Robotics Multi-robot systems have the ability to show complex behavior, which is one of the features that motivate my study of them. They also have the potential to solve classic problems in novel, distributed ways. What I&amp;rsquo;m excited about in this book is the presentation of how we derive partial differential equations (Fokker-Planck equation) from a stochastic differential equation (Langevin equation), which forms the basis of the Brownian motion model.</description>
     </item>
     
     <item>
