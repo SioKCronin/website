@@ -1,5 +1,5 @@
 I am a software engineer with a love for machine learning, data engineering,
-mathematics and the mind. I began my career researching early cognitive 
+and mathematics. I began my career researching early cognitive 
 development at Harvard University/Harvard Medical School, and then spent several 
 years conducting independent embodied cognition research before transitioning to
 machine learning research and engineering in 2016. I have since contracted at 
