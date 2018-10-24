@@ -139,16 +139,5 @@ Least Response Time Method LB directs traffic to the server with the fewest acti
 For example, today&amp;rsquo;s cars are equipped with a data storage device, the EDR (event data recorder), which stores all the sensor data for the vehicle. Such data could be used for routing, dashboard analytics, or mechanical operation (cruise control, lane correction, auto parking, etc). This is just one of many use cases in the IoT universe, all requiring connectivity to control centers and real-time processing of data streams.</description>
     </item>
     
-    <item>
-      <title>System design challenge</title>
-      <link>https://siobhankcronin.com/ai_notes/software_engineering/github_take_home/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://siobhankcronin.com/ai_notes/software_engineering/github_take_home/</guid>
-      <description>Infrastructure Software Engineer The following questions were answerd by Siobhan K Cronin.
-Question 1 What properties of the CAP theorem would you prioritize for a cloud storage service (e.g. Amazon S3, Google Cloud Storage)? What tradeoffs would you have to make?
-I approach the consistency vs. availability trade-off as an opportunity to clarify how our system might best serve our business goals. For example, in systems where it is mission-critical that all users see exactly the same data, such as systems serving critical-care patient medical records, then I would prioritize consistency.</description>
-    </item>
-    
   </channel>
 </rss>
