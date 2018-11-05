@@ -1,8 +1,8 @@
 I am a software engineer with a love for machine learning, data engineering,
 and mathematics. I began my career researching early cognitive 
 development at Harvard University/Harvard Medical School, and then spent several 
-years conducting independent embodied cognition research before transitioning to
-machine learning research and engineering in 2016. I have since contracted at 
+years managing organizations in the culture sectore before transitioning to
+machine learning research and software engineering in 2016. I have since contracted at 
 two AI startups, collaborated on open source swarm intelligence projects, 
 including SwarmOpt and PySwarms, and was a 2018 Insight Data Engineering Fellow.
 

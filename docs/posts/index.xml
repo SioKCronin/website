@@ -105,5 +105,14 @@ Key ideas Canonical applications (theories developed to describe an application)
 Key quotes  &amp;ldquo;No uniform scheme will lead to machines as resourceful as the human brain. Instead, I&amp;rsquo;m convinced that this will require many different &amp;lsquo;ways to think&amp;rsquo; - along with bodies of knowledge about how and when to use them&amp;rdquo;. &amp;ldquo;Computer science has helped us envision a far wider range of ways to represent different types and forms of knowledge,&amp;hellip;&amp;rdquo; &amp;ldquo;I see each emotional state as a distinctly different way to think&amp;rdquo;.</description>
     </item>
     
+    <item>
+      <title>Strategies and Principles of Distributed ML on Big Data (REVIEW)</title>
+      <link>https://siobhankcronin.com/posts/distributed_ml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/posts/distributed_ml/</guid>
+      <description>The central question this paper asks is &amp;ldquo;how should we distribute our ML programs over a cluster?&amp;ldquo;. For some of us, the answer is &amp;ldquo;Spark&amp;rdquo;, and we call it a day. But if we aren&amp;rsquo;t satisified with the current state of performance, and would like to, instead, lean into the performance edge between ML models and systems, and explore the possibilities of improved performance, then we need to dig a little further.</description>
+    </item>
+    
   </channel>
 </rss>
