@@ -152,6 +152,16 @@ Slow Research Lab | 2016-Present Independent research on quadrivium pedagogy.</d
     </item>
     
     <item>
+      <title>API</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/api/</guid>
+      <description>Application Program Interfaces (APIs) do a lot of heavy lifting in software engineering, and are a world unto themselves. Let&amp;rsquo;s cover the basics for interacting with an API, and then build out from there.
+Designing an endpoint An endpoint is one end of a communication channel. In the case of an API call, the client may request data from a specific endpoint on a server. If we were designing that endpoint, we&amp;rsquo;d want to specify what information is required in that API call to serve the data.</description>
+    </item>
+    
+    <item>
       <title>AWS Virtual Private Clouds (VPCs)</title>
       <link>https://siobhankcronin.com/ai_notes/software_engineering/aws_vpc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -469,6 +479,15 @@ Fundamentals of Swarm Robotics Multi-robot systems have the ability to show comp
 Therefore, there exists $p, q$ such that $\sqrt{2} = \frac{p}{q}$, where $q \neq 0$, and $p, q$ share no common divisors other than 1.
 Squaring both sides gives $2 = \frac{p^2}{q^2}$, so consequently $2q^2 = p^2$.
 If a square of a number is even, then the number is even, so there exists some number $k$ such that $p=2k$. Subsituting this value into the equation yields $2q^2 = 4k^2$, or $q^2 = 2k^2$.</description>
+    </item>
+    
+    <item>
+      <title>Strategies and Principles of Distributed ML on Big Data (REVIEW)</title>
+      <link>https://siobhankcronin.com/posts/distributed_ml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/posts/distributed_ml/</guid>
+      <description>The central question this paper asks is &amp;ldquo;how should we distribute our ML programs over a cluster?&amp;ldquo;. For some of us, the answer is &amp;ldquo;Spark&amp;rdquo;, and we call it a day. But if we aren&amp;rsquo;t satisified with the current state of performance, and would like to, instead, lean into the performance edge between ML models and systems, and explore the possibilities of improved performance, then we need to dig a little further.</description>
     </item>
     
     <item>

@@ -21,6 +21,16 @@ We then shift into Robot Tour Optimization. Getting to different paths efficient
     </item>
     
     <item>
+      <title>API</title>
+      <link>https://siobhankcronin.com/ai_notes/software_engineering/api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/software_engineering/api/</guid>
+      <description>Application Program Interfaces (APIs) do a lot of heavy lifting in software engineering, and are a world unto themselves. Let&amp;rsquo;s cover the basics for interacting with an API, and then build out from there.
+Designing an endpoint An endpoint is one end of a communication channel. In the case of an API call, the client may request data from a specific endpoint on a server. If we were designing that endpoint, we&amp;rsquo;d want to specify what information is required in that API call to serve the data.</description>
+    </item>
+    
+    <item>
       <title>AWS Virtual Private Clouds (VPCs)</title>
       <link>https://siobhankcronin.com/ai_notes/software_engineering/aws_vpc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
