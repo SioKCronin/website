@@ -6,10 +6,19 @@
     <description>Recent content on Siobhán K Cronin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siobhankcronin.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Strategies and Principles of Distributed ML on Big Data (REVIEW)</title>
+      <link>https://siobhankcronin.com/posts/distributed_ml/</link>
+      <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/posts/distributed_ml/</guid>
+      <description>The central question this paper asks is &amp;ldquo;how should we distribute our ML programs over a cluster?&amp;ldquo;. For some of us, the answer is &amp;ldquo;Spark&amp;rdquo;, and we call it a day. But if we aren&amp;rsquo;t satisified with the current state of performance, and would like to, instead, lean into the performance edge between ML models and systems, and explore the possibilities of improved performance, then we need to dig a little further.</description>
+    </item>
     
     <item>
       <title>DeepLog: Anomaly Detection and Diagnosis from System Logs through Deep Learning</title>
@@ -103,15 +112,6 @@ Key ideas Canonical applications (theories developed to describe an application)
       <guid>https://siobhankcronin.com/posts/what_comes_after_minds/</guid>
       <description>What comes after minds? by Marvin Minsky. From The New Humanists: Science at the Edge (2003). Edited by John Brockman. Barnes &amp;amp; Noble Books: New York.
 Key quotes  &amp;ldquo;No uniform scheme will lead to machines as resourceful as the human brain. Instead, I&amp;rsquo;m convinced that this will require many different &amp;lsquo;ways to think&amp;rsquo; - along with bodies of knowledge about how and when to use them&amp;rdquo;. &amp;ldquo;Computer science has helped us envision a far wider range of ways to represent different types and forms of knowledge,&amp;hellip;&amp;rdquo; &amp;ldquo;I see each emotional state as a distinctly different way to think&amp;rdquo;.</description>
-    </item>
-    
-    <item>
-      <title>Strategies and Principles of Distributed ML on Big Data (REVIEW)</title>
-      <link>https://siobhankcronin.com/posts/distributed_ml/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://siobhankcronin.com/posts/distributed_ml/</guid>
-      <description>The central question this paper asks is &amp;ldquo;how should we distribute our ML programs over a cluster?&amp;ldquo;. For some of us, the answer is &amp;ldquo;Spark&amp;rdquo;, and we call it a day. But if we aren&amp;rsquo;t satisified with the current state of performance, and would like to, instead, lean into the performance edge between ML models and systems, and explore the possibilities of improved performance, then we need to dig a little further.</description>
     </item>
     
   </channel>
