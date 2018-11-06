@@ -1,6 +1,6 @@
 ---
 title: "Strategies and Principles of Distributed ML on Big Data (REVIEW)"
-date: "2018-10-5"
+date: "2018-10-05"
 ---
 The central question this paper asks is "how should we distribute our ML programs
 over a cluster?". For some of us, the answer is "Spark", and we call it a day.

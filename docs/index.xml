@@ -6,10 +6,19 @@
     <description>Recent content on Siobhán K Cronin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siobhankcronin.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Strategies and Principles of Distributed ML on Big Data (REVIEW)</title>
+      <link>https://siobhankcronin.com/posts/distributed_ml/</link>
+      <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/posts/distributed_ml/</guid>
+      <description>The central question this paper asks is &amp;ldquo;how should we distribute our ML programs over a cluster?&amp;ldquo;. For some of us, the answer is &amp;ldquo;Spark&amp;rdquo;, and we call it a day. But if we aren&amp;rsquo;t satisified with the current state of performance, and would like to, instead, lean into the performance edge between ML models and systems, and explore the possibilities of improved performance, then we need to dig a little further.</description>
+    </item>
     
     <item>
       <title>DeepLog: Anomaly Detection and Diagnosis from System Logs through Deep Learning</title>
@@ -479,15 +488,6 @@ Fundamentals of Swarm Robotics Multi-robot systems have the ability to show comp
 Therefore, there exists $p, q$ such that $\sqrt{2} = \frac{p}{q}$, where $q \neq 0$, and $p, q$ share no common divisors other than 1.
 Squaring both sides gives $2 = \frac{p^2}{q^2}$, so consequently $2q^2 = p^2$.
 If a square of a number is even, then the number is even, so there exists some number $k$ such that $p=2k$. Subsituting this value into the equation yields $2q^2 = 4k^2$, or $q^2 = 2k^2$.</description>
-    </item>
-    
-    <item>
-      <title>Strategies and Principles of Distributed ML on Big Data (REVIEW)</title>
-      <link>https://siobhankcronin.com/posts/distributed_ml/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://siobhankcronin.com/posts/distributed_ml/</guid>
-      <description>The central question this paper asks is &amp;ldquo;how should we distribute our ML programs over a cluster?&amp;ldquo;. For some of us, the answer is &amp;ldquo;Spark&amp;rdquo;, and we call it a day. But if we aren&amp;rsquo;t satisified with the current state of performance, and would like to, instead, lean into the performance edge between ML models and systems, and explore the possibilities of improved performance, then we need to dig a little further.</description>
     </item>
     
     <item>
