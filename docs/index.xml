@@ -267,6 +267,16 @@ File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Key-Va
     </item>
     
     <item>
+      <title>Godel, Escher, Bach</title>
+      <link>https://siobhankcronin.com/ai_notes/books/geb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/books/geb/</guid>
+      <description>Oh my, this book is every bit as delightful as I had imagined it would be.
+To be clear, I had slated this book as my &amp;ldquo;summer&amp;rdquo; read, imagining I would have stolen myself to an island somewhere to curl up alongside this book. But life found me in a data engineering fellowship in Palo Alto instead, drinking an endless stream of La Croix (La Croixes?) whilst building streaming pipelines and occassionaly drawing inspiration from the large bronze statue of Nikola Tesla that stood outside the office.</description>
+    </item>
+    
+    <item>
       <title>Hashing</title>
       <link>https://siobhankcronin.com/ai_notes/software_engineering/hashing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
