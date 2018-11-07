@@ -178,6 +178,12 @@
   </url>
   
   <url>
+    <loc>https://siobhankcronin.com/ai_notes/books/geb/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://siobhankcronin.com/ai_notes/software_engineering/hashing/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
