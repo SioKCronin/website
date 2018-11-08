@@ -62,7 +62,7 @@ Designing an endpoint An endpoint is one end of a communication channel. In the 
 
 
 
-<meta itemprop="wordCount" content="156">
+<meta itemprop="wordCount" content="355">
 
 
 
@@ -176,7 +176,7 @@ Designing an endpoint An endpoint is one end of a communication channel. In the 
 engineering, and are a world unto themselves. Let&rsquo;s cover the basics for
 interacting with an API, and then build out from there.</p>
 
-<h1 id="designing-an-endpoint">Designing an endpoint</h1>
+<h2 id="designing-an-endpoint">Designing an endpoint</h2>
 
 <p>An endpoint is one end of a communication channel. In the case of an API call,
 the client may request data from a specific endpoint on a server. If we were
@@ -185,13 +185,31 @@ in that API call to serve the data. Are their specific query terms? Do we need
 the user&rsquo;s ID? Is the timestamp important? These inputs become parameters we&rsquo;ll
 pass to our underlying logic to obtain the relelvant data.</p>
 
-<h1 id="get-vs-post">GET vs. POST</h1>
+<h2 id="get-vs-post">GET vs. POST</h2>
 
 <p>GET is a common HTTP method, and used to request data from a specific resource.</p>
 
 <p>On the flipside, POST is used to send data to a server to create/update a resource.</p>
 
-<h1 id="automate-http-jobs-with-curl">Automate HTTP jobs with curl</h1>
+<h2 id="rest-vs-rpc">REST vs RPC</h2>
+
+<p>I&rsquo;ll admit, I fell victim to what Phil Stugeon describes in his article on RPC
+(remote procedure call), which is I assumed REST would better suit my needs,
+so I gave it little attention. Phil writes about <a href="https://www.smashingmagazine.com/2016/09/understanding-rest-and-rpc-for-http-apis/">the difference between RPC
+and REST</a>,
+not in an attempt to prove one is more universally valuable than the other,
+but to demonstrate situations where one might be more appropriate than the other.
+RPCs excell at actions or commands, and Phil points out an example of RESTful API
+that is being used to execute a command, and how this is really RPC in disguise.
+Can you think of a situation where you&rsquo;d want RPC? My mind goes to situations
+where you wouldn&rsquo;t need CRUD, but simply to execute a command - perhaps some
+sensor-driven activation, like a trip-wire out in the world.</p>
+
+<p>And then Phil blows our minds and reminds us that we could, of course, have
+both RPC and REST for the same application! He also shows a clear example of
+an RPC being used alongside a REST API, which is have an RPC to restart
+servers and run commands on batches of servers (while the REST chugs on doing
+its CRUD work).</p>
 <ul class="pa0">
   
 </ul>
