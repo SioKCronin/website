@@ -61,3 +61,32 @@ currently running, which can then be made available through a **Service
 Registry** (Client-Side Service Discovery). The locations can also be 
 stored in a load balancer (AWS ELB, for instance), or in the address references
 themselves (Server-Side Service Discovery). 
+
+### API Management
+
+For services that must communicate with several other services, it is often
+preferable to use an API Gateway. This API Gateway will receive the request,
+sequence the calls to the necessary APIs (applying protocol translations
+where necessary), formatting the responses, and sending the responses back 
+to the client. 
+
+### Communication layer
+
+The Enterprise Service Bus (ESB) has traditionally coordinated communication in
+Service Oriented Architeture (SOAs), yet systems are evolving to employ
+scalable messaging queues (implemented with platforms like Kafka or Kinesis). 
+This provides a pub-sub process where producers and consumers can interact 
+independently with the queue. It is proposed that pub-sub won't serve all cases
+(although I'm curious to hear more compelling edge cases), in which case 
+something like Akka Streams, whose actor model abstraction and platform affords
+far more control in defining the nuances of a parallel processing/distributed 
+system. 
+
+### Integration
+
+How we control the flow of calls/data between systems requires we have some 
+protocol defining their interface, and, often, this protocol defines some form
+of back-pressure to control the flow of data between the systems. Failures
+must also be captured and quarentined to prevent cascading failures. One design
+pattern has been to have services emit event streams that other systems can 
+consume.
