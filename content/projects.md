@@ -47,15 +47,3 @@ linguistic detection of plurality with Dr. Sid Kouider.
 
 **Boston College - Department of Psychology | 2000-2001**</br>
 Affect research with Dr. Lisa Feldman Barrett.
-
-### Music
-
-**Tempered (2018-Present)**</br>
-Performance meditation on the Galilean moons.
-
-**Ryujin (2016)**</br>
-String quartet (premiered at the SF Women's Building by Friction Quartet, sponsored by 
-the San Francisco Arts Commission).
-
-**O Pacifica (2014)**</br>
-String quintet (sponsored by the Center for Cultural Innovation). 
