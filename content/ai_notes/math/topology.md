@@ -80,18 +80,36 @@ compactness I keep referring to? Compactness refers to a subset of Euclidean spa
 that is both closed (including its limit points) and bounded (having a fixed length
 between all its points). 
 
-I got into simplicial complexes inter great detail elsewhere, but suffice it to say
+I got into simplicial complexes into greater detail elsewhere, but suffice it to say
 they play an important role in TDA. In the great intro paper Chazal & Michel 2017,
 the authors explore how one can go about building simplicial complexes from data. 
-In particular, they introduce two complexes, Vietoris-Rips and Cech, and introduce 
-the concept of a cover. Formally, a cover of a set X is a collection of sets whose
-union contains X as a subset. In this case we say "C covers X". A subcover of C
-is a subset of C that covers X, and we deem C an "open cover" if each of its members
-is an open set (contained in T, the topology of X). And here's a term whose name I LOVE.
-A **refiniement** of C is a cover D of X such that ever set in D is contained 
-in some set of C.  
+An **abstract simplicial complex** with vertex set $V$ is a set $K$ of finite
+subsets of V such that the elements of V belong to K, and for any $\omega \in K$,
+any subset of $\omega$ belongs to $K$. The elements of $K$ are the faces, simplices,
+of $K$. A **geometic simplicial complex** K is a collection of simplices such that
+1) any face of a siplex of K is a simplex of K, and 2) the intersection of any 
+two simplices of K is either empty or a common face of both. 
+
+The paper introduces two specific complexes, Vietoris-Rips and Cech. The 
+**Vietoris-Rips complex** $R\_{\alpha}(\mathbb{X})$ is the set of simplices
+$[x\_{0}, ..., x\_{k}]$ such that $d\_{\mathbb{X}}(x\_{i}, x\_{j}) \leq \alpha$
+for all $(i, j)$. The **Cech complex** is the set of simplices
+$[x\_{0}, ..., x\_{k}]$ such that the $k + 1$ closed balls $B(x\_{i}, \alpha)$ 
+have a non-empty intersection. 
+
+Next, a breif introduction to the concept of a cover. A cover of a set X is a 
+collection of sets whose union contains X as a subset. In this case we say 
+"C covers X". A subcover of C is a subset of C that covers X, and we deem C 
+an "open cover" if each of its members is an open set (contained in T, 
+the topology of X). And here's a term whose name I LOVE. A **refiniement** of 
+C is a cover D of X such that every set in D is contained in some set of C.  
 
 Oh my, you're probably thinking "when will this list of definitions stop", but
 I like to think of each concept as an imgination color we can paint with. I promise,
 it all comes together in some pretty dazzling fireworks displays. For now, let's 
-turn our attention to the **Nerve Theorem**. 
+turn our attention to the **Nerve Theorem**: 
+
+Let $\mathcal{U}=(U\_{i})\_{i \in I}$ be a cover of a topological space $X$ by
+open sets such that the intersection of any subcollection of the $U\_{i}$'s 
+is either empty or contractibe. Then X and the nerve $\mathcal{C}(\mathcal{U})$ are homotopy
+equivalent. 
