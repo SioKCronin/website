@@ -16,8 +16,8 @@ professionals buy homes in high-cost cities.
 Siobhán has published research in Brain & Cognition, Neuroreport, and
 Model View Culture, and presented at the Conference on Complex Systems,
 Conference on Cognitive Neuroscience, AlterConf, PyLadies, Metis, and
-Temple University. She is the lead developer of SwarmOpt, a swarm 
-intelligence hyperparameter optimizer, a member of Bay Area Women in Machine Learning
+Temple University. She is the lead developer of SwarmOpt (an open-source swarm 
+intelligence algorithm library), a member of Bay Area Women in Machine Learning
 and Data Science, a guest researcher at Slow Research Lab, and a youth 
 engineering mentor at dev/Mission.
 
