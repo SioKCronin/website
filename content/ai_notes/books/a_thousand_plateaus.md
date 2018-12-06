@@ -49,8 +49,10 @@ there was something other than our individual parts. A third self emerging betwe
 us. And it seems I have been gathering more and more evidence to support that the
 study of such emergence lies at the center of the the catalyst that will break 
 us from the plague of reductionism and pave the way for new forms of system
-thinking/making/researching in myriad disciplines. This is not simply the province
-of network science. System effects emerge everwhere, especially in the dealings 
+thinking/making/researching in myriad disciplines. 
+
+This is not simply the province of network science. 
+System effects emerge everwhere, especially in the dealings 
 between complex organisms like humans. Complex systems of the weather pattern 
 and traffic ilk are not the only places to question "what are the nodes and 
 what are the edges?". How she felt about how her cupcakes were received by 
@@ -65,7 +67,7 @@ nature long enough to see new ways to break it. The song of the rhizome, which
 Deleuze & Guitarri have clearly learned to sing. What delicious 
 structured/unstructured cacophonies this song stirs.
 
-I keep coming back to the need for decentralization. The need for minds to unlearn 
+I observe a need for decentralization. A need for minds to unlearn 
 habitual localisation. Self at the center. Self against other(s). Incessent tree 
 thinking. Self as root. Memory as root. Desire as root. Are we ready to release 
 our swarm of curves, tori, and circles? Can we do so without rupturing
