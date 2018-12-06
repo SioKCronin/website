@@ -112,6 +112,12 @@
   </url>
   
   <url>
+    <loc>https://siobhankcronin.com/ai_notes/books/a_thousand_plateaus/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://siobhankcronin.com/ai_notes/software_engineering/api/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
