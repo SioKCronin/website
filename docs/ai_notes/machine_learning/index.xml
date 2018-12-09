@@ -11,6 +11,18 @@
     
     
     <item>
+      <title>Correlation</title>
+      <link>https://siobhankcronin.com/ai_notes/machine_learning/correlation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/machine_learning/correlation/</guid>
+      <description>I hesitated before putting this note on Correlation in my ML section, but then I remembered this comic:
+Also, who could forget this chestnut of a motivational lead in to the topic of Maximum Information Coefficient (MIC)?:
+I&amp;rsquo;d like to overview Pearson&amp;rsquo;s r, touch upon Kendall and Spearman, and then dive into MIC.
+Pearon&amp;rsquo;s r This is what people typically think of when they think of correlation. It measures the linear relationship between two variables.</description>
+    </item>
+    
+    <item>
       <title>RL in Process Scheduling</title>
       <link>https://siobhankcronin.com/ai_notes/machine_learning/rl_in_process_scheduling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
