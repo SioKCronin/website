@@ -37,8 +37,8 @@ Key concepts  system logs: A file that records the system states and significant
       <pubDate>Tue, 24 Apr 2018 11:53:47 -0700</pubDate>
       
       <guid>https://siobhankcronin.com/about/</guid>
-      <description>Siobhán is a software engineer with a passion for data engineering, evolutionary computing and mathematics.
-She began her career researching how humans learn at Harvard&amp;rsquo;s Lab for Developmental Studies and Harvard Medical School, and now develops tools to help systems of machines and humans learn together. She is the Data Engineering Lead at Landed, where she builds data infrastructure to support essential professionals buy homes in high-cost cities.
+      <description>Siobhán is a software engineer with a passion for data engineering, machine learning and complex systems modeling.
+She began her career researching how humans learn at Harvard&amp;rsquo;s Lab for Developmental Studies and Harvard Medical School, and now develops tools to help machines and humans learn together. She is the Data Engineering Lead at Landed, where she builds data infrastructure to support essential professionals buy homes in high-cost cities.
 Siobhán has published research in Brain &amp;amp; Cognition, Neuroreport, and Model View Culture, and presented at the Conference on Complex Systems, Conference on Cognitive Neuroscience, AlterConf, PyLadies, Metis, and Temple University.</description>
     </item>
     
@@ -254,6 +254,18 @@ This burgeoning research arena, wearing hand-me-downs from theoretical physics a
       
       <guid>https://siobhankcronin.com/contact/</guid>
       <description> Your Name Email Address An email address is required.  Message   </description>
+    </item>
+    
+    <item>
+      <title>Correlation</title>
+      <link>https://siobhankcronin.com/ai_notes/machine_learning/correlation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/machine_learning/correlation/</guid>
+      <description>I hesitated before putting this note on Correlation in my ML section, but then I remembered this comic:
+Also, who could forget this chestnut of a motivational lead in to the topic of Maximum Information Coefficient (MIC)?:
+I&amp;rsquo;d like to overview Pearson&amp;rsquo;s r, touch upon Kendall and Spearman, and then dive into MIC.
+Pearon&amp;rsquo;s r This is what people typically think of when they think of correlation. It measures the linear relationship between two variables.</description>
     </item>
     
     <item>
