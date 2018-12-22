@@ -4,12 +4,12 @@ date = "2018-04-24T11:53:47-07:00"
 draft = false
 
 +++
-Siobhán is a software engineer with a passion for data engineering, 
-evolutionary computing and mathematics.
+Siobhán is a software engineer with a passion for data engineering,
+machine learning and complex systems modeling.
 
 She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies and Harvard Medical School, and now develops tools
-to help systems of machines and humans learn together. She is the Data 
+to help machines and humans learn together. She is the Data 
 Engineering Lead at Landed, where she builds data infrastructure to support essential
 professionals buy homes in high-cost cities.
 
