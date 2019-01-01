@@ -4,14 +4,14 @@ date = "2018-04-24T11:53:47-07:00"
 draft = false
 
 +++
-Siobhán is a software engineer with a passion for data engineering,
-machine learning and complex systems modeling.
+Siobhán is a data engineer with a passion for scalable infrastructure, 
+machine learning and data experience design.
 
 She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies and Harvard Medical School, and now develops tools
 to help machines and humans learn together. She is the Data 
-Engineering Lead at Landed, where she builds data infrastructure to support essential
-professionals buy homes in high-cost cities.
+Engineering Lead at Landed, where she helps support the financial 
+well-being of essential professionals.
 
 Siobhán has published research in Brain & Cognition, Neuroreport, and
 Model View Culture, and presented at the Conference on Complex Systems,

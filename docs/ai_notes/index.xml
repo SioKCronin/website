@@ -35,6 +35,16 @@ Multiply both sides by $\phi$ to get $\phi^2 = \phi + 1$.</description>
     </item>
     
     <item>
+      <title>Data experience design</title>
+      <link>https://siobhankcronin.com/ai_notes/design/data_experience_design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/design/data_experience_design/</guid>
+      <description>What signals should we attend to when studying a system? If we capture everything, how will we filter out the noise to listen to what matters? How do we know what matters? Does that change over time? How will we engage with what matters? Will it be on single metric? A two-dimensional chart? A 3D display? A 3D display that moves with color and sound adding further dimensional context?
+These are the questions I think throughout my days with, until now, little context for exploring their histories and futures in the broader scope of analytics, interaction design, human computer interaction, and feminist computing.</description>
+    </item>
+    
+    <item>
       <title>Godel, Escher, Bach</title>
       <link>https://siobhankcronin.com/ai_notes/books/geb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
