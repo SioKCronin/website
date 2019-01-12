@@ -2,7 +2,7 @@
 title: Data experience design
 menu:
     ai_notes:
-        parent: Design
+        parent: HCI
 draft: False
 ---
 What signals should we attend to when studying a system? If we capture everything,
