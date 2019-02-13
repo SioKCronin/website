@@ -9,7 +9,7 @@ When my dog Arlo was a puppy, he went through a period where being on a leash
 made him anxious, and he would react more agressively to other dogs on the street.
 My husband and I took him to a class at the local SPCA called "Reactive Rover"
 where he learned to chill out whilst walking on leash. In the context of this
-class, reactive was deemed a negative quality we were learning un-condition, yet, 
+class, reactive was deemed a negative quality we were learning to un-condition, yet, 
 in service architecture, reactive takes on an entirely different meaning. 
 
 In software development, it all comes back to the customers, and the teams we 
@@ -33,7 +33,7 @@ value from the log."
 An important caution is raised, which is that REST is "always at the expense
 of decoupling, system evolution, scale, and availability." Whoa! Them be 
 fighting words. The point is that REST is most often synchronous, so should 
-only be used in contexts of thightly coupled services. RPCs should be investigated
+only be used in contexts of tightly coupled services. RPCs should be investigated
 more fully as an alternative, and I will save that for another post. 
 
 A concise history lesson is provided, that shows how we went from storing large
