@@ -1,5 +1,5 @@
 ---
-title: Data experience design
+title: Data experience design 
 menu:
     ai_notes:
         parent: HCI
@@ -21,19 +21,28 @@ humans are capable of exploring more humanity along the axes of care, trust,
 collaboration, healing, joy, service, and contentement than along the axis of
 consumption. I'll leave politics out of the equation, and present more of my thesis.
 
-For my piece, I have situated myself between three spheres of overlapping labor, 
-which I name loosely as **engineering**, **analytics**, and **data experience design**. 
-I engage in this labor in service of the questions above, and in response to the 
+In this context, I am situating myself between three spheres of overlapping labor:  **engineering**, 
+**practices of meaning making**, and **human computer interaction**. I engage in this labor in 
+service of the questions above, and in response to the 
 imperitive that compels them - people make important decisions that impact myriad 
-beings without adequate information, and/or with adequate information that is 
-poorly interpretted. Rather than bemoan human ignorance, and throw my 
-hands up to the sky, I'm putting my hands (and entire mind-body) to work on
-developing new possiblities for leveraging the kinetic-perceptive-cognitive
-abilities that are core to our species in novel ways to draw more meaning from 
-the data we generate and engage with. In the AI parlance, I'm concerned with 
-human in the loop systems, but I have a particular slant on how humans might 
-best participate in the loop. 
+beings without adequate information. We have yet to see the extant we can make rational,
+loving, compassionate, and deeply caring decisions as individuals and as people. We have
+been context-impoverished not only because of limited access to data, but also limited 
+shared imagination regarind the potentials of thining with our systems. A dangerous sort of hubris,
+or over-prioritzation of our human minds divorced of context-rich, responsive systems. 
 
-To kick things, off I thought it best to start with a collection of images
-demonstrating how humans have externalized their representations of complex systems,
-and to begin to trace the intuitions these systems have given rise to.
+Rather than bemoan human ignorance, and throw my hands up to the sky, I'm putting my hands 
+(and entire mind-body) to work on developing new possiblities for leveraging the 
+kinetic-perceptive-cognitive abilities that are core to our species in novel ways to 
+draw more meaning from the data we generate and engage with. I'm interested human in the loop systems, 
+including human in the loop in bio-ecosystems, cyber-ecosystems, and meaning-making systems.
+I'm also interested in empathic AI that will enhance our ability to relate compassionately to 
+ourselves and others, as sound decision making is predicated on the kinds of values and ethics that a
+healthy, balanced, awake human can engage in. 
+
+I've enjoyed my weekend visits to Dynamicland, and it may be helpful to start this research thesis 
+with a collection of images demonstrating how humans have representated their location within
+complex systems. Perhaps from there we can trace scaffolding we've collectively been working with,
+which may spark fresh thinking on what else might be possible. 
+
+
