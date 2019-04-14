@@ -3,7 +3,7 @@ title: Data experience design
 menu:
     ai_notes:
         parent: HCI
-draft: False
+draft: True
 ---
 What signals should we attend to when studying a system? If we capture everything,
 how will we filter out the noise to listen to what matters? How do we know what
@@ -39,10 +39,4 @@ including human in the loop in bio-ecosystems, cyber-ecosystems, and meaning-mak
 I'm also interested in empathic AI that will enhance our ability to relate compassionately to 
 ourselves and others, as sound decision making is predicated on the kinds of values and ethics that a
 healthy, balanced, awake human can engage in. 
-
-I've enjoyed my weekend visits to Dynamicland, and it may be helpful to start this research thesis 
-with a collection of images demonstrating how humans have representated their location within
-complex systems. Perhaps from there we can trace scaffolding we've collectively been working with,
-which may spark fresh thinking on what else might be possible. 
-
 
