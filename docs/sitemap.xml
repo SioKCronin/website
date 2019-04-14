@@ -178,12 +178,6 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/ai_notes/hci/data_experience_design/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://siobhankcronin.com/ai_notes/software_engineering/databases/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
