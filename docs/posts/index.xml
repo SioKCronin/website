@@ -6,10 +6,23 @@
     <description>Recent content on Siobhán K Cronin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siobhankcronin.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A growing neural gas network learns toplogies</title>
+      <link>https://siobhankcronin.com/posts/neural_gas_learns_topologies/</link>
+      <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/posts/neural_gas_learns_topologies/</guid>
+      <description>A growing neural gas network learns topologies by Bernd Fritzke (1995).
+Overview Hebbian learning variations for learning topologies in high-dimensional data.
+Key concepts  topological learning: Given some high-dimensional data distributionp, find a topological structure which closely reflects the topology of the data distribu
+ competitive Hebbian leanring (CHL): For each input signal x connect the two closest centers (measured by Euclidean distance) by an edge.
+ vector quantization (VC): Often used for data compression, quantization involves dividing a large set of points (vectors) into groups having approximatley the same number of points closest to them.</description>
+    </item>
     
     <item>
       <title>Strategies and Principles of Distributed ML on Big Data (REVIEW)</title>

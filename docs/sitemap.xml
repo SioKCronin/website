@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://siobhankcronin.com/posts/neural_gas_learns_topologies/</loc>
+    <lastmod>2019-04-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://siobhankcronin.com/posts/distributed_ml/</loc>
     <lastmod>2018-10-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -81,7 +88,7 @@
   
   <url>
     <loc>https://siobhankcronin.com/</loc>
-    <lastmod>2018-10-05T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-14T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -100,7 +107,7 @@
   
   <url>
     <loc>https://siobhankcronin.com/posts/</loc>
-    <lastmod>2018-10-05T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-14T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
