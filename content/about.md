@@ -4,22 +4,27 @@ date = "2018-04-24T11:53:47-07:00"
 draft = false
 
 +++
-Siobhán is a data engineer with a passion for scalable infrastructure, 
-machine learning and interactive intelligence.
+Siobhán is a data engineer and researcher with a passion for 
+scalable infrastructure, machine learning and impact investing.
 
 She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies and Harvard Medical School, and now develops tools
-to help machines and humans learn together. She is the Data 
-Engineering Lead at Landed, where she helps support the financial 
-well-being of essential professionals.
+to help machines and humans collaborate together. She is the Data Engineering Lead 
+at Landed, where she helps support the financial well-being of essential professionals.
 
 Siobhán has published research in Brain & Cognition, Neuroreport, and
 Model View Culture, and presented at the Conference on Complex Systems,
 Conference on Cognitive Neuroscience, AlterConf, PyLadies, Metis, and
 Temple University. She is the lead developer of SwarmOpt (an open-source swarm 
 intelligence algorithm library), a member of Bay Area Women in Machine Learning
-and Data Science, a guest researcher at Slow Research Lab, and a youth 
-engineering mentor at dev/Mission.
+and Data Science, and a guest researcher at Slow Research Lab.
+
+After decades of chronic anxiety and internalized queer shame, Siobhán experienced
+a life-changing EMDR/Somatic Experiencing process in 2016 that resulted in a profound
+shift in her consciousness which culminated in an ego death. Her life is now dedicated 
+to catalyzing emergence for others and reducing suffering. When not leveraging capital 
+to catalyze social change she facilitates movement workshops and meditation retreats 
+drawing inspiration from her training in somatics, bhakti yoga, and trauma release.
 
 ![sio](skc_blaisse.jpg)
 (Anna Halprin's deck with Maria Blaisse's forms. Photo by Carolyn Strauss)
