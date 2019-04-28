@@ -21,9 +21,9 @@ and Data Science, and a guest researcher at Slow Research Lab.
 
 After decades of chronic anxiety stemming from the violence directed towards queer people, 
 Siobhán experienced a life-changing EMDR/Somatic Experiencing process in 2016 that 
-resulted in a profound shift in her consciousness which culminated in an ego death. 
-Her life is now dedicated to catalyzing  emergence from chronic suffering. 
-When not leveraging capital to catalyze social change she facilitates movement workshops and 
+resulted in a profound shift in her consciousness. Her life is now dedicated to 
+supporting the emergence of others and reducing suffering. When not leveraging capital 
+to catalyze social change she facilitates movement workshops and 
 meditation retreats drawing inspiration from her training in somatics, bhakti yoga, 
 and trauma release.
 
