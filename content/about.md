@@ -4,8 +4,8 @@ date = "2018-04-24T11:53:47-07:00"
 draft = false
 
 +++
-Siobhán is a data engineer and researcher with a passion for 
-scalable infrastructure, machine learning and impact investing.
+Siobhán is a data engineer with a passion for 
+scalable infrastructure, machine learning and interactive intelligence.
 
 She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies and Harvard Medical School, and now develops tools
@@ -22,8 +22,8 @@ and Data Science, and a guest researcher at Slow Research Lab.
 After decades of chronic anxiety stemming from the violence directed towards queer people, 
 Siobhán experienced a life-changing EMDR/Somatic Experiencing process in 2016 that 
 resulted in a profound shift in her consciousness. Her life is now dedicated to 
-supporting the emergence of others and reducing suffering. When not leveraging capital 
-to catalyze social change she facilitates movement workshops and 
+creating the conditions for others to emerge from and dismantle systems of systemic oppression.
+When not leveraging capital to catalyze social change she facilitates movement workshops and 
 meditation retreats drawing inspiration from her training in somatics, bhakti yoga, 
 and trauma release.
 
