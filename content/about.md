@@ -23,8 +23,6 @@ After decades of chronic anxiety stemming from the violence directed towards que
 Siobhán experienced a life-changing EMDR/Somatic Experiencing process in 2016 that 
 resulted in a profound shift in her consciousness. Her life is now dedicated to 
 creating the conditions for others to emerge from and dismantle systems of systemic oppression.
-When not supporting the economic empowerment of the disenfranchised, Siobhán supports
-her community by offering yoga and mindfulness workshops and non-dualist counseling.
 
 ![sio](skc_blaisse.jpg)
 (Anna Halprin's deck with Maria Blaisse's forms. Photo by Carolyn Strauss)
