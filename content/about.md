@@ -22,7 +22,7 @@ and Data Science, and a guest researcher at Slow Research Lab.
 After decades of chronic anxiety stemming from the violence directed towards queer people, 
 Siobhán experienced a life-changing EMDR/Somatic Experiencing process in 2016 that 
 resulted in a profound shift in her consciousness. Her life is now dedicated to 
-creating the conditions for others to emerge from and dismantle systems of systemic oppression.
+creating the conditions for others to emerge from and dismantle systems of oppression.
 
 ![sio](skc_blaisse.jpg)
 (Anna Halprin's deck with Maria Blaisse's forms. Photo by Carolyn Strauss)
