@@ -24,7 +24,7 @@ violence directed towards queer people, Siobhán experienced a powerful EMDR/Som
 Experiencing process in 2016 that resulted in a profound shift in her consciousness. 
 Her life is now dedicated to supporting ventures that dismantle systems of oppression, 
 including the cultural and technological barriers preventing women/girls and non-binary 
-people from accessing education and economic opportunity/stability.
+people from accessing education and economic opportunity.
 
 ![sio](skc_blaisse.jpg)
 (Anna Halprin's deck with Maria Blaisse's forms. Photo by Carolyn Strauss)
