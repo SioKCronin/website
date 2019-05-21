@@ -16,7 +16,7 @@ draft = false
 ### Service
 
 **devMission** | Youth Mentor | Sep 2018 - Present</br>
-**Bay Area Arts & Science Interactive Collaborative Sessions** | Advisor | Feb 2014 - Dec 2016</br>
+**BAASICS** | Advisor | Feb 2014 - Dec 2016</br>
 **Horizons for Homeless Children** | Volunteer Caregiver | 2003 - 2005</br>
 **Queer Domestic Violence Project** | Hotline Volunteer  | 2003 - 2005</br>
 
