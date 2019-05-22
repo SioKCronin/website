@@ -19,7 +19,7 @@ Temple University. She is the lead developer of SwarmOpt (an open-source swarm
 intelligence algorithm library), a member of Bay Area Women in Machine Learning
 and Data Science, and a guest researcher at Slow Research Lab.
 
-After decades of suffering under a dissociation condition caused by the 
+After suffering under a dissociation condition caused by the 
 violence directed towards queer people, Siobhán experienced a powerful EMDR/Somatic 
 Experiencing process in 2016 that resulted in a profound shift in her consciousness. 
 Her life is now dedicated to supporting ventures that dismantle systems of oppression, 
