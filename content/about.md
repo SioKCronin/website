@@ -5,7 +5,7 @@ draft = false
 
 +++
 Siobhán is a data engineer with a passion for 
-scalable infrastructure, machine learning and interactive intelligence.
+scalable infrastructure, machine learning and collective intelligence.
 
 She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies and Harvard Medical School, and now develops tools
