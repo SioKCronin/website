@@ -12,7 +12,7 @@ Hebbian learning variations for learning topologies in high-dimensional data.
 ## Key concepts
 
 * **topological learning**: Given some high-dimensional data distributionp, find a topological
-structure which closely reflects the topology of the data distribu
+structure which closely reflects the topology of the data distribution.
 
 * **competitive Hebbian leanring (CHL)**: For each input signal x connect the two closest centers (measured
 by Euclidean distance) by an edge. 
