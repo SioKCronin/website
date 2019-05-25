@@ -1,11 +1,11 @@
 +++
 title = ""
 date = "2018-04-24T11:53:47-07:00"
-draft = true
+draft = false
 
 +++
 ### Upcoming
-Stay tuned!
+* 6.12.2019 --- Empowering Busines Owners with dbt @ Grove Collaborative (SF)<br/>
 
 ### Past
 
@@ -53,4 +53,3 @@ you can relate the content directly to what you’re building. I’ll be
 available afterwards (and by e-mail) to ensure you have what you need to
 implement the optimizers we discuss. Code examples will be presented in
 Python, but I’ll also provide libraries and resources in R.
-
