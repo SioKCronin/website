@@ -53,7 +53,7 @@ enableRobotsTXT = false
     identifier = "speaking"
     name       = "Speaking"
     url        = "/speaking"
-    weight     = 2
+    weight     = 1
 
     [[menu.main]]
     identifier = "about"

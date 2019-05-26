@@ -5,7 +5,7 @@ draft = false
 
 +++
 ### Upcoming
-* 6.12.2019 --- Empowering Busines Owners with dbt @ Grove Collaborative (SF)<br/>
+* 6.12.2019 --- Empowering Business Owners with dbt @ Grove Collaborative (SF)<br/>
 
 ### Past
 
