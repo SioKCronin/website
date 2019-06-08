@@ -38,6 +38,12 @@ enableRobotsTXT = false
 
 [menu]
     [[menu.main]]
+    identifier = "praxis"
+    name       = "Praxis"
+    url        = "/praxis.html"
+    weight     = 4
+
+    [[menu.main]]
     identifier = "ai_notes"
     name       = "AI Notes"
     url        = "/index.html"
