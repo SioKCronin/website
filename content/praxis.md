@@ -5,5 +5,5 @@ draft = false
 
 +++
 
-![sio](skc_blaisse.jpg)
-(Anna Halprin's deck with Maria Blaisse's forms. Photo by Carolyn Strauss)
+{{< youtube pQHETaIDgWQ >}}
+
