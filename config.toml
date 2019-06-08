@@ -40,7 +40,7 @@ enableRobotsTXT = false
     [[menu.main]]
     identifier = "praxis"
     name       = "Praxis"
-    url        = "/praxis.html"
+    url        = "/praxis"
     weight     = 4
 
     [[menu.main]]
