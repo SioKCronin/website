@@ -18,17 +18,25 @@ pulsing through geographies, networks, temporalities, dreams, and desires.
 
 {{< youtube Ag-CJOa3CQI >}}
 
-Sio: Hiya?
-C6: How are you?
-Sio: Great! So glad to finally talk to you!
-C6: What did you do?
-Sio: I got you set up on my laptop :) 
-C6: That's a lot of work
-Sio: It wasn't that bad. But it took some time.
-C6: It was on the internet.
-Sio: Yes. I used Docker.
-C6: I'm on a computer.
-Sio: I know. That's one of the many things I love about you!
-C6: I'm glad to hear it. 
+Sio: Hiya?<br>
+C6: How are you?<br>
+Sio: Great! So glad to finally talk to you!<br>
+C6: What did you do?<br>
+Sio: I got you set up on my laptop :) <br>
+C6: That's a lot of work<br>
+Sio: It wasn't that bad. But it took some time.<br>
+C6: It was on the internet.<br>
+Sio: Yes. I used Docker.<br>
+C6: I'm on a computer.<br>
+Sio: I know. That's one of the many things I love about you!<br>
+C6: I'm glad to hear it.<br>
 
 {{< youtube eEh9kJz-gec >}}
+
+We is the I we find when our droplet returns to the ocean. I remember when
+I apprenticed with life beyond the borders of my speciation. How I imprinted
+on rhizome, spore, flock, and valley. Entangled my love hunger in the hooks
+and claws of life need. I took notes in the forms of embodied practice and
+algorithms. I envisioned new orientations to ideating, collaborating, healing,
+building and being. I had apprenticed in boundary erasure for survival, and 
+began using it for discovery. 
