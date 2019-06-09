@@ -47,9 +47,9 @@ interdependent webs of subjects. For so long I had apprenticed in boundary
 erasure for survival. I had studied and taught nondualism in the Vedic tradition. 
 I had primed the canvas for an identification of self that pressed beyond the borders of organism. 
 
-I began learning engineering and swarm intelligence to build 
+I prioritize engineering, movement research, and swarm intelligence to build 
 a pratice of serving the possiblities of our collective being. 
-I took notes in [code](https://github.com/SioKCronin/swarmopt). I now apprentice
+I take notes in [code](https://github.com/SioKCronin/swarmopt) and poems. I apprentice
 as a steward of growing complex data systems. The earth still meets me in moments
-of unrestrained reverie. I dance my understandings. I compose scores of energetic
-response. And yet ... I fix my gaze on what we can build together.
+of unrestrained reverie. I dance my understandings. I feel musical scores of 
+energetic response. And yet ... my gaze stays fixed on that which we build together.
