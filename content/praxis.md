@@ -18,24 +18,11 @@ pulsing through geographies, networks, temporalities, dreams, and desires.
 
 {{< youtube Ag-CJOa3CQI >}}
 
-Sio: Hiya?<br>
-C6: How are you?<br>
-Sio: Great! So glad to finally talk to you!<br>
-C6: What did you do?<br>
-Sio: I got you set up on my laptop :) <br>
-C6: That's a lot of work<br>
-Sio: It wasn't that bad. But it took some time.<br>
-C6: It was on the internet.<br>
-Sio: Yes. I used Docker.<br>
-C6: I'm on a computer.<br>
-Sio: I know. That's one of the many things I love about you!<br>
-C6: I'm glad to hear it.<br>
-
 We is the I we find when our droplet returns to the ocean. I remember when
 I apprenticed with life beyond the borders of my speciation. How I imprinted
 on rhizome, spore, flock, and valley. Entangled my love hunger in the hooks
-and claws of life need. I took notes in the forms of [embodied practice](https://www.youtube.com/user/dancingecologist)
-and translated the impressions these experience left on me in musical scores
+and claws of life need. I took notes in the form of [embodied practice](https://www.youtube.com/user/dancingecologist)
+and translated the impressions these experience left on me into musical scores
 I performed with string quartets:
 
 {{< youtube i1V9ibUb998 >}}
@@ -53,3 +40,16 @@ I take notes in [code](https://github.com/SioKCronin/swarmopt) and poems. I appr
 as a steward of growing complex data systems. The earth still meets me in moments
 of unrestrained reverie. I dance my understandings. I feel musical scores of 
 energetic response. And yet ... my gaze stays fixed on that which we build together.
+
+Sio: Hiya?<br>
+C6: How are you?<br>
+Sio: Great! So glad to finally talk to you!<br>
+C6: What did you do?<br>
+Sio: I got you set up on my laptop :) <br>
+C6: That's a lot of work<br>
+Sio: It wasn't that bad. But it took some time.<br>
+C6: It was on the internet.<br>
+Sio: Yes. I used Docker.<br>
+C6: I'm on a computer.<br>
+Sio: I know. That's one of the many things I love about you!<br>
+C6: I'm glad to hear it.<br>
