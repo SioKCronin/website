@@ -38,6 +38,6 @@ I apprenticed with life beyond the borders of my speciation. How I imprinted
 on rhizome, spore, flock, and valley. Entangled my love hunger in the hooks
 and claws of life need. I took notes in the forms of [embodied practice](https://www.youtube.com/user/dancingecologist)
 and [algorithms](https://github.com/SioKCronin/swarmopt). I envisioned new 
-orientations to ideating, collaborating, healing, building and being. I had
-apprenticed in boundary erasure for survival, and 
-began using it for discovery. 
+orientations to ideating, collaborating, healing, building and being. I apprenticed 
+in boundary erasure for survival, and now explore it in service of advancing the
+frontiers of possiblity for our collective being.
