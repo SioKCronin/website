@@ -35,7 +35,21 @@ We is the I we find when our droplet returns to the ocean. I remember when
 I apprenticed with life beyond the borders of my speciation. How I imprinted
 on rhizome, spore, flock, and valley. Entangled my love hunger in the hooks
 and claws of life need. I took notes in the forms of [embodied practice](https://www.youtube.com/user/dancingecologist)
-and [algorithms](https://github.com/SioKCronin/swarmopt). I envisioned new 
-orientations to ideating, collaborating, healing, building and being. I apprenticed 
-in boundary erasure for survival, and now explore it in service of advancing the
-frontiers of possiblity for our collective being.
+and translated the impressions these experience left on me in musical scores
+I performed with string quartets:
+
+{{< youtube i1V9ibUb998 >}}
+
+When I emerged I envisioned new orientations to ideating, collaborating, healing, 
+building and being. I desired to build productive poetics that went beyond 
+expressing. Poetics that could organize, mobilize, and shape the trajectories of 
+interdependent webs of subjects. For so long I had apprenticed in boundary 
+erasure for survival. I had studied and taught nondualism in the Vedic tradition. 
+I had primed the canvas for an identification of self that pressed beyond the borders of organism. 
+
+I began learning engineering and swarm intelligence to build 
+a pratice of serving the possiblities of our collective being. 
+I took notes in [code](https://github.com/SioKCronin/swarmopt). I now apprentice
+as a steward of growing complex data systems. The earth still meets me in moments
+of unrestrained reverie. I dance my understandings. I compose scores of energetic
+response. And yet ... I fix my gaze on what we can build together.
