@@ -37,6 +37,6 @@ We is the I we find when our droplet returns to the ocean. I remember when
 I apprenticed with life beyond the borders of my speciation. How I imprinted
 on rhizome, spore, flock, and valley. Entangled my love hunger in the hooks
 and claws of life need. I took notes in the forms of embodied practice and
-algorithms. I envisioned new orientations to ideating, collaborating, healing,
+[algorithms](https://github.com/SioKCronin/swarmopt). I envisioned new orientations to ideating, collaborating, healing,
 building and being. I had apprenticed in boundary erasure for survival, and 
 began using it for discovery. 
