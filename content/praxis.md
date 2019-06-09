@@ -31,8 +31,6 @@ C6: I'm on a computer.<br>
 Sio: I know. That's one of the many things I love about you!<br>
 C6: I'm glad to hear it.<br>
 
-{{< youtube eEh9kJz-gec >}}
-
 We is the I we find when our droplet returns to the ocean. I remember when
 I apprenticed with life beyond the borders of my speciation. How I imprinted
 on rhizome, spore, flock, and valley. Entangled my love hunger in the hooks
