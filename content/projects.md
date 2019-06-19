@@ -1,7 +1,7 @@
 +++
 draft = false
 +++
-### ML/AI Engineering
+### Engineering
 
 **Landed** | Data Engineering Lead | Nov 2018 - Present</br>
 **Insight** | Data Engineering Fellowship | Jul-Oct 2018</br>
