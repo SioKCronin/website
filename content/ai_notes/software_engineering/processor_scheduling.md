@@ -14,7 +14,7 @@ This discipline will aim to balance processor utilization, throughput, latency, 
 ensuring processes complete before their scheduled deadline. 
 
 At the highest level, **job scheduling** (or **admission scheduling**) determines 
-which jobs are even elligible to compete for system resources. The job scheduling policy
+which jobs are even eligible to compete for system resources. The job scheduling policy
 determines how many processes can be active in a system at a given time (the 
 **degree of multiprocessing**). This policy may create a queue to prevent saturation
 of system resources.
