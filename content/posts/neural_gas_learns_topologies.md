@@ -1,5 +1,5 @@
 ---
-title: "A growing neural gas network learns toplogies"
+title: "A growing neural gas network learns topologies"
 date: "2019-04-14"
 ---
 **A growing neural gas network learns topologies**
@@ -14,7 +14,7 @@ Hebbian learning variations for learning topologies in high-dimensional data.
 * **topological learning**: Given some high-dimensional data distributionp, find a topological
 structure which closely reflects the topology of the data distribution.
 
-* **competitive Hebbian leanring (CHL)**: For each input signal x connect the two closest centers (measured
+* **competitive Hebbian learning (CHL)**: For each input signal x connect the two closest centers (measured
 by Euclidean distance) by an edge. 
 
 * **vector quantization (VC)**: Often used for data compression, quantization involves dividing a large
