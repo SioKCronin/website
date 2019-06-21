@@ -22,7 +22,7 @@ The Poetics of Swarms Swarm intelligence is the collective behavior of decentral
     </item>
     
     <item>
-      <title>A growing neural gas network learns toplogies</title>
+      <title>A growing neural gas network learns topologies</title>
       <link>https://siobhankcronin.com/posts/neural_gas_learns_topologies/</link>
       <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -30,7 +30,7 @@ The Poetics of Swarms Swarm intelligence is the collective behavior of decentral
       <description>A growing neural gas network learns topologies by Bernd Fritzke (1995).
 Overview Hebbian learning variations for learning topologies in high-dimensional data.
 Key concepts  topological learning: Given some high-dimensional data distributionp, find a topological structure which closely reflects the topology of the data distribution.
- competitive Hebbian leanring (CHL): For each input signal x connect the two closest centers (measured by Euclidean distance) by an edge.
+ competitive Hebbian learning (CHL): For each input signal x connect the two closest centers (measured by Euclidean distance) by an edge.
  vector quantization (VC): Often used for data compression, quantization involves dividing a large set of points (vectors) into groups having approximatley the same number of points closest to them.</description>
     </item>
     
