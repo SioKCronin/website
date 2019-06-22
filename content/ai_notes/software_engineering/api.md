@@ -31,7 +31,7 @@ so I gave it little attention. Phil writes about [the difference between RPC
 and REST](https://www.smashingmagazine.com/2016/09/understanding-rest-and-rpc-for-http-apis/), 
 not in an attempt to prove one is more universally valuable than the other,
 but to demonstrate situations where one might be more appropriate than the other.
-RPCs excell at actions or commands, and Phil points out an example of RESTful API
+RPCs excel at actions or commands, and Phil points out an example of RESTful API
 that is being used to execute a command, and how this is really RPC in disguise. 
 Can you think of a situation where you'd want RPC? My mind goes to situations
 where you wouldn't need CRUD, but simply to execute a command - perhaps some
@@ -42,9 +42,5 @@ both RPC and REST for the same application! He also shows a clear example of
 an RPC being used alongside a REST API, which is have an RPC to restart
 servers and run commands on batches of servers (while the REST chugs on doing
 its CRUD work). 
-
-
-
-
 
 

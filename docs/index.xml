@@ -6,20 +6,10 @@
     <description>Recent content on Siobhán K Cronin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 May 2019 11:53:47 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 14 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siobhankcronin.com/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>https://siobhankcronin.com/speaking/</link>
-      <pubDate>Sat, 25 May 2019 11:53:47 -0700</pubDate>
-      
-      <guid>https://siobhankcronin.com/speaking/</guid>
-      <description>Upcoming  6.12.2019 &amp;mdash; Empowering Business Owners with dbt @ Grove Collaborative (SF)  Past  10.11.2017 &amp;mdash; Step by Step @ Metis (SF) 9.21.2016 &amp;mdash; Forms @ Conference on Complex Systems (Amsterdam) 8.9.2016 &amp;mdash; Form and Movement in Complex Systems @ PyLadies (SF) 6.4.2016 &amp;mdash; On People, Cubes and Snacks @ AlterConf (SF)  
-The Poetics of Swarms Swarm intelligence is the collective behavior of decentralized, self-organized systems.</description>
-    </item>
     
     <item>
       <title>A growing neural gas network learns topologies</title>
@@ -192,6 +182,19 @@ Service devMission | Youth Mentor | Sep 2018 - Present BAASICS | Advisor | Feb 2
     </item>
     
     <item>
+      <title></title>
+      <link>https://siobhankcronin.com/speaking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/speaking/</guid>
+      <description>++ title = &amp;ldquo;&amp;rdquo; date = &amp;ldquo;2019-05-25T11:53:47-07:00&amp;rdquo; draft = false
++++
+Upcoming Stay tuned
+Past  6.12.2019 &amp;mdash; Empowering Business Owners with dbt @ Grove Collaborative (SF) 10.11.2017 &amp;mdash; Step by Step @ Metis (SF) 9.21.2016 &amp;mdash; Forms @ Conference on Complex Systems (Amsterdam) 8.9.2016 &amp;mdash; Form and Movement in Complex Systems @ PyLadies (SF) 6.4.2016 &amp;mdash; On People, Cubes and Snacks @ AlterConf (SF)  
+The Poetics of Swarms Swarm intelligence is the collective behavior of decentralized, self-organized systems.</description>
+    </item>
+    
+    <item>
       <title>A Thousand Plateaus</title>
       <link>https://siobhankcronin.com/ai_notes/books/a_thousand_plateaus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -253,7 +256,7 @@ Multiply both sides by $\phi$ to get $\phi^2 = \phi + 1$.</description>
       
       <guid>https://siobhankcronin.com/ai_notes/lecture_notes/cs75/</guid>
       <description>Ah, David Malan, we meet again. Many months have passed since I waded through your hyper-caffeinated orations in CS50, and now I find you building dynamic websites in the summer of 2012. I accept your challenge.
-9. Scalability Begins with a brief recap on what we look for from a web host, including confirming FSTP (vs. FTP) to ensure security and deciding how fast we think we might scale (so we&amp;rsquo;re not pushed out by other users on a shared system).</description>
+9. Scalability Begins with a brief recap on what we look for from a web host, including confirming SFTP (vs. FTP) to ensure security and deciding how fast we think we might scale (so we&amp;rsquo;re not pushed out by other users on a shared system).</description>
     </item>
     
     <item>
