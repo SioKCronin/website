@@ -40,6 +40,6 @@ in [code](https://github.com/SioKCronin/swarmopt) and poems. I apprentice
 as a steward of growing complex data systems to provide scaffolding to my inquiry. 
 The earth still meets me in moments of unrestrained reverie. I dance my understandings. 
 I feel musical scores of energetic response. And yet ... my gaze stays fixed on supporting
-that which we are build together.
+that which we are building together.
 
 {{< youtube B_CMHGz8QCo >}}
