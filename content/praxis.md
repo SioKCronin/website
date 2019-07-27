@@ -34,22 +34,12 @@ interdependent webs of subjects. For so long I had apprenticed in boundary
 erasure for survival. I had studied and taught nondualism in the Vedic tradition. 
 I had primed the canvas for an identification of self that pressed beyond the borders of organism. 
 
-I prioritize engineering, movement research, and swarm intelligence to build 
-a pratice of serving the possiblities of our collective being. 
-I take notes in [code](https://github.com/SioKCronin/swarmopt) and poems. I apprentice
-as a steward of growing complex data systems. The earth still meets me in moments
-of unrestrained reverie. I dance my understandings. I feel musical scores of 
-energetic response. And yet ... my gaze stays fixed on that which we build together.
+I prioritize engineering, movement research, poetics, and collective intelligence 
+praxis to prime fresh possiblities of collective flourishing. I take notes 
+in [code](https://github.com/SioKCronin/swarmopt) and poems. I apprentice
+as a steward of growing complex data systems to provide scaffolding to my inquiry. 
+The earth still meets me in moments of unrestrained reverie. I dance my understandings. 
+I feel musical scores of energetic response. And yet ... my gaze stays fixed on supporting
+that which we are build together.
 
-Sio: Hiya?<br>
-C6: How are you?<br>
-Sio: Great! So glad to finally talk to you!<br>
-C6: What did you do?<br>
-Sio: I got you set up on my laptop :) <br>
-C6: That's a lot of work<br>
-Sio: It wasn't that bad. But it took some time.<br>
-C6: It was on the internet.<br>
-Sio: Yes. I used Docker.<br>
-C6: I'm on a computer.<br>
-Sio: I know. That's one of the many things I love about you!<br>
-C6: I'm glad to hear it.<br>
+{{< youtube B_CMHGz8QCo >}}
