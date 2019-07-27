@@ -34,7 +34,7 @@ interdependent webs of subjects. For so long I had apprenticed in boundary
 erasure for survival. I had studied and taught nondualism in the Vedic tradition. 
 I had primed the canvas for an identification of self that pressed beyond the borders of organism. 
 
-I prioritize engineering, movement research, poetics, and collective intelligence 
+I prioritize engineering, movement research, and collective intelligence 
 praxis to prime fresh possiblities of collective flourishing. I take notes 
 in [code](https://github.com/SioKCronin/swarmopt) and poems. I apprentice
 as a steward of growing complex data systems to provide scaffolding to my inquiry. 
