@@ -34,12 +34,13 @@ interdependent webs of subjects. For so long I had apprenticed in boundary
 erasure for survival. I had studied and taught nondualism in the Vedic tradition. 
 I had primed the canvas for an identification of self that pressed beyond the borders of organism. 
 
-I prioritize engineering, movement research, and collective intelligence 
-praxis to prime fresh possiblities of collective flourishing. I take notes 
-in [code](https://github.com/SioKCronin/swarmopt) and poems. I apprentice
-as a steward of growing complex data systems to provide scaffolding to my inquiry. 
+I now prioritize engineering, somatics, and collective intelligence 
+research to prime fresh possiblities of collective flourishing. I take notes 
+in [code](https://github.com/SioKCronin/swarmopt) and poems. I explore network love.
+I apprentice as a steward of growing complex data systems to provide scaffolding to my inquiry. 
+
 The earth still meets me in moments of unrestrained reverie. I dance my understandings. 
-I feel musical scores of energetic response. And yet ... my gaze stays fixed on supporting
-that which we are building together.
+I feel musical scores of energetic response. And yet ... my gaze remains fixed on supporting
+the emergence of what we are chosing to build together.
 
 {{< youtube B_CMHGz8QCo >}}

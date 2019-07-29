@@ -6,21 +6,10 @@
     <description>Recent content on Siobhán K Cronin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 May 2019 11:53:47 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 14 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://siobhankcronin.com/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>https://siobhankcronin.com/speaking/</link>
-      <pubDate>Sat, 25 May 2019 11:53:47 -0700</pubDate>
-      
-      <guid>https://siobhankcronin.com/speaking/</guid>
-      <description>Upcoming Stay tuned
-Past  6.12.2019 &amp;mdash; Empowering Business Owners with dbt @ Grove Collaborative (SF) 10.11.2017 &amp;mdash; Step by Step @ Metis (SF) 9.21.2016 &amp;mdash; Forms @ Conference on Complex Systems (Amsterdam) 8.9.2016 &amp;mdash; Form and Movement in Complex Systems @ PyLadies (SF) 6.4.2016 &amp;mdash; On People, Cubes and Snacks @ AlterConf (SF)  
-The Poetics of Swarms Swarm intelligence is the collective behavior of decentralized, self-organized systems.</description>
-    </item>
     
     <item>
       <title>A growing neural gas network learns topologies</title>
@@ -190,6 +179,19 @@ import matplotlib import numpy as np import matplotlib.pyplot as plt %matplotlib
       <description>Engineering Landed | Data Engineering Lead | Nov 2018 - Present Insight | Data Engineering Fellowship | Jul-Oct 2018 Uncountable | Software Engineer | Jan-Feb 2018 Avisell | Machine Learning Engineer | May-Sep 2017
 Open Source Software Alluvium - Realtime streaming search with Kafka and Apache Storm SwarmOpt — Swarm Intelligence (SI) optimizer for hyperparameter tuning
 Service devMission | Youth Mentor | Sep 2018 - Present BAASICS | Advisor | Feb 2014 - Dec 2016 Horizons for Homeless Children | Volunteer Caregiver | 2003 - 2005 Queer Domestic Violence Project | Hotline Volunteer | 2003 - 2005</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://siobhankcronin.com/speaking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/speaking/</guid>
+      <description>++ title = &amp;ldquo;&amp;rdquo; date = &amp;ldquo;2019-05-25T11:53:47-07:00&amp;rdquo; draft = true
++++
+Upcoming Stay tuned
+Past  6.12.2019 &amp;mdash; Empowering Business Owners with dbt @ Grove Collaborative (SF) 10.11.2017 &amp;mdash; Step by Step @ Metis (SF) 9.21.2016 &amp;mdash; Forms @ Conference on Complex Systems (Amsterdam) 8.9.2016 &amp;mdash; Form and Movement in Complex Systems @ PyLadies (SF) 6.4.2016 &amp;mdash; On People, Cubes and Snacks @ AlterConf (SF)  
+The Poetics of Swarms Swarm intelligence is the collective behavior of decentralized, self-organized systems.</description>
     </item>
     
     <item>
