@@ -4,9 +4,8 @@ date = "2018-04-24T11:53:47-07:00"
 draft = false
 
 +++
-Siobhán is a data engineer, machine learning researcher, and poet 
-with a passion for scalable data infrastructure and collective 
-intelligence.
+Siobhán is a data engineer with a passion for scalable data 
+infrastructure, machine learning, and collective intelligence.
 
 She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies and Harvard Medical School, and now develops tools
