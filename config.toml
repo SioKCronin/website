@@ -56,14 +56,8 @@ enableRobotsTXT = false
     weight     = 2
 
     [[menu.main]]
-    identifier = "speaking"
-    name       = "Speaking"
-    url        = "/speaking"
-    weight     = 1
-
-    [[menu.main]]
     identifier = "about"
     name       = "About"
     url        = "/about"
-    weight     = 0
+    weight     = 1
 
