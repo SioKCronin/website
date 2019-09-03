@@ -1,5 +1,4 @@
 +++
-
 title = ""
 date = "2018-04-24T11:53:47-07:00"
 draft = false
@@ -31,17 +30,13 @@ I performed with string quartets:
 When I emerged I envisioned new orientations to ideating, collaborating, healing, 
 building and being. I desired to build productive poetics that went beyond 
 expressing. Poetics that could organize, mobilize, and shape the trajectories of 
-interdependent webs of subjects. For so long I had apprenticed in boundary 
-erasure for survival. I had studied and taught nondualism in the Vedic tradition. 
-I had primed the canvas for an identification of self that pressed beyond the borders of organism. 
+interdependent webs of subjects. 
 
-I now prioritize engineering, somatics, and collective intelligence 
-research to prime fresh possiblities of collective flourishing. I take notes 
-in [code](https://github.com/SioKCronin/swarmopt) and poems. I explore network love.
-I apprentice as a steward of growing complex data systems to provide scaffolding to my inquiry. 
+I now prioritize information infrastructure, somatics, poetics, dialectics,
+and collective intelligence research to prime fresh possiblities of collective 
+flourishing. I take notes in [code](https://github.com/SioKCronin/swarmopt) and poems. 
 
-The earth still meets me in moments of unrestrained reverie. I dance my understandings. 
-I feel musical scores of energetic response. And yet ... my gaze remains fixed on supporting
-the emergence of what we are chosing to build together.
+The earth continues to meet me in moments of unrestrained reverie, and yet my gaze 
+is fixed on supporting the emergence of what we will build together.
 
 {{< youtube B_CMHGz8QCo >}}
