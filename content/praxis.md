@@ -41,8 +41,8 @@ I wet ash spared from my valley into ink</br>
 and scrawl the names of godessess on my skin</br>
 to make myself known to myself</br>
 
-I am not an edifice</br>
-but a divine orifice</br>
+I am not edifice</br>
+but divine orifice</br>
 a channel forged by centuries of tears</br>
 now carved by light</br>
 
