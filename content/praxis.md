@@ -28,15 +28,34 @@ I performed with string quartets:
 {{< youtube i1V9ibUb998 >}}
 
 When I emerged I envisioned new orientations to ideating, collaborating, healing, 
-building and being. I desired to build productive poetics that went beyond 
-expressing. Poetics that could organize, mobilize, and shape the trajectories of 
-interdependent webs of subjects. 
-
-I now prioritize information infrastructure, somatics, poetics, dialectics,
-and collective intelligence research to prime fresh possiblities of collective 
-flourishing. I take notes in [code](https://github.com/SioKCronin/swarmopt) and poems. 
-
-The earth continues to meet me in moments of unrestrained reverie, and yet my gaze 
-is fixed on supporting the emergence of what we will build together.
+building and being. I desired to build a productive poetic that would extend
+beyond expressing. A poetic that could organize, mobilize, and shape the trajectories of 
+interdependent webs of becomings. My poems exist as patterns of knowing that fire 
+in my neural connectome. I call them geoflora, and I tend
+them as my principal labor. They are the story of the love I dared to feel
+and the network of care I dared to cultivate. 
 
 {{< youtube B_CMHGz8QCo >}}
+
+I wet ash spared from my valley into ink
+and scrawl the names of godessess on my skin
+to make myself known to myself
+
+I am not an edifice
+but a divine orifice
+a channel forged by centuries of tears
+now carved by light
+
+I sing to you oh fecund overflow
+and my cells lose their meaning
+and I am lost
+and it is forever night and day at once
+and I spill into you
+oh adjascent others
+through hooks of longing lust pulse tether
+
+fill and drain
+reform and rupture
+a rapture of life death
+becomes our saltana
+and we are drunk on our own music

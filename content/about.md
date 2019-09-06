@@ -8,8 +8,8 @@ Siobhán is an engineering leader with a passion for scalable
 infrastructure, machine learning, and collective intelligence.
 
 She began her career researching how humans learn at Harvard's Lab for
-Developmental Studies and Harvard Medical School, and now develops tools
-and mentors teams exploring how machines and humans can learn together. 
+Developmental Studies and Harvard Medical School, and now builds software
+and mentors teams to help machines and humans learn together. 
 She is currently the Data Engineering Lead at Landed, where she helps support the 
 financial well-being of essential professionals.
 
@@ -19,6 +19,9 @@ Conference on Cognitive Neuroscience, AlterConf, PyLadies, Metis, and
 Temple University. She is the lead developer of SwarmOpt (an open-source swarm 
 intelligence algorithm library), a contributor to PySwarms, a member of Bay Area 
 Women in Machine Learning and Data Science, and a guest researcher at Slow Research Lab.
+
+Siobhán enjoys writing and sharing poems inspired by her ongoing practices of
+community healing and transformation. 
 
 ![sio](skc_blaisse.jpg)
 (Anna Halprin's deck with Maria Blaisse's forms. Photo by Carolyn Strauss)
