@@ -46,7 +46,7 @@ but a divine orifice</br>
 a channel forged by centuries of tears</br>
 now carved by light</br>
 
-I sing to you oh fecund overflow</br>
+I sing to the fecund overflow</br>
 and my cells lose their meaning</br>
 and I am lost</br>
 and it is forever night and day at once</br>
