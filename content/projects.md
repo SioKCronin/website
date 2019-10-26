@@ -4,7 +4,7 @@ draft = false
 ### Engineering
 
 **Landed** | Engineering Manager | Oct 2019 - Present</br>
-**Landed** | Data Engineering Lead | Nov 2018 - Oct 2019/br>
+**Landed** | Data Engineering Lead | Nov 2018 - Oct 2019</br>
 **Insight** | Data Engineering Fellowship | Jul-Oct 2018</br>
 **Uncountable** | Software Engineer | Jan-Feb 2018</br>
 **Avisell** | Machine Learning Engineer | May-Sep 2017</br> 
