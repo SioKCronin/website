@@ -10,7 +10,7 @@ infrastructure, machine learning, and human potential.
 She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies and Harvard Medical School, and now helps computers
 and humans collaborate together to solve problems that matter. She is currently 
-the Data Engineering Lead at Landed, where she helps support the financial 
+the Engineering Manager at Landed, where she helps support the financial 
 well-being of essential professionals.
 
 Siobhán has published research in Brain & Cognition, Neuroreport, and
