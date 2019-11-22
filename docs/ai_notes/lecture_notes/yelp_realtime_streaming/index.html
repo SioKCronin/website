@@ -9,7 +9,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.41" />
+    <meta name="generator" content="Hugo 0.59.1" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -40,21 +40,6 @@
 Deciding on their schema took some planning, as they wanted to prevent the number of joins of common operations (that was the situation that led to the change in the first place!" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://siobhankcronin.com/ai_notes/lecture_notes/yelp_realtime_streaming/" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <meta itemprop="name" content="Yelp Realtime Streaming Data Infrastructure">
 <meta itemprop="description" content="Fast Order Search Using Yelp&rsquo;s Data Pipeline and Elasticsearch Yelp was experiencing drag on their food order history page due to database lookups. Each lookup required a join across four tables. They found they needed both a relational data store and a key-value store for lantency-sensitive, high-traffic contexts. They also wanted to support full-text search across their data. After weighing their options, they chose Elasticsearch.

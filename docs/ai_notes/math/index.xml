@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Math on Siobhán K Cronin</title>
+    <link>https://siobhankcronin.com/ai_notes/math/</link>
+    <description>Recent content in Math on Siobhán K Cronin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://siobhankcronin.com/ai_notes/math/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linear Algebra Basics</title>
+      <link>https://siobhankcronin.com/ai_notes/math/linear_algebra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/math/linear_algebra/</guid>
+      <description>Useful terms and ideas  diagonal matrix: Matrix with zero values except on the diagonal. change of basis matrix: Taking the product of this matrix provides a new basis, which is helpful to us if that basis transformation sets us up for an operation that requires the matrix to be in a particular form. For instance, a change of basis matrix could diagonalize the matrix, such as the choice of the orthogonal matrix as the change of basis matrix in PCA.</description>
+    </item>
+    
+    <item>
+      <title>Navier-Stokes Existence and Smoothness Problem</title>
+      <link>https://siobhankcronin.com/ai_notes/math/navier_stokes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/math/navier_stokes/</guid>
+      <description>Let me say up front, I have not solved this problem, nor am I in the running. I came to math late in 2016 after a lifetime of music study, and while I am building a solid trellis upon which to grow my imagination, it will take me many years to capitalize on my potential. That being said, the Millenium Prizes are my one of my favorite sporting events, and the Navier-Stokes Existence and Smoothness Problem is my home team I&amp;rsquo;m rooting for to emerge next.</description>
+    </item>
+    
+    <item>
+      <title>Network Geometry</title>
+      <link>https://siobhankcronin.com/ai_notes/math/network_geometry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/math/network_geometry/</guid>
+      <description>Network geometry is one of the topics that propelled me towards complexity research and machine learning. If we accept that interactions between agents in a networked system have themselves an impact on the dynamics of a system, it follows that we must investigate the emergence and charactertistics of these interactions. We start to wonder how we might reason about these system &amp;ldquo;overtones&amp;rdquo;.
+I find Mulder &amp;amp; Bicaconi&amp;rsquo;s 2018 paper Network Geometry and Complexity to be a nice primer, so I&amp;rsquo;ll start there.</description>
+    </item>
+    
+    <item>
+      <title>Principal Component Analysis (PCA)</title>
+      <link>https://siobhankcronin.com/ai_notes/math/pca/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/math/pca/</guid>
+      <description>Cool Result Considering the decompostions $A = Q^{T}DQ$, where $Q$ is an orthogonal matrix and $D$ is the diagonal matrix of eigenvalues, the columns of $Q$ are the principal components of our matrix!
+How does it work? Remember, $Y = XP$, where $P$ is the change of basis matrix.
+First we start with the covariance matrix $S_{x} = \frac{1}{m}X^{T}X$, where X is our input matrix. If every feature was necessary, with no redundancy, we&amp;rsquo;d see a diagonal covariance matrix where the only non-zero values would be lined up on the diagonal.</description>
+    </item>
+    
+    <item>
+      <title>Radicals</title>
+      <link>https://siobhankcronin.com/ai_notes/math/radicals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/math/radicals/</guid>
+      <description>OK, so I have just learned about nested radicals, and want to use them as a springboard to meditate on the use of radicals in imagining symmetry in various dimensions. We begin with the infinite nested radicals problem posed by Srivinas Ramanujan.
+$? = \sqrt{1 + 2\sqrt{1 + 3\sqrt{1 + \dots}}}$.
+His solution involves expressing the geometric series under the radical with the following general formulation
+$? = \sqrt{ax + (n + a)^2 + x\sqrt{a(x+n) + (n+a)^2 + (x+n)\sqrt{\dots}}}$.</description>
+    </item>
+    
+    <item>
+      <title>Topological Data Analysis</title>
+      <link>https://siobhankcronin.com/ai_notes/math/topology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/math/topology/</guid>
+      <description>I have wanted to study topology for over two years now, and have finally carved out time to begin. I had felt called in this direction for several reasons (ehem, manifolds and network topology), but it wasn&amp;rsquo;t until recently that I found words to articulate why I am eager to get topology in my toolkit.
+Essentially, what little I&amp;rsquo;ve already learned of topology is already giving me fresh scaffolding upon which to grow my understanding of the relationships between individuals and groups of all stripes (particles, people, computers, planets).</description>
+    </item>
+    
+  </channel>
+</rss>
