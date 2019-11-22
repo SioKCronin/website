@@ -35,13 +35,13 @@ witnessed, and free.
 
 My service is three-fold and involves my professional work as an engineer
 working financial equity (putting money in the hands of women does a host of 
-amazing things for our planet, to mention the lives of those women!), howing up 
-and being myself in a variety of spaces to model one small fraction of what trans
-people can become if presented with the opportunity to thrive (human existence is 
+amazing things for our planet, to mention the lives of those women!), showing up 
+in the world and online and showing how awesome trans people can be if you give 
+them health care and a chance to explore their potential (human existence is 
 hard enough without us muddying the water with human-made 
 systems of categorical oppression), and guiding others in the cognitive-somatic 
 practice that kept me alive all those years in my exile (not offered as a 
 substitute for trauma release therapy, but as comfort in the storm). 
 
-I offer daily morning meditations from my practice on WhatsAPP, and you are 
-warmly welcomed to join .
+I offer daily morning meditations from my practice, and you are 
+warmly welcomed to join: https://anchor.fm/thisfountainofbeing
