@@ -4,8 +4,9 @@ date = "2018-04-24T11:53:47-07:00"
 draft = false
 
 +++
-Siobhán is an engineering leader and artist with a passion for scalable
-infrastructure, machine learning, and human potential.
+Siobhán is an engineering leader, public speaker, and human rights advocate 
+with a passion for scalable infrastructure, machine learning, and complexity
+science.
 
 She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies and Harvard Medical School, and now helps computers
@@ -20,7 +21,7 @@ Temple University. She is the lead developer of SwarmOpt (an open-source swarm
 intelligence algorithm library), a contributor to PySwarms, a member of Bay Area 
 Women in Machine Learning and Data Science, and a guest researcher at Slow Research Lab.
 
-Siobhán enjoys sharing original music, leading guided meditations, and believing in people.
+Siobhán enjoys playing jazz, dancing, and believing in people.
 
 ![sio](skc_blaisse.jpg)
 (Anna Halprin's deck with Maria Blaisse's forms. Photo by Carolyn Strauss)
