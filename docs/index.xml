@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Siobhán K Cronin</title>
@@ -61,7 +61,7 @@ Siobhán has published research in Brain &amp;amp; Cognition, Neuroreport, and M
       <pubDate>Tue, 24 Apr 2018 11:53:47 -0700</pubDate>
       
       <guid>https://siobhankcronin.com/praxis/</guid>
-      <description>     </description>
+      <description>      </description>
     </item>
     
     <item>
@@ -193,16 +193,6 @@ There is no way to &amp;ldquo;review&amp;rdquo; this book, any more than there i
     </item>
     
     <item>
-      <title>Active Matter</title>
-      <link>https://siobhankcronin.com/ai_notes/swarm_intelligence/active_matter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://siobhankcronin.com/ai_notes/swarm_intelligence/active_matter/</guid>
-      <description>I first caught wind of Active Matter through the work of one of my favorite researchers, Tamas Vicsek, whose intellectual bling includes a fractal bearing his name.
-My understanding of this sprawling sub-domain of physics is that we can study the activity of individuals agents and systems as though studying something like hydrodynamics, kinematics, and non-equilbrium statistical phsyics. Crowds become streams. Flocks become rivers. Networks of agents become oceans.</description>
-    </item>
-    
-    <item>
       <title>API</title>
       <link>https://siobhankcronin.com/ai_notes/software_engineering/api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -224,6 +214,16 @@ Some terms we&amp;rsquo;ll need:
     </item>
     
     <item>
+      <title>Active Matter</title>
+      <link>https://siobhankcronin.com/ai_notes/swarm_intelligence/active_matter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/swarm_intelligence/active_matter/</guid>
+      <description>I first caught wind of Active Matter through the work of one of my favorite researchers, Tamas Vicsek, whose intellectual bling includes a fractal bearing his name.
+My understanding of this sprawling sub-domain of physics is that we can study the activity of individuals agents and systems as though studying something like hydrodynamics, kinematics, and non-equilbrium statistical phsyics. Crowds become streams. Flocks become rivers. Networks of agents become oceans.</description>
+    </item>
+    
+    <item>
       <title>Binet&#39;s Formula</title>
       <link>https://siobhankcronin.com/ai_notes/proofs/binets_formula/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -234,6 +234,16 @@ Suppose we have two similar rectangles, $A$ and $B$. Let $A$ have sides $a$ and 
 Then $\frac{b}{a} = \frac{a+b}{b}$. Also, $\frac{b}{a} = \frac{a}{b} + 1$.
 Call $\phi = \frac{b}{a}$. Then $\phi = \frac{1}{\phi} + 1$.
 Multiply both sides by $\phi$ to get $\phi^2 = \phi + 1$.</description>
+    </item>
+    
+    <item>
+      <title>CS75</title>
+      <link>https://siobhankcronin.com/ai_notes/lecture_notes/cs75/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/lecture_notes/cs75/</guid>
+      <description>Ah, David Malan, we meet again. Many months have passed since I waded through your hyper-caffeinated orations in CS50, and now I find you building dynamic websites in the summer of 2012. I accept your challenge.
+9. Scalability Begins with a brief recap on what we look for from a web host, including confirming SFTP (vs. FTP) to ensure security and deciding how fast we think we might scale (so we&amp;rsquo;re not pushed out by other users on a shared system).</description>
     </item>
     
     <item>
@@ -277,16 +287,6 @@ This burgeoning research arena, wearing hand-me-downs from theoretical physics a
 Also, who could forget this chestnut of a motivational lead in to the topic of Maximum Information Coefficient (MIC)?:
 I&amp;rsquo;d like to overview Pearson&amp;rsquo;s r, touch upon Kendall and Spearman, and then dive into MIC.
 Pearon&amp;rsquo;s r This is what people typically think of when they think of correlation. It measures the linear relationship between two variables.</description>
-    </item>
-    
-    <item>
-      <title>CS75</title>
-      <link>https://siobhankcronin.com/ai_notes/lecture_notes/cs75/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://siobhankcronin.com/ai_notes/lecture_notes/cs75/</guid>
-      <description>Ah, David Malan, we meet again. Many months have passed since I waded through your hyper-caffeinated orations in CS50, and now I find you building dynamic websites in the summer of 2012. I accept your challenge.
-9. Scalability Begins with a brief recap on what we look for from a web host, including confirming SFTP (vs. FTP) to ensure security and deciding how fast we think we might scale (so we&amp;rsquo;re not pushed out by other users on a shared system).</description>
     </item>
     
     <item>
@@ -483,6 +483,16 @@ First we start with the covariance matrix $S_{x} = \frac{1}{m}X^{T}X$, where X i
     </item>
     
     <item>
+      <title>RL in Process Scheduling</title>
+      <link>https://siobhankcronin.com/ai_notes/machine_learning/rl_in_process_scheduling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/ai_notes/machine_learning/rl_in_process_scheduling/</guid>
+      <description>When I mentioned my interest in this idea to my partner Carl, he encouraged me to pursue it, but highlighted that it may be at least a masters thesis to secure the necessary OS and RL foundations to implement something that works. I like multi-year challenges, so wanted to at least start scoping the problem to see what is required.
+At the onset, I think it would be helpful to identify how processes are currently scheduled (the dominant paradigms), how process scheduling could be framed as a MDP, and how RL could be applied.</description>
+    </item>
+    
+    <item>
       <title>Radicals</title>
       <link>https://siobhankcronin.com/ai_notes/math/radicals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -510,16 +520,6 @@ $? = \sqrt{ax + (n + a)^2 + x\sqrt{a(x+n) + (n+a)^2 + (x+n)\sqrt{\dots}}}$.</des
       
       <guid>https://siobhankcronin.com/ai_notes/books/reinforcement_learning/</guid>
       <description>Reinforcement Learning: An Introduction (1998). Richard Sutton &amp;amp; Andrew Barto. At the onset, I&amp;rsquo;m curious to know how much has changed since this book&amp;rsquo;s publication 20 years ago. That being said, as these are two leaders in the field, I&amp;rsquo;m interested in gaining a sense of their perspective on the history/origin of this subfield, and acclimating to some of the core concepts/constructs. CHAPTER 1 One of the key takeaways from this chapter was the distinction between the value function and rewards function in an RL problem.</description>
-    </item>
-    
-    <item>
-      <title>RL in Process Scheduling</title>
-      <link>https://siobhankcronin.com/ai_notes/machine_learning/rl_in_process_scheduling/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://siobhankcronin.com/ai_notes/machine_learning/rl_in_process_scheduling/</guid>
-      <description>When I mentioned my interest in this idea to my partner Carl, he encouraged me to pursue it, but highlighted that it may be at least a masters thesis to secure the necessary OS and RL foundations to implement something that works. I like multi-year challenges, so wanted to at least start scoping the problem to see what is required.
-At the onset, I think it would be helpful to identify how processes are currently scheduled (the dominant paradigms), how process scheduling could be framed as a MDP, and how RL could be applied.</description>
     </item>
     
     <item>
