@@ -1,18 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://siobhankcronin.com/</loc>
-    <lastmod>2019-04-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://siobhankcronin.com/posts/</loc>
-    <lastmod>2019-04-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
   
   <url>
     <loc>https://siobhankcronin.com/posts/neural_gas_learns_topologies/</loc>
@@ -106,13 +94,29 @@
   </url>
   
   <url>
+    <loc>https://siobhankcronin.com/</loc>
+    <lastmod>2019-04-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://siobhankcronin.com/ai_notes/software_engineering/algorithm_design_manual/</loc>
-    <priority>0</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://siobhankcronin.com/ai_notes/swarm_intelligence/prob/</loc>
-    <priority>0</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siobhankcronin.com/posts/</loc>
+    <lastmod>2019-04-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -123,12 +127,6 @@
   
   <url>
     <loc>https://siobhankcronin.com/ai_notes/books/a_thousand_plateaus/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://siobhankcronin.com/ai_notes/swarm_intelligence/active_matter/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -146,7 +144,19 @@
   </url>
   
   <url>
+    <loc>https://siobhankcronin.com/ai_notes/swarm_intelligence/active_matter/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://siobhankcronin.com/ai_notes/proofs/binets_formula/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siobhankcronin.com/ai_notes/lecture_notes/cs75/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -154,7 +164,7 @@
   <url>
     <loc>https://siobhankcronin.com/categories/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -177,12 +187,6 @@
   
   <url>
     <loc>https://siobhankcronin.com/ai_notes/machine_learning/correlation/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://siobhankcronin.com/ai_notes/lecture_notes/cs75/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -248,19 +252,13 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/ai_notes/machine_learning/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://siobhankcronin.com/ai_notes/math/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://siobhankcronin.com/ai_notes/lecture_notes/mlss_cadiz_2016/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siobhankcronin.com/ai_notes/machine_learning/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -326,6 +324,12 @@
   </url>
   
   <url>
+    <loc>https://siobhankcronin.com/ai_notes/machine_learning/rl_in_process_scheduling/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://siobhankcronin.com/ai_notes/math/radicals/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -339,12 +343,6 @@
   
   <url>
     <loc>https://siobhankcronin.com/ai_notes/books/reinforcement_learning/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://siobhankcronin.com/ai_notes/machine_learning/rl_in_process_scheduling/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -388,7 +386,7 @@
   <url>
     <loc>https://siobhankcronin.com/tags/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0</priority>
   </url>
   
   <url>

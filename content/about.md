@@ -20,7 +20,7 @@ Temple University. She is the lead developer of SwarmOpt (an open-source swarm
 intelligence algorithm library), a contributor to PySwarms, a member of Bay Area 
 Women in Machine Learning and Data Science, and a guest researcher at Slow Research Lab.
 
-Siobhán enjoys playing jazz, dancing, and believing in others.
+Siobhán enjoys dancing, rhapsodizing about life's beauty, and believing in others.
 
 ![sio](skc_blaisse.jpg)
 (Anna Halprin's deck with Maria Blaisse's forms. Photo by Carolyn Strauss)
