@@ -5,7 +5,7 @@ draft = false
 
 +++
 Siobhán is an engineering leader with a passion for scalable infrastructure, 
-machine learning, and complexity science.
+machine learning, and complex systems.
 
 She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies and Harvard Medical School, and now helps computers
