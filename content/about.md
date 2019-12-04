@@ -5,7 +5,7 @@ draft = false
 
 +++
 Siobhán is an engineer and artist with a passion for data infrastructure, 
-collective intelligence, and intellectual beauty.
+machine learning, and collective intelligence.
 
 She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies and dancing at the Merce Cunningham Studio, and now helps computers
