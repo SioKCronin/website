@@ -4,8 +4,8 @@ date = "2018-04-24T11:53:47-07:00"
 draft = false
 
 +++
-Siobhán is an engineer and artist with a passion for data infrastructure, 
-machine learning, and collective intelligence.
+Siobhán is an engineer, writer, and public speaker with a passion for 
+scaleable infrastructure, machine learning, and emergent collective intelligence.
 
 She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies and dancing at the Merce Cunningham Studio, and now helps computers
@@ -20,8 +20,8 @@ Temple University. She is the lead developer of SwarmOpt (an open-source swarm
 intelligence algorithm library), a contributor to PySwarms, a member of Bay Area 
 Women in Machine Learning and Data Science, and a guest researcher at Slow Research Lab.
 
-Siobhán enjoys dancing, playing piano, studying swarm intelligence algorithms,
-and building strong communities.
+Siobhán enjoys powerful conversations, championing the dreams of others, dancing, 
+studying swarm intelligence algorithms, and building strong communities.
 
 ![sio](skc_blaisse.jpg)
 (Anna Halprin's deck with Maria Blaisse's forms. Photo by Carolyn Strauss)
