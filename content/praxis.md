@@ -38,3 +38,5 @@ forming of communities of care, healing, pleasure, joy, and restorative justice.
 EMDR. Somatic Expeiencing. Network love. Twin star systems. Algebraic topology. 
 T Group. Bioinformatics. Swarm intelligence. Holobiont research. 
 Cyborg futures. 
+
+{{< youtube B_CMHGz8QCo >}}
