@@ -8,10 +8,9 @@ Siobhán is an engineer, writer, and public speaker with a passion for
 scaleable infrastructure, machine learning, and emergent collective intelligence.
 
 She began her career researching how humans learn at Harvard's Lab for
-Developmental Studies and dancing at the Merce Cunningham Studio, and now helps computers
-and humans collaborate together to solve problems that matter. She is currently 
-the Engineering Manager at Landed, where she helps support the financial 
-well-being of essential professionals.
+Developmental Studies, and now stewards human-computer ecosystems 
+solving problems that matter. She is currently the Engineering Manager at Landed, 
+where she helps support the financial well-being of essential professionals.
 
 Siobhán has published research in Brain & Cognition, Neuroreport, and
 Model View Culture, and presented at the Conference on Complex Systems,
@@ -20,8 +19,9 @@ Temple University. She is the lead developer of SwarmOpt (an open-source swarm
 intelligence algorithm library), a contributor to PySwarms, a member of Bay Area 
 Women in Machine Learning and Data Science, and a guest researcher at Slow Research Lab.
 
-Siobhán enjoys powerful conversations, championing the dreams of others, dancing, 
-studying swarm intelligence algorithms, and building strong communities.
+Siobhán enjoys powerful conversations, championing the dreams of others, dancing,
+laughing, grieving mindfully, studying complex systems and swarm intelligence, 
+and building strong communities.
 
 ![sio](skc_blaisse.jpg)
 (Anna Halprin's deck with Maria Blaisse's forms. Photo by Carolyn Strauss)
