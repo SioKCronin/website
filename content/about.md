@@ -10,7 +10,7 @@ scaleable infrastructure, machine learning, and emergent collective intelligence
 She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies, and now stewards human-computer ecosystems 
 solving problems that matter. She is currently the Engineering Manager at Landed, 
-where she helps support the financial well-being of essential professionals.
+where she leads a team of engineers helping support the financial well-being of essential professionals.
 
 Siobhán has published research in Brain & Cognition, Neuroreport, and
 Model View Culture, and presented at the Conference on Complex Systems,
