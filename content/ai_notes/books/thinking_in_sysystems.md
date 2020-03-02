@@ -48,3 +48,22 @@ The cabin is filled with books about inner and outer worlds. I layer systems
 of meaning the way we layer acids in a delicious meal (with aged vinegars
 splashing into lemon juice and pickles). 
 
+"Out of simple rules of self-organization can grow enormous, diversifying 
+crystals of technology, physical structures, organizations, and cultures". 
+
+#### Hierarchy
+
+"Complex systems can evolve from simple systems only if there are stable
+intermediate forms". 
+
+Hierarchies "reduce the amount of information that any part of the system has
+to keep track of". I have felt this in my role as an engineer, where my exploration
+of business value emerges in conversation with product owners, but does not 
+require me to extend the context I hold out past them (to our customers directly,
+for instance). Although part of me thinks that would be fun, another part of me
+(the part that usually wins out) knows that I just need to know enough to do my
+job successfully, and cultivate trust with others in my system that they have 
+the knowledge and diversity of perspectives necessary to do their work successfully.
+In fact, that is typically how I see work communities that are shy of creating 
+such hierarchical separations - members of the team fear or doubt others will 
+arrive at the best solutions. 
