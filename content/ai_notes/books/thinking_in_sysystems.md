@@ -6,7 +6,17 @@ menu:
 ---
 Thinking in Systems by Donella H. Meadows
 
-### Why Systems Work So Well
+### 1. The Basics
+
+Elements. Interconnectedness. Purpose. These come together to create a system.
+Meadows presents these building blocks in the very first paragraph. Our primitives
+in this world of system tracking. What strikes me is the need for purpose. 
+Interconnected elements without a purpose (e.g. sand scattered on a road), do
+not constitute a system. So, it seems, purpose imbues interconnected elements
+with something special. Who determines the purpose? What are the edges of purpose?
+I imagine this book will give room to test these limits. 
+
+### 3. Why Systems Work So Well
 
 I jumped to this chapter, because I want to know! Well...why do they?!
 
@@ -67,3 +77,16 @@ the knowledge and diversity of perspectives necessary to do their work successfu
 In fact, that is typically how I see work communities that are shy of creating 
 such hierarchical separations - members of the team fear or doubt others will 
 arrive at the best solutions. 
+
+So many gems here. For instance, when hierarchies break down, they usually split
+along their subsystem boundaries. These can sometimes behave as systems unto
+themselves (i.e. the liver can be studied independently from the system of the
+body). The term suboptimization is introduced here to describe what happens 
+when "a subsystem's goals dominate at the expense of the total system's goals". 
+The inverse poses challenges in the other direction - central control preventing
+effective functioning of the subsystems. This arena of Meadows' research 
+seems particularly pertinent to tracking the emergence of hierarchy in fast-growing
+startups. 
+
+
+
