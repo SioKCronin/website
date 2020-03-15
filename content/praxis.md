@@ -13,21 +13,20 @@ a chronic dissociative disorder that went undetected. It began as a child,
 emerging in response to a knowledge of self I could not reconcile with the 
 frameworks of knowing presented to me. 
 
-In 2016 I emerged in a process of healing that changed everthing. Systems of 
-categorical oppression trace their origins to a central fallacy that
-another's nature is knowable. This is the prerequisite to placing value on their 
-nature. I do not put stock in this central fallacy. I refuse to mutilate the 
-expanse of another's being and consciousness to situate them within a limited 
-horizon of meaning-making. I will not coerce poetry to prose. We exist as a 
-burgeoning, endlessly forming and deforming interconnected system of becoming. 
+In 2016 I emerged in a process of healing that changed everthing. In the process
+I saw that we exist as a burgeoning, endlessly forming and deforming 
+interconnected system of becoming. Healing from trauma, therefore, happens 
+internally as well as systemically. I now join the countless others who are 
+dedicating their lives to healing individuals and systems so that we can finally 
+see what we're fully capable of as a species. 
 
-I join the countless others who are dedicating their lives to defending the 
-practices of unknowing and remembering that are required to live into that 
-becoming. I emphasize love, complex systems analysis and machine learning to 
-trace possibilities of our collective self-knowledge. I study and champion 
-knowledge and technological systems that support our forming of communities of 
-care, healing, love, pleasure, joy, and restorative justice. EMDR. 
-Somatic Expeiencing. Network love. Twin star systems. Algebraic topology. T Group. 
-Bioinformatics. Swarm intelligence. Holobiont research. Cyborg futures. 
+My pratice emphasizes unconditional love - the most powerful technology I have
+encountered. I study and champion knowledge systems that support our development
+of uncondnitional love as we form communities of care, healing, pleasure, joy, 
+and restorative justice. 
+
+I'm particularly drawn to guided meditation, calm tech, EMDR, somatic experiencing, 
+network love, attachment theory, algebraic topology, gaga dance, T groups, 
+swarm intelligence algorithms, holobiont research, and feminist cyborg futures. 
 
 {{< youtube B_CMHGz8QCo >}}
