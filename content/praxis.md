@@ -23,10 +23,9 @@ see what we're fully capable of as a species.
 My pratice emphasizes unconditional love - the most powerful technology I have
 encountered. I study and champion knowledge systems that support our development
 of uncondnitional love as we form communities of care, healing, pleasure, joy, 
-and restorative justice. 
-
-I'm particularly drawn to guided meditation, calm tech, EMDR, somatic experiencing, 
-network love, attachment theory, algebraic topology, gaga dance, T groups, 
-swarm intelligence algorithms, holobiont research, and feminist cyborg futures. 
+and restorative justice. I'm particularly drawn to guided meditation, calm tech, 
+emotional chatbots, EMDR, somatic experiencing, network love, attachment theory, 
+gaga dance, T groups, swarm intelligence algorithms, holobiont research, and 
+feminist cyborg futures. 
 
 {{< youtube B_CMHGz8QCo >}}
