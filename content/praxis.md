@@ -20,10 +20,4 @@ internally as well as systemically. I now join the countless others who are
 dedicating their lives to helping individuals and systems heal so that we can 
 finally see what we're fully capable of as a species. 
 
-I study and champion knowledge systems that support our development
-of resilient and equitable communities of care, healing, pleasure, joy, and peace. 
-I'm particularly drawn to guided meditation, emotional chatbots, EMDR, 
-somatic experiencing, network theory, attachment theory, T groups, 
-swarm intelligence algorithms, and feminist cyborg futures. 
-
 {{< youtube B_CMHGz8QCo >}}
