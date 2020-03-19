@@ -17,15 +17,13 @@ In 2016 I emerged in a process of healing that changed everthing. In the process
 I saw that we exist as a burgeoning, endlessly forming and deforming 
 interconnected system of becoming. Healing from trauma, therefore, happens 
 internally as well as systemically. I now join the countless others who are 
-dedicating their lives to healing individuals and systems so that we can finally 
-see what we're fully capable of as a species. 
+dedicating their lives to helping individuals and systems heal so that we can 
+finally see what we're fully capable of as a species. 
 
-My pratice emphasizes unconditional love - the most powerful technology I have
-encountered. I study and champion knowledge systems that support our development
-of uncondnitional love as we form communities of care, healing, pleasure, joy, 
-and restorative justice. I'm particularly drawn to guided meditation, calm tech, 
-emotional chatbots, EMDR, somatic experiencing, network love, attachment theory, 
-gaga dance, T groups, swarm intelligence algorithms, holobiont research, and 
-feminist cyborg futures. 
+I study and champion knowledge systems that support our development
+of resilient and equitable communities of care, healing, pleasure, joy, and peace. 
+I'm particularly drawn to guided meditation, emotional chatbots, EMDR, 
+somatic experiencing, network theory, attachment theory, T groups, 
+swarm intelligence algorithms, and feminist cyborg futures. 
 
 {{< youtube B_CMHGz8QCo >}}
