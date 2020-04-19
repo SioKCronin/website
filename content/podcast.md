@@ -7,6 +7,8 @@ draft = false
 "The night is covered with signs. The body and face of man, with signs, and
 his journeys" - Muriel Rukeyeser
 
+[This Fountain of Being](https://podcasts.apple.com/us/podcast/this-fountain-of-being/id1485854868)
+
 My interest in leveraing technology to cultivate communities of care and healing 
 emerges from a deeply personal origin story. For 25 years I lived frozen inside 
 a chronic dissociative disorder that went undetected. It began as a child,
@@ -15,9 +17,7 @@ frameworks of knowing presented to me.
 
 In 2016 I emerged in a process of healing that changed everthing. In the process
 I saw that we exist as a burgeoning, endlessly forming and deforming 
-interconnected system of becoming. Healing from trauma, therefore, happens 
-internally as well as systemically. I now join the countless others who are 
-dedicating their lives to helping individuals and systems heal so that we can 
-finally see what we're fully capable of as a species. 
-
-{{< youtube B_CMHGz8QCo >}}
+interconnected fountain of being. Healing from trauma happens 
+internally as well as systemically. We heal together. We are a system of care,
+and my podcast, This Fountain of Being, is a celebration of the power we have 
+to change and cultivate health in our communities. 
