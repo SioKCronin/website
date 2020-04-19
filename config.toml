@@ -23,7 +23,7 @@ enableRobotsTXT = false
   highlightjslanguages = ["python"]
   mainSections = ["posts"]
   favicon = ""
-  description = "Siobhán K Cronin is a data engineer, researcher, and public speaker"
+  description = "Siobhán K Cronin is a software engineer, researcher, and public speaker"
   facebook = ""
   twitter = "//twitter.com/siokcronin"
   instagram = ""
@@ -38,9 +38,9 @@ enableRobotsTXT = false
 
 [menu]
     [[menu.main]]
-    identifier = "praxis"
-    name       = "Praxis"
-    url        = "/praxis"
+    identifier = "podcast"
+    name       = "Podcast"
+    url        = "/podcast"
     weight     = 4
 
     [[menu.main]]
