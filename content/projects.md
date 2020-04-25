@@ -16,6 +16,7 @@ draft = false
 
 ### Service
 
+**This Fountain of Being** | Meditation faciliator | Nov 2019 - Prsent</br>
 **devMission** | Youth Mentor | Sep 2018 - Present</br>
 **BAASICS** | Advisor | Feb 2014 - Dec 2016</br>
 **Horizons for Homeless Children** | Volunteer Caregiver | 2003 - 2005</br>
