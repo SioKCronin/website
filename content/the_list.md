@@ -20,7 +20,7 @@ If you have ideas for other companies/teams and leaders, let me know!
 # The List
 
 | Company           | Leadership (title)        | Careers Page                                |
-|-------------------|---------------------------|---------------------------------------------|
+|:------------------|:--------------------------|:--------------------------------------------|
 | Landed            | Siobhan K Cronin (EM)     | [link](https://www.landed.com/jobs)         |
 | Thorn             | Moshe Ezderman (Dir of E) | [link](https://www.thorn.org/careers/)      |
 | Big Health        | Chris Tower (VP of E)     | [link](https://www.bighealth.com/careers)   |
