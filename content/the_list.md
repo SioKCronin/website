@@ -17,14 +17,12 @@ and nurturing.
 
 If you have ideas for other companies/teams and leaders, let me know!
 
-# The List
-
 | Company           | Leadership (title)        | Careers Page                                |
 |:------------------|:--------------------------|:--------------------------------------------|
-| Landed            | Siobhan K Cronin (EM)     | [link](https://www.landed.com/jobs)         |
-| Thorn             | Moshe Ezderman (Dir of E) | [link](https://www.thorn.org/careers/)      |
-| Big Health        | Chris Tower (VP of E)     | [link](https://www.bighealth.com/careers)   |
-| Kiva              | Ken Leung (Exec VP of E)  | [link](https://www.careers.kiva.org/)       |
-| Code for America  | Laura Kogler (E Dir)      | [link](https://www.codeforamerica.org/jobs) | 
-| Vote.org          | Jake Levine (VP of Tech)  | [link](https://votedotorg.recruiterbox.com/)|
+| Landed            | [Siobhan K Cronin](https://www.linkedin.com/in/siobhankcronin/) (EM)     | [link](https://www.landed.com/jobs)         |
+| Thorn             | [Moshe Ezderman](https://www.linkedin.com/in/ezderman/) (Dir of E) | [link](https://www.thorn.org/careers/)      |
+| Big Health        | [Chris Tower](https://www.linkedin.com/in/christower/) (VP of E)     | [link](https://www.bighealth.com/careers)   |
+| Kiva              | [Ken Leung](https://www.linkedin.com/in/kenleung2/) (Exec VP of E)  | [link](https://www.careers.kiva.org/)       |
+| Code for America  | [Laura Kogler](https://www.linkedin.com/in/laura-kogler-8a8a6032/) (E Dir) | [link](https://www.codeforamerica.org/jobs) | 
+| Vote.org          | [Jake Levine](https://www.linkedin.com/in/jakelevine/) (VP of Tech)  | [link](https://votedotorg.recruiterbox.com/)|
 
