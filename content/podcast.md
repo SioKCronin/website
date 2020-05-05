@@ -12,5 +12,5 @@ his journeys" - Muriel Rukeyeser
 I lead guided meditation sessions based on my ongoing study of non-dualism,
 consciousness, bhakti yoga, complex systems, and care. These recordings 
 are opportunities to drop in, remember our interconnected nature, find some
-stillness and peace, and stoke the fire of care service that emerges when
-our core needs are met, including the need to feel deeply loved. 
+stillness and peace, and stoke the fire of care and service that emerges when
+our core needs are met, including the need to feel deeply seen and loved. 

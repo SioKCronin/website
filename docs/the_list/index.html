@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Siobhán K Cronin  | Hashing</title>
+    <title>Siobhán K Cronin  | The List</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -35,11 +35,17 @@
 
     
 
-    <meta property="og:title" content="Hashing" />
-<meta property="og:description" content="Hashing Hash functions map sequences of bytes to fixed length sequences. The value returned by a hash function is often called a hash, message digest, hash value, or checksum.
-Underlying a hash table is a large array of length $N$, where most of the slots are empty. To resolve collisions (which happen when we go to enter a value at a particular position, and there is already a value there), we can either implement chaining (where we turn each slot into a linked list) or open addressing where we place the value in the next empty slot." />
+    <meta property="og:title" content="The List" />
+<meta property="og:description" content="I&rsquo;m keeping track of companies on a mission to make a meaningful impact in the world, and the engineering leaders who are building teams within those companies. I&rsquo;m including leadership because ultimately it&rsquo;s people who make companies great, and there&rsquo;s no use spending your time giving your all to a great cause if the culture is not simultaneously supporting you.
+My biggest hope is that all engineers who have the ability to do so will consider applying their skills to projects that matter and teams that are healthy, equitable, and nurturing." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://siobhankcronin.com/ai_notes/software_engineering/hashing/" />
+<meta property="og:url" content="https://siobhankcronin.com/the_list/" />
+
+
+
+<meta property="article:published_time" content="2018-04-24T11:53:47-07:00"/>
+
+<meta property="article:modified_time" content="2018-04-24T11:53:47-07:00"/>
 
 
 
@@ -51,26 +57,22 @@ Underlying a hash table is a large array of length $N$, where most of the slots 
 
 
 
+<meta itemprop="name" content="The List">
+<meta itemprop="description" content="I&rsquo;m keeping track of companies on a mission to make a meaningful impact in the world, and the engineering leaders who are building teams within those companies. I&rsquo;m including leadership because ultimately it&rsquo;s people who make companies great, and there&rsquo;s no use spending your time giving your all to a great cause if the culture is not simultaneously supporting you.
+My biggest hope is that all engineers who have the ability to do so will consider applying their skills to projects that matter and teams that are healthy, equitable, and nurturing.">
 
 
-
-
-
-<meta itemprop="name" content="Hashing">
-<meta itemprop="description" content="Hashing Hash functions map sequences of bytes to fixed length sequences. The value returned by a hash function is often called a hash, message digest, hash value, or checksum.
-Underlying a hash table is a large array of length $N$, where most of the slots are empty. To resolve collisions (which happen when we go to enter a value at a particular position, and there is already a value there), we can either implement chaining (where we turn each slot into a linked list) or open addressing where we place the value in the next empty slot.">
-
-
-
-<meta itemprop="wordCount" content="288">
+<meta itemprop="datePublished" content="2018-04-24T11:53:47-07:00" />
+<meta itemprop="dateModified" content="2018-04-24T11:53:47-07:00" />
+<meta itemprop="wordCount" content="154">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Hashing"/>
-<meta name="twitter:description" content="Hashing Hash functions map sequences of bytes to fixed length sequences. The value returned by a hash function is often called a hash, message digest, hash value, or checksum.
-Underlying a hash table is a large array of length $N$, where most of the slots are empty. To resolve collisions (which happen when we go to enter a value at a particular position, and there is already a value there), we can either implement chaining (where we turn each slot into a linked list) or open addressing where we place the value in the next empty slot."/>
+<meta name="twitter:title" content="The List"/>
+<meta name="twitter:description" content="I&rsquo;m keeping track of companies on a mission to make a meaningful impact in the world, and the engineering leaders who are building teams within those companies. I&rsquo;m including leadership because ultimately it&rsquo;s people who make companies great, and there&rsquo;s no use spending your time giving your all to a great cause if the culture is not simultaneously supporting you.
+My biggest hope is that all engineers who have the ability to do so will consider applying their skills to projects that matter and teams that are healthy, equitable, and nurturing."/>
 
       
     
@@ -79,8 +81,6 @@ Underlying a hash table is a large array of length $N$, where most of the slots 
   <body class="ma0 avenir bg-white-90">
 
     
-   
-  
 
   <header>
     <div class="bg-sio-yellow">
@@ -170,84 +170,86 @@ Underlying a hash table is a large array of length $N$, where most of the slots 
   </header>
 
 
-
     <main class="pb7" role="main">
       
-  <article class="flex-l flex-wrap justify-between center">
-    <header class="pt4 pa3 ph4-ns pb0 w-100 w-60-ns center">
-      <p class="f6 b helvetica tracked">
+  <div class="flex-l mt2 mw8 center">
+    <article class="w-100 w-80-ns center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <p class="f6 b helvetica tracked">
           
-        SOFTWARE ENGINEERING
-      </p>
-      <h1 class="f1 helvetica mb1">Hashing</h1>
-    </header>
-
-    <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
-
-<h1 id="hashing">Hashing</h1>
-
-<p>Hash functions map sequences of bytes to fixed length sequences. The value returned
-by a hash function is often called a hash, message digest, hash value, or checksum.</p>
-
-<p>Underlying a hash table is a large array of length $N$, where most of the slots are
-empty. To resolve collisions (which happen when we go to enter a value at a particular position,
-and there is already a value there), we can either implement chaining (where we turn
-each slot into a linked list) or open addressing where we place the value in the next empty
-slot. If we use chaining, we&rsquo;ll have to tack on a 32 or 64 bit pointer to our space bill
-for each element in our linked list. And if we use open addressing and do not keep a
-spacious amount of space (storing a lot of empty slots) our clever hash table will
-devolve to a structure with $O(n)$ traversal. Tradeoffs to consider!</p>
-
-<h2 id="md5">MD5</h2>
-
-<h2 id="binascii">binascii</h2>
-
-<p>If you&rsquo;re looking to hash a string, you&rsquo;ll need to convert your string to binary.</p>
-
-<pre><code class="language-python"># Convert string to binary
-binary_string = b'abcd'
-print(binary_string)
-
-&gt;&gt;&gt;
-b'abcd'
-</code></pre>
-
-<pre><code class="language-python"># Generate hexadecimal from binary string
-import binascii
-binascii.hexlify(binary_string)
-
-&gt;&gt;&gt;
-b'61626364'
-</code></pre>
-
-<h2 id="hashlib">hashlib</h2>
-
-<pre><code class="language-python">import hashlib
-m = hashlib.md5()
-m.update(binary_string)
-m.hexdigest()
-
-&gt;&gt;&gt;
-'e2fc714c4727ee9395f324cd2e7f331f'
-</code></pre>
-
-<h2 id="sparsehash">sparsehash</h2>
-
-<p>Before you get to thinking that these Python built-ins are all there is to know
-in the world of hash functions, let me dazzle before your eyes Google&rsquo;s
-<a href="https://github.com/sparsehash/sparsehash">sparsehash</a>, which offers one of the
-most space efficient hashmap implementations known to humankind, requiring a mere
-2 bits of overhead per entry. It does, however, clock up to 2 to 3 times slower
-than the implementations explored above, but if space is your concern, I suggest
-you check it out.</p>
-<ul class="pa0">
-  
-</ul>
-<div class="mt6">
+        </p>
+        <h1 class="f1">
+          The List
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
         
+
+<p>I&rsquo;m keeping track of companies on a mission to make a meaningful impact in the
+world, and the engineering leaders who are building teams within those companies.
+I&rsquo;m including leadership because ultimately it&rsquo;s people who make companies great,
+and there&rsquo;s no use spending your time giving your all to a great cause if the
+culture is not simultaneously supporting you.</p>
+
+<p>My biggest hope is that all engineers who have the ability to do so will consider
+applying their skills to projects that matter and teams that are healthy, equitable,
+and nurturing.</p>
+
+<p>If you have ideas for other companies/teams and leaders, let me know!</p>
+
+<h1 id="the-list">The List</h1>
+
+<table>
+<thead>
+<tr>
+<th>Company</th>
+<th>Leadership (title)</th>
+<th>Careers Page</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Landed</td>
+<td>Siobhan K Cronin (EM)</td>
+<td><a href="https://www.landed.com/jobs">link</a></td>
+</tr>
+
+<tr>
+<td>Thorn</td>
+<td>Moshe Ezderman (Dir of E)</td>
+<td><a href="https://www.thorn.org/careers/">link</a></td>
+</tr>
+
+<tr>
+<td>Big Health</td>
+<td>Chris Tower (VP of E)</td>
+<td><a href="https://www.bighealth.com/careers">link</a></td>
+</tr>
+
+<tr>
+<td>Kiva</td>
+<td>Ken Leung (Exec VP of E)</td>
+<td><a href="https://www.careers.kiva.org/">link</a></td>
+</tr>
+
+<tr>
+<td>Code for America</td>
+<td>Laura Kogler (E Dir)</td>
+<td><a href="https://www.codeforamerica.org/jobs">link</a></td>
+</tr>
+
+<tr>
+<td>Vote.org</td>
+<td>Jake Levine (VP of Tech)</td>
+<td><a href="https://votedotorg.recruiterbox.com/">link</a></td>
+</tr>
+</tbody>
+</table>
+
       </div>
-    </main>
-  </article>
+    </article>
+  </div>
 
     </main>
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
