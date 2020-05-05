@@ -15,7 +15,7 @@ My biggest hope is that all engineers who have the ability to do so will conside
 applying their skills to projects that matter and teams that are healthy, equitable,
 and nurturing.
 
-If you have ideas for other companies/teams and leaders, let me know!
+These companies inpsire me. Let me know what companies inspire YOU!
 
 | Company           | Leadership (title)        | Careers Page                                |
 |:------------------|:--------------------------|:--------------------------------------------|
