@@ -15,7 +15,7 @@ My biggest hope is that all engineers who have the ability to do so will conside
 applying their skills to projects that matter and teams that are healthy, equitable,
 and nurturing.
 
-These companies inpsire me. Let me know what companies inspire YOU!
+These companies inpsire me. Which companies inspire YOU?
 
 | Company           | Leadership (title)        | Careers Page                                |
 |:------------------|:--------------------------|:--------------------------------------------|
@@ -26,4 +26,4 @@ These companies inpsire me. Let me know what companies inspire YOU!
 | Code for America  | [Laura Kogler](https://www.linkedin.com/in/laura-kogler-8a8a6032/) (E Dir) | [link](https://www.codeforamerica.org/jobs) | 
 | Vote.org          | [Jake Levine](https://www.linkedin.com/in/jakelevine/) (VP of Tech)  | [link](https://votedotorg.recruiterbox.com/)|
 | Mobilize        | [Avi Arfin](https://www.linkedin.com/in/avi-arfin-b0287546/) (Dir of E) | [link](https://join.mobilize.us/jobs) |
-| Guild Education | [Jessica Rusin](https://www.linkedin.com/in/jessicarusin/) (SVP of E )| [link](https://www.guildeducation.com/about-us/careers/) |
+| Guild Education | [Jessica Rusin](https://www.linkedin.com/in/jessicarusin/) (SVP of E)| [link](https://www.guildeducation.com/about-us/careers/) |
