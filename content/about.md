@@ -17,11 +17,11 @@ Siobhán has published research in Brain & Cognition, Neuroreport, and
 Model View Culture, and presented at the Conference on Complex Systems,
 Conference on Cognitive Neuroscience, AlterConf, PyLadies, Metis, and
 Temple University. She is the lead developer of SwarmOpt (an open-source swarm 
-intelligence algorithm library), a contributor to PySwarms, a member of Bay Area 
-Women in Machine Learning and Data Science, and a guest researcher at Slow Research Lab.
+intelligence algorithm library), a guest researcher at Slow Research Lab,
+and an engineering mantor at Hackbright Academy. 
 
 Siobhán enjoys powerful conversations, championing women/NB changemakers, 
-dancing, laughing, enjoying delicious food, dismantling systems of inequality,
+dancing, laughing, enjoying delicious food, reading poetry,
 supporting friends through life transistions and building strong communities.
 
 ![sio](skc_blaisse.jpg)
