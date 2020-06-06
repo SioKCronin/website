@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Swarm Intelligence on Siobhán K Cronin</title>
+    <link>https://siobhankcronin.com/notes/swarm_intelligence/</link>
+    <description>Recent content in Swarm Intelligence on Siobhán K Cronin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://siobhankcronin.com/notes/swarm_intelligence/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://siobhankcronin.com/notes/swarm_intelligence/prob/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/swarm_intelligence/prob/</guid>
+      <description>Prob \begin{align} \dot{x} &amp;amp; = \sigma(y-x) \\
+\dot{y} &amp;amp; = \rho x - y - xz \\
+\dot{z} &amp;amp; = -\beta z + xy \end{align}
+$$\alpha = 1000$$
+import matplotlib import numpy as np import matplotlib.pyplot as plt %matplotlib inline  /usr/local/lib/python3.6/site-packages/matplotlib/font_manager.py:278: UserWarning: Matplotlib is building the font cache using fc-list. This may take a moment. &#39;Matplotlib is building the font cache using fc-list. &#39;  x = np.linspace(0, 3*np.</description>
+    </item>
+    
+    <item>
+      <title>Active Matter</title>
+      <link>https://siobhankcronin.com/notes/swarm_intelligence/active_matter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/swarm_intelligence/active_matter/</guid>
+      <description>I first caught wind of Active Matter through the work of one of my favorite researchers, Tamas Vicsek, whose intellectual bling includes a fractal bearing his name.
+My understanding of this sprawling sub-domain of physics is that we can study the activity of individuals agents and systems as though studying something like hydrodynamics, kinematics, and non-equilbrium statistical phsyics. Crowds become streams. Flocks become rivers. Networks of agents become oceans.</description>
+    </item>
+    
+    <item>
+      <title>Network Topology</title>
+      <link>https://siobhankcronin.com/notes/swarm_intelligence/network_topology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/swarm_intelligence/network_topology/</guid>
+      <description>What are the advantages of various topogical structures? How can they be combined? Mutate over time? How do swarm systems develop communication topologies?
+First, let&amp;rsquo;s get acclimated with the different structures - their definitions and some useful examples of their use in practice.
+Ring This is a bus topology in a closed loop, with data traveling around the ring in one direction, passing through each node in turn until it arrives where its going.</description>
+    </item>
+    
+    <item>
+      <title>Outlier Detection</title>
+      <link>https://siobhankcronin.com/notes/swarm_intelligence/outlier_detection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/swarm_intelligence/outlier_detection/</guid>
+      <description>PSO Approach A paper was brought to my attention today (Particle Swarm Optimization for Outlier Detection) presenting a novel application of PSOs in outlier detection, and I wanted to write about it to see if I can find my way to some context in operations intelligence (i.e. possibly anomaly detection in log files?).
+As the authors established the outlier problem, I realized that I carry with me a distance measurement bias when I think about classifying outliers.</description>
+    </item>
+    
+  </channel>
+</rss>

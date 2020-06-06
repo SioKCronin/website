@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Siobhán K Cronin</title>
+    <link>https://siobhankcronin.com/notes/</link>
+    <description>Recent content in Notes on Siobhán K Cronin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://siobhankcronin.com/notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Thousand Plateaus</title>
+      <link>https://siobhankcronin.com/notes/books/a_thousand_plateaus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/books/a_thousand_plateaus/</guid>
+      <description>A Thousand Plateaus by Gilles Deleuze &amp;amp; Felix Guattari
+&amp;ldquo;The question is not: is it true? But: does it work? What new thoughts does it make possible to think? What new emotion does it make possible to feel? What new sensations and perceptions does it open in the body?&amp;rdquo; Brian Massumi, translator.
+There is no way to &amp;ldquo;review&amp;rdquo; this book, any more than there is a way to review the experience of witnessing sunlight over the course of one&amp;rsquo;s life.</description>
+    </item>
+    
+    <item>
+      <title>Binet&#39;s Formula</title>
+      <link>https://siobhankcronin.com/notes/proofs/binets_formula/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/proofs/binets_formula/</guid>
+      <description>This proof was shared with me by my friend Chuck Larrieu Casias, and I liked it so much I wanted to write it up here.
+Suppose we have two similar rectangles, $A$ and $B$. Let $A$ have sides $a$ and $b$, and $B$ have corresponding sides $b$ and $a+b$.
+Then $\frac{b}{a} = \frac{a+b}{b}$. Also, $\frac{b}{a} = \frac{a}{b} + 1$.
+Call $\phi = \frac{b}{a}$. Then $\phi = \frac{1}{\phi} + 1$.
+Multiply both sides by $\phi$ to get $\phi^2 = \phi + 1$.</description>
+    </item>
+    
+    <item>
+      <title>Godel, Escher, Bach</title>
+      <link>https://siobhankcronin.com/notes/books/geb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/books/geb/</guid>
+      <description>Oh my, this book is every bit as delightful as I had imagined it would be.
+To be clear, I had slated this book as my &amp;ldquo;summer&amp;rdquo; read, imagining I would have stolen myself to an island somewhere to curl up alongside this book. But life found me in a data engineering fellowship in Palo Alto instead, drinking an endless stream of La Croix (La Croixes?) whilst building streaming pipelines and occassionaly drawing inspiration from the large bronze statue of Nikola Tesla that stood outside the office.</description>
+    </item>
+    
+    <item>
+      <title>Intersection of Convex Sets</title>
+      <link>https://siobhankcronin.com/notes/proofs/intersection_of_convex_sets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/proofs/intersection_of_convex_sets/</guid>
+      <description>Convex sets are interesting in the context of optimization, as they represent regions where we know we can find global minima. A convex region is a region where for every pair of points within the region, every point on the line that joins the points is also within the region.
+Fun fact - the intersection of all convex sets containing a given subset A of Euclidean space, is called the convex hull of A, which is the smallest convex set containing A.</description>
+    </item>
+    
+    <item>
+      <title>Linear Algebra Basics</title>
+      <link>https://siobhankcronin.com/notes/math/linear_algebra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/math/linear_algebra/</guid>
+      <description>Useful terms and ideas  diagonal matrix: Matrix with zero values except on the diagonal. change of basis matrix: Taking the product of this matrix provides a new basis, which is helpful to us if that basis transformation sets us up for an operation that requires the matrix to be in a particular form. For instance, a change of basis matrix could diagonalize the matrix, such as the choice of the orthogonal matrix as the change of basis matrix in PCA.</description>
+    </item>
+    
+    <item>
+      <title>Navier-Stokes Existence and Smoothness Problem</title>
+      <link>https://siobhankcronin.com/notes/math/navier_stokes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/math/navier_stokes/</guid>
+      <description>Let me say up front, I have not solved this problem, nor am I in the running. I came to math late in 2016 after a lifetime of music study, and while I am building a solid trellis upon which to grow my imagination, it will take me many years to capitalize on my potential. That being said, the Millenium Prizes are my one of my favorite sporting events, and the Navier-Stokes Existence and Smoothness Problem is my home team I&amp;rsquo;m rooting for to emerge next.</description>
+    </item>
+    
+    <item>
+      <title>Network Geometry</title>
+      <link>https://siobhankcronin.com/notes/math/network_geometry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/math/network_geometry/</guid>
+      <description>Network geometry is one of the topics that propelled me towards complexity research and machine learning. If we accept that interactions between agents in a networked system have themselves an impact on the dynamics of a system, it follows that we must investigate the emergence and charactertistics of these interactions. We start to wonder how we might reason about these system &amp;ldquo;overtones&amp;rdquo;.
+I find Mulder &amp;amp; Bicaconi&amp;rsquo;s 2018 paper Network Geometry and Complexity to be a nice primer, so I&amp;rsquo;ll start there.</description>
+    </item>
+    
+    <item>
+      <title>Parrallelogram is convex</title>
+      <link>https://siobhankcronin.com/notes/proofs/convex_parrallelogram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/proofs/convex_parrallelogram/</guid>
+      <description>Let $S$ be the parallelogram consisting of all linear combinations of $t_{1}v_{1} + t_{2}v_{2}$ with $0 \leq t_{1} \leq $ and $0 \leq t_{2} \leq $, or equivlently $0 \leq t_{i} \leq $.
+We remember that the line segment $PQ$ consists of all points $(1-t)P + tQ$ with $0\leq t \leq 1$, and that $PQ$ exists in vector space $S$ if all points $P, Q$ exist in $S$.
+Proof. Let $P=t_{1}v_{1} + t_{2}v_{2}$ and $Q=t_{1}v_{1} + t_{2}v_{2}$ be points in $S$.</description>
+    </item>
+    
+    <item>
+      <title>Phenomenology of Perception</title>
+      <link>https://siobhankcronin.com/notes/books/phenomenology_of_perception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/books/phenomenology_of_perception/</guid>
+      <description>Phenomenology of Perception by Maurice Merleau-Ponty.
+Originally printed in 1945 by Editions Gallimard, with English translation published in 1958 by Routledge &amp;amp; Kegan Paul. I am referencing the 2002 Routledge Classics edition.
+Overview There are times in our lives when we notice the apparatus of our perception. Maybe we see a mirage emerge on the horizon, or grow determined to know why our ears are ringing. When we study such visual apparitions and sonic glitches, we align ourselves with generations of philosophers and cognitive scientists who have looked at perception&amp;rsquo;s outliers to help us understand what happens all along without our noticing.</description>
+    </item>
+    
+    <item>
+      <title>Primes</title>
+      <link>https://siobhankcronin.com/notes/math/primes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/math/primes/</guid>
+      <description>I began studying primes after seeing how they were used in the RSA public-key cryptography algorithm. This led me to Euler&amp;rsquo;s totient function and the idea of relative primes (on integers and on sets of integers, with their parwise coprime goodness).
+And what would primes be with factoring? Ah, factorization. Why you gotta be so difficult?
+But not so fast factorization, we&amp;rsquo;re building quantum computers and we&amp;rsquo;ve got Shor&amp;rsquo;s algorithm up our sleeves.</description>
+    </item>
+    
+    <item>
+      <title>Principal Component Analysis (PCA)</title>
+      <link>https://siobhankcronin.com/notes/math/pca/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/math/pca/</guid>
+      <description>Cool Result Considering the decompostions $A = Q^{T}DQ$, where $Q$ is an orthogonal matrix and $D$ is the diagonal matrix of eigenvalues, the columns of $Q$ are the principal components of our matrix!
+How does it work? Remember, $Y = XP$, where $P$ is the change of basis matrix.
+First we start with the covariance matrix $S_{x} = \frac{1}{m}X^{T}X$, where X is our input matrix. If every feature was necessary, with no redundancy, we&amp;rsquo;d see a diagonal covariance matrix where the only non-zero values would be lined up on the diagonal.</description>
+    </item>
+    
+    <item>
+      <title>Radicals</title>
+      <link>https://siobhankcronin.com/notes/math/radicals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/math/radicals/</guid>
+      <description>OK, so I have just learned about nested radicals, and want to use them as a springboard to meditate on the use of radicals in imagining symmetry in various dimensions. We begin with the infinite nested radicals problem posed by Srivinas Ramanujan.
+$? = \sqrt{1 + 2\sqrt{1 + 3\sqrt{1 + \dots}}}$.
+His solution involves expressing the geometric series under the radical with the following general formulation
+$? = \sqrt{ax + (n + a)^2 + x\sqrt{a(x+n) + (n+a)^2 + (x+n)\sqrt{\dots}}}$.</description>
+    </item>
+    
+    <item>
+      <title>Reactive Microservices Architecture</title>
+      <link>https://siobhankcronin.com/notes/books/reactive_microservices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/books/reactive_microservices/</guid>
+      <description>When my dog Arlo was a puppy, he went through a period where being on a leash made him anxious, and he would react more agressively to other dogs on the street. My husband and I took him to a class at the local SPCA called &amp;ldquo;Reactive Rover&amp;rdquo; where he learned to chill out whilst walking on leash. In the context of this class, reactive was deemed a negative quality we were learning to un-condition, yet, in service architecture, reactive takes on an entirely different meaning.</description>
+    </item>
+    
+    <item>
+      <title>Reinforcement Learning</title>
+      <link>https://siobhankcronin.com/notes/books/reinforcement_learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/books/reinforcement_learning/</guid>
+      <description>Reinforcement Learning: An Introduction (1998). Richard Sutton &amp;amp; Andrew Barto. At the onset, I&amp;rsquo;m curious to know how much has changed since this book&amp;rsquo;s publication 20 years ago. That being said, as these are two leaders in the field, I&amp;rsquo;m interested in gaining a sense of their perspective on the history/origin of this subfield, and acclimating to some of the core concepts/constructs. CHAPTER 1 One of the key takeaways from this chapter was the distinction between the value function and rewards function in an RL problem.</description>
+    </item>
+    
+    <item>
+      <title>Space-Time Continuous Models of Swarm Robotic Systems</title>
+      <link>https://siobhankcronin.com/notes/books/swarm_robotics_models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/books/swarm_robotics_models/</guid>
+      <description>Space-Time Continuous Models of Swarm Robotic Systems: Supporting Global-to-Local Programming, by Heiko Hamann
+Fundamentals of Swarm Robotics Multi-robot systems have the ability to show complex behavior, which is one of the features that motivate my study of them. They also have the potential to solve classic problems in novel, distributed ways. What I&amp;rsquo;m excited about in this book is the presentation of how we derive partial differential equations (Fokker-Planck equation) from a stochastic differential equation (Langevin equation), which forms the basis of the Brownian motion model.</description>
+    </item>
+    
+    <item>
+      <title>Square Root of 2 is Irrational</title>
+      <link>https://siobhankcronin.com/notes/proofs/proove_sqrt2_is_irrational/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/proofs/proove_sqrt2_is_irrational/</guid>
+      <description>Proof. Assume for contradiction that $\sqrt{2}$ is rational.
+Therefore, there exists $p, q$ such that $\sqrt{2} = \frac{p}{q}$, where $q \neq 0$, and $p, q$ share no common divisors other than 1.
+Squaring both sides gives $2 = \frac{p^2}{q^2}$, so consequently $2q^2 = p^2$.
+If a square of a number is even, then the number is even, so there exists some number $k$ such that $p=2k$. Subsituting this value into the equation yields $2q^2 = 4k^2$, or $q^2 = 2k^2$.</description>
+    </item>
+    
+    <item>
+      <title>Supersizing the Mind</title>
+      <link>https://siobhankcronin.com/notes/books/supersizing_the_mind/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/books/supersizing_the_mind/</guid>
+      <description>Supersizing the Mind: Embodiment, Action, and Cognitive Extension by Andy Clark
+1. The Active Body I think a lot of us hold a general sense that there is something called embodied intelligence. In my case, I know I hold a somewhat limited idea of what this means. I remmeber reading that there are feedback mechanisms in the nervous system for some cognition that is not situated in the cerebral cortex, or is perhaps involved in bundling up the information in a more meaningful way before sending it on up to the brain.</description>
+    </item>
+    
+    <item>
+      <title>Thinking in Systems</title>
+      <link>https://siobhankcronin.com/notes/books/thinking_in_sysystems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/books/thinking_in_sysystems/</guid>
+      <description>Thinking in Systems by Donella H. Meadows
+1. The Basics Elements. Interconnectedness. Purpose. These come together to create a system. Meadows presents these building blocks in the very first paragraph. Our primitives in this world of system tracking. What strikes me is the need for purpose. Interconnected elements without a purpose (e.g. sand scattered on a road), do not constitute a system. So, it seems, purpose imbues interconnected elements with something special.</description>
+    </item>
+    
+    <item>
+      <title>Topological Data Analysis</title>
+      <link>https://siobhankcronin.com/notes/math/topology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/math/topology/</guid>
+      <description>I have wanted to study topology for over two years now, and have finally carved out time to begin. I had felt called in this direction for several reasons (ehem, manifolds and network topology), but it wasn&amp;rsquo;t until recently that I found words to articulate why I am eager to get topology in my toolkit.
+Essentially, what little I&amp;rsquo;ve already learned of topology is already giving me fresh scaffolding upon which to grow my understanding of the relationships between individuals and groups of all stripes (particles, people, computers, planets).</description>
+    </item>
+    
+  </channel>
+</rss>

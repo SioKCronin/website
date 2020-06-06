@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Siobhán K Cronin  | Yelp Realtime Streaming Data Infrastructure</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.41" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+
+    
+    
+      <link href="https://siobhankcronin.com/dist/css/app.ab4b67a3ea25990fa8279f3b7ef08b61.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="https://siobhankcronin.com/css/override.css">
+    
+
+    
+        <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Yelp Realtime Streaming Data Infrastructure" />
+<meta property="og:description" content="Fast Order Search Using Yelp&rsquo;s Data Pipeline and Elasticsearch Yelp was experiencing drag on their food order history page due to database lookups. Each lookup required a join across four tables. They found they needed both a relational data store and a key-value store for lantency-sensitive, high-traffic contexts. They also wanted to support full-text search across their data. After weighing their options, they chose Elasticsearch.
+Deciding on their schema took some planning, as they wanted to prevent the number of joins of common operations (that was the situation that led to the change in the first place!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://siobhankcronin.com/notes/lecture_notes/yelp_realtime_streaming/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Yelp Realtime Streaming Data Infrastructure">
+<meta itemprop="description" content="Fast Order Search Using Yelp&rsquo;s Data Pipeline and Elasticsearch Yelp was experiencing drag on their food order history page due to database lookups. Each lookup required a join across four tables. They found they needed both a relational data store and a key-value store for lantency-sensitive, high-traffic contexts. They also wanted to support full-text search across their data. After weighing their options, they chose Elasticsearch.
+Deciding on their schema took some planning, as they wanted to prevent the number of joins of common operations (that was the situation that led to the change in the first place!">
+
+
+
+<meta itemprop="wordCount" content="3120">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Yelp Realtime Streaming Data Infrastructure"/>
+<meta name="twitter:description" content="Fast Order Search Using Yelp&rsquo;s Data Pipeline and Elasticsearch Yelp was experiencing drag on their food order history page due to database lookups. Each lookup required a join across four tables. They found they needed both a relational data store and a key-value store for lantency-sensitive, high-traffic contexts. They also wanted to support full-text search across their data. After weighing their options, they chose Elasticsearch.
+Deciding on their schema took some planning, as they wanted to prevent the number of joins of common operations (that was the situation that led to the change in the first place!"/>
+
+      
+    
+  </head>
+
+  <body class="ma0 avenir bg-white-90">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-sio-yellow">
+      <nav class="bb bw2 b--mid-gray pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://siobhankcronin.com/" class="f3 fw6 no-underline black dib">
+      Siobhán K Cronin
+    </a>
+    <div class="flex-l items-center">
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw5 dib pr3">
+            <a class="hover-gray no-underline mid-gray" href="/about" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw5 dib pr3">
+            <a class="hover-gray no-underline mid-gray" href="/projects" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw5 dib pr3">
+            <a class="hover-gray no-underline mid-gray" href="/index.html" title="AI Notes page">
+              AI Notes
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw5 dib pr3">
+            <a class="hover-gray no-underline mid-gray" href="/podcast" title="Podcast page">
+              Podcast
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw5 dib pr3">
+            <a class="hover-gray no-underline mid-gray" href="/the_list" title="The List page">
+              The List
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw5 dib pr3">
+            <a class="hover-gray no-underline mid-gray" href="/contact/" title="Contact page">
+              Contact
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+  <a href="//twitter.com/siokcronin" class="link-transition twitter link dib z-999 pt3 pr1 pt0-l mr2" title="Twitter link">
+    <svg height="20px"  width="20px"  aria-labelledby="simpleicons-twitter-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-twitter-icon">Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg>
+
+  </a>
+
+
+
+
+  <a href="//linkedin.com/in/siobhankcronin" class="link-transition linkedin link dib z-999 pt3 pr1 pt0-l mr2" title="LinkedIn link">
+    <svg height="20px"  width="20px"  aria-labelledby="simpleicons-linkedin-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-linkedin-icon">LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+
+  </a>
+
+
+  <a href="//github.com/siokcronin" class="link-transition github link dib z-999 pt3 pr1 pt0-l mr2" title="Github link">
+    <svg height="20px"  width="20px"  aria-labelledby="simpleicons-github-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-github-icon">GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+
+  </a>
+
+
+  <a href="//medium.com/@siobhankcronin" class="link-transition medium link dib z-999 pt3 pt0-l mr2" title="Medium link">
+    <svg height="20px"  width="20px" aria-labelledby="simpleicons-medium-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-medium-icon">Medium icon</title><path d="M2.846 6.36c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403H7.26l5.378 11.795 4.728-11.795H24v.403l-1.917 1.837c-.165.126-.247.333-.213.538v13.5c-.034.204.048.41.213.537l1.87 1.837v.403h-9.41v-.403l1.937-1.882c.19-.19.19-.246.19-.538V7.794l-5.39 13.688h-.727L4.278 7.794v9.174c-.052.386.076.774.347 1.053l2.52 3.06v.402H0v-.403l2.52-3.06c.27-.278.39-.67.326-1.052V6.36z"/></svg>
+
+  </a>
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  <article class="flex-l flex-wrap justify-between center">
+    <header class="pt4 pa3 ph4-ns pb0 w-100 w-60-ns center">
+      <p class="f6 b helvetica tracked">
+          
+        LECTURE NOTES
+      </p>
+      <h1 class="f1 helvetica mb1">Yelp Realtime Streaming Data Infrastructure</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="0001-01-01T00:00:00Z">January 1, 0001</time>
+    </header>
+
+    <div class="w-100">
+    <main class="pt4 pa3 ph4-ns pb0 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray">
+
+<h2 id="fast-order-search-using-yelp-s-data-pipeline-and-elasticsearch">Fast Order Search Using Yelp&rsquo;s Data Pipeline and Elasticsearch</h2>
+
+<p>Yelp was experiencing drag on their food order history page due to database lookups.
+Each lookup required a join across four tables. They found they needed both a relational
+data store and a key-value store for lantency-sensitive, high-traffic contexts.
+They also wanted to support full-text search across their data. After weighing their
+options, they chose Elasticsearch.</p>
+
+<p>Deciding on their schema took some planning, as they wanted to prevent the number
+of joins of common operations (that was the situation that led to the change in the first place!).
+They sureveyed their clients, and thought about possible future use cases. Yelp persists
+MySQL writes to Kafka topics, a topic tracking changes for each table. That provides
+a lot of useful data, but how would we reconstruct high level order updates from those topics?</p>
+
+<p>They explored their data, and saw that high level order changes make changes to their &lsquo;Order&rsquo;
+table. &lsquo;Order&rsquo; was a Fact table in their Snowflake schema. This means they could check
+to see if new or updates rows were for existing orders (by checking &lsquo;Order&rsquo;). If they found
+the document was indeed in a finalized state, they could the row&rsquo;s foreign keys to
+create a full denormalized order document.</p>
+
+<p>Let&rsquo;s see how this all comes together with Paastorm, Yelp&rsquo;s in-house stream processor.
+An order assembler consumes the Kafka stream of &lsquo;Order&rsquo; updates, references
+additional fields from the database, and constructs order documents that can then
+be instered into Elasticsearch. These documents are written to their own Kafka topic,
+&lsquo;assembled_order&rsquo;. This topic is consumed by Elasticpipe (a connector they built in Flink),
+which writes records out to Elasticsearch.</p>
+
+<p>What happens if there is divergence between the &lsquo;assembled_order&rsquo;
+topic and Elasticsearch? Elasticsearch has a feature called
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/coerce.html">type coercion</a> that was used.
+They developed their own auditing algorithm to ensure Elasticpipe was performing the
+way they expected. This algorithm retrieves, sorts, and dedupes all document ids
+that should exist in Elasticsearch by scanning the Kafka topic, and then scan Elasticsearch
+for possible missing documents using binary search.</p>
+
+<h2 id="billions-of-messages-a-day">Billions of Messages a Day</h2>
+
+<p>In 2011, Yelp transitioned to a service oriented architecture (SOA), which scaled
+to 150 production services by 2014. Here&rsquo;s a fun factoid shared in the blog. Metcale&rsquo;s
+Law that the effect of a telecommunications network is proportional to the square
+of the number of users connected to the system. This is a shorthand way of characterizing
+network effects in complex systems. We can compare this to the services in a SOA.
+Ideally we have the effect of all those possible pathways through the system. However,
+if we use RESTFul HTTP connections between all pairs of services this will be difficult
+to scale.</p>
+
+<p>Since 2016, Yelp has had over 100 million reviews, which raises some unique challenges.
+&ldquo;Bulk data applications become service scalability problems&rdquo;. For instance, how would
+we handle joins across services? Won&rsquo;t we need to make N service calls for the
+<strong><a href="https://secure.phabricator.com/book/phabcontrib/article/n_plus_one/">N+1 Query Problem</a></strong>?</p>
+
+<p>The solution Yelp came up with lies in a message bus and standardized data formatting.
+For the bus, Kafka does the heavy lifting, shifting the complexity from $n^2$ to $n$.
+They exploit Kafka&rsquo;s log compaction feature, which prunes topics down, and retains
+only the most recent message for every key. For formatting, they chose Avro, a
+space-efficient binary serialization format that integreates nicely with dynamic languages.
+What they exploited in their stream architecture was Avro&rsquo;s schema evolution, which
+means that reader and writer applications can use different schema versions, provided
+they are compatible. This is very cool! Producers can iterate on their schema, without
+effecting consumer applications. Schemas are catalogued in an HTTP schema store called
+the &ldquo;Schematizer&rdquo;, so that data can be transported without schemas. Schemas are retrieved
+and data is decoded at runtime.</p>
+
+<p>So, with a set of Kafka topics regulated by a Schematizer, Yelp&rsquo;s realtime data pipeline
+can provide some important guarentees:</p>
+
+<ul>
+<li><strong>format</strong> (registered schema are immutable)</li>
+<li><strong>compatability</strong> (every active schema assigned to a topic is guarenteed
+to be compatible with every other active schema assigned to the same topic)</li>
+<li><strong>registration</strong> (producers and consumers register whenever they produce or consume
+data with a schema, so there is a log of which users are using which schema at what
+frequency)</li>
+<li><strong>data ownership</strong> (all schema require documentation, and a team assignment, which
+is exposed through an interface called Watson)</li>
+<li><strong>data availability</strong> (database change capture can reconstruct a complete snapshot)</li>
+</ul>
+
+<h2 id="using-services-to-break-down-monoliths">Using Services to Break Down Monoliths</h2>
+
+<p>I was remarking to a colleague that I&rsquo;ve entered the field of data engineering
+at the height of service oriented architecture, and that I actually need to back up
+and learn more about the monoliths from which such systems came. What I&rsquo;ve been enjoying
+about the Yelp blog is that they share the points of inflection in their systems.</p>
+
+<p>Here are some of the tools/practices they&rsquo;re using at Yelp to keep their services
+humming (and growing):</p>
+
+<ul>
+<li><strong>Swagger</strong> documents the interface of HHTP/JSON services. <em>swagger-py</em> will
+automatically create a Python client given a Swagger specification, and <em>Swagger UI</em>
+provides a centralized directory for all service interfaces.</li>
+<li><strong>Docker containers</strong> are used to spin up test instances for services, creating
+images that can be pulled in as dependencies by other service authors who wish
+to acceptance test the service.</li>
+<li><strong>Pyramid</strong> is used as the service stack&rsquo;s web framework, which is a Python
+package that &ldquo;makes it easy to write web applications&rdquo;.</li>
+<li><strong>gevent</strong> is a coroutine-based Python networking library providing a high-level
+synchronous API</li>
+<li><strong>SmartStack</strong> backs the service discovery system, with each client host running
+an HAProxy instance bound to a localhost. A client contacts a service by connecting
+to its localhost load balancer which then proxies the request to a service instance.</li>
+<li><strong>SQLAlchemy</strong> is used as the database access layer.</li>
+<li><strong>uWSGI</strong> is used behind all the hosting services.</li>
+</ul>
+
+<h2 id="more-than-just-a-schema-store">More than Just a Schema Store</h2>
+
+<p>Being out in front of the curve has its advantages, but in tech that can sometimes
+mean you are building and maintaining software that will one day be a big fancy
+open source project others can plug and play with. Such was the case when Yelp
+tackled its schema management. There wasn&rsquo;t a product on the market suited to their
+needs, so they built their own solution, the Schematizer (which is the closest
+to a data engineering superhero name I&rsquo;ve ever heard).</p>
+
+<p>In the world of NoSQL databases, schemas can get a bad rap. But as Storm&rsquo;s founder
+Nathan Marz puts it, schemas force us to deal with exceptions at the time the data
+is added, when the context is the most rich as to what might be wrong, as opposed
+to handling such misisng or incorrectly formatted data downstream, where the context
+is the weakest. When used well, schemas can reduce serious debugging headaches
+and ensure consumers receive data in the form they expect.</p>
+
+<p>Yelp uses Avro to represent their schemas, which are defined with JSON. If you&rsquo;re interested
+in exploring this landscape, be sure to check out Thrift as well. One of the Avro
+features highlighted in this article is schema evolution, which handles what happens
+when when Avro schema are changed after data has been written to the data store
+using an older version. Here&rsquo;s more <a href="https://docs.oracle.com/database/nosql-11.2.2.0/GettingStartedGuide/schemaevolution.html">info</a> on schema evolution from Oracle. At Yelp, each
+schema that strams through the pipeline is serialized with an Avro schema. The message
+itself contains a schema ID, so when it reaches the consumer the consumer can retrieve
+the appropriate schema from the Schematizer and deserialize the message. Having
+all the schemas in one place creates a &ldquo;single point of truth&rdquo;.</p>
+
+<p>An interesting case worth considering is what happens when an upstream producer
+changes the schema of the data it passes to the pipeline. How will this affect
+consumers downstream? This is addressed by the Schematizer, which determines
+topics that can safely be assigned to the new schema based on schema compatibility.
+This compatibility is determined by Avro resolution roles, which you can read more
+about <a href="http://avro.apache.org/docs/1.8.0/spec.html#Schema+Resolution">here</a>. If you
+look through the resolution steps, they&rsquo;re pretty intuitive - the schemas have to
+define compatible data structures (i.e. &ldquo;maps whose value types match&rdquo;, or &ldquo;have
+the same primitive type&rdquo;). Values from the writer can be &ldquo;promoted&rdquo; to what the
+reader expects. For example, <strong>int</strong> is promotable to <strong>long, float</strong> or <strong>double</strong>.</p>
+
+<p>The primary key fields of the schemas in the Schematizer are used for log compaction,
+which is useful for restoring state after a crash. Log compaction retains the last
+update for each key, and a log compacted Kafka topic log contains a full snapshot
+of final record values for every record key. Log compaction allows consumers to restore
+their state from the log compacted topic. You can learn more about how log compaction works
+<a href="http://cloudurable.com/blog/kafka-architecture-log-compaction/index.html">here</a>.</p>
+
+<p>It&rsquo;s also worth mentioning, that when personally identifiable information (PII) fields
+are added to a schema that previously only had non-PII fields, the two schema are
+flagged as incompatible, and the Schematizer creates a new topic for the new schema.
+This is great feature for controlling access to private information.</p>
+
+<p>Producers and Consumers are also tracked by the Schematizer. If something needs
+attention, this information can be used to contact the appropriate teams. Interestingly,
+this data is also available on its own Kafka topic, using <a href="https://github.com/Yelp/yelp_kafka">Yelp Kafka</a>
+which has a host of handy features.</p>
+
+<h2 id="introducing-paasta-an-open-distributed-paas">Introducing PaaSTA: An Open, Distributed PaaS</h2>
+
+<p>PaaSTA allows developers to define the build, deployment, routing, and monitoring of their
+code through the setting of config files. PaaSTA helps developers at Yelp ship their
+code. It achieves this by integrating open-source components, including <strong>Docker</strong>,
+<strong>Mesos</strong>, <strong>Mesosphere Marathon</strong>, <strong>Chronos</strong>, <strong>SmartStack</strong>, <strong>Sensu</strong>, and <strong>Jenkins</strong>.
+It is this spirit of assembling existing tools that allows PaaSTA to leverage the
+best of what&rsquo;s out there, with clear perforations around software so that new components
+can be swapped in as needed.</p>
+
+<p>The process requires a Docker image for their repo, which includes the project&rsquo;s
+dependencies. From there, developers define the number of instances needed, and PaaSTA
+spins up the cluster using Mesos, Marathon, and Chronos. SmartStack is used for service discovery,
+and Sensu routes alerts with PaaSTA monitoring the entire deployment suite.</p>
+
+<h2 id="paastorm-a-streaming-processor">PaaStorm: A Streaming Processor</h2>
+
+<p>One of the things I like most about Yelp is that over the years they&rsquo;ve open-sourced
+several tools, including MRJob which supports MapReduce jobs in AWS. The team then
+noticed that the need for scheduling multiple MRJobs in a real-time context required additional
+support, and ideally they wanted this support to come from PaaSTA, Yelp&rsquo;s PaaS that
+deploys services. That&rsquo;s how PaaStorm came to be.</p>
+
+<p>PaaStorm transformed data mostly writes to Kafka, although there are other endpoints,
+which allows all interested parties to register as a consumer of the transformed data.
+PaaStorm runs Spolts, which define a set of incoming messages (like a Spout) and
+the process to transform those messages (like a Bolt). The Spolt definition doesn&rsquo;t
+directly reference Kafka. PaaStorm takes care of stitching up the Spolot to the source
+topic it needs, and publishing transformed data to the correct output Kafka topic.</p>
+
+<p>The solution described here for failure discovery is actually pretty clever. They
+inject the Kafka offset for the next raw message into the last transformed message (downstream),
+which in turn emits the offset back to a callback in the producer. That way the system
+always knows the offset of what the Spolt was working on when the system last had a
+succcessful transformed message, and get rewind to that point.</p>
+
+<p>In terms of monitoring, PaaStorm keeps track of the number of messages consumed
+and the number published. These can be compared to identify bottlenecks.</p>
+
+<h2 id="hybrid-cloud-using-mesos-and-docker">Hybrid Cloud using Mesos and Docker</h2>
+
+<p>While not on the Yelp Engineering Blog, I found <a href="https://mesosphere.com/blog/containers-clouds-and-code-how-yelp-built-a-hybrid-cloud-using-mesos-and-docker/">this article</a>
+helpful in understanding how Mesos was integrated into Yelp&rsquo;s infastructure.</p>
+
+<p>They used the Marathon PaaS framework to schedule and orchestrate jobs. The Docker-based
+microservice PaaSTA sits on top of this. PaaSTA takes core resource discovery and
+and launching of the containers, so the developers just have to focus on configuring
+their Docker containers and complying with the PaaSTA platform contract. PaaSTA
+allows for automatic provisioning and migrations of services across in-house
+and AWS hardware.</p>
+
+<p>Yelps testing platform, Seagull, also uses Mesosphere (commercial package), combining
+Mesos with a custom scheduler to parallelize and accelerate unit tests. The estimate
+in this article is that Yelp runs about 17 million individual tests every day, all
+managed by Mesos. The company was reported to also be launching 1 million Docker
+containers per day. That&rsquo;s a lot for Mesos to coordinate!</p>
+
+<p>A nice side benefit is that they could spot bid on instances, since Mesos would
+be able to pick up where things left off if the instance disappeared during a job
+run. This way the job keeps going, and money is saved.</p>
+
+<h2 id="making-30x-performance-improvements-on-yelp-s-mysqlstreamer">Making 30x performance improvements on Yelp&rsquo;s MySQLStreamer</h2>
+
+<p>MySQLStreamer streams data from Yelp&rsquo;s MySQL clusters into Kafka. To imagine the scope,
+MySQL databases at Yelp receive hundreds of millions of data manipulation requests per day,
+and tens of thousands of queries per second. It&rsquo;s worth noting that one way they&rsquo;ve
+met the demands of this volume is by running processes on PyPy (instead of Python&rsquo;s
+CPython compiler).</p>
+
+<p>They used a cool platform called <a href="https://vmprof.readthedocs.io/en/latest/">VMProf</a>
+that can help teams &ldquo;understand and resolve performance bottlenecks&rdquo; in their codebase.
+This platform samples Python stack traces and then generates a visualization that shows
+the percentage of time each function took relative to other functions.</p>
+
+<h2 id="streaming-mysql-tables-in-real-time-with-kafka">Streaming MySQL tables in real-time with Kafka</h2>
+
+<p>Yelp built MySQLStreamer to monitor database changes and alert all subscribing services
+about them. A &ldquo;change data capture and publish system&rdquo;, which essentially bundles
+up all changes into messages and publishes them to Kafka. This relates to the concept
+of stream-table duality, which means a stream can be viewed as a table (replaying
+every chang to reconstruct the table) and a table can be viewed as a stream (iterating
+over every change in a table to create a stream).</p>
+
+<p>To process replication across the cluster, events on the master database are first
+written to a binary log, which is read by each replica.</p>
+
+<p><img src="1.jpg" alt="image" /></p>
+
+<p>The two types of replication in MySQL are <strong>statement-based-replication (SBR)</strong> and
+<strong>row-based replication (RBR)</strong>. For SBR, the master writes events to the binary log,
+and the replica&rsquo;s SQL thread replays these statements on the replica. This approach
+has challenges, as the statements may generate different results on the master and replica
+(for instance, if RAND or NOW are used in the statements). The safer bet is RBR, which is
+what Yelp uses for their MySQLStreamer. Each event shows how the row of the table
+has been modified. We don&rsquo;t care about the statement that generated the changes,
+we care about the changes themselves.</p>
+
+<p>The two types of changes the MySQLStreamer is concerned with are DDL (Data Definition Language)
+which modify the database structure or schema and DML (Data Manipulation Language)
+which manipulate data within the specified schema. The MySQLStreamer handles both kinds
+of events, and publishes DML events to Kafka topics. In particular, there are four
+kinds of events that are processed: <em>INSERT</em>, <em>UPDATE</em>, <em>DELETE</em>, and <em>REFRESH</em>.</p>
+
+<p>There are three databases involved in the MySQLStreamer process:</p>
+
+<ul>
+<li><strong>Source DB</strong> stores change events from the upstream data</li>
+<li><strong>State DB</strong> stores the MySQLStreamer&rsquo;s internal states in three tables
+(<strong>DATA_EVENT_CHECKPOINT</strong> - each topic&rsquo;s info and last known published offset,
+<strong>GLOBAL_EVENT_STATE</strong> - stores position, <strong>MYSQL_DUMPS</strong> - not quite sure how
+this is used other than in resotring after a failure)</li>
+<li><strong>Schema Tracker DB</strong> - stores the Avro schemas created by the Schematizer.</li>
+</ul>
+
+<p><img src="2.jpg" alt="image1" /></p>
+
+<h2 id="replication-integrity-between-mysql-and-redshift">Replication integrity between MySQL and Redshift</h2>
+
+<p>Write-ahead logging? Two-phase commit? Fuzz testing? Monkey testing? Black-box auditing?</p>
+
+<p>OK, our friend Jacob has just laid out a bevy of interesting topics worthy of their own
+brief mention before diving in further.</p>
+
+<ul>
+<li><strong>Write-ahead logging (WAL)</strong> systems write all modifications to the log before they
+are applied. The idea is that if something goes wrong, you can compare what output happened
+with what is written in the last log to see if the modification completed or was still
+being processed when the failure happened. This provides durability to the system, and also
+atomicity, as the log keeps track of each unit, and we know precisely which unit did or
+did not complete. This topic also brushes up against <a href="https://en.wikipedia.org/wiki/Algorithms_for_Recovery_and_Isolation_Exploiting_Semantics">Algorithms for Recovery and
+Isolation Exploiting Semantics (ARIES)</a>.</li>
+<li><strong>Two-phase commit</strong> protocol is a type of <strong>atomic commitment protocol (ATP)</strong>, which
+&ldquo;applies a set of distinct changes as a single operation&rdquo; (thus sayeth Wikipedia). So
+atomic. It is a distributed algorithm that coordinates all the processes in a distributed
+transaction as to whether to commit or abort and roll back to an earlier state. There are
+two key phases involved, the <em>voting phase</em> and the <em>completion phase</em>. In the <em>voting phase</em>,
+the coordinator sends a <strong>query to commit</strong> message to all cohorts processing in the
+distributed transaction, and they respond with either a thumbs up or thumbs down
+(an <em>agreement</em> message or an <em>abort</em> message). If the coordinator receives agreement
+messages from all cohorts, then a <strong>commit message</strong> is sent to all cohorts, and life moves on.
+Otherwise, the coordinator sends a <strong>rollback message</strong>.</li>
+<li><strong>Fuzz testing</strong> tests edge cases by sending invalid, random, or unexpected inputs
+to a system to test performance in such situations.</li>
+<li><strong>Monkey testing</strong> is often implemented as random, automated unit tests.</li>
+</ul>
+
+<p>Now back to the task at hand - verifying end-to-end replication integrity between
+MySQL and AWS Redshift. For this we will turn our attention to black-box auditing,
+which essentially means we can test the functionality of a black box without knowing
+anything about what&rsquo;s actually in the black box.</p>
+
+<p>To verify their data is eventually consistent, systems like Cassandra and Riak
+uase a process called anti-entropy repair that leverages Merkle trees (<a href="https://en.wikipedia.org/wiki/Merkle_tree">hash trees</a>)
+to verify and/or update all replicas. The <a href="https://en.wikipedia.org/wiki/Error_detection_and_correction">anti-entropy process</a>
+can be implemented several ways, yet the general idea is that you take a snapshot of your
+replicas, partition them, create hash trees for each, and repair each inconsistent partition.
+This gets tricky for Dynamo systems, which are eventually consistent. How would we ensure
+that partitions are indeed inconsistent when we know there is inherent propogation delay?</p>
+
+<p>This is the problem the Yelp team tackled, and their solution sprung from the recognition
+that one could expand the notion of equality to partition similarity (feels akin to
+conditional probabilities in the Bayesian revolution). The algorithm they came up with
+is similiar to the traditional anti-entropy repair, only it adds similarity testing into the mix.</p>
+
+<p>To implement their similarity testing, they used MinHash which can calculate the
+Jacard similarity coefficient between two sets. Yelp&rsquo;s implementation is expressed
+in SQL. This has the benefit of using Redshift&rsquo;s built-in distributed query
+execution engine, which leverages a parallelized a MapReduce job to produce
+speedy results.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </main>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://siobhankcronin.com/" >
+    &copy; 2020 Siobhán K Cronin
+  </a>
+  </div>
+</footer>
+
+    
+
+  <script src="https://siobhankcronin.com/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+  </body>
+</html>

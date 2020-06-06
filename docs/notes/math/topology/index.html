@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Siobhán K Cronin  | Topological Data Analysis</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.41" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+
+    
+    
+      <link href="https://siobhankcronin.com/dist/css/app.ab4b67a3ea25990fa8279f3b7ef08b61.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="https://siobhankcronin.com/css/override.css">
+    
+
+    
+        <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Topological Data Analysis" />
+<meta property="og:description" content="I have wanted to study topology for over two years now, and have finally carved out time to begin. I had felt called in this direction for several reasons (ehem, manifolds and network topology), but it wasn&rsquo;t until recently that I found words to articulate why I am eager to get topology in my toolkit.
+Essentially, what little I&rsquo;ve already learned of topology is already giving me fresh scaffolding upon which to grow my understanding of the relationships between individuals and groups of all stripes (particles, people, computers, planets)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://siobhankcronin.com/notes/math/topology/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Topological Data Analysis">
+<meta itemprop="description" content="I have wanted to study topology for over two years now, and have finally carved out time to begin. I had felt called in this direction for several reasons (ehem, manifolds and network topology), but it wasn&rsquo;t until recently that I found words to articulate why I am eager to get topology in my toolkit.
+Essentially, what little I&rsquo;ve already learned of topology is already giving me fresh scaffolding upon which to grow my understanding of the relationships between individuals and groups of all stripes (particles, people, computers, planets).">
+
+
+
+<meta itemprop="wordCount" content="1077">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Topological Data Analysis"/>
+<meta name="twitter:description" content="I have wanted to study topology for over two years now, and have finally carved out time to begin. I had felt called in this direction for several reasons (ehem, manifolds and network topology), but it wasn&rsquo;t until recently that I found words to articulate why I am eager to get topology in my toolkit.
+Essentially, what little I&rsquo;ve already learned of topology is already giving me fresh scaffolding upon which to grow my understanding of the relationships between individuals and groups of all stripes (particles, people, computers, planets)."/>
+
+      
+    
+  </head>
+
+  <body class="ma0 avenir bg-white-90">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-sio-yellow">
+      <nav class="bb bw2 b--mid-gray pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://siobhankcronin.com/" class="f3 fw6 no-underline black dib">
+      Siobhán K Cronin
+    </a>
+    <div class="flex-l items-center">
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw5 dib pr3">
+            <a class="hover-gray no-underline mid-gray" href="/about" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw5 dib pr3">
+            <a class="hover-gray no-underline mid-gray" href="/projects" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw5 dib pr3">
+            <a class="hover-gray no-underline mid-gray" href="/index.html" title="AI Notes page">
+              AI Notes
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw5 dib pr3">
+            <a class="hover-gray no-underline mid-gray" href="/podcast" title="Podcast page">
+              Podcast
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw5 dib pr3">
+            <a class="hover-gray no-underline mid-gray" href="/the_list" title="The List page">
+              The List
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw5 dib pr3">
+            <a class="hover-gray no-underline mid-gray" href="/contact/" title="Contact page">
+              Contact
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+  <a href="//twitter.com/siokcronin" class="link-transition twitter link dib z-999 pt3 pr1 pt0-l mr2" title="Twitter link">
+    <svg height="20px"  width="20px"  aria-labelledby="simpleicons-twitter-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-twitter-icon">Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg>
+
+  </a>
+
+
+
+
+  <a href="//linkedin.com/in/siobhankcronin" class="link-transition linkedin link dib z-999 pt3 pr1 pt0-l mr2" title="LinkedIn link">
+    <svg height="20px"  width="20px"  aria-labelledby="simpleicons-linkedin-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-linkedin-icon">LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+
+  </a>
+
+
+  <a href="//github.com/siokcronin" class="link-transition github link dib z-999 pt3 pr1 pt0-l mr2" title="Github link">
+    <svg height="20px"  width="20px"  aria-labelledby="simpleicons-github-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-github-icon">GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+
+  </a>
+
+
+  <a href="//medium.com/@siobhankcronin" class="link-transition medium link dib z-999 pt3 pt0-l mr2" title="Medium link">
+    <svg height="20px"  width="20px" aria-labelledby="simpleicons-medium-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-medium-icon">Medium icon</title><path d="M2.846 6.36c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403H7.26l5.378 11.795 4.728-11.795H24v.403l-1.917 1.837c-.165.126-.247.333-.213.538v13.5c-.034.204.048.41.213.537l1.87 1.837v.403h-9.41v-.403l1.937-1.882c.19-.19.19-.246.19-.538V7.794l-5.39 13.688h-.727L4.278 7.794v9.174c-.052.386.076.774.347 1.053l2.52 3.06v.402H0v-.403l2.52-3.06c.27-.278.39-.67.326-1.052V6.36z"/></svg>
+
+  </a>
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  <article class="flex-l flex-wrap justify-between center">
+    <header class="pt4 pa3 ph4-ns pb0 w-100 w-60-ns center">
+      <p class="f6 b helvetica tracked">
+          
+        NOTES
+      </p>
+      <h1 class="f1 helvetica mb1">Topological Data Analysis</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="0001-01-01T00:00:00Z">January 1, 0001</time>
+    </header>
+
+    <div class="w-100">
+    <main class="pt4 pa3 ph4-ns pb0 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray">
+
+<p>I have wanted to study topology for over two years now, and have finally carved
+out time to begin. I had felt called in this direction for several reasons
+(ehem, manifolds and network topology), but it wasn&rsquo;t until recently that
+I found words to articulate why I am eager to get topology in my toolkit.</p>
+
+<p>Essentially, what little I&rsquo;ve already learned of topology is already giving me
+fresh scaffolding upon which to grow my understanding of the relationships
+between individuals and groups of all stripes (particles, people, computers,
+planets). What elements are connected? Are those connections maintained as the system changes?
+What are the zones of influence/sharing/exchange? Math can forge new practices
+of imagination that you can then bring to bare on questions you feel compelled
+to ask.</p>
+
+<p>I realized that if I didn&rsquo;t root my study of topology into some concrete questions
+I would start to drift into its vast ocean, and run the risk of never coalescing
+my imagination in something fresh and useful, so I&rsquo;ve decided to focus my attention
+on how I can apply Topological Data Analysis (TDA) in my work, and use that to
+as my true north.</p>
+
+<p>Preliminary definitions give us the colors we can fingerpaint with, so let&rsquo;s
+check them out.</p>
+
+<h2 id="topological-spaces">Topological Spaces</h2>
+
+<p>If a space walks up to us and claims itself to be topological, we can verify
+whether it is telling us the truth or not by asking these four questions:</p>
+
+<ul>
+<li>Do you contain the empty set?</li>
+<li>Do you contain all your elements?</li>
+<li>Do you contain subsets of all the intersections of your subsets?</li>
+<li>Do you contain subsets of all the unions of all your subsets?</li>
+</ul>
+
+<p>It&rsquo;s important to note that the elements can be any mathemetical object. Points.
+Sets. Topological spaces. Topologies of topologies? Now we&rsquo;re talkin&rsquo;!</p>
+
+<h2 id="neighbourhoods">Neighbourhoods</h2>
+
+<p>A math poem is perhaps best to introduce this color.</p>
+
+<p>If $X$ is a topological space and $p$ is a point in $X$, a neighborhood of $p$
+is a subset $V$ of $X$ that includes an open set $U$ containing $p$. So,
+$p \in U \subsetneq V$.</p>
+
+<h2 id="topological-data-analysis">Topological Data Analysis</h2>
+
+<p>Topological Data Analysis (TDA) seeks to reveal the complex topological and
+geometrical structures underlying data. One benefit of knowing this structure
+is that it can be used to narrow in on the core features &ldquo;running the show&rdquo;
+in the system, or at least the features playing a structural role. In my mind,
+TDA can play a role in EDA and in priming the canvas for other ML models. There
+is still a lot of work to be done in connecting the theory with practice,
+but I&rsquo;m excited about the possibilities.</p>
+
+<p>As with much in ML, the system of orientation and measurement we chose plays a
+big role in how we process and make meaning of our data. In TDA, data is typically
+treated as a discrete metric space, or a sample from a metric space. Metric spaces
+are spaces were distances between all members of the set are defined. My mind jumps
+to Euclidean space, but there are metric spaces elliptic and hyperbolic geometries
+as well. Metric spaces were named by good &lsquo;ol Felix Hausdorff, but first introduced
+by Maurice Frechet. And to be more specific, it is the Euclidean distance of Euclidean
+n-space that satifies the metric space specs, as does Banach spaces (complete
+normed vector space).</p>
+
+<p>Equipped with our understanding of metric spaces, we can venture forth to calculate
+Hausdorff distances, which tell us how far two subsets of a metric space are from
+each other (the greatest distance from a point in one set to the closest point
+in the other set). We can use these distances to gain an understanding the proximity
+of different data sets in our metric space, or comparisons between pairs of
+compact metric spaces (which can be accomplished with the Gromov-Hausdorff distance).
+Specifically, the Gromov-Hausdorff distance tells us how far two compact metric
+spaces are from being isometric, which is to say bijective. But what of this
+compactness I keep referring to? Compactness refers to a subset of Euclidean space
+that is both closed (including its limit points) and bounded (having a fixed length
+between all its points).</p>
+
+<p>I got into simplicial complexes into greater detail elsewhere, but suffice it to say
+they play an important role in TDA. In the great intro paper Chazal &amp; Michel 2017,
+the authors explore how one can go about building simplicial complexes from data.
+An <strong>abstract simplicial complex</strong> with vertex set $V$ is a set $K$ of finite
+subsets of V such that the elements of V belong to K, and for any $\omega \in K$,
+any subset of $\omega$ belongs to $K$. The elements of $K$ are the faces, simplices,
+of $K$. A <strong>geometic simplicial complex</strong> K is a collection of simplices such that
+1) any face of a siplex of K is a simplex of K, and 2) the intersection of any
+two simplices of K is either empty or a common face of both.</p>
+
+<p>The paper introduces two specific complexes, Vietoris-Rips and Cech. The
+<strong>Vietoris-Rips complex</strong> $R_{\alpha}(\mathbb{X})$ is the set of simplices
+$[x_{0}, &hellip;, x_{k}]$ such that $d_{\mathbb{X}}(x_{i}, x_{j}) \leq \alpha$
+for all $(i, j)$. The <strong>Cech complex</strong> is the set of simplices
+$[x_{0}, &hellip;, x_{k}]$ such that the $k + 1$ closed balls $B(x_{i}, \alpha)$
+have a non-empty intersection.</p>
+
+<p>Next, a breif introduction to the concept of a cover. A cover of a set X is a
+collection of sets whose union contains X as a subset. In this case we say
+&ldquo;C covers X&rdquo;. A subcover of C is a subset of C that covers X, and we deem C
+an &ldquo;open cover&rdquo; if each of its members is an open set (contained in T,
+the topology of X). And here&rsquo;s a term whose name I LOVE. A <strong>refiniement</strong> of
+C is a cover D of X such that every set in D is contained in some set of C.</p>
+
+<p>Oh my, you&rsquo;re probably thinking &ldquo;when will this list of definitions stop&rdquo;, but
+I like to think of each concept as an imgination color we can paint with. I promise,
+it all comes together in some pretty dazzling fireworks displays. For now, let&rsquo;s
+turn our attention to the <strong>Nerve Theorem</strong>:</p>
+
+<p>Let $\mathcal{U}=(U_{i})_{i \in I}$ be a cover of a topological space $X$ by
+open sets such that the intersection of any subcollection of the $U_{i}$&rsquo;s
+is either empty or contractibe. Then X and the nerve $\mathcal{C}(\mathcal{U})$ are homotopy
+equivalent.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </main>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://siobhankcronin.com/" >
+    &copy; 2020 Siobhán K Cronin
+  </a>
+  </div>
+</footer>
+
+    
+
+  <script src="https://siobhankcronin.com/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+  </body>
+</html>
