@@ -44,21 +44,21 @@ enableRobotsTXT = false
     weight     = 5
 
     [[menu.main]]
-    identifier = "podcast"
-    name       = "Podcast"
-    url        = "/podcast"
+    identifier = "meditation"
+    name       = "Meditation"
+    url        = "/meditation"
     weight     = 4
 
     [[menu.main]]
-    identifier = "ai_notes"
-    name       = "AI Notes"
+    identifier = "notes"
+    name       = "Notes"
     url        = "/index.html"
     weight     = 3
 
     [[menu.main]]
-    identifier = "projects"
-    name       = "Projects"
-    url        = "/projects"
+    identifier = "cv"
+    name       = "CV"
+    url        = "/cv"
     weight     = 2
 
     [[menu.main]]
