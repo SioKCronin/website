@@ -18,7 +18,7 @@ Model View Culture, and presented at the Conference on Complex Systems,
 Conference on Cognitive Neuroscience, AlterConf, PyLadies, Metis, and
 Temple University. She is the lead developer of SwarmOpt (an open-source swarm 
 intelligence algorithm library), a guest researcher at Slow Research Lab,
-and an engineering mantor at Hackbright Academy. 
+and an engineering mentor at Hackbright Academy. 
 
 Siobhán enjoys powerful conversations, championing women/NB changemakers, 
 dancing, laughing, enjoying delicious food, reading poetry,
