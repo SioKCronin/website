@@ -138,6 +138,12 @@
   </url>
   
   <url>
+    <loc>https://siobhankcronin.com/notes/web_servers/asgi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://siobhankcronin.com/notes/infrastructure/aws_vpc/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

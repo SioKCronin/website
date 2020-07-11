@@ -205,6 +205,15 @@ Designing an endpoint An endpoint is one end of a communication channel. In the 
     </item>
     
     <item>
+      <title>ASGI</title>
+      <link>https://siobhankcronin.com/notes/web_servers/asgi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/web_servers/asgi/</guid>
+      <description>   </description>
+    </item>
+    
+    <item>
       <title>AWS Virtual Private Clouds (VPCs)</title>
       <link>https://siobhankcronin.com/notes/infrastructure/aws_vpc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
