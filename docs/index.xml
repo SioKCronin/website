@@ -210,7 +210,8 @@ Designing an endpoint An endpoint is one end of a communication channel. In the 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://siobhankcronin.com/notes/web_servers/asgi/</guid>
-      <description>   </description>
+      <description>Asynchronus Server Gateway Interface (ASGI)
+  </description>
     </item>
     
     <item>
