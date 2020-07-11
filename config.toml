@@ -37,11 +37,6 @@ enableRobotsTXT = false
   recent_posts_number = 10
 
 [menu]
-    [[menu.main]]
-    identifier = "the_list"
-    name       = "The List"
-    url        = "/the_list"
-    weight     = 5
 
     [[menu.main]]
     identifier = "meditation"

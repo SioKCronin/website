@@ -23,6 +23,16 @@ Pearon&amp;rsquo;s r This is what people typically think of when they think of c
     </item>
     
     <item>
+      <title>K-nearest neighbors</title>
+      <link>https://siobhankcronin.com/notes/machine_learning/k_nearest_neighbors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/machine_learning/k_nearest_neighbors/</guid>
+      <description>Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates, and strategies for using these distances to calculate neighors:
+Distance Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.</description>
+    </item>
+    
+    <item>
       <title>RL in Process Scheduling</title>
       <link>https://siobhankcronin.com/notes/machine_learning/rl_in_process_scheduling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

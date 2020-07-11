@@ -107,12 +107,6 @@
           </li>
           
           <li class="list f5 f4-ns fw5 dib pr3">
-            <a class="hover-gray no-underline mid-gray" href="/the_list" title="The List page">
-              The List
-            </a>
-          </li>
-          
-          <li class="list f5 f4-ns fw5 dib pr3">
             <a class="hover-gray no-underline mid-gray" href="/contact/" title="Contact page">
               Contact
             </a>
@@ -185,7 +179,38 @@ There is no way to &ldquo;review&rdquo; this book, any more than there is a way 
         <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
   <div class="bg-white mb1 pa4 gray overflow-hidden">
     <h1 class="f3 near-black">
-      <a href="/notes/proofs/binets_formula/" class="link black dim">
+      <a href="/notes/api_design/api/" class="link black dim">
+        API
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Application Program Interfaces (APIs) do a lot of heavy lifting in software engineering, and are a world unto themselves. Let&rsquo;s cover the basics for interacting with an API, and then build out from there.
+Designing an endpoint An endpoint is one end of a communication channel. In the case of an API call, the client may request data from a specific endpoint on a server. If we were designing that endpoint, we&rsquo;d want to specify what information is required in that API call to serve the data.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
+  <div class="bg-white mb1 pa4 gray overflow-hidden">
+    <h1 class="f3 near-black">
+      <a href="/notes/infrastructure/aws_vpc/" class="link black dim">
+        AWS Virtual Private Clouds (VPCs)
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Overview As J Cole Morrison puts it, we need Virtual Private Clouds (VPCs) because we need control of security, the organization of our resources, traffic between our services, and the ability to keep differing architectures separate.
+Some terms we&rsquo;ll need:
+ Subnets: Route Tables: Network ACLs: Internet Gateway: NAT Gateway: Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network).
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
+  <div class="bg-white mb1 pa4 gray overflow-hidden">
+    <h1 class="f3 near-black">
+      <a href="/notes/math/binets_formula/" class="link black dim">
         Binet&#39;s Formula
       </a>
     </h1>
@@ -195,6 +220,21 @@ Suppose we have two similar rectangles, $A$ and $B$. Let $A$ have sides $a$ and 
 Then $\frac{b}{a} = \frac{a+b}{b}$. Also, $\frac{b}{a} = \frac{a}{b} + 1$.
 Call $\phi = \frac{b}{a}$. Then $\phi = \frac{1}{\phi} + 1$.
 Multiply both sides by $\phi$ to get $\phi^2 = \phi + 1$.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
+  <div class="bg-white mb1 pa4 gray overflow-hidden">
+    <h1 class="f3 near-black">
+      <a href="/notes/data_systems/databases/" class="link black dim">
+        Databases
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I&rsquo;d first like to explore the differences between software in the data ecology, and then dive deeper into key topics affecting their use.
+File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Key-Value Cache  Apache Ignite: Cache for Cassandra clusters Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array.
     </div>
   </div>
 </div>
@@ -218,13 +258,28 @@ To be clear, I had slated this book as my &ldquo;summer&rdquo; read, imagining I
         <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
   <div class="bg-white mb1 pa4 gray overflow-hidden">
     <h1 class="f3 near-black">
-      <a href="/notes/proofs/intersection_of_convex_sets/" class="link black dim">
+      <a href="/notes/math/intersection_of_convex_sets/" class="link black dim">
         Intersection of Convex Sets
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       Convex sets are interesting in the context of optimization, as they represent regions where we know we can find global minima. A convex region is a region where for every pair of points within the region, every point on the line that joins the points is also within the region.
 Fun fact - the intersection of all convex sets containing a given subset A of Euclidean space, is called the convex hull of A, which is the smallest convex set containing A.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
+  <div class="bg-white mb1 pa4 gray overflow-hidden">
+    <h1 class="f3 near-black">
+      <a href="/notes/web_servers/kafka/" class="link black dim">
+        Kafka &amp; Kinesis
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      In Dunning &amp; Friedman&rsquo;s book Streaming Architecture, they state &ldquo;a big difference between stream-based and traditional design &hellip; is that messaging layer plays a much more prominent role.&rdquo;
+I am streaming architecture&rsquo;s biggest fan. So many possibilities open up when you de-couple producers from consumers, and let your messaging layer do the heavy lifting on persisting events. To get at some of the finer points I thought it could be fun to compare the open source project Apache Kafka with AWS&rsquo; pay-to-play Kinesis.
     </div>
   </div>
 </div>
@@ -247,75 +302,14 @@ Fun fact - the intersection of all convex sets containing a given subset A of Eu
         <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
   <div class="bg-white mb1 pa4 gray overflow-hidden">
     <h1 class="f3 near-black">
-      <a href="/notes/math/navier_stokes/" class="link black dim">
-        Navier-Stokes Existence and Smoothness Problem
+      <a href="/notes/networking/load_balancer_algorithms/" class="link black dim">
+        Load Balancing Algorithms
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Let me say up front, I have not solved this problem, nor am I in the running. I came to math late in 2016 after a lifetime of music study, and while I am building a solid trellis upon which to grow my imagination, it will take me many years to capitalize on my potential. That being said, the Millenium Prizes are my one of my favorite sporting events, and the Navier-Stokes Existence and Smoothness Problem is my home team I&rsquo;m rooting for to emerge next.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/math/network_geometry/" class="link black dim">
-        Network Geometry
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Network geometry is one of the topics that propelled me towards complexity research and machine learning. If we accept that interactions between agents in a networked system have themselves an impact on the dynamics of a system, it follows that we must investigate the emergence and charactertistics of these interactions. We start to wonder how we might reason about these system &ldquo;overtones&rdquo;.
-I find Mulder &amp; Bicaconi&rsquo;s 2018 paper Network Geometry and Complexity to be a nice primer, so I&rsquo;ll start there.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/proofs/convex_parrallelogram/" class="link black dim">
-        Parrallelogram is convex
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Let $S$ be the parallelogram consisting of all linear combinations of $t_{1}v_{1} + t_{2}v_{2}$ with $0 \leq t_{1} \leq $ and $0 \leq t_{2} \leq $, or equivlently $0 \leq t_{i} \leq $.
-We remember that the line segment $PQ$ consists of all points $(1-t)P + tQ$ with $0\leq t \leq 1$, and that $PQ$ exists in vector space $S$ if all points $P, Q$ exist in $S$.
-Proof. Let $P=t_{1}v_{1} + t_{2}v_{2}$ and $Q=t_{1}v_{1} + t_{2}v_{2}$ be points in $S$.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/books/phenomenology_of_perception/" class="link black dim">
-        Phenomenology of Perception
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Phenomenology of Perception by Maurice Merleau-Ponty.
-Originally printed in 1945 by Editions Gallimard, with English translation published in 1958 by Routledge &amp; Kegan Paul. I am referencing the 2002 Routledge Classics edition.
-Overview There are times in our lives when we notice the apparatus of our perception. Maybe we see a mirage emerge on the horizon, or grow determined to know why our ears are ringing. When we study such visual apparitions and sonic glitches, we align ourselves with generations of philosophers and cognitive scientists who have looked at perception&rsquo;s outliers to help us understand what happens all along without our noticing.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/math/primes/" class="link black dim">
-        Primes
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I began studying primes after seeing how they were used in the RSA public-key cryptography algorithm. This led me to Euler&rsquo;s totient function and the idea of relative primes (on integers and on sets of integers, with their parwise coprime goodness).
-And what would primes be with factoring? Ah, factorization. Why you gotta be so difficult?
-But not so fast factorization, we&rsquo;re building quantum computers and we&rsquo;ve got Shor&rsquo;s algorithm up our sleeves.
+      First of all, the load balancer has to keep track of which servers are healthy by routinely pinging them and recording if they respond. If a server fails a health check, it is removed from the viable server list, and will only be added again if it passes a later health check.
+Algorithms Least Connection Method LB directs traffic to the server with the fewest active connections
+Least Response Time Method LB directs traffic to the server with the fewest active connections and the lowest average response time.
     </div>
   </div>
 </div>
@@ -359,13 +353,25 @@ But not so fast factorization, we&rsquo;re building quantum computers and we&rsq
     ><a href="/notes/page/2/">2</a></li>
     
     
+    
+    
+    
+    
+        
+        
+    
+    
+    <li
+    ><a href="/notes/page/3/">3</a></li>
+    
+    
     <li
     >
     <a href="/notes/page/2/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
     </li>
     
     <li>
-        <a href="/notes/page/2/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/notes/page/3/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
     </li>
     
 </ul>

@@ -67,16 +67,6 @@ I lead guided meditation sessions based on my ongoing study of non-dualism, cons
     </item>
     
     <item>
-      <title>The List</title>
-      <link>https://siobhankcronin.com/the_list/</link>
-      <pubDate>Tue, 24 Apr 2018 11:53:47 -0700</pubDate>
-      
-      <guid>https://siobhankcronin.com/the_list/</guid>
-      <description>I&amp;rsquo;m keeping track of companies on a mission to make a meaningful impact in the world, and the engineering leaders who are building teams within those companies. I&amp;rsquo;m including leadership because ultimately it&amp;rsquo;s people who make companies great, and there&amp;rsquo;s no use spending your time giving your all to a great cause if the culture is not simultaneously supporting you.
-My biggest hope is that all engineers who have the ability to do so will consider applying their skills to projects that matter and teams that are healthy, equitable, and nurturing.</description>
-    </item>
-    
-    <item>
       <title>Alignment for Advanced ML Systems (REVIEW)</title>
       <link>https://siobhankcronin.com/posts/miri_alignment/</link>
       <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
@@ -167,7 +157,7 @@ Key quotes  &amp;ldquo;No uniform scheme will lead to machines as resourceful as
       <guid>https://siobhankcronin.com/cv/</guid>
       <description>Engineering Landed | Engineering Manager | Oct 2019 - Present Landed | Data Engineering Lead | Nov 2018 - Oct 2019 Insight | Data Engineering Fellowship | Jul-Oct 2018 Uncountable | Software Engineer | Jan-Feb 2018 Avisell | Machine Learning Engineer | May-Sep 2017
 Open Source Software Alluvium - Realtime streaming search with Kafka and Apache Storm SwarmOpt — Swarm Intelligence (SI) optimizer for hyperparameter tuning
-Service This Fountain of Being | Meditation faciliator | Nov 2019 - Prsent devMission | Youth Mentor | Sep 2018 - Present BAASICS | Advisor | Feb 2014 - Dec 2016 Horizons for Homeless Children | Volunteer Caregiver | 2003 - 2005 Queer Domestic Violence Project | Hotline Volunteer | 2003 - 2005</description>
+Service This Fountain of Being | Meditation | Nov 2019 - Prsent devMission | Youth Mentor | Sep 2018 - Present BAASICS | Advisor | Feb 2014 - Dec 2016 Horizons for Homeless Children | Volunteer Caregiver | 2003 - 2005 Queer Domestic Violence Project | Hotline Volunteer | 2003 - 2005</description>
     </item>
     
     <item>
@@ -206,20 +196,20 @@ There is no way to &amp;ldquo;review&amp;rdquo; this book, any more than there i
     
     <item>
       <title>API</title>
-      <link>https://siobhankcronin.com/notes/software_engineering/api/</link>
+      <link>https://siobhankcronin.com/notes/api_design/api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/software_engineering/api/</guid>
+      <guid>https://siobhankcronin.com/notes/api_design/api/</guid>
       <description>Application Program Interfaces (APIs) do a lot of heavy lifting in software engineering, and are a world unto themselves. Let&amp;rsquo;s cover the basics for interacting with an API, and then build out from there.
 Designing an endpoint An endpoint is one end of a communication channel. In the case of an API call, the client may request data from a specific endpoint on a server. If we were designing that endpoint, we&amp;rsquo;d want to specify what information is required in that API call to serve the data.</description>
     </item>
     
     <item>
       <title>AWS Virtual Private Clouds (VPCs)</title>
-      <link>https://siobhankcronin.com/notes/software_engineering/aws_vpc/</link>
+      <link>https://siobhankcronin.com/notes/infrastructure/aws_vpc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/software_engineering/aws_vpc/</guid>
+      <guid>https://siobhankcronin.com/notes/infrastructure/aws_vpc/</guid>
       <description>Overview As J Cole Morrison puts it, we need Virtual Private Clouds (VPCs) because we need control of security, the organization of our resources, traffic between our services, and the ability to keep differing architectures separate.
 Some terms we&amp;rsquo;ll need:
  Subnets: Route Tables: Network ACLs: Internet Gateway: NAT Gateway: Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network).</description>
@@ -237,10 +227,10 @@ My understanding of this sprawling sub-domain of physics is that we can study th
     
     <item>
       <title>Binet&#39;s Formula</title>
-      <link>https://siobhankcronin.com/notes/proofs/binets_formula/</link>
+      <link>https://siobhankcronin.com/notes/math/binets_formula/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/proofs/binets_formula/</guid>
+      <guid>https://siobhankcronin.com/notes/math/binets_formula/</guid>
       <description>This proof was shared with me by my friend Chuck Larrieu Casias, and I liked it so much I wanted to write it up here.
 Suppose we have two similar rectangles, $A$ and $B$. Let $A$ have sides $a$ and $b$, and $B$ have corresponding sides $b$ and $a+b$.
 Then $\frac{b}{a} = \frac{a+b}{b}$. Also, $\frac{b}{a} = \frac{a}{b} + 1$.
@@ -303,12 +293,23 @@ Pearon&amp;rsquo;s r This is what people typically think of when they think of c
     
     <item>
       <title>Databases</title>
-      <link>https://siobhankcronin.com/notes/software_engineering/databases/</link>
+      <link>https://siobhankcronin.com/notes/data_systems/databases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/software_engineering/databases/</guid>
+      <guid>https://siobhankcronin.com/notes/data_systems/databases/</guid>
       <description>I&amp;rsquo;d first like to explore the differences between software in the data ecology, and then dive deeper into key topics affecting their use.
 File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Key-Value Cache  Apache Ignite: Cache for Cassandra clusters Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array.</description>
+    </item>
+    
+    <item>
+      <title>Decorators and Metaclasses</title>
+      <link>https://siobhankcronin.com/notes/software_engineering/decorators_and_metaclasses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/software_engineering/decorators_and_metaclasses/</guid>
+      <description>Let&amp;rsquo;s explore each in turn, and then explore when each might be most useful.
+Counter Counter is a dictionary subclass with no restrictions on keys and values.
+from collections import Counter words = [&#39;apples&#39;,&#39;oranges&#39;, &#39;apples&#39;, &#39;apples&#39;] words1 = [&#39;oranges&#39;, &#39;oranges&#39;, &#39;oranges&#39;, &#39;apples&#39;]  # Return (element, count) pairs for n most common Counter(words).most_common()  # Subtract elements from another mapping w = Counter(words) w1 = Counter(words1) w.subract(w1) # subtraction, includes zero and negatives w - w1 # subtraction, only positive counts w &amp;amp; w1 # intersection w | w1 # union w + w1 # adds two counters together  # Some useful patterns c.</description>
     </item>
     
     <item>
@@ -344,30 +345,30 @@ Underlying a hash table is a large array of length $N$, where most of the slots 
     
     <item>
       <title>Intersection of Convex Sets</title>
-      <link>https://siobhankcronin.com/notes/proofs/intersection_of_convex_sets/</link>
+      <link>https://siobhankcronin.com/notes/math/intersection_of_convex_sets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/proofs/intersection_of_convex_sets/</guid>
+      <guid>https://siobhankcronin.com/notes/math/intersection_of_convex_sets/</guid>
       <description>Convex sets are interesting in the context of optimization, as they represent regions where we know we can find global minima. A convex region is a region where for every pair of points within the region, every point on the line that joins the points is also within the region.
 Fun fact - the intersection of all convex sets containing a given subset A of Euclidean space, is called the convex hull of A, which is the smallest convex set containing A.</description>
     </item>
     
     <item>
       <title>K-nearest neighbors</title>
-      <link>https://siobhankcronin.com/notes/software_engineering/k_nearest_neighbors/</link>
+      <link>https://siobhankcronin.com/notes/machine_learning/k_nearest_neighbors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/software_engineering/k_nearest_neighbors/</guid>
+      <guid>https://siobhankcronin.com/notes/machine_learning/k_nearest_neighbors/</guid>
       <description>Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates, and strategies for using these distances to calculate neighors:
 Distance Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.</description>
     </item>
     
     <item>
       <title>Kafka &amp; Kinesis</title>
-      <link>https://siobhankcronin.com/notes/software_engineering/kafka/</link>
+      <link>https://siobhankcronin.com/notes/web_servers/kafka/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/software_engineering/kafka/</guid>
+      <guid>https://siobhankcronin.com/notes/web_servers/kafka/</guid>
       <description>In Dunning &amp;amp; Friedman&amp;rsquo;s book Streaming Architecture, they state &amp;ldquo;a big difference between stream-based and traditional design &amp;hellip; is that messaging layer plays a much more prominent role.&amp;rdquo;
 I am streaming architecture&amp;rsquo;s biggest fan. So many possibilities open up when you de-couple producers from consumers, and let your messaging layer do the heavy lifting on persisting events. To get at some of the finer points I thought it could be fun to compare the open source project Apache Kafka with AWS&amp;rsquo; pay-to-play Kinesis.</description>
     </item>
@@ -383,10 +384,10 @@ I am streaming architecture&amp;rsquo;s biggest fan. So many possibilities open 
     
     <item>
       <title>Load Balancing Algorithms</title>
-      <link>https://siobhankcronin.com/notes/software_engineering/load_balancer_algorithms/</link>
+      <link>https://siobhankcronin.com/notes/networking/load_balancer_algorithms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/software_engineering/load_balancer_algorithms/</guid>
+      <guid>https://siobhankcronin.com/notes/networking/load_balancer_algorithms/</guid>
       <description>First of all, the load balancer has to keep track of which servers are healthy by routinely pinging them and recording if they respond. If a server fails a health check, it is removed from the viable server list, and will only be added again if it passes a later health check.
 Algorithms Least Connection Method LB directs traffic to the server with the fewest active connections
 Least Response Time Method LB directs traffic to the server with the fewest active connections and the lowest average response time.</description>
@@ -435,10 +436,10 @@ Ring This is a bus topology in a closed loop, with data traveling around the rin
     
     <item>
       <title>Networking</title>
-      <link>https://siobhankcronin.com/notes/software_engineering/networking/</link>
+      <link>https://siobhankcronin.com/notes/networking/networking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/software_engineering/networking/</guid>
+      <guid>https://siobhankcronin.com/notes/networking/networking/</guid>
       <description>Terms  Connection: Built before data transfer (following protocol) and deconstructed after. Packet: The envelopes that carry your data (in pieces) from one point to the next. Includes header that includes source and destination, timestamps, network hops, plus the main portion which is the data being transfered (also called body, or payload). Network Interface: Software interface to your networking hardware. Local Area Network (LAN): A network or portion of network not publically accessible to the greater internet.</description>
     </item>
     
@@ -454,10 +455,10 @@ As the authors established the outlier problem, I realized that I carry with me 
     
     <item>
       <title>Parrallelogram is convex</title>
-      <link>https://siobhankcronin.com/notes/proofs/convex_parrallelogram/</link>
+      <link>https://siobhankcronin.com/notes/math/convex_parrallelogram/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/proofs/convex_parrallelogram/</guid>
+      <guid>https://siobhankcronin.com/notes/math/convex_parrallelogram/</guid>
       <description>Let $S$ be the parallelogram consisting of all linear combinations of $t_{1}v_{1} + t_{2}v_{2}$ with $0 \leq t_{1} \leq $ and $0 \leq t_{2} \leq $, or equivlently $0 \leq t_{i} \leq $.
 We remember that the line segment $PQ$ consists of all points $(1-t)P + tQ$ with $0\leq t \leq 1$, and that $PQ$ exists in vector space $S$ if all points $P, Q$ exist in $S$.
 Proof. Let $P=t_{1}v_{1} + t_{2}v_{2}$ and $Q=t_{1}v_{1} + t_{2}v_{2}$ be points in $S$.</description>
@@ -498,10 +499,10 @@ First we start with the covariance matrix $S_{x} = \frac{1}{m}X^{T}X$, where X i
     
     <item>
       <title>Processor Scheduling</title>
-      <link>https://siobhankcronin.com/notes/software_engineering/processor_scheduling/</link>
+      <link>https://siobhankcronin.com/notes/operating_systems/processor_scheduling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/software_engineering/processor_scheduling/</guid>
+      <guid>https://siobhankcronin.com/notes/operating_systems/processor_scheduling/</guid>
       <description>I&amp;rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. It&amp;rsquo;s about deciding what happens when. It sparks an optimization bubble over my head &amp;mdash; how do we ensure the most efficient scheduling? The strategy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline.</description>
     </item>
     
@@ -566,10 +567,10 @@ Fundamentals of Swarm Robotics Multi-robot systems have the ability to show comp
     
     <item>
       <title>Square Root of 2 is Irrational</title>
-      <link>https://siobhankcronin.com/notes/proofs/proove_sqrt2_is_irrational/</link>
+      <link>https://siobhankcronin.com/notes/math/proove_sqrt2_is_irrational/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/proofs/proove_sqrt2_is_irrational/</guid>
+      <guid>https://siobhankcronin.com/notes/math/proove_sqrt2_is_irrational/</guid>
       <description>Proof. Assume for contradiction that $\sqrt{2}$ is rational.
 Therefore, there exists $p, q$ such that $\sqrt{2} = \frac{p}{q}$, where $q \neq 0$, and $p, q$ share no common divisors other than 1.
 Squaring both sides gives $2 = \frac{p^2}{q^2}$, so consequently $2q^2 = p^2$.
@@ -578,10 +579,10 @@ If a square of a number is even, then the number is even, so there exists some n
     
     <item>
       <title>Stream Architecture</title>
-      <link>https://siobhankcronin.com/notes/software_engineering/stream_architecture/</link>
+      <link>https://siobhankcronin.com/notes/data_systems/stream_architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/software_engineering/stream_architecture/</guid>
+      <guid>https://siobhankcronin.com/notes/data_systems/stream_architecture/</guid>
       <description>How can we build a persistent message queue that scales to millions of messages/second?
 For example, today&amp;rsquo;s cars are equipped with a data storage device, the EDR (event data recorder), which stores all the sensor data for the vehicle. Such data could be used for routing, dashboard analytics, or mechanical operation (cruise control, lane correction, auto parking, etc). This is just one of many use cases in the IoT universe, all requiring connectivity to control centers and real-time processing of data streams.</description>
     </item>

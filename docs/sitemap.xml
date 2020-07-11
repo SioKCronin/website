@@ -38,13 +38,6 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/the_list/</loc>
-    <lastmod>2018-04-24T11:53:47-07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://siobhankcronin.com/posts/miri_alignment/</loc>
     <lastmod>2018-03-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -139,13 +132,13 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/software_engineering/api/</loc>
+    <loc>https://siobhankcronin.com/notes/api_design/api/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/software_engineering/aws_vpc/</loc>
+    <loc>https://siobhankcronin.com/notes/infrastructure/aws_vpc/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -157,7 +150,7 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/proofs/binets_formula/</loc>
+    <loc>https://siobhankcronin.com/notes/math/binets_formula/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -199,7 +192,13 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/software_engineering/databases/</loc>
+    <loc>https://siobhankcronin.com/notes/data_systems/databases/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siobhankcronin.com/notes/software_engineering/decorators_and_metaclasses/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -223,19 +222,19 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/proofs/intersection_of_convex_sets/</loc>
+    <loc>https://siobhankcronin.com/notes/math/intersection_of_convex_sets/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/software_engineering/k_nearest_neighbors/</loc>
+    <loc>https://siobhankcronin.com/notes/machine_learning/k_nearest_neighbors/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/software_engineering/kafka/</loc>
+    <loc>https://siobhankcronin.com/notes/web_servers/kafka/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -253,7 +252,7 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/software_engineering/load_balancer_algorithms/</loc>
+    <loc>https://siobhankcronin.com/notes/networking/load_balancer_algorithms/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -289,7 +288,7 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/software_engineering/networking/</loc>
+    <loc>https://siobhankcronin.com/notes/networking/networking/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -307,7 +306,7 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/proofs/convex_parrallelogram/</loc>
+    <loc>https://siobhankcronin.com/notes/math/convex_parrallelogram/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -331,7 +330,7 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/software_engineering/processor_scheduling/</loc>
+    <loc>https://siobhankcronin.com/notes/operating_systems/processor_scheduling/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -379,13 +378,13 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/proofs/proove_sqrt2_is_irrational/</loc>
+    <loc>https://siobhankcronin.com/notes/math/proove_sqrt2_is_irrational/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/software_engineering/stream_architecture/</loc>
+    <loc>https://siobhankcronin.com/notes/data_systems/stream_architecture/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
