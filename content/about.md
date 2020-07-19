@@ -20,9 +20,4 @@ Temple University. She is the lead developer of SwarmOpt (an open-source swarm
 intelligence algorithm library), a guest researcher at Slow Research Lab,
 and an engineering mentor at Hackbright Academy. 
 
-Siobhán enjoys powerful conversations, championing women/NB changemakers, 
-dancing, laughing, enjoying delicious food, reading poetry,
-supporting friends through life transistions and building strong communities.
-
 ![sio](sio.jpg)
-(Anna Halprin's deck with Maria Blaisse's forms. Photo by Carolyn Strauss)
