@@ -32,15 +32,5 @@ Pearon&amp;rsquo;s r This is what people typically think of when they think of c
 Distance Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.</description>
     </item>
     
-    <item>
-      <title>RL in Process Scheduling</title>
-      <link>https://siobhankcronin.com/notes/machine_learning/rl_in_process_scheduling/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://siobhankcronin.com/notes/machine_learning/rl_in_process_scheduling/</guid>
-      <description>When I mentioned my interest in this idea to my partner Carl, he encouraged me to pursue it, but highlighted that it may be at least a masters thesis to secure the necessary OS and RL foundations to implement something that works. I like multi-year challenges, so wanted to at least start scoping the problem to see what is required.
-At the onset, I think it would be helpful to identify how processes are currently scheduled (the dominant paradigms), how process scheduling could be framed as a MDP, and how RL could be applied.</description>
-    </item>
-    
   </channel>
 </rss>

@@ -67,6 +67,15 @@ I lead guided meditation sessions based on my ongoing study of non-dualism, cons
     </item>
     
     <item>
+      <title></title>
+      <link>https://siobhankcronin.com/studio/</link>
+      <pubDate>Tue, 24 Apr 2018 11:53:47 -0700</pubDate>
+      
+      <guid>https://siobhankcronin.com/studio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Alignment for Advanced ML Systems (REVIEW)</title>
       <link>https://siobhankcronin.com/posts/miri_alignment/</link>
       <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
@@ -514,16 +523,6 @@ First we start with the covariance matrix $S_{x} = \frac{1}{m}X^{T}X$, where X i
       
       <guid>https://siobhankcronin.com/notes/operating_systems/processor_scheduling/</guid>
       <description>I&amp;rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. It&amp;rsquo;s about deciding what happens when. It sparks an optimization bubble over my head &amp;mdash; how do we ensure the most efficient scheduling? The strategy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline.</description>
-    </item>
-    
-    <item>
-      <title>RL in Process Scheduling</title>
-      <link>https://siobhankcronin.com/notes/machine_learning/rl_in_process_scheduling/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://siobhankcronin.com/notes/machine_learning/rl_in_process_scheduling/</guid>
-      <description>When I mentioned my interest in this idea to my partner Carl, he encouraged me to pursue it, but highlighted that it may be at least a masters thesis to secure the necessary OS and RL foundations to implement something that works. I like multi-year challenges, so wanted to at least start scoping the problem to see what is required.
-At the onset, I think it would be helpful to identify how processes are currently scheduled (the dominant paradigms), how process scheduling could be framed as a MDP, and how RL could be applied.</description>
     </item>
     
     <item>

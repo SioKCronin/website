@@ -2,7 +2,7 @@
 title: K-nearest neighbors
 menu:
     ai_notes:
-        parent: Software Engineering
+        parent: Machine Learning
 ---
 Sometimes we want to perform an operation on an agent/vector/particle
 based on what we know about its neibhors. Here are contenders for measuring
