@@ -24,5 +24,5 @@ Siobhán enjoys powerful conversations, championing women/NB changemakers,
 dancing, laughing, enjoying delicious food, reading poetry,
 supporting friends through life transistions and building strong communities.
 
-![sio](skc_blaisse.jpg)
+![sio](sio.jpg)
 (Anna Halprin's deck with Maria Blaisse's forms. Photo by Carolyn Strauss)
