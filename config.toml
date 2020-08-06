@@ -81,6 +81,12 @@ enableRobotsTXT = false
     weight     = 3
 
     [[menu.main]]
+    identifer = "mvmt"
+    name      = "mvmt"
+    url       = "/mvmt"
+    weight    = 2
+
+    [[menu.main]]
     identifier = "cv"
     name       = "CV"
     url        = "/cv"
