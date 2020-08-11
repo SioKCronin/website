@@ -81,9 +81,9 @@ enableRobotsTXT = false
     weight     = 3
 
     [[menu.main]]
-    identifer = "mvmt"
-    name      = "mvmt"
-    url       = "/mvmt"
+    identifer = "Oloid"
+    name      = "Oloid"
+    url       = "/oloid"
     weight    = 2
 
     [[menu.main]]
