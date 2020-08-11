@@ -55,7 +55,7 @@ attention to the barriers between systems. If the internet is an organism,
 I'm interested in cell membranes and the circulatory system more broadly.
 
 I'm reimagining my studio, drawing inspiration from Maria Blaisse and a smattering
-and traditional martial arts dojos. Where the existence of the human being is
+of traditional martial arts dojos. Where the existence of the human being is
 centered, not the desk and chair. I'm interested in a desk that conforms to my
 body posture, not the other way around. Yoga asana and pillows become "chair"
 in this context, with an emphasis on the moving body. Yesterday I sat in a meeting
