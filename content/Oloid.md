@@ -47,15 +47,15 @@ In the formalism of setting and maintaining expectations across
 human-technical systems. The expecations we set with one another. 
 How we maintian them. This runs through my interest in networking protocols. 
 These core contracts that are the atoms of our living breathing internet. 
-I'm interested in those that examining how
+I'm interested in those who are examining how
 changing these fundamentals would change the resonance of the entire system. 
 I latched on to compute initially, with quantum computing, but have shifted my
 attention to the barriers between systems. If the internet is an organism, 
 I'm interested in cell membranes and the circulatory system more broadly.
 
 I'm reimagining my studio, drawing inspiration from Maria Blaisse and a smattering
-images I hold in my imagination of martial arts dojos and dance studios I've
-trained in. Where the existence of the human being is
+of memories I hold in my body of martial arts dojos and dance studios I've
+trained in. Where the potential of the human being is
 centered, not the desk and chair. I'm interested in a desk that conforms to my
 body posture, not the other way around. Yoga asana and pillows become "chair"
 in this context, with an emphasis on the kinetic body that is always in motion,
