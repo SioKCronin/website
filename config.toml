@@ -39,12 +39,6 @@ enableRobotsTXT = false
 [menu]
 
     [[menu.main]]
-    identifier = "studio"
-    name       = "Studio"
-    url        = "/studio"
-    weight     = 5
-
-    [[menu.main]]
     identifier = "meditation"
     name       = "Meditation"
     url        = "/meditation"
