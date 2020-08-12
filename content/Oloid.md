@@ -6,7 +6,7 @@ draft = false
 
 # One
 
-{{< youtube MPUAy5Js9dk>}}
+{{< youtube VJWIq2Qxtv0>}}
 
 Building out a daily practice. Drawing inspiration from my teachers.
 Alvin Collantes. Bobbi Jene Smith. Deborah Hay. The countless friends
