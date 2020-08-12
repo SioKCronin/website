@@ -14,9 +14,7 @@ I met in the Somatic Natural History Archive. My ongoing dialogues
 with Zubair Ahmed, Deborah Black, Carolyn Strauss, and Maria Blaisse. 
 The love I feel for Moosa and Carl, and their ever-unfolding networks of 
 care and connection to others. The pleasure I get from color, sensation,
-movement, tension and release. The abstraction of the chakra system
-as a set of lenses to prioritize grounding, creativity, purpose, connection,
-power, understanding, and broader identification. 
+movement, tension and release.
 
 I prioritized cognitive development since my awakening because it was so 
 thrilling to see how fast my mind could grow new tendrils. I emphasized
