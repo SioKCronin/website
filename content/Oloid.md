@@ -30,7 +30,7 @@ so many years of limiting my mind-body gestures.
 
 When I center my practice on joy, pleasure, delight, and centered-power, my
 entire being springs to life. When I watch my footage I can see when I'm 
-drawing mind gestures, and when I'm reaching for more pleasure. Situating
+drawing mind gestures, versus reaching for more pleasure. Situating
 myself in pleasure and spinning it out, like taking a ball of dough and rolling
 it out so that it encompasses more and more space. I laugh a lot when I find it.
 Right there in the center of it all, my own ability to really feel pleasure
@@ -65,6 +65,8 @@ event at "rest". Yesterday I sat in a meeting
 where my pelvis was free to stretch while taking notes. It felt radical and
 liberating to be meeting the needs of my body while meeting the needs of my mind.
 
+![day_1](day_1.jpg)
+
 Sound. Smell. Shifting light throughout the day. The beauty of objects from loved
 ones surrounding me. Capitalizing on the opportunity of a home office. How much
 humanity can flow through my day. I think I've been performing what I think 
@@ -85,7 +87,7 @@ while in retreat next week. I'm brining some ML papers (the one about an infinit
 wide neural network, I mean, come on that's a cool horizon to imagine), a book 
 on abstract algebra and a book on algebraic topology (still determined to 
 stitch topology into my imagination), a wheelbarrow full of 
-self-care products (amassed after watching too many of Vogues self-care videos), 
+self-care products (amassed after watching too many of Vogue's self-care videos), 
 clothes to move in, a bodyboard and wetsuit, my camera and poloroid print, 
 a big sketchbook and pencils, some candles. And what do I hope the alchemy
 of these materials will deliver? Nothing in particular. I hope they serve
