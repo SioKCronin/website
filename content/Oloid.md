@@ -4,13 +4,31 @@ date = "2018-04-24T11:53:47-07:00"
 draft = false
 +++
 
+# Two
+
+{{< youtube Q8kIqpceCHw>}}
+
+Went on a walk looking for beauty, and perhaps to learn something about what I 
+chose to see in the world around me. I find myself drawn to images that ask me
+to consider a new framework of seeing. Trees that become friendly beasts. 
+Wire lines inscribing some seemingly relevant geometric proof. An improbable
+shadow requiring me to wonder how I see in my mind's eye the presence of those
+I love. 
+
+Tonight I blended Alvin's practice with my own geoflora tracing practice
+and a little Deborah Hay, mostly in my percussive use of my feet, which
+reminds me of the floor shuffling in The Runner. I'm struck by Alvin's committment
+to spinnging out kinetic potential from deep within, and the continuousness of
+the practice. An embrace of repetition.
+
 # One
 
 {{< youtube VJWIq2Qxtv0>}}
 
 Building out a daily practice. Drawing inspiration from my teachers.
-Alvin Collantes. Bobbi Jene Smith. Deborah Hay. The countless friends
-I met in the Somatic Natural History Archive. My ongoing dialogues
+[Alvin Collantes](https://www.alvincollantes.com/), [Bobbi Jene Smith](https://www.gagapeople.com/en/teachers/bobbi-jene-smith/),
+[Deborah Hay](https://dhdcblog.blogspot.com/). The countless friends
+I met in the [Somatic Natural History Archive](https://www.youtube.com/user/dancingecologist/videos). My ongoing dialogues
 with Zubair Ahmed, Deborah Black, Carolyn Strauss, and Maria Blaisse. 
 The love I feel for Moosa and Carl, and their ever-unfolding networks of 
 care and connection to others. The pleasure I get from color, sensation,
