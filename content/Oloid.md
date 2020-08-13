@@ -4,6 +4,22 @@ date = "2018-04-24T11:53:47-07:00"
 draft = false
 +++
 
+# Three
+
+{{< youtube EaGb-mHvduc>}}
+
+I slowed my groove down, to see if I could find sustainable rest. I am learning
+about self care and self harm. A friend of mine lashed out at me recently,
+and in my reflections I realized they are equally lashing out to themselves. I 
+compare this to my partners, who each are very kind to themselves, and are
+therefore practiced in being kind. Self care as training ground for showing
+up with more compassion in the world. In this body this looks like amping
+up the tracking of pleasure. The reflection of sun off the vines outside my 
+window. The soft air my body moves through. The safety of this home.
+
+My ideation feels pensive this morning. I am coming back to my studio practice
+after such a long hiataus. 
+
 # Two
 
 {{< youtube Q8kIqpceCHw>}}
@@ -80,8 +96,6 @@ in this context, with an emphasis on the kinetic body that is always in motion,
 event at "rest". Yesterday I sat in a meeting
 where my pelvis was free to stretch while taking notes. It felt radical and
 liberating to be meeting the needs of my body while meeting the needs of my mind.
-
-![day_1](day_1.jpg)
 
 Sound. Smell. Shifting light throughout the day. The beauty of objects from loved
 ones surrounding me. Capitalizing on the opportunity of a home office. How much
