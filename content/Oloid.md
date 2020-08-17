@@ -8,38 +8,34 @@ draft = false
 
 {{<youtube qcNBTKzccXw>}}
 
-Today I explored what it means to come from somewhere with Alvin Collantes. 
-
-Our roots. Our ancestors. Soil. Fiber. The basin
-at the bottom of it all that holds the ocean.  
-
-I took the  practice out into the world. 
-Pressing the earth with my thighs. Proclaiming myself as its progency
-Tracking my relationship to our molten core. 
+Today I explored what it means to come from somewhere with Alvin Collantes,
+as I began his seven-day chakra series. Roots. Soil. Fiber. The basin
+at the bottom of it all that holds the ocean. I danced in my rental, and then
+took the  practice out into the world. Pressing the earth with my thighs;
+proclaiming myself its progency. Tracking my relationship to its molten core. 
 
 I made my way to a park where I saw a man throw a boomerang. From my 
 vantage point it looked, at first, as though the boomerang would 
-track the path of a frisbie. Gliding directly away from 
-the man. But then, all of a sudden, it turned back sharply. I watched
+track the path of a frisbie, gliding forever away until hitting something. 
+But then, all of a sudden, it turned back sharply. I watched
 him throw it three times. He never caught it, nor did he
 attempt to. Like me, he seemed fascinated by 
-the mechanics of the elipses this 90 degree angle spinning disk inscribed.
+the elipses this 90 degree angle spinning disk inscribed.
 
 I continued along the path and took a self portrait. 
 A portrait of my mind as an instrument of meaning-making. It was 
 such a thrill to see myself. How my body-mind, living
-in perception and the hunt for beauty, corporeal extension, desire
-fullfillment can play with my concept-mind, the assigner of value. 
-When they get humming I can create a state of creative reverie where 
-I deem everything I see as incredibly valuable. Every shadow. 
-Every geometric patterning. Every convergence of sets of pasts 
+in perception and the hunt for beauty, corporeal extension, and desire
+fullfillment can play with my concept-mind, the assigner of value and rules. 
+When their collaboration gets humming, I can create a state of perpetual 
+creative reverie where I deem everything I see as incredibly meaningful.
+Every shadow. 
+Every geometric patterning. Every imagined convergence of sets of pasts 
 meeting sets of possible futures. I learned this when I was young 
 as a form of freeing myself from the very particular story line of 
-my life as a buried transgirl
-trying to either extricate herself from her existential condition
-or find a way to safely live. 
+my life as a transgirl buried alive in her own mind-body.
 
-In the self portrait I see how I am saying to myself, "if you drop 
+In the self portrait I call out to myself, "if you drop 
 the tilted topgraphy as being 'wrong', can you center the geometry 
 of a fence and its shadow as figure, accept its centrality in
 the image, and just enjoy it?" I ask myself to
@@ -53,17 +49,11 @@ statistically rare those domains colliding in one person are. My trans
 nature, with its rich lineage of forging an 
 indepdent practice of mind to undersand and document an existence in 
 a social vacuum. My movement practice, born of a desire to control my body
-and thereby escape it, yet now has been repurposed to create the 
+and thereby escape it, yet now repurposed to create the 
 opportunity for a deeply embodied experience of living. And then my 
-conceptual abstraction practices in engineering which now call me 
-to connect my embodied creativity to my technical formalism. 
+conceptual abstraction practices in engineering which call me now
+to connect embodied creativity with technical formalism. 
 What a delightful confluence of lineages. 
-
-I started today feeling nervous about whether I would find a practice
-I could bring back home with me, but here I am finding it on day 1, no 
-small part due to Alvin's deep inner wisdom and guidance. I belong here.
-On the planet. In my body. And in my unique practice of meaning-making
-that was born of so much inpsiration, struggle and hope. 
 
 # Three
 
