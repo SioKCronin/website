@@ -4,18 +4,6 @@ date = "2018-04-24T11:53:47-07:00"
 draft = false
 +++
 
-Oloid is my attempt to do two things at once. First, 
-to integrate some pretty extensive mind-body systems that are 
-quite strong, yet were kept separate for a long time they 
-need some encouragement to unite. 
-
-Second, I'm seeking to stir conversations regarding
-building practices that bring embodiment in harmony with conceptual
-meaning-making. This feels like a very human pursuit, one that's been
-approached from many angles. My angle is not definitive nor 
-comprehesive. If you think my path through the woods sounds
-interesting, please join me! 
-
 # Four
 
 {{<youtube qcNBTKzccXw>}}
