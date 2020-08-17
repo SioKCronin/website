@@ -54,11 +54,10 @@ nature, with its rich lineage of forging an
 indepdent practice of mind to undersand and document an existence in 
 a social vacuum. My movement practice, born of a desire to control my body
 and thereby escape it, yet now has been repurposed to create the 
-opportunity for a deeply embodied experience of livin. And then my 
+opportunity for a deeply embodied experience of living. And then my 
 conceptual abstraction practices in engineering which now call me 
-to connect my embodied creativity to a my technical formalism
-that I might better help those who are suffering. What a delightful 
-confluence of lineages. 
+to connect my embodied creativity to my technical formalism. 
+What a delightful confluence of lineages. 
 
 I started today feeling nervous about whether I would find a practice
 I could bring back home with me, but here I am finding it on day 1, no 
