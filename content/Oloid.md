@@ -4,174 +4,77 @@ date = "2018-04-24T11:53:47-07:00"
 draft = false
 +++
 
-# Four
+![engineering](engineering.jpg)
 
-{{<youtube qcNBTKzccXw>}}
+# Oloid
 
-Today I explored what it means to come from somewhere with Alvin Collantes,
-as I began his seven-day chakra series. Roots. Soil. Fiber. The basin
-at the bottom of it all that holds the ocean. I danced in my rental, and then
-took the  practice out into the world. Pressing the earth with my thighs;
-proclaiming myself its progency. Tracking my relationship to its molten core. 
+The oloid is the symbol for my studio practice where I blend
+my artistic practice with my engineering practice, as well as the symbol for 
+how I love. In my studio practice I ingegrate my conscious mind with my embodied intelligence. 
+I do this formerly in both spheres with study and practice. And informally through the delight of 
+my own integrated mind which I taste as I move around the world, draw, write poetry,
+dance, and engage in conversation. The ocean of my imagination
+is spherical, and I rest my attention at the center so I can move equally
+between sensation and concept. This is not easy task in a business world where
+sensation is so ruthlessly cut-out of the praxis of working, so I dedicate to 
+this practice with the ferocity of a nun who knows what she stands
+to lose if the fullness of their being is once again denied. 
 
-I made my way to a park where I saw a man throw a boomerang. From my 
-vantage point it looked, at first, as though the boomerang would 
-track the path of a frisbie, gliding forever away until hitting something. 
-But then, all of a sudden, it turned back sharply. I watched
-him throw it three times. He never caught it, nor did he
-attempt to. Like me, he seemed fascinated by 
-the elipses this 90 degree angle spinning disk inscribed.
+This is me proclaiming myself. After four
+years of working in tech I found I was still holding my breath.
+I began dulling my body, not sure how to bring it's perspective to bare
+on the abstractions I was interactin with. I shut down decades of channel making 
+between my conscioussness and subconscious via my embodied intelligence. For example,
+what are you referencing when you check your gut before making a decision? 
+I spent years developing an inner vocabulary for having such conversations. I did
+so as a form of survival, but now direct this conversations towards desire, curisoity,
+and joy.
 
-I continued along the path and took a self portrait. 
-A portrait of my mind as an instrument of meaning-making. It was 
-such a thrill to see myself. How my body-mind, living
-in perception and the hunt for beauty, corporeal extension, and desire
-fullfillment can play with my concept-mind, the assigner of value and rules. 
-When their collaboration gets humming, I can create a state of perpetual 
-creative reverie where I deem everything I see as incredibly meaningful.
-Every shadow. 
-Every geometric patterning. Every imagined convergence of sets of pasts 
-meeting sets of possible futures. I learned this when I was young 
-as a form of freeing myself from the very particular story line of 
-my life as a transgirl buried alive in her own mind-body.
+I find I am most at rest when I see events as existing a the intersection
+of a cresting wave of matter and time, but not in themselves worthy of all of
+our focus. I prefer a diffuse holding of identification. I rest somewhere around 
+the present moment and present material situation, but with a soft grip. I stay
+positioned on the wave so I can move about. This is how I think, and rather than 
+try to un-think this way, I gravitate towards disciplines that benefit from 
+such modes of thinking. This is waht led me to human-computer ecosystems. 
+The situated nature of my our own minds blinds to signal about our world, 
+even our own minds. Quantified self, extended mind, and empathetic tech
+seemed obvious extensions of a homo sapiens sapiens. As obvious as penicillin 
+in the care of the self and species. Trace the ripples of our motion to model 
+trajectories and propose helpful nudges to deliver new possible futures. 
 
-In the self portrait I call out to myself, "if you drop 
-the tilted topgraphy as being 'wrong', can you center the geometry 
-of a fence and its shadow as figure, accept its centrality in
-the image, and just enjoy it?" I ask myself to
-play with believing in a new potential orientation long
-enough to rest in it and see what it has to offer. 
+That's how it seemed to me four years ago,
+and now, it feels even more clearly the purpose of software engineering, when
+applied to problems that matter. Also, perhaps given the age I've begun my 
+formal engineering training in, I see machine learning as a part of a "full-stack"
+platform engineering system. I also hold information as the first class citizen, 
+with all other aspects of the system serving it. 
 
-And it dawned on me my own unique situation, as a transwoman who trained
-in both emobidiment (informally through an extended period of self-documentation
-and formally through dance) as well as science, math and engineering. How
-statistically rare those domains colliding in one person are. My trans 
-nature, with its rich lineage of forging an 
-indepdent practice of mind to undersand and document an existence in 
-a social vacuum. My movement practice, born of a desire to control my body
-and thereby escape it, yet now repurposed to create the 
-opportunity for a deeply embodied experience of living. And then my 
-conceptual abstraction practices in engineering which call me now
-to connect embodied creativity with technical formalism. 
-What a delightful confluence of lineages. 
+* Gathering data
+* Storing data
+* Moving data
+* Enriching data
+* Serving data
+* Protecting data
 
-# Three
+This is what guides my on-going research on engineering systems. But that is only
+part of the story. Engineering systems exist as human-computer ecosystems.
+So, if we care about engigneering solutions, we must care deeply about the human
+cultures that steward such engineering solutions into existence. For me, this 
+is rooted both in practice of nuturing the community as well as encouraging
+deep personal development; studio practices for every player where they 
+are encouraged to cultivate their own unique art of engineering. I will speak
+of both things here, but MBAs be warned, I don't speak the language of capitalism.
+The culture that births powerful human-computer ecosystems also exists beyond
+capitalism at the very fiber of complex social organization (think ants, honeybees,
+adversarial AIs, etc.). My ideation springs from these deeper wells, although
+my experience shows such creative upswells play nicely with startups, provided
+they are situated to honor creativity and humanity, which is what I've 
+experienced at Landed. 
 
-{{< youtube EaGb-mHvduc>}}
+I'm chosing to blog about this because bringing my full mind-body to the table
+is why I got in tech. For whatever reason, I felt I had to prove myself first
+in the formalism of the craft before proposing my personal take. I think this
+was prudent, and I will forver study to increase the bandwidth between my
+idiosyncratic imagination and colleagues (because networks are where it's at!). 
 
-I slowed my groove down, to see if I could find sustainable rest. I am learning
-about self care and self harm. A friend of mine lashed out at me recently,
-and in my reflections I realized they are equally lashing out to themselves. I 
-compare this to my partners, who each are very kind to themselves, and are
-therefore practiced in being kind. Self care as training ground for showing
-up with more compassion in the world. In this body this looks like amping
-up the tracking of pleasure. The reflection of sun off the vines outside my 
-window. The soft air my body moves through. The safety of this home.
-
-My ideation feels pensive this morning. I am coming back to my studio practice
-after such a long hiataus. 
-
-# Two
-
-{{< youtube Q8kIqpceCHw>}}
-
-Went on a walk looking for beauty, and perhaps to learn something about what I 
-chose to see in the world around me. I find myself drawn to images that ask me
-to consider a new framework of seeing. Trees that become friendly beasts. 
-Wire lines inscribing some seemingly relevant geometric proof. An improbable
-shadow requiring me to wonder how I see in my mind's eye the presence of those
-I love. 
-
-Tonight I blended Alvin's practice with my own geoflora tracing practice
-and a little Deborah Hay, mostly in my percussive use of my feet, which
-reminds me of the floor shuffling in The Runner. I'm struck by Alvin's committment
-to spinnging out kinetic potential from deep within, and the continuousness of
-the practice. An embrace of repetition.
-
-# One
-
-{{< youtube VJWIq2Qxtv0>}}
-
-Building out a daily practice. Drawing inspiration from my teachers.
-[Alvin Collantes](https://www.alvincollantes.com/), [Bobbi Jene Smith](https://www.gagapeople.com/en/teachers/bobbi-jene-smith/),
-[Deborah Hay](https://dhdcblog.blogspot.com/). The countless friends
-I met in the [Somatic Natural History Archive](https://www.youtube.com/user/dancingecologist/videos). My ongoing dialogues
-with Zubair Ahmed, Deborah Black, Carolyn Strauss, and Maria Blaisse. 
-The love I feel for Moosa and Carl, and their ever-unfolding networks of 
-care and connection to others. The pleasure I get from color, sensation,
-movement, tension and release.
-
-I prioritized cognitive development since my awakening because it was so 
-thrilling to see how fast my mind could grow new tendrils. I emphasized
-the acquisition of new knowledge. My body went along for the ride. It is
-asking now for deeper integration with my research on the fuller sensorium,
-not to throw the cognitive development off-track, but to fill the shapes I've 
-inscribed with color and texture. The mural I've begun is a great footnote.
-How I delighted in drawing the gestures of my mind-body, yet how I did not
-feel called to color them in. How deeply my thirst was for expansion after 
-so many years of limiting my mind-body gestures. 
-
-When I center my practice on joy, pleasure, delight, and centered-power, my
-entire being springs to life. When I watch my footage I can see when I'm 
-drawing mind gestures, versus reaching for more pleasure. Situating
-myself in pleasure and spinning it out, like taking a ball of dough and rolling
-it out so that it encompasses more and more space. I laugh a lot when I find it.
-Right there in the center of it all, my own ability to really feel pleasure
-and allow it to expand without judgements. Am I supposed to be doing this? Is
-this too much? Is this ethical, given the suffering of all beings? The vitality
-of the mind-body when it is centered in it's own love of self points 
-to the answer. The mind-body tuned to its own ever-evolving lived understanding 
-of love is the mind-body most capable of bringing true resource to others who
-are suffering. When I am in that state, I don't need anyone to absolve my suffering
-for me. No long phone calls with friends. No impossible demands of partners. I
-feed myself from the inside with my own energy. I reverse the hydraulics, shifting
-from a need machine to a fountain of care. 
-
-Today's practice reminded me why I'm interested in site reliability engineering. 
-In the formalism of setting and maintaining expectations across 
-human-technical systems. The expecations we set with one another. 
-How we maintian them. This runs through my interest in networking protocols. 
-These core contracts that are the atoms of our living breathing internet. 
-I'm interested in those who are examining how
-changing these fundamentals would change the resonance of the entire system. 
-I latched on to compute initially, with quantum computing, but have shifted my
-attention to the barriers between systems. If the internet is an organism, 
-I'm interested in cell membranes and the circulatory system more broadly.
-
-I'm reimagining my studio, drawing inspiration from Maria Blaisse and a smattering
-of memories I hold in my body of martial arts dojos and dance studios I've
-trained in. Where the potential of the human being is
-centered, not the desk and chair. I'm interested in a desk that conforms to my
-body posture, not the other way around. Yoga asana and pillows become "chair"
-in this context, with an emphasis on the kinetic body that is always in motion,
-event at "rest". Yesterday I sat in a meeting
-where my pelvis was free to stretch while taking notes. It felt radical and
-liberating to be meeting the needs of my body while meeting the needs of my mind.
-
-Sound. Smell. Shifting light throughout the day. The beauty of objects from loved
-ones surrounding me. Capitalizing on the opportunity of a home office. How much
-humanity can flow through my day. I think I've been performing what I think 
-a good student engineering manager does. Reading Hacker News while running on a 
-treadmill, or something like that. But I got into this field to do this very integration.
-I spent decades creating pathways to my subconscious powerhouse via the formalism
-of art practice. I trained to allow ideas to ripple through,
-relying on the deep intuition of the mind-body to do the heavy lifting of
-ideation. I believed this could be applied to engineering, and took heart in 
-the senior engineering practices I witnessed in my partner Carl, whose studio
-practice is a priviledge to witness up close. I don't have to wonder if
-I'm on the right path. I live with 
-someone who exhibits the benefits of investing in slow mind over decades 
-and applying it simultaneously to art and engineering. The art of engineering.
-
-I'm curious to see what I can explore this week, and how this practice will shift
-while in retreat next week. I'm brining some ML papers (the one about an infinitely
-wide neural network, I mean, come on that's a cool horizon to imagine), a book 
-on abstract algebra and a book on algebraic topology (still determined to 
-stitch topology into my imagination), a wheelbarrow full of 
-self-care products (amassed after watching too many of Vogue's self-care videos), 
-clothes to move in, a bodyboard and wetsuit, my camera and poloroid print, 
-a big sketchbook and pencils, some candles. And what do I hope the alchemy
-of these materials will deliver? Nothing in particular. I hope they serve
-as prompts, as scaffolding, as companions as I wander into the unknown of my 
-imagination. It's been four years, and I'm ready to reconnect with the progress 
-I've made, and where my feels are pointing me.
