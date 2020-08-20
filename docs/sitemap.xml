@@ -121,18 +121,6 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/software_engineering/algorithm_design_manual/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://siobhankcronin.com/notes/swarm_intelligence/prob/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://siobhankcronin.com/posts/</loc>
     <lastmod>2019-04-14T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -146,25 +134,13 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/api_design/api/</loc>
+    <loc>https://siobhankcronin.com/notes/serving_data/aws_vpc/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/web_servers/asgi/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://siobhankcronin.com/notes/infrastructure/aws_vpc/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://siobhankcronin.com/notes/swarm_intelligence/active_matter/</loc>
+    <loc>https://siobhankcronin.com/notes/enriching_data/active_matter/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -188,12 +164,6 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/software_engineering/collections/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://siobhankcronin.com/notes/lecture_notes/ccs2016/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -206,19 +176,13 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/machine_learning/correlation/</loc>
+    <loc>https://siobhankcronin.com/notes/enriching_data/correlation/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/data_systems/databases/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://siobhankcronin.com/notes/software_engineering/decorators_and_metaclasses/</loc>
+    <loc>https://siobhankcronin.com/notes/storing_data/databases/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -236,25 +200,13 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/software_engineering/hashing/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://siobhankcronin.com/notes/math/intersection_of_convex_sets/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/machine_learning/k_nearest_neighbors/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://siobhankcronin.com/notes/web_servers/kafka/</loc>
+    <loc>https://siobhankcronin.com/notes/enriching_data/k_nearest_neighbors/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -272,7 +224,7 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/networking/load_balancer_algorithms/</loc>
+    <loc>https://siobhankcronin.com/notes/serving_data/load_balancer_algorithms/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -284,7 +236,7 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/machine_learning/</loc>
+    <loc>https://siobhankcronin.com/notes/enriching_data/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -302,13 +254,7 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/swarm_intelligence/network_topology/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://siobhankcronin.com/notes/networking/networking/</loc>
+    <loc>https://siobhankcronin.com/notes/serving_data/networking/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -320,7 +266,7 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/swarm_intelligence/outlier_detection/</loc>
+    <loc>https://siobhankcronin.com/notes/enriching_data/outlier_detection/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -350,7 +296,7 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/operating_systems/processor_scheduling/</loc>
+    <loc>https://siobhankcronin.com/notes/serving_data/processor_scheduling/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -374,18 +320,6 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/software_engineering/scaling/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://siobhankcronin.com/notes/software_engineering/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://siobhankcronin.com/notes/books/swarm_robotics_models/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -398,19 +332,13 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/notes/data_systems/stream_architecture/</loc>
+    <loc>https://siobhankcronin.com/notes/storing_data/stream_architecture/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://siobhankcronin.com/notes/books/supersizing_the_mind/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://siobhankcronin.com/notes/swarm_intelligence/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

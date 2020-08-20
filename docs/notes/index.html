@@ -185,37 +185,7 @@ There is no way to &ldquo;review&rdquo; this book, any more than there is a way 
         <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
   <div class="bg-white mb1 pa4 gray overflow-hidden">
     <h1 class="f3 near-black">
-      <a href="/notes/api_design/api/" class="link black dim">
-        API
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Application Program Interfaces (APIs) do a lot of heavy lifting in software engineering, and are a world unto themselves. Let&rsquo;s cover the basics for interacting with an API, and then build out from there.
-Designing an endpoint An endpoint is one end of a communication channel. In the case of an API call, the client may request data from a specific endpoint on a server. If we were designing that endpoint, we&rsquo;d want to specify what information is required in that API call to serve the data.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/web_servers/asgi/" class="link black dim">
-        ASGI
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Asynchronus Server Gateway Interface (ASGI)
-  
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/infrastructure/aws_vpc/" class="link black dim">
+      <a href="/notes/serving_data/aws_vpc/" class="link black dim">
         AWS Virtual Private Clouds (VPCs)
       </a>
     </h1>
@@ -249,7 +219,7 @@ Multiply both sides by $\phi$ to get $\phi^2 = \phi + 1$.
         <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
   <div class="bg-white mb1 pa4 gray overflow-hidden">
     <h1 class="f3 near-black">
-      <a href="/notes/data_systems/databases/" class="link black dim">
+      <a href="/notes/storing_data/databases/" class="link black dim">
         Databases
       </a>
     </h1>
@@ -294,13 +264,12 @@ Fun fact - the intersection of all convex sets containing a given subset A of Eu
         <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
   <div class="bg-white mb1 pa4 gray overflow-hidden">
     <h1 class="f3 near-black">
-      <a href="/notes/web_servers/kafka/" class="link black dim">
-        Kafka &amp; Kinesis
+      <a href="/notes/math/linear_algebra/" class="link black dim">
+        Linear Algebra Basics
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      In Dunning &amp; Friedman&rsquo;s book Streaming Architecture, they state &ldquo;a big difference between stream-based and traditional design &hellip; is that messaging layer plays a much more prominent role.&rdquo;
-I am streaming architecture&rsquo;s biggest fan. So many possibilities open up when you de-couple producers from consumers, and let your messaging layer do the heavy lifting on persisting events. To get at some of the finer points I thought it could be fun to compare the open source project Apache Kafka with AWS&rsquo; pay-to-play Kinesis.
+      Useful terms and ideas  diagonal matrix: Matrix with zero values except on the diagonal. change of basis matrix: Taking the product of this matrix provides a new basis, which is helpful to us if that basis transformation sets us up for an operation that requires the matrix to be in a particular form. For instance, a change of basis matrix could diagonalize the matrix, such as the choice of the orthogonal matrix as the change of basis matrix in PCA.
     </div>
   </div>
 </div>
@@ -309,12 +278,43 @@ I am streaming architecture&rsquo;s biggest fan. So many possibilities open up w
         <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
   <div class="bg-white mb1 pa4 gray overflow-hidden">
     <h1 class="f3 near-black">
-      <a href="/notes/math/linear_algebra/" class="link black dim">
-        Linear Algebra Basics
+      <a href="/notes/serving_data/load_balancer_algorithms/" class="link black dim">
+        Load Balancing Algorithms
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Useful terms and ideas  diagonal matrix: Matrix with zero values except on the diagonal. change of basis matrix: Taking the product of this matrix provides a new basis, which is helpful to us if that basis transformation sets us up for an operation that requires the matrix to be in a particular form. For instance, a change of basis matrix could diagonalize the matrix, such as the choice of the orthogonal matrix as the change of basis matrix in PCA.
+      First of all, the load balancer has to keep track of which servers are healthy by routinely pinging them and recording if they respond. If a server fails a health check, it is removed from the viable server list, and will only be added again if it passes a later health check.
+Algorithms Least Connection Method LB directs traffic to the server with the fewest active connections
+Least Response Time Method LB directs traffic to the server with the fewest active connections and the lowest average response time.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
+  <div class="bg-white mb1 pa4 gray overflow-hidden">
+    <h1 class="f3 near-black">
+      <a href="/notes/math/navier_stokes/" class="link black dim">
+        Navier-Stokes Existence and Smoothness Problem
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Let me say up front, I have not solved this problem, nor am I in the running. I came to math late in 2016 after a lifetime of music study, and while I am building a solid trellis upon which to grow my imagination, it will take me many years to capitalize on my potential. That being said, the Millenium Prizes are my one of my favorite sporting events, and the Navier-Stokes Existence and Smoothness Problem is my home team I&rsquo;m rooting for to emerge next.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
+  <div class="bg-white mb1 pa4 gray overflow-hidden">
+    <h1 class="f3 near-black">
+      <a href="/notes/math/network_geometry/" class="link black dim">
+        Network Geometry
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Network geometry is one of the topics that propelled me towards complexity research and machine learning. If we accept that interactions between agents in a networked system have themselves an impact on the dynamics of a system, it follows that we must investigate the emergence and charactertistics of these interactions. We start to wonder how we might reason about these system &ldquo;overtones&rdquo;.
+I find Mulder &amp; Bicaconi&rsquo;s 2018 paper Network Geometry and Complexity to be a nice primer, so I&rsquo;ll start there.
     </div>
   </div>
 </div>

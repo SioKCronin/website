@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Siobhán K Cronin  | Notes</title>
+    <title>Siobhán K Cronin  | AWS Virtual Private Clouds (VPCs)</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -34,15 +34,13 @@
     
 
     
-      <link href="https://siobhankcronin.com/notes/index.xml" rel="alternate" type="application/rss+xml" title="Siobhán K Cronin" />
-      <link href="https://siobhankcronin.com/notes/index.xml" rel="feed" type="application/rss+xml" title="Siobhán K Cronin" />
-    
 
-    <meta property="og:title" content="Notes" />
-<meta property="og:description" content="Siobhán K Cronin is a software engineer, researcher, and public speaker" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://siobhankcronin.com/notes/" />
-
+    <meta property="og:title" content="AWS Virtual Private Clouds (VPCs)" />
+<meta property="og:description" content="Overview As J Cole Morrison puts it, we need Virtual Private Clouds (VPCs) because we need control of security, the organization of our resources, traffic between our services, and the ability to keep differing architectures separate.
+Some terms we&rsquo;ll need:
+ Subnets: Route Tables: Network ACLs: Internet Gateway: NAT Gateway: Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://siobhankcronin.com/notes/serving_data/aws_vpc/" />
 
 
 
@@ -56,12 +54,26 @@
 
 
 
-<meta itemprop="name" content="Notes">
-<meta itemprop="description" content="Siobhán K Cronin is a software engineer, researcher, and public speaker">
 
+
+
+<meta itemprop="name" content="AWS Virtual Private Clouds (VPCs)">
+<meta itemprop="description" content="Overview As J Cole Morrison puts it, we need Virtual Private Clouds (VPCs) because we need control of security, the organization of our resources, traffic between our services, and the ability to keep differing architectures separate.
+Some terms we&rsquo;ll need:
+ Subnets: Route Tables: Network ACLs: Internet Gateway: NAT Gateway: Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network).">
+
+
+
+<meta itemprop="wordCount" content="366">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Notes"/>
-<meta name="twitter:description" content="Siobhán K Cronin is a software engineer, researcher, and public speaker"/>
+<meta name="twitter:title" content="AWS Virtual Private Clouds (VPCs)"/>
+<meta name="twitter:description" content="Overview As J Cole Morrison puts it, we need Virtual Private Clouds (VPCs) because we need control of security, the organization of our resources, traffic between our services, and the ability to keep differing architectures separate.
+Some terms we&rsquo;ll need:
+ Subnets: Route Tables: Network ACLs: Internet Gateway: NAT Gateway: Variable-length subnet masking (VLSM): Allows you to specify arbitrary-lenght prefixes. Classless Inter-Domain Routing (CIDR) block notation: IP addresses consiste of two groups of bits; the most significant bits are the network prefix (identifies a whole network or subnet) and the least significant set forms the host identifier (specifies a particular interface of a host on that network)."/>
 
       
     
@@ -70,6 +82,8 @@
   <body class="ma0 avenir bg-white-90">
 
     
+   
+  
 
   <header>
     <div class="bg-sio-yellow">
@@ -159,151 +173,130 @@
   </header>
 
 
+
     <main class="pb7" role="main">
       
-  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
-  <main class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"><p>Here&rsquo;s some things I like to think about.</p>
-</main>
-    <section class="flex-ns flex-wrap justify-around mt1">
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/math/proove_sqrt2_is_irrational/" class="link black dim">
-        Square Root of 2 is Irrational
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Proof. Assume for contradiction that $\sqrt{2}$ is rational.
-Therefore, there exists $p, q$ such that $\sqrt{2} = \frac{p}{q}$, where $q \neq 0$, and $p, q$ share no common divisors other than 1.
-Squaring both sides gives $2 = \frac{p^2}{q^2}$, so consequently $2q^2 = p^2$.
-If a square of a number is even, then the number is even, so there exists some number $k$ such that $p=2k$. Subsituting this value into the equation yields $2q^2 = 4k^2$, or $q^2 = 2k^2$.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/storing_data/stream_architecture/" class="link black dim">
-        Stream Architecture
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      How can we build a persistent message queue that scales to millions of messages/second?
-For example, today&rsquo;s cars are equipped with a data storage device, the EDR (event data recorder), which stores all the sensor data for the vehicle. Such data could be used for routing, dashboard analytics, or mechanical operation (cruise control, lane correction, auto parking, etc). This is just one of many use cases in the IoT universe, all requiring connectivity to control centers and real-time processing of data streams.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/books/supersizing_the_mind/" class="link black dim">
-        Supersizing the Mind
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Supersizing the Mind: Embodiment, Action, and Cognitive Extension by Andy Clark
-1. The Active Body I think a lot of us hold a general sense that there is something called embodied intelligence. In my case, I know I hold a somewhat limited idea of what this means. I remmeber reading that there are feedback mechanisms in the nervous system for some cognition that is not situated in the cerebral cortex, or is perhaps involved in bundling up the information in a more meaningful way before sending it on up to the brain.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/books/thinking_in_sysystems/" class="link black dim">
-        Thinking in Systems
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Thinking in Systems by Donella H. Meadows
-1. The Basics Elements. Interconnectedness. Purpose. These come together to create a system. Meadows presents these building blocks in the very first paragraph. Our primitives in this world of system tracking. What strikes me is the need for purpose. Interconnected elements without a purpose (e.g. sand scattered on a road), do not constitute a system. So, it seems, purpose imbues interconnected elements with something special.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/math/topology/" class="link black dim">
-        Topological Data Analysis
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I have wanted to study topology for over two years now, and have finally carved out time to begin. I had felt called in this direction for several reasons (ehem, manifolds and network topology), but it wasn&rsquo;t until recently that I found words to articulate why I am eager to get topology in my toolkit.
-Essentially, what little I&rsquo;ve already learned of topology is already giving me fresh scaffolding upon which to grow my understanding of the relationships between individuals and groups of all stripes (particles, people, computers, planets).
-    </div>
-  </div>
-</div>
-</div>
-      
-    </section>
+  <article class="flex-l flex-wrap justify-between center">
+    <header class="pt4 pa3 ph4-ns pb0 w-100 w-60-ns center">
+      <p class="f6 b helvetica tracked">
+          
+        NOTES
+      </p>
+      <h1 class="f1 helvetica mb1">AWS Virtual Private Clouds (VPCs)</h1>
+    </header>
 
-<ul class="pagination">
-    
-    <li>
-        <a href="/notes/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
-    
-    <li
-    >
-    <a href="/notes/page/2/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li
-    ><a href="/notes/">1</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li
-    ><a href="/notes/page/2/">2</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li
-    class="active"><a href="/notes/page/3/">3</a></li>
-    
-    
-    <li
-    class="disabled">
-    <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li>
-        <a href="/notes/page/3/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
-    
+    <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
+
+<h3 id="overview">Overview</h3>
+
+<p>As J Cole Morrison puts it, we need Virtual Private Clouds (VPCs) because we need control
+of security, the organization of our resources, traffic between our services, and the ability
+to keep differing architectures separate.</p>
+
+<p>Some terms we&rsquo;ll need:</p>
+
+<ul>
+<li><strong>Subnets</strong>:</li>
+<li><strong>Route Tables</strong>:</li>
+<li><strong>Network ACLs</strong>:</li>
+<li><strong>Internet Gateway</strong>:</li>
+<li><strong>NAT Gateway</strong>:</li>
+<li><strong>Variable-length subnet masking (VLSM)</strong>: Allows you to specify arbitrary-lenght prefixes.</li>
+<li><strong>Classless Inter-Domain Routing (CIDR) block notation</strong>: IP addresses consiste
+of two groups of bits; the most significant bits are the network prefix (identifies a
+whole network or subnet) and the least significant set forms the <em>host identifier</em>
+(specifies a particular interface of a host on that network). This notation includes
+a suffix indidcating the number of bits of the prefix.</li>
 </ul>
-</article>
+
+<p>We first define a range of IP addresses for our VPC to sketch out the space we&rsquo;ll be building.</p>
+
+<h3 id="services">Services</h3>
+
+<p>It&rsquo;s a big world of AWS services, so let&rsquo;s apply some cartography.</p>
+
+<h4 id="ec2">EC2</h4>
+
+<ul>
+<li><strong>compute optimized</strong></li>
+<li><strong>memory optimized</strong></li>
+<li><strong>storage optimized</strong></li>
+</ul>
+
+<h4 id="s3-simple-storage-services">S3 (Simple Storage Services)</h4>
+
+<ul>
+<li><strong>Standard Storage</strong>: Frequently accessed. Charged by the gibabyte used and
+number of requests to access, delete, list, copy or loading data in S3. Less
+than 1hr of downtime/yr.</li>
+<li><strong>Infrequent Access Storage</strong>: Less than 9hrs of downtime/year.</li>
+<li><strong>Glacier</strong>: Deep storage. Can take hours to retrieve. Much cheaper than standard.
+Redundant data sites.</li>
+<li><strong>Reduced Redundancy Storage</strong>:</li>
+</ul>
+
+<h4 id="elastic-load-balancer-elb">Elastic Load Balancer (ELB)</h4>
+
+<ul>
+<li>Send client requests to appropriate server.</li>
+<li>Avoid server hotspots.</li>
+<li><strong>Classic Load Balancing</strong>: Ensures fault tolerance int he event of an EC2 instance failure.</li>
+<li><strong>Application Load Balancing</strong>: Looks at content request and routes accordingly.</li>
+</ul>
+
+<h4 id="cloudfront">CloudFront</h4>
+
+<ul>
+<li>Global content delivery system</li>
+</ul>
+
+<h4 id="elastic-block-store-ebs">Elastic Block Store (EBS)</h4>
+
+<ul>
+<li>Low-latency instance access</li>
+<li>Access high speed Solid State Drive (SSD) storage.</li>
+<li>Layer security with Access Control Lists and encryption.</li>
+</ul>
+
+<h3 id="amazon-route-53">Amazon Route 53</h3>
+
+<ul>
+<li>Domain Name System (DNS) routing.</li>
+</ul>
+
+<h3 id="cloudwatch">Cloudwatch</h3>
+
+<ul>
+<li>Gather logs and monitor metrics.</li>
+</ul>
+
+<h3 id="elasticache">Elasticache</h3>
+
+<ul>
+<li>Like Memcached or Redis</li>
+</ul>
+
+<h3 id="other">Other</h3>
+
+<ul>
+<li><strong>Lambda</strong>: Abstracts AWS infrastructure.</li>
+<li><strong>AWS Config</strong>: Infrastructure management.</li>
+<li><strong>Elastic Beanstalk</strong>: App development.</li>
+<li><strong>CloudTrail</strong>: API transaction analytics.</li>
+<li><strong>Elastic File System (EFS)</strong>: Grow and shrink file storage system. Can mount one file system
+to multiple EC2 instances to share common data.</li>
+<li><strong>Kinesis</strong>: Loading and analyzing streaming data. <em>Kinesis Firehose</em> ingests data.
+<em>Kinesis Analytics</em> collects data with SQL queries. <em>Kinesis Streams</em> transform data into
+dashboard or generate alerts.</li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </main>
+  </article>
 
     </main>
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Siobhán K Cronin  | Notes</title>
+    <title>Siobhán K Cronin  | Processor Scheduling</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -34,14 +34,11 @@
     
 
     
-      <link href="https://siobhankcronin.com/notes/index.xml" rel="alternate" type="application/rss+xml" title="Siobhán K Cronin" />
-      <link href="https://siobhankcronin.com/notes/index.xml" rel="feed" type="application/rss+xml" title="Siobhán K Cronin" />
-    
 
-    <meta property="og:title" content="Notes" />
-<meta property="og:description" content="Siobhán K Cronin is a software engineer, researcher, and public speaker" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://siobhankcronin.com/notes/" />
+    <meta property="og:title" content="Processor Scheduling" />
+<meta property="og:description" content="I&rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. It&rsquo;s about deciding what happens when. It sparks an optimization bubble over my head &mdash; how do we ensure the most efficient scheduling? The strategy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://siobhankcronin.com/notes/serving_data/processor_scheduling/" />
 
 
 
@@ -56,12 +53,21 @@
 
 
 
-<meta itemprop="name" content="Notes">
-<meta itemprop="description" content="Siobhán K Cronin is a software engineer, researcher, and public speaker">
 
+
+<meta itemprop="name" content="Processor Scheduling">
+<meta itemprop="description" content="I&rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. It&rsquo;s about deciding what happens when. It sparks an optimization bubble over my head &mdash; how do we ensure the most efficient scheduling? The strategy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline.">
+
+
+
+<meta itemprop="wordCount" content="588">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Notes"/>
-<meta name="twitter:description" content="Siobhán K Cronin is a software engineer, researcher, and public speaker"/>
+<meta name="twitter:title" content="Processor Scheduling"/>
+<meta name="twitter:description" content="I&rsquo;m not sure why processor scheduling has so captured my imagination, but I think because it is so central to computing in general. It&rsquo;s about deciding what happens when. It sparks an optimization bubble over my head &mdash; how do we ensure the most efficient scheduling? The strategy a system employs is called a processor scheduling policy, or discipline. This discipline will aim to balance processor utilization, throughput, latency, and ensuring processes complete before their scheduled deadline."/>
 
       
     
@@ -70,6 +76,8 @@
   <body class="ma0 avenir bg-white-90">
 
     
+   
+  
 
   <header>
     <div class="bg-sio-yellow">
@@ -159,151 +167,96 @@
   </header>
 
 
+
     <main class="pb7" role="main">
       
-  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
-  <main class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"><p>Here&rsquo;s some things I like to think about.</p>
-</main>
-    <section class="flex-ns flex-wrap justify-around mt1">
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/math/proove_sqrt2_is_irrational/" class="link black dim">
-        Square Root of 2 is Irrational
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Proof. Assume for contradiction that $\sqrt{2}$ is rational.
-Therefore, there exists $p, q$ such that $\sqrt{2} = \frac{p}{q}$, where $q \neq 0$, and $p, q$ share no common divisors other than 1.
-Squaring both sides gives $2 = \frac{p^2}{q^2}$, so consequently $2q^2 = p^2$.
-If a square of a number is even, then the number is even, so there exists some number $k$ such that $p=2k$. Subsituting this value into the equation yields $2q^2 = 4k^2$, or $q^2 = 2k^2$.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/storing_data/stream_architecture/" class="link black dim">
-        Stream Architecture
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      How can we build a persistent message queue that scales to millions of messages/second?
-For example, today&rsquo;s cars are equipped with a data storage device, the EDR (event data recorder), which stores all the sensor data for the vehicle. Such data could be used for routing, dashboard analytics, or mechanical operation (cruise control, lane correction, auto parking, etc). This is just one of many use cases in the IoT universe, all requiring connectivity to control centers and real-time processing of data streams.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/books/supersizing_the_mind/" class="link black dim">
-        Supersizing the Mind
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Supersizing the Mind: Embodiment, Action, and Cognitive Extension by Andy Clark
-1. The Active Body I think a lot of us hold a general sense that there is something called embodied intelligence. In my case, I know I hold a somewhat limited idea of what this means. I remmeber reading that there are feedback mechanisms in the nervous system for some cognition that is not situated in the cerebral cortex, or is perhaps involved in bundling up the information in a more meaningful way before sending it on up to the brain.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/books/thinking_in_sysystems/" class="link black dim">
-        Thinking in Systems
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Thinking in Systems by Donella H. Meadows
-1. The Basics Elements. Interconnectedness. Purpose. These come together to create a system. Meadows presents these building blocks in the very first paragraph. Our primitives in this world of system tracking. What strikes me is the need for purpose. Interconnected elements without a purpose (e.g. sand scattered on a road), do not constitute a system. So, it seems, purpose imbues interconnected elements with something special.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/math/topology/" class="link black dim">
-        Topological Data Analysis
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I have wanted to study topology for over two years now, and have finally carved out time to begin. I had felt called in this direction for several reasons (ehem, manifolds and network topology), but it wasn&rsquo;t until recently that I found words to articulate why I am eager to get topology in my toolkit.
-Essentially, what little I&rsquo;ve already learned of topology is already giving me fresh scaffolding upon which to grow my understanding of the relationships between individuals and groups of all stripes (particles, people, computers, planets).
-    </div>
-  </div>
-</div>
-</div>
-      
-    </section>
+  <article class="flex-l flex-wrap justify-between center">
+    <header class="pt4 pa3 ph4-ns pb0 w-100 w-60-ns center">
+      <p class="f6 b helvetica tracked">
+          
+        NOTES
+      </p>
+      <h1 class="f1 helvetica mb1">Processor Scheduling</h1>
+    </header>
 
-<ul class="pagination">
-    
-    <li>
-        <a href="/notes/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
-    
-    <li
-    >
-    <a href="/notes/page/2/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li
-    ><a href="/notes/">1</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li
-    ><a href="/notes/page/2/">2</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li
-    class="active"><a href="/notes/page/3/">3</a></li>
-    
-    
-    <li
-    class="disabled">
-    <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li>
-        <a href="/notes/page/3/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
-    
+    <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0"><p>I&rsquo;m not sure why processor scheduling has so captured my imagination, but I think
+because it is so central to computing in general. It&rsquo;s about deciding what happens when.
+It sparks an optimization bubble over my head &mdash; how do we ensure the most efficient scheduling?
+The strategy a system employs is called a processor scheduling policy, or discipline.
+This discipline will aim to balance processor utilization, throughput, latency, and
+ensuring processes complete before their scheduled deadline.</p>
+
+<p>At the highest level, <strong>job scheduling</strong> (or <strong>admission scheduling</strong>) determines
+which jobs are even eligible to compete for system resources. The job scheduling policy
+determines how many processes can be active in a system at a given time (the
+<strong>degree of multiprocessing</strong>). This policy may create a queue to prevent saturation
+of system resources.</p>
+
+<p>The <strong>intermediate-level scheduling</strong> policy determines which processes should
+be allowed to compete for processors, and the <strong>low-level scheduling</strong> policy determines
+which <em>ready</em> processes are assigned to an available processor. We call this low-level
+scheduler the dispatcher.</p>
+
+<p>Before we look at specific algorithms, let&rsquo;s articulate some high-level scheduling objectives:</p>
+
+<ul>
+<li><em>Maximize throughput</em></li>
+<li><em>Maximize the number of interactive processes receiving acceptable response times</em></li>
+<li><em>Maximize resource utilization</em></li>
+<li><em>Avoid indefinite postponement</em></li>
+<li><em>Enforce priorities</em> (the queue prioritization)</li>
+<li><em>Minimize overhead</em></li>
+<li><em>Ensure predictability</em></li>
 </ul>
-</article>
+
+<p>In the Deitel brothers operating systems book I culled these from, they highlight that
+the several approaches we will explore have the following in common:</p>
+
+<ul>
+<li><strong>Fairness</strong>: All like processes are treated similarly.</li>
+<li><strong>Predictability</strong>: A particular process should perform the same under similar system loads.</li>
+<li><strong>Scalability</strong>: Performance should &ldquo;degrade gracefully&rdquo; (perhaps the best CS term
+I have ever heard), which means we shouldn&rsquo;t see any freezing up, but a gradual decline
+in performance as load increases.</li>
+</ul>
+
+<p>On to the scheduling algorithms!</p>
+
+<ul>
+<li><strong>FIFO Scheduling</strong>: This is a straightforward queue for processes (seldom used by itself,
+although FIFO for processes of the same priority is used).</li>
+<li><strong>Round Robin Scheduling</strong>: Processes are assigned a quantum, and if they don&rsquo;t complete
+their task within that time-limit, they&rsquo;re sent to the end of the ready queue. Often
+used as a sub-strategy in a larger master scheme. There&rsquo;s a selfish round robin (SRR)
+variant tha favors older processes (using aging; you can tune the priority rates of the
+active and holding queues to control the flow of contenders into the round robin). It is
+worth noting that careful selection of the quantum size q is necessary to maximize the
+benefit of round robin (if it&rsquo;s too long, then you&rsquo;re just back to FIFO).</li>
+<li><strong>Shortest-Process-First (SPF) Scheduling</strong>: Uses run-time estimates to select next process.</li>
+<li><strong>Highest-Response-Ratio-Next Scheduling</strong>: Uses a priority ratio,
+$\frac{time_waiting+service_time}{service_time}$, to determine next process (once priority
+hits threshold, it is passed to processor where it is processed to completion).</li>
+<li><strong>Shortest-Remaining-Time (SRT) Scheduling</strong>: This is like SPF in that shortest estimated
+runtimes are prioritized, but it goes one step further, so if a new process enters the holding
+queue that is estimated to be fasters than what remains in the active process, the active
+process gets back to the holding queue and the new fastest is processed. It&rsquo;s a dog
+eat dog world.</li>
+<li><strong>Multilevel Feedback Queues</strong>: This is a cool structure of multiple queues. If the
+process doesn&rsquo;t complete before the end of the quantum in the top level, it gets bumped
+to the next level below. This continues until we get to the end where processes are
+completed round robin.</li>
+<li><strong>Fair Share Scheduling</strong>: Group processes in some logical way, and then ensure
+that each group gets a fair crack at the processors.</li>
+<li><strong>Deadline Scheduling</strong>: Set specific deadlines for processes.</li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </main>
+  </article>
 
     </main>
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
