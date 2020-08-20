@@ -2,7 +2,7 @@
 title: Proximal Policy Optimization (PPO)
 menu:
     ai_notes:
-         parent: Machine Learning 
+         parent: Enriching Data
 draft: True
 ---
 

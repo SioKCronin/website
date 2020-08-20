@@ -2,7 +2,7 @@
 title: Networking
 menu: 
     ai_notes:
-        parent: Networking
+        parent: Serving Data
 draft: False
 ---
 ### Terms

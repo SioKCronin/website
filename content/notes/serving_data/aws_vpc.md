@@ -2,7 +2,7 @@
 title: AWS Virtual Private Clouds (VPCs)
 menu:
     ai_notes:
-        parent: Infrastructure
+        parent: Serving Data
 draft: False
 ---
 ### Overview

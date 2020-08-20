@@ -2,7 +2,7 @@
 title: Processor Scheduling
 menu:
     ai_notes:
-        parent: Operating Systems
+        parent: Serving Data
 draft: False
 ---
 

@@ -2,7 +2,7 @@
 title: Database Systems
 menu:
     ai_notes:
-        parent: Data Systems
+        parent: Storing Data
 draft: True
 ---
 ## Core Concepts

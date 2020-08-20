@@ -2,7 +2,7 @@
 title: Load Balancing Algorithms
 menu:
     ai_notes:
-        parent: Networking
+        parent: Serving Data
 ---
 First of all, the load balancer has to keep track of which servers are healthy
 by routinely pinging them and recording if they respond. If a server fails

@@ -2,7 +2,7 @@
 title: Active Matter
 menu:
     ai_notes:
-         parent: Swarm Intelligence
+         parent: Enriching Data
 ---
 
 I first caught wind of Active Matter through the work of one of my

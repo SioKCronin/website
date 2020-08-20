@@ -2,7 +2,7 @@
 title: Stream Architecture
 menu:
     ai_notes:
-        parent: Data Systems
+        parent: Storing Data
 ---
 How can we build a persistent message queue that scales to millions of messages/second?
 

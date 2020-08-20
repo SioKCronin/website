@@ -2,7 +2,7 @@
 title: Swarm Design Patterns
 menu:
     ai_notes:
-        parent: Swarm Intelligence
+        parent: Enriching Data
 draft: True
 ---
 If you read through a handful of swarm intelligence algorithms, you'll soon 

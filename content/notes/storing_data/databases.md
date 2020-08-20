@@ -2,7 +2,7 @@
 title: Databases
 menu:
     ai_notes:
-        parent: Data Systems
+        parent: Storing Data
 draft: False
 ---
 I'd first like to explore the differences between software in the data ecology,
