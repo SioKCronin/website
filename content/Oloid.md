@@ -42,9 +42,9 @@ coming from when engaging with colleagues in the world.
 
 I'm interested in nuturting engineering communities of practice that embrace 
 what artists have long known to be true - the imagination is a portal 
-to the powerhouse of the subconcsious. These are rich human cultural traditions 
+to the powerhouse of the subconcsious. There are rich human cultural traditions 
 that challenge and exite the mind-body, leading to innovation. Why are we keeping them so far 
-from engineers? Why are offices set up as a mini mind factories, prioritizing
+from engineers? Why are offices set up as mini mind factories, prioritizing
 the gear over human bodies? Why are designers the only one's allowed to have 
 creative practice in the engineering ecosystem, when engineers are creatively 
 solving problems every day? I will continue to dedicate my management practice
