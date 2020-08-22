@@ -19,17 +19,17 @@ nun who knows what she stands to lose if the fullness of her being is denied.
 
 This blog is me proclaiming myself and documenting my journey. 
 After four years of working in tech I found I was still holding my breath. 
-I began dulling my body, not sure how to leverage my perspective to tackle
-the problems facing my team. That I am at this point where I believe I can 
+I began dulling my body, not sure how to leverage my perspective. 
+That I am at this point where I believe I can 
 articulate the connections between my studio practice and the teams and systems
-I'm serving (and aspire to server) is a product of the love and care of my 
+I'm serving (and aspire to serve) is a product of the love and care of my 
 community, both in and outside of my role at Landed. My colleagues, partners,
 and friends have never shamed me for my feral use of metaphors or my 
 periodic checking in with my body to source networks of knowledge. 
 I am grateful for their belief in me, and to be coming into my own as a systems
 thinker in a community that values cognitive diversity. And by golly, when I 
 look objectively at this mind-body that builds conceptual
-scaffolding through embodied poetic systems and grafts them to a study
+scaffolding through embodied poetics and grafts them to a study
 of emergence in human-computer engineering systems, even I think, "whoa, that's 
 pretty unusual but soooooo cool". 
 
@@ -51,30 +51,26 @@ solving problems every day? I will continue to dedicate my management practice
 to addressing these questions, and weaving in more and more humanity and 
 creativity into our conception of what it means to build technical systems.
 
-The focal point of my studio practice is a four-dimensional ocean. The 3D 
+The focal point of my studio practice is a four-dimensional (4D) ocean. The 3D 
 reduction would look much like our earth's oceans - a dynamic display of material
 in motion through space. A dynamical system. A process. A state of becoming.
 The additional dimension is time. As an embodied thinker,
-I can not hold advaned intuitions of 4D spaces accurately in my body alond, so I 
+I can not hold advaned intuitions of 4D spaces accurately in my body alone, so I 
 partner with computers. Professionally, I steward human-computer ecosystems that study
 4D oceans in service of unblocking pain points adversely affecting life on
-our planet. I dedicate my studio practie to learning about 4D oceans. 
+our planet. I dedicate my studio practice to 4D oceans. 
 
 Through my studies, I am learning to see events as instantaneous
-snapshots of a cresting wave of the 4D ocean. The consequential outcome 
+snapshots of a cresting wave. The consequential outcome 
 of a set of other events. I am learning to diffuse my attention 
-to map the broader 4D manifold of inputs and outputs
-surrounding events. Bayesian inference and meditation help with this. 
+to map the broader manifold of inputs and outputs
+surrounding such events. Bayesian inference and meditation help with this. 
 
 This is a snapshot of how I think, and rather than try to un-think this way, I 
-gravitate towards service opportunities that benefit from 
-such ways of thinking. This is what led me to wanting to steward 
-human-computer systems. Such systems are themeselves 4D oceans, so prime
-candidates for my attention. I also engage in spiritual study, which allows 
-me to nurture release in the individuals and communities (e.g. if community
-members are stuck in circumstantial or imagined undertow, my study of fluid
-dynamics in complex systems can help them navigate their way out; I do this
-mostly through my meditation podcast and community council).
+gravitate towards service opportunities that could benefit from 
+my practice of mind. This is what led me to stewarding
+human-computer systems. Such systems are themeselves 4D oceans, and as such are prime
+areans for applying my practice.
 
 My studio practice advances on two lines of inquiry --- embodiment and concept.
 
@@ -106,7 +102,7 @@ with computing systems. When I say it out loud like that, I chuckle
 a bit. This is what happens when you let an embodied, empathetic human 
 play around with engineering toys! :) 
 
-From my perspective, this is the true purpose of software engineering. 
+From my perspective, this is the core purpose of software engineering. 
 Scan society. Find the fundamental wounds. Build 
 human-computer systems to gather data, intercept work/experience flows, propose
 new actions based on batch and streaming data analysis, and iterate until the 
