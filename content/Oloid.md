@@ -6,6 +6,8 @@ draft = false
 
 ![waves](waves.jpg)
 
+{{< youtube "uxawr-kmmnk" >}}
+
 My imagination marries embodied intelligence with conceptual abstractions. 
 Keeping this humming along is no easy task in a business world where
 sensation is so ruthlessly extracted from the praxis of working. But I refuse
