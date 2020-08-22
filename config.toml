@@ -75,12 +75,6 @@ enableRobotsTXT = false
     weight     = 3
 
     [[menu.main]]
-    identifer = "Oloid"
-    name      = "Oloid"
-    url       = "/oloid"
-    weight    = 2
-
-    [[menu.main]]
     identifier = "cv"
     name       = "CV"
     url        = "/cv"
