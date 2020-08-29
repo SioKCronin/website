@@ -57,9 +57,9 @@ enableRobotsTXT = false
     weight     = 2
 
     [[menu.main]]
-    identifier = "oloid"
-    name       = "oloid"
-    url        = "/oloid"
+    identifier = "vision"
+    name       = "Vision"
+    url        = "/vision"
     weight     = 1
 
     [[menu.main]]
