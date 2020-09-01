@@ -31,14 +31,14 @@
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/dance_notes/</loc>
+    <loc>https://siobhankcronin.com/meditation/</loc>
     <lastmod>2018-04-24T11:53:47-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://siobhankcronin.com/meditation/</loc>
+    <loc>https://siobhankcronin.com/mvmt/</loc>
     <lastmod>2018-04-24T11:53:47-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -123,6 +123,12 @@
   <url>
     <loc>https://siobhankcronin.com/posts/</loc>
     <lastmod>2019-04-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://siobhankcronin.com/notes/studio/sept/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

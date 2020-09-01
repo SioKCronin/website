@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Siobhán K Cronin  | MLSS Cadiz 2016</title>
+    <title>Siobhán K Cronin  | 2020.9</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -35,12 +35,10 @@
 
     
 
-    <meta property="og:title" content="MLSS Cadiz 2016" />
-<meta property="og:description" content="John Shulman Deep RL I found these talks to be super straightforward and helpful. A breath of fresh air.
-Part 1 A brief overview of applications, including robotics, inventory management, resource allocation (queuing), and routing problems (sequential decision making problem).
-Differentiating between policy optimization and dynamic programming. In particular, policy optimization including DFO/Evolutionary algorithms (derivative-free) and Policy Gradients (using gradients, improves with more parameters. Dynamic programming requires discrete finite states, and so must be approximated (for instance, approximating function with neural nets)." />
+    <meta property="og:title" content="2020.9" />
+<meta property="og:description" content="Data flows and fluid dynamics We talk about data streams and data flows. Do they follow the propeties of fluid dynamics in other systems? Would understanding data streams as a fluids help us anticipate behavior in novel ways? Let&rsquo;s find out!" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://siobhankcronin.com/notes/lecture_notes/mlss_cadiz_2016/" />
+<meta property="og:url" content="https://siobhankcronin.com/notes/studio/sept/" />
 
 
 
@@ -57,23 +55,19 @@ Differentiating between policy optimization and dynamic programming. In particul
 
 
 
-<meta itemprop="name" content="MLSS Cadiz 2016">
-<meta itemprop="description" content="John Shulman Deep RL I found these talks to be super straightforward and helpful. A breath of fresh air.
-Part 1 A brief overview of applications, including robotics, inventory management, resource allocation (queuing), and routing problems (sequential decision making problem).
-Differentiating between policy optimization and dynamic programming. In particular, policy optimization including DFO/Evolutionary algorithms (derivative-free) and Policy Gradients (using gradients, improves with more parameters. Dynamic programming requires discrete finite states, and so must be approximated (for instance, approximating function with neural nets).">
+<meta itemprop="name" content="2020.9">
+<meta itemprop="description" content="Data flows and fluid dynamics We talk about data streams and data flows. Do they follow the propeties of fluid dynamics in other systems? Would understanding data streams as a fluids help us anticipate behavior in novel ways? Let&rsquo;s find out!">
 
 
 
-<meta itemprop="wordCount" content="443">
+<meta itemprop="wordCount" content="41">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="MLSS Cadiz 2016"/>
-<meta name="twitter:description" content="John Shulman Deep RL I found these talks to be super straightforward and helpful. A breath of fresh air.
-Part 1 A brief overview of applications, including robotics, inventory management, resource allocation (queuing), and routing problems (sequential decision making problem).
-Differentiating between policy optimization and dynamic programming. In particular, policy optimization including DFO/Evolutionary algorithms (derivative-free) and Policy Gradients (using gradients, improves with more parameters. Dynamic programming requires discrete finite states, and so must be approximated (for instance, approximating function with neural nets)."/>
+<meta name="twitter:title" content="2020.9"/>
+<meta name="twitter:description" content="Data flows and fluid dynamics We talk about data streams and data flows. Do they follow the propeties of fluid dynamics in other systems? Would understanding data streams as a fluids help us anticipate behavior in novel ways? Let&rsquo;s find out!"/>
 
       
     
@@ -186,72 +180,18 @@ Differentiating between policy optimization and dynamic programming. In particul
     <header class="pt4 pa3 ph4-ns pb0 w-100 w-60-ns center">
       <p class="f6 b helvetica tracked">
           
-        LECTURE NOTES
+        NOTES
       </p>
-      <h1 class="f1 helvetica mb1">MLSS Cadiz 2016</h1>
+      <h1 class="f1 helvetica mb1">2020.9</h1>
     </header>
 
     <main class="w-100 w-60-ns center nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pt4 pa3 ph4-ns pb0">
 
-<h3 id="john-shulman-deep-rl">John Shulman Deep RL</h3>
+<h1 id="data-flows-and-fluid-dynamics">Data flows and fluid dynamics</h1>
 
-<p>I found these talks to be super straightforward and helpful. A breath of
-fresh air.</p>
-
-<h4 id="part-1">Part 1</h4>
-
-<p>A brief overview of applications, including robotics, inventory
-management, resource allocation (queuing), and routing problems
-(sequential decision making problem).</p>
-
-<p>Differentiating between policy optimization and dynamic programming. In
-particular, policy optimization including DFO/Evolutionary algorithms
-(derivative-free) and Policy Gradients (using gradients, improves with
-more parameters. Dynamic programming requires discrete finite states,
-and so must be approximated (for instance, approximating function with
-neural nets). Actor-critic methods lie at the intersection, as they use
-value functions.</p>
-
-<p>Deep RL is concerned with control and decision making (compared to motor
-and frontal cortex - perhaps basal ganglia as well?). &ldquo;At any time in
-the problem you&rsquo;re solving an optimization problem with GD&rdquo;, using
-non-linear function approximators that don&rsquo;t make assumptions about the
-form of the functions themselves (whether linear or not).</p>
-
-<p>Markov Decision Processes (MDP) are defined by (S, A, P), with state
-space (S), action space (A), and the transition probability distribution
-(P(r, s&rsquo; | s, a), with reward &reg; and next state (s&rsquo;) given by current
-state (s) and action (a)). One might also define the initial sate
-distribution (\mu) or a discount factor (\gamma) that indicates the
-degree to which you care less about stuff in the future than the
-present.</p>
-
-<p>One can define define different settings, including episodic, where you
-sample an initial state from \mu and proceed until a terminal state
-(defined in the state space) is reached. This termination could be good
-(ex. taxi reaches its destination), bad, (ex. robot falls over), or can
-be defined by a fixed length (episode ends after 1000 cycles). In this
-episode setting we aim to maximize reward per episode.</p>
-
-<p>We can have deterministic policies (functions) or stochastic policies
-(probability distribution of action given state), and these are what we
-are optimizing. We can also have parameterized policies where we are
-optimizing a parameter vector associated with the policy.</p>
-
-<p>The cross-entropy method is an example of an evolutionary algorithm,
-that at every time t is maintaining a distribution over parameter
-vectors. It only views the input parameters (\theta) and their reward,
-and views the rest of the MDP as a black box. These work, as he said,
-&ldquo;embarrassingly&rdquo; well (I think because we are embarrassed that simple
-works better than complicated?).</p>
-
-<h4 id="part-2">Part 2</h4>
-
-<p>We want to calculate the gradient, but we don&rsquo;t know f(x), so we&rsquo;ll
-gather a lot of samples of x and use them to estimate the gradient. Two
-estimation strategies are explored, score function gradient estimator
-and importance sampling. This is a valid approach even if f(x) is
-discontinuous, so it&rsquo;s very flexible.</p>
+<p>We talk about data streams and data flows. Do they follow the propeties
+of fluid dynamics in other systems? Would understanding data streams
+as a fluids help us anticipate behavior in novel ways? Let&rsquo;s find out!</p>
 <ul class="pa0">
   
 </ul>
