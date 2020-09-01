@@ -76,8 +76,8 @@ enableRobotsTXT = false
 
     [[menu.main]]
     identifier = "mvmt"
-    name       = "Dance"
-    url        = "/dance"
+    name       = "mvmt"
+    url        = "/mvmt"
     weight     = 5
 
     [[menu.main]]
