@@ -24,7 +24,7 @@ draft = false
 
 ### Research
 
-**Slow Research Lab | 2016-Present**</br> 
+**[Slow Research Lab](https://www.slowlab.net/) | 2016-Present**</br> 
 Independent research on collective intelligence.
 
 **Yerba Buena Center for the Arts | 2016-2017**</br>
