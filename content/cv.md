@@ -42,7 +42,7 @@ and Bryan Campbell.
 Experiments inspired by Bruno Latour's actor network theory (ANT) with
 Dr. Sasha Cuerda and Maggie Smith.
 
-**Deborah Hay's _The Runner_ | 2007-2008**</br>
+**[Deborah Hay's](https://www.youtube.com/watch?v=j5SYVDPpxUI) _The Runner_ | 2007-2008**</br>
 What if the 37 trillion cells of my body could surrender the pattern of
 facing a single direction?
 
