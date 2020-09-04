@@ -28,17 +28,16 @@ draft = false
 Independent research on collective intelligence.
 
 **Yerba Buena Center for the Arts | 2016-2017**</br>
-Network models of institutionalized oppression with Ray Gilstrap and Pia
-Zaragoza.
+Network models of institutionalized oppression with [Ray Gilstrap](https://www.linkedin.com/in/rgilstrap/) and [Pia Zaragoza](https://www.linkedin.com/in/piazaragoza/).
 
-**Somatic Natural History Archive | 2009-2013**</br>
+**[Somatic Natural History Archive](https://www.youtube.com/user/dancingecologist/videos) | 2009-2013**</br>
 Longitudinal study on the phenomenology of non-human movement systems.
 
-**Movement Research | 2008-2010**</br>
+**[Movement Research](https://movementresearch.org/) | 2008-2010**</br>
 Somatic memory in Brooklyn (NY) and Childress (TX) with Deborah Black
 and Bryan Campbell.
 
-**Interdisciplinary Laboratory for Art, Nature and Dance | 2008**</br>
+**[Interdisciplinary Laboratory for Art, Nature and Dance](http://www.ilandart.org/ilab/) | 2008**</br>
 Experiments inspired by Bruno Latour's actor network theory (ANT) with
 Dr. Sasha Cuerda and Maggie Smith.
 
@@ -46,11 +45,11 @@ Dr. Sasha Cuerda and Maggie Smith.
 What if the 37 trillion cells of my body could surrender the pattern of
 facing a single direction?
 
-**Harvard Medical School Music Neuroimaging Laboratory | 2002-2005**</br>
+**[Harvard Medical School Music Neuroimaging Laboratory](https://www.musicianbrain.com/#index) | 2002-2005**</br>
 Structural and functional correlates of music processing with Dr. Katie
 Overy, Dr. Gottfried Schlaug and Dr. Ellen Winner.
 
-**Harvard Laboratory for Development Studies | 2002-2003**</br>
+**[Harvard Laboratory for Development Studies](https://www.harvardlds.org/) | 2002-2003**</br>
 Processing of space-time metaphor in children with Dr. Laura Wagner and
 linguistic detection of plurality with Dr. Sid Kouider.
 
