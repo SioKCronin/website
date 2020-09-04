@@ -89,7 +89,7 @@ learning algorithms, core CS, and emergence in complex systems.
 
 My goal is to become a wave whisperer for complex emergent systems, blending
 my growing analytic/critical toolkit alongside the embodied intuition I'm cultivating. 
-This is lifelong pursuit, so I'm pacing myself, while committing to apply my learnings
+This is a lifelong pursuit, so I'm pacing myself, while committing to apply my learnings
 in realtime to the growth of enterprises solving problems that matter. 
 
 That our minds are situated at particular 3D vantage points on the waves of 
@@ -103,12 +103,12 @@ with computing systems.
 
 From my perspective, this is the core purpose of software engineering. 
 Scan society. Find the fundamental wounds. Build 
-human-computer systems to gather data, intercept work/experience flows, propose
+human-computer systems to gather data, intercept information flows, propose
 new actions based on batch and streaming data analysis, and iterate until the 
-"water" runs clean. Machine learning is a critical part of the vision I hold, 
+"water" runs clean. Machine learning is a critical component of the vision I hold, 
 but for most ventures I'd say that is not the bottleneck. Scalable infrastructure, 
-strong data engineering, and empowered developer culture are typically the forces 
-I'm tracking. I also hold information as the first class citizen in my imagination, 
+strong data engineering, and empowered developer culture are typically the priorities. 
+I also hold information as the first class citizen in my imagination, 
 with all other aspects of the system serving it. 
 
 * Gathering data
@@ -118,26 +118,26 @@ with all other aspects of the system serving it.
 * Serving data
 * Protecting data
 
-This is what guides my on-going research of engineering systems, but the 
+This is what guides my research of engineering systems, but the 
 technical system is only part of the story. Engineering is a human enterprise.
 If we care about finding engigneering solutions, we must care deeply about the human
-cultures that foster their emergence. For me, this is rooted both in practice of 
+cultures that foster their emergence. For me, this is rooted both in
 nuturing communities of practice as well as supporting the development
-of rich indiviudal studio practices, where every engineer is
+of indiviudal studio practices, where every engineer is
 encouraged to develop their own unique art of engineering. I will speak
 of both the technical and the human in this blog, but MBAs be warned, I don't 
 speak the reductionist language of capitalism. I speak the language of inifinite
 conceputal horizons backed by a fervant belief in the power of the human imgination. 
 I will not artificially stop the lines of my thinking to connect ideas back to the market.
-But, I will say, I play incredibly well with product and leadership teams that do! 
-I just want to be clear about where I am situated. It would be silly for me 
-to pretend my life's passion is anything other than applying my study of 4D
-oceans to the cultivation of powerful human-computer ecosystems in service
-of healing critical wounds in the populace. 
+But I play nice with product and leadership teams that do! 
+I just want to be clear about where I'm situated in all of this. 
+It would be silly for me to pretend my life's passion is anything other than 
+applying my study of 4D oceans to the cultivation of powerful 
+human-computer ecosystems in service of healing critical wounds in the populace. 
 
-I'm chosing to blog about this because bringing my full mind-body to the table
-is why I got into tech. I had a deep feeling that my idiosyncratic mind could
-be of service. As you know, it takes a lot of effort to get in the room.
+I maintain this blog to bring my full mind-body to the table. 
+I had a deep feeling that my idiosyncratic mind could
+be of service in tech. As you know, it takes a lot of effort to get in the room.
 One can not learn computer science from intuition. It is a collective
 endeavor born from the hearts and minds of millions of humans and their thinking
 machines, and I have spent years apprenticing (and will continue to apprentice
