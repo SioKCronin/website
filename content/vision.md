@@ -65,26 +65,27 @@ as instantaneous snapshots. The consequential outcome
 of a set of other events. The starting point for finite set of probable futures.
 I am learning to diffuse my attention to map the broader manifold of inputs and outputs
 surrounding such events. Bayesian inference has totally shaped my thinking on this
-as has meditation on the ocean dynamics (Naviar-Stokes). 
+as has meditation on ocean dynamics (Naviar-Stokes). 
 
 This is how I think, and rather than try to un-think this way, I 
 gravitate towards service opportunities that might benefit from 
 my practice of mind. This is what led me to stewarding
 human-computer systems. Such systems are themeselves 4D oceans, and as such are prime
-areans for applying my practice.
+arenas for applying my practice.
 
 My studio practice advances on two lines of inquiry --- embodiment and concept.
 
 My embodiment practice is anchored in a movement meditation practice
-centered around a study of 3D fluid dynamics (Gaga, bodysurfing, sketching,
-Somatic Natural History Archive, situated cognition practice with Slow Research Lab).
+centered around a study of 3D fluid dynamics (Gaga, Deborah Hay, bodysurfing, 
+action sketching, Somatic Natural History Archive, 
+and my situated cognition practice with Slow Research Lab).
 I'm particulary interested in how the impact of events develop and decay in
 systems over time. This is as important to me for its application
 to studying how technical debt impacts the ability to generate value 
 in human-computer ecosystems, as it is in understanding how we can accelerate
-society's rippling out of the damage casued by structural racism. 
+society's rippling out of the damage caused by structural racism. 
 
-My conceptual development is anchored on study of inference, algebraic topology,
+My conceptual development is anchored on my study of inference, algebraic topology,
 learning algorithms, core CS, and emergence in complex systems. 
 
 My goal is to become a wave whisperer for complex emergent systems, blending
@@ -94,7 +95,7 @@ in realtime to the growth of enterprises solving problems that matter.
 
 That our minds are situated at particular 3D vantage points on the waves of 
 a 4D ocean motivates my enthusiasm for computing. My subconscious does this 4D
-ocean mapping already (human minds are awesome!), but my mind's preocuppation
+ocean mapping already (human minds are awesome!), but my mind's preocupation
 with my organism prevents me from seeing events rising across subsets of the 
 population, which is what I'm intereted in addressing to alleviave suffering
 in others. If it was just about me tracking me, I probably wouldn't be 
@@ -129,7 +130,7 @@ of both the technical and the human in this blog, but MBAs be warned, I don't
 speak the reductionist language of capitalism. I speak the language of inifinite
 conceputal horizons backed by a fervant belief in the power of the human imgination. 
 I will not artificially stop the lines of my thinking to connect ideas back to the market.
-But I play nice with product and leadership teams that do! 
+But I play nice with product and business leaders that do! 
 I just want to be clear about where I'm situated in all of this. 
 It would be silly for me to pretend my life's passion is anything other than 
 applying my study of 4D oceans to the cultivation of powerful 
