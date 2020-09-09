@@ -39,12 +39,6 @@ enableRobotsTXT = false
 [menu]
 
     [[menu.main]]
-    identifier = "meditation"
-    name       = "Meditation"
-    url        = "/meditation"
-    weight     = 4
-
-    [[menu.main]]
     identifier = "notes"
     name       = "Notes"
     url        = "/index.html"
