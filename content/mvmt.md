@@ -9,5 +9,3 @@ draft = false
 {{<youtube Q8kIqpceCHw>}}
 
 {{<youtube B_CMHGz8QCo>}}
-
-{{<youtube i1V9ibUb998>}}
