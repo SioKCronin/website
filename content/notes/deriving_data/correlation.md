@@ -2,7 +2,7 @@
 title: Correlation
 menu:
     ai_notes:
-        parent: Machine Learning
+        parent: Deriving Data
 ---
 I hesitated before putting this note on Correlation
 in my ML section, but then I remembered this comic:

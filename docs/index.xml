@@ -76,15 +76,6 @@ I lead guided meditation sessions based on my ongoing study of non-dualism, cons
     
     <item>
       <title></title>
-      <link>https://siobhankcronin.com/mvmt/</link>
-      <pubDate>Tue, 24 Apr 2018 11:53:47 -0700</pubDate>
-      
-      <guid>https://siobhankcronin.com/mvmt/</guid>
-      <description>         </description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://siobhankcronin.com/vision/</link>
       <pubDate>Tue, 24 Apr 2018 11:53:47 -0700</pubDate>
       
@@ -187,15 +178,6 @@ Service This Fountain of Being | Meditation | Nov 2019 - Prsent devMission | You
     </item>
     
     <item>
-      <title>2020.9</title>
-      <link>https://siobhankcronin.com/notes/studio/sept/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://siobhankcronin.com/notes/studio/sept/</guid>
-      <description>Data flows and fluid dynamics We talk about data streams and data flows. Do they follow the propeties of fluid dynamics in other systems? Would understanding data streams as a fluids help us anticipate behavior in novel ways? Let&amp;rsquo;s find out!</description>
-    </item>
-    
-    <item>
       <title>A Thousand Plateaus</title>
       <link>https://siobhankcronin.com/notes/books/a_thousand_plateaus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -219,10 +201,10 @@ Some terms we&amp;rsquo;ll need:
     
     <item>
       <title>Active Matter</title>
-      <link>https://siobhankcronin.com/notes/enriching_data/active_matter/</link>
+      <link>https://siobhankcronin.com/notes/deriving_data/active_matter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/enriching_data/active_matter/</guid>
+      <guid>https://siobhankcronin.com/notes/deriving_data/active_matter/</guid>
       <description>I first caught wind of Active Matter through the work of one of my favorite researchers, Tamas Vicsek, whose intellectual bling includes a fractal bearing his name.
 My understanding of this sprawling sub-domain of physics is that we can study the activity of individuals agents and systems as though studying something like hydrodynamics, kinematics, and non-equilbrium statistical phsyics. Crowds become streams. Flocks become rivers. Networks of agents become oceans.</description>
     </item>
@@ -272,10 +254,10 @@ This burgeoning research arena, wearing hand-me-downs from theoretical physics a
     
     <item>
       <title>Correlation</title>
-      <link>https://siobhankcronin.com/notes/enriching_data/correlation/</link>
+      <link>https://siobhankcronin.com/notes/deriving_data/correlation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/enriching_data/correlation/</guid>
+      <guid>https://siobhankcronin.com/notes/deriving_data/correlation/</guid>
       <description>I hesitated before putting this note on Correlation in my ML section, but then I remembered this comic:
 Also, who could forget this chestnut of a motivational lead in to the topic of Maximum Information Coefficient (MIC)?:
 I&amp;rsquo;d like to overview Pearson&amp;rsquo;s r, touch upon Kendall and Spearman, and then dive into MIC.
@@ -283,11 +265,40 @@ Pearon&amp;rsquo;s r This is what people typically think of when they think of c
     </item>
     
     <item>
-      <title>Databases</title>
-      <link>https://siobhankcronin.com/notes/storing_data/databases/</link>
+      <title>Database Encoding</title>
+      <link>https://siobhankcronin.com/notes/storing_data/encoding/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/storing_data/databases/</guid>
+      <guid>https://siobhankcronin.com/notes/storing_data/encoding/</guid>
+      <description>I&amp;rsquo;d first like to explore the differences between software in the data ecology, and then dive deeper into key topics affecting their use.
+File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Key-Value Cache  Apache Ignite: Cache for Cassandra clusters Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array.</description>
+    </item>
+    
+    <item>
+      <title>Database Overview</title>
+      <link>https://siobhankcronin.com/notes/storing_data/database_overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/storing_data/database_overview/</guid>
+      <description>I&amp;rsquo;d first like to explore the differences between software in the data ecology, and then dive deeper into key topics affecting their use.
+File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Key-Value Cache  Apache Ignite: Cache for Cassandra clusters Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array.</description>
+    </item>
+    
+    <item>
+      <title>Database Systems</title>
+      <link>https://siobhankcronin.com/notes/storing_data/database_systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/storing_data/database_systems/</guid>
+      <description>Core Concepts Query planning Cost estimation  measured in terms of I/I or CPU costs based on pre-computed stats and an estimate of the cardinality of query output  Relational equivalences that define a search space Cost-based search  uses a DP algorithm to construct a plan for the query  Concurrency control Multi-granularity locking Multiple lock modes Database recovery Distribution References Readings in Database Systems (the Red Book)</description>
+    </item>
+    
+    <item>
+      <title>Databases</title>
+      <link>https://siobhankcronin.com/notes/storing_data/serialization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/storing_data/serialization/</guid>
       <description>I&amp;rsquo;d first like to explore the differences between software in the data ecology, and then dive deeper into key topics affecting their use.
 File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Key-Value Cache  Apache Ignite: Cache for Cassandra clusters Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array.</description>
     </item>
@@ -301,6 +312,16 @@ File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Key-Va
       <description>2017 Deep RL Bootcamp Lecture 1: Motivation + Overview + Exact Solution Method VIDEO
 (0 - 10) Starts off with a review of MDPs from Barto, and then sets up a simple grid world with an example of a deterministic policy with infinite horizon.
 (10-20) OMG, talk gets a bit derailed by series of rando questions that don&amp;rsquo;t seem to be clarifying thinking (answerable by the definition of a deterministic policy).</description>
+    </item>
+    
+    <item>
+      <title>Designing Data-Intensive Applications</title>
+      <link>https://siobhankcronin.com/notes/books/designing_data_intensive_applications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/books/designing_data_intensive_applications/</guid>
+      <description> Designing Data-Intensive Applications by Martin Kleppmann
+1. Foundations of Data Systems </description>
     </item>
     
     <item>
@@ -325,10 +346,10 @@ Fun fact - the intersection of all convex sets containing a given subset A of Eu
     
     <item>
       <title>K-nearest neighbors</title>
-      <link>https://siobhankcronin.com/notes/enriching_data/k_nearest_neighbors/</link>
+      <link>https://siobhankcronin.com/notes/deriving_data/k_nearest_neighbors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/enriching_data/k_nearest_neighbors/</guid>
+      <guid>https://siobhankcronin.com/notes/deriving_data/k_nearest_neighbors/</guid>
       <description>Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates, and strategies for using these distances to calculate neighors:
 Distance Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.</description>
     </item>
@@ -394,10 +415,10 @@ I find Mulder &amp;amp; Bicaconi&amp;rsquo;s 2018 paper Network Geometry and Com
     
     <item>
       <title>Outlier Detection</title>
-      <link>https://siobhankcronin.com/notes/enriching_data/outlier_detection/</link>
+      <link>https://siobhankcronin.com/notes/deriving_data/outlier_detection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/enriching_data/outlier_detection/</guid>
+      <guid>https://siobhankcronin.com/notes/deriving_data/outlier_detection/</guid>
       <description>PSO Approach A paper was brought to my attention today (Particle Swarm Optimization for Outlier Detection) presenting a novel application of PSOs in outlier detection, and I wanted to write about it to see if I can find my way to some context in operations intelligence (i.e. possibly anomaly detection in log files?).
 As the authors established the outlier problem, I realized that I carry with me a distance measurement bias when I think about classifying outliers.</description>
     </item>
@@ -529,10 +550,10 @@ For example, today&amp;rsquo;s cars are equipped with a data storage device, the
     
     <item>
       <title>Thinking in Systems</title>
-      <link>https://siobhankcronin.com/notes/books/thinking_in_sysystems/</link>
+      <link>https://siobhankcronin.com/notes/books/thinking_in_systems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/books/thinking_in_sysystems/</guid>
+      <guid>https://siobhankcronin.com/notes/books/thinking_in_systems/</guid>
       <description>Thinking in Systems by Donella H. Meadows
 1. The Basics Elements. Interconnectedness. Purpose. These come together to create a system. Meadows presents these building blocks in the very first paragraph. Our primitives in this world of system tracking. What strikes me is the need for purpose. Interconnected elements without a purpose (e.g. sand scattered on a road), do not constitute a system. So, it seems, purpose imbues interconnected elements with something special.</description>
     </item>

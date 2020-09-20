@@ -69,12 +69,6 @@ enableRobotsTXT = false
     weight     = 4
 
     [[menu.main]]
-    identifier = "mvmt"
-    name       = "mvmt"
-    url        = "/mvmt"
-    weight     = 5
-
-    [[menu.main]]
     identifier = "notes"
     name       = "Notes"
     url        = "/index.html"

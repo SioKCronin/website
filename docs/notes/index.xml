@@ -11,15 +11,6 @@
     
     
     <item>
-      <title>2020.9</title>
-      <link>https://siobhankcronin.com/notes/studio/sept/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://siobhankcronin.com/notes/studio/sept/</guid>
-      <description>Data flows and fluid dynamics We talk about data streams and data flows. Do they follow the propeties of fluid dynamics in other systems? Would understanding data streams as a fluids help us anticipate behavior in novel ways? Let&amp;rsquo;s find out!</description>
-    </item>
-    
-    <item>
       <title>A Thousand Plateaus</title>
       <link>https://siobhankcronin.com/notes/books/a_thousand_plateaus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -55,13 +46,52 @@ Multiply both sides by $\phi$ to get $\phi^2 = \phi + 1$.</description>
     </item>
     
     <item>
-      <title>Databases</title>
-      <link>https://siobhankcronin.com/notes/storing_data/databases/</link>
+      <title>Database Encoding</title>
+      <link>https://siobhankcronin.com/notes/storing_data/encoding/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/storing_data/databases/</guid>
+      <guid>https://siobhankcronin.com/notes/storing_data/encoding/</guid>
       <description>I&amp;rsquo;d first like to explore the differences between software in the data ecology, and then dive deeper into key topics affecting their use.
 File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Key-Value Cache  Apache Ignite: Cache for Cassandra clusters Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array.</description>
+    </item>
+    
+    <item>
+      <title>Database Overview</title>
+      <link>https://siobhankcronin.com/notes/storing_data/database_overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/storing_data/database_overview/</guid>
+      <description>I&amp;rsquo;d first like to explore the differences between software in the data ecology, and then dive deeper into key topics affecting their use.
+File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Key-Value Cache  Apache Ignite: Cache for Cassandra clusters Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array.</description>
+    </item>
+    
+    <item>
+      <title>Database Systems</title>
+      <link>https://siobhankcronin.com/notes/storing_data/database_systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/storing_data/database_systems/</guid>
+      <description>Core Concepts Query planning Cost estimation  measured in terms of I/I or CPU costs based on pre-computed stats and an estimate of the cardinality of query output  Relational equivalences that define a search space Cost-based search  uses a DP algorithm to construct a plan for the query  Concurrency control Multi-granularity locking Multiple lock modes Database recovery Distribution References Readings in Database Systems (the Red Book)</description>
+    </item>
+    
+    <item>
+      <title>Databases</title>
+      <link>https://siobhankcronin.com/notes/storing_data/serialization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/storing_data/serialization/</guid>
+      <description>I&amp;rsquo;d first like to explore the differences between software in the data ecology, and then dive deeper into key topics affecting their use.
+File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Key-Value Cache  Apache Ignite: Cache for Cassandra clusters Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array.</description>
+    </item>
+    
+    <item>
+      <title>Designing Data-Intensive Applications</title>
+      <link>https://siobhankcronin.com/notes/books/designing_data_intensive_applications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/books/designing_data_intensive_applications/</guid>
+      <description> Designing Data-Intensive Applications by Martin Kleppmann
+1. Foundations of Data Systems </description>
     </item>
     
     <item>
@@ -259,10 +289,10 @@ For example, today&amp;rsquo;s cars are equipped with a data storage device, the
     
     <item>
       <title>Thinking in Systems</title>
-      <link>https://siobhankcronin.com/notes/books/thinking_in_sysystems/</link>
+      <link>https://siobhankcronin.com/notes/books/thinking_in_systems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://siobhankcronin.com/notes/books/thinking_in_sysystems/</guid>
+      <guid>https://siobhankcronin.com/notes/books/thinking_in_systems/</guid>
       <description>Thinking in Systems by Donella H. Meadows
 1. The Basics Elements. Interconnectedness. Purpose. These come together to create a system. Meadows presents these building blocks in the very first paragraph. Our primitives in this world of system tracking. What strikes me is the need for purpose. Interconnected elements without a purpose (e.g. sand scattered on a road), do not constitute a system. So, it seems, purpose imbues interconnected elements with something special.</description>
     </item>

@@ -113,12 +113,6 @@
           </li>
           
           <li class="list f5 f4-ns fw5 dib pr3">
-            <a class="hover-gray no-underline mid-gray" href="/mvmt" title="mvmt page">
-              mvmt
-            </a>
-          </li>
-          
-          <li class="list f5 f4-ns fw5 dib pr3">
             <a class="hover-gray no-underline mid-gray" href="/contact/" title="Contact page">
               Contact
             </a>
@@ -175,20 +169,6 @@
         <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
   <div class="bg-white mb1 pa4 gray overflow-hidden">
     <h1 class="f3 near-black">
-      <a href="/notes/studio/sept/" class="link black dim">
-        2020.9
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Data flows and fluid dynamics We talk about data streams and data flows. Do they follow the propeties of fluid dynamics in other systems? Would understanding data streams as a fluids help us anticipate behavior in novel ways? Let&rsquo;s find out!
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
       <a href="/notes/books/a_thousand_plateaus/" class="link black dim">
         A Thousand Plateaus
       </a>
@@ -239,13 +219,72 @@ Multiply both sides by $\phi$ to get $\phi^2 = \phi + 1$.
         <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
   <div class="bg-white mb1 pa4 gray overflow-hidden">
     <h1 class="f3 near-black">
-      <a href="/notes/storing_data/databases/" class="link black dim">
+      <a href="/notes/storing_data/encoding/" class="link black dim">
+        Database Encoding
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I&rsquo;d first like to explore the differences between software in the data ecology, and then dive deeper into key topics affecting their use.
+File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Key-Value Cache  Apache Ignite: Cache for Cassandra clusters Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
+  <div class="bg-white mb1 pa4 gray overflow-hidden">
+    <h1 class="f3 near-black">
+      <a href="/notes/storing_data/database_overview/" class="link black dim">
+        Database Overview
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I&rsquo;d first like to explore the differences between software in the data ecology, and then dive deeper into key topics affecting their use.
+File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Key-Value Cache  Apache Ignite: Cache for Cassandra clusters Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
+  <div class="bg-white mb1 pa4 gray overflow-hidden">
+    <h1 class="f3 near-black">
+      <a href="/notes/storing_data/database_systems/" class="link black dim">
+        Database Systems
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Core Concepts Query planning Cost estimation  measured in terms of I/I or CPU costs based on pre-computed stats and an estimate of the cardinality of query output  Relational equivalences that define a search space Cost-based search  uses a DP algorithm to construct a plan for the query  Concurrency control Multi-granularity locking Multiple lock modes Database recovery Distribution References Readings in Database Systems (the Red Book)
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
+  <div class="bg-white mb1 pa4 gray overflow-hidden">
+    <h1 class="f3 near-black">
+      <a href="/notes/storing_data/serialization/" class="link black dim">
         Databases
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       I&rsquo;d first like to explore the differences between software in the data ecology, and then dive deeper into key topics affecting their use.
 File System (block storage)  HDFS AWS S3 Azure Blob Storage Alluxio Ceph  Key-Value Cache  Apache Ignite: Cache for Cassandra clusters Redis: OSS in-memory data structure storage, used as a database, cache, and message broker. Key-value based database system. Memcached: distributed memory cacheing system. Key-value associative array.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
+  <div class="bg-white mb1 pa4 gray overflow-hidden">
+    <h1 class="f3 near-black">
+      <a href="/notes/books/designing_data_intensive_applications/" class="link black dim">
+        Designing Data-Intensive Applications
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+       Designing Data-Intensive Applications by Martin Kleppmann
+1. Foundations of Data Systems 
     </div>
   </div>
 </div>
@@ -276,50 +315,6 @@ To be clear, I had slated this book as my &ldquo;summer&rdquo; read, imagining I
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       Convex sets are interesting in the context of optimization, as they represent regions where we know we can find global minima. A convex region is a region where for every pair of points within the region, every point on the line that joins the points is also within the region.
 Fun fact - the intersection of all convex sets containing a given subset A of Euclidean space, is called the convex hull of A, which is the smallest convex set containing A.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/math/linear_algebra/" class="link black dim">
-        Linear Algebra Basics
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Useful terms and ideas  diagonal matrix: Matrix with zero values except on the diagonal. change of basis matrix: Taking the product of this matrix provides a new basis, which is helpful to us if that basis transformation sets us up for an operation that requires the matrix to be in a particular form. For instance, a change of basis matrix could diagonalize the matrix, such as the choice of the orthogonal matrix as the change of basis matrix in PCA.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/serving_data/load_balancer_algorithms/" class="link black dim">
-        Load Balancing Algorithms
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      First of all, the load balancer has to keep track of which servers are healthy by routinely pinging them and recording if they respond. If a server fails a health check, it is removed from the viable server list, and will only be added again if it passes a later health check.
-Algorithms Least Connection Method LB directs traffic to the server with the fewest active connections
-Least Response Time Method LB directs traffic to the server with the fewest active connections and the lowest average response time.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 mb4"><div class="relative w-100 mb1 bg-white nested-copy-line-height">
-  <div class="bg-white mb1 pa4 gray overflow-hidden">
-    <h1 class="f3 near-black">
-      <a href="/notes/math/navier_stokes/" class="link black dim">
-        Navier-Stokes Existence and Smoothness Problem
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Let me say up front, I have not solved this problem, nor am I in the running. I came to math late in 2016 after a lifetime of music study, and while I am building a solid trellis upon which to grow my imagination, it will take me many years to capitalize on my potential. That being said, the Millenium Prizes are my one of my favorite sporting events, and the Navier-Stokes Existence and Smoothness Problem is my home team I&rsquo;m rooting for to emerge next.
     </div>
   </div>
 </div>

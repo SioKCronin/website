@@ -1,5 +1,5 @@
 ---
-title: Databases
+title: Databases Class
 menu: 
     ai_notes:
         parent: Lecture Notes

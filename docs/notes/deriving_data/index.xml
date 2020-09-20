@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on Siobhán K Cronin</title>
+    <link>https://siobhankcronin.com/notes/deriving_data/</link>
+    <description>Recent content in Machine Learning on Siobhán K Cronin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://siobhankcronin.com/notes/deriving_data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Active Matter</title>
+      <link>https://siobhankcronin.com/notes/deriving_data/active_matter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/deriving_data/active_matter/</guid>
+      <description>I first caught wind of Active Matter through the work of one of my favorite researchers, Tamas Vicsek, whose intellectual bling includes a fractal bearing his name.
+My understanding of this sprawling sub-domain of physics is that we can study the activity of individuals agents and systems as though studying something like hydrodynamics, kinematics, and non-equilbrium statistical phsyics. Crowds become streams. Flocks become rivers. Networks of agents become oceans.</description>
+    </item>
+    
+    <item>
+      <title>Correlation</title>
+      <link>https://siobhankcronin.com/notes/deriving_data/correlation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/deriving_data/correlation/</guid>
+      <description>I hesitated before putting this note on Correlation in my ML section, but then I remembered this comic:
+Also, who could forget this chestnut of a motivational lead in to the topic of Maximum Information Coefficient (MIC)?:
+I&amp;rsquo;d like to overview Pearson&amp;rsquo;s r, touch upon Kendall and Spearman, and then dive into MIC.
+Pearon&amp;rsquo;s r This is what people typically think of when they think of correlation. It measures the linear relationship between two variables.</description>
+    </item>
+    
+    <item>
+      <title>K-nearest neighbors</title>
+      <link>https://siobhankcronin.com/notes/deriving_data/k_nearest_neighbors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/deriving_data/k_nearest_neighbors/</guid>
+      <description>Sometimes we want to perform an operation on an agent/vector/particle based on what we know about its neibhors. Here are contenders for measuring the nearness of any two points in an n-dimensional real vector space with fixed cartesian coordinates, and strategies for using these distances to calculate neighors:
+Distance Euclidean As the name suggests, this is the square root of the sum of squares for each corresponding input pair of our points.</description>
+    </item>
+    
+    <item>
+      <title>Outlier Detection</title>
+      <link>https://siobhankcronin.com/notes/deriving_data/outlier_detection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/deriving_data/outlier_detection/</guid>
+      <description>PSO Approach A paper was brought to my attention today (Particle Swarm Optimization for Outlier Detection) presenting a novel application of PSOs in outlier detection, and I wanted to write about it to see if I can find my way to some context in operations intelligence (i.e. possibly anomaly detection in log files?).
+As the authors established the outlier problem, I realized that I carry with me a distance measurement bias when I think about classifying outliers.</description>
+    </item>
+    
+  </channel>
+</rss>

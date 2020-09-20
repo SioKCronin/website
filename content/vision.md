@@ -115,7 +115,7 @@ with all other aspects of the system serving it.
 * Gathering data
 * Storing data
 * Moving data
-* Enriching data
+* Deriving data
 * Serving data
 * Protecting data
 
