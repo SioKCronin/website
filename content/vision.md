@@ -77,7 +77,7 @@ with this awesome challenge of tracking the shape of our collective imagination
 as a team over time, and running experiments to either speed up our existing 
 solution-finding practices or expand the surface area of solutions we perceive
 as possible. Mapping our collective neural cloud. This is the arena of engineering
-I choose to innovate; the cultivation of thriving human-computer ecoystems. 
+in which I choose to innovate.
 
 I'm interested in nuturting communities of engineering practice that embrace 
 what artists have long known to be true - imagination is a portal 
