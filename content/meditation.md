@@ -9,8 +9,9 @@ his journeys" - Muriel Rukeyeser
 
 [This Fountain of Being](https://podcasts.apple.com/us/podcast/this-fountain-of-being/id1485854868)
 
-I lead guided meditation sessions based on my ongoing study of non-dualism,
-consciousness, bhakti yoga, complex systems, and care. These recordings 
-are opportunities to drop in, remember our interconnected nature, find some
-stillness and peace, and stoke the fire of care and service that emerges when
-our core needs are met, including the need to feel deeply seen and loved. 
+I lead guided meditation sessions based on my ongoing study of bhakti yoga, 
+complex systems, and care. When offered in person I weave in movement, sound,
+and reiki. These offerings are opportunities to drop in, remember our 
+interconnected nature, find some stillness and peace, and stoke the fire of 
+care and service that emerges when our core needs are met, including the 
+need to feel deeply seen and loved. 
