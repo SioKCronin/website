@@ -6,20 +6,9 @@ draft = false
 
 ![waves](waves.jpg)
 
-![mvp](mvp.jpg)
-
-![mvp1](mvp1.jpg)
 
 My studio practice is honing in on practices of marrying embodied practice 
 with conceptual scaffolding in service of self and community actualization.
-That I am at this point where I believe I can articulate the connections between my 
-studio practice (self), network practice (community), and the teams and systems
-I serve and aspire to serve (body of professional work) is a product of the 
-love and care of my communities. My colleagues, partners, and friends have 
-never shamed me for my feral use of metaphors or how I wiggle and check in 
-with my body to source networks of knowledge. I am grateful for their belief 
-in me and in us.
-
 The focal point of my studio practice is care,
 which I experience as a dynamical system of information flow and optimization. 
 A network of feedback loops. Coemergent states of becoming. A complex system. 
@@ -33,7 +22,7 @@ so I partner with computers.
 
 A major part of my psycho-social healing as an American who is digging herself 
 out of industrialized notions of the autonomous "human unit" is to reclaim my place in the world
-as an interconnected being.I am learning to diffuse my 
+as an interconnected being. I am learning to diffuse my 
 attention to map broader manifolds of inputs and outputs and network effects
 surrounding events that matter most to me in my life. This research is rooted
 in a movement practice that blends gaga with my own homebrew 
@@ -50,8 +39,7 @@ Jasmine Tarkeshi (2013), which led to my non-dualist "eureka" in 2016.
 I stopped gripping the life raft of my organism as the origin of organizing 
 a concept of self and understanding reality, and now I chose to layer networks 
 of self identification (holiobiont, chosen family, watershed, etc.). 
-To reference style culture, my signature scent
-is a layering of multiple scents. 
+To reference style culture, my signature scent is a layering of multiple scents. 
 
 My desire is to become a poet laureate of complex emergent systems, blending
 my growing analytic/critical/technical toolkit alongside the embodied intuitions
@@ -69,8 +57,9 @@ data analysis, and iterate until the "water" runs clean. Machine learning is a
 critical component of this, but for most ventures I'd say is not the bottleneck. 
 Exploring how we gather and store high-quality, relevant data in a performant, 
 scalable infrastructure, and empower a diverse, creative engineering culture 
-to reimagine systems of moving and deriving insights from data to solve problems
-that matter is the unsolved question I'm tackling. 
+to build systems of moving and deriving insights from data to solve problems
+that matter is the unsolved question I'm tackling. I loosely operationalize 
+this a practice of platform engineering with the following pillars:
 
 * Gathering data
 * Storing data
@@ -79,7 +68,7 @@ that matter is the unsolved question I'm tackling.
 * Serving data
 * Protecting data
 
-And yet, the technical system is only part of the story. Engineering is a human enterprise.
+Yet the technical system is only part of the story. Engineering is a human enterprise.
 If we care about finding engigneering solutions, we must care deeply about the human
 cultures that foster their emergence. For me, this is rooted both in
 nuturing communities of practice as well as supporting the actualization
@@ -103,7 +92,19 @@ while engineers are creatively solving problems every day? I will continue to
 dedicate my management practice to addressing these questions, and weaving in 
 more and more humanity and creativity into our conception of what it means to build technical systems.
 
-# Geoflora MVP
+That I am at this point where I believe I can articulate the connections between my 
+studio practice (self), network practice (community), and the teams and systems
+I serve and aspire to serve (body of professional work) is a product of the 
+love and care of my communities. My colleagues, partners, and friends have 
+never shamed me for my feral use of metaphors or how I wiggle and check in 
+with my body to source networks of knowledge. I am grateful for their belief 
+in me and in us.
+
+## Geoflora MVP
+
+![mvp](mvp.jpg)
+
+![mvp1](mvp1.jpg)
 
 I'm working on a non-linear poem that tracks key
 moments of connection across my chosen family, friends, and colleagues. I am 
