@@ -9,28 +9,25 @@ draft = false
 
 My studio practice is honing in on practices of marrying embodied practice 
 with conceptual scaffolding in service of self and community actualization.
-The focal point of my studio practice is care,
-which I experience as a dynamical system of information flow and optimization. 
-A network of feedback loops. Coemergent states of becoming. A complex system. 
-I'm interested in the network effects of such a system as much
-as the development of individual trajectories over time, as I'm observing that 
-these network effects greatly shape my network yet I have not always felt equipped to 
-track them. As an embodied thinker I can not hold advanced intuitions of multidimensional 
-solution spaces accurately in my body, or at least with the fidelity that allows me 
-to connect current experiences to specific nodes of knowledge or historical events, 
-so I partner with computers. 
+The focal point of my studio practice is care.
 
-A major part of my psycho-social healing as an American who is digging herself 
-out of industrialized notions of the autonomous "human unit" is to reclaim my place in the world
-as an interconnected being. I am learning to diffuse my 
-attention to map broader manifolds of inputs and outputs and network effects
-surrounding events that matter most to me in my life. This research is rooted
-in a movement practice that blends gaga with my own homebrew 
-energetic healing practice and a dialetic practice with indviduals in my network.
-I track what I'm learning with sketches, and sit with these sketches while studying 
-Bayesian inference, algebraic topology, network theory, platform engineering, and ocean dynamics.
+I cultivate a well of material from my practices and lived experiences.
+I then meet others in the present moment, listen deeply, and draw from my
+well in the ways I feel will be of service. And I ask for feedback and track
+progress over time, as I track my own. I frame it as art because I believe
+in human cultural technology and its trasnmission, and lifestyle and art 
+practice as fantastic delivery mechanisms.
 
-The lineage of research that led to this current studio practice began with
+Practices right now include:
+
+* gaga (with a Sio twist from previous movement research)
+* WhatsApp voice memos
+* This Fountain of Being (meditation podcast)
+* poetry
+* drawing
+* engineering management
+
+This lineage of research began with
 my work with Deborah Hay and continued with Deborah Black and Bryan Campbell 
 in NYC through our Experiential Geography research. The research continued
 with a host of non-human collaborators and ecosystems through the 
@@ -41,20 +38,23 @@ a concept of self and understanding reality, and now I chose to layer networks
 of self identification (holiobiont, chosen family, watershed, etc.). 
 To reference style culture, my signature scent is a layering of multiple scents. 
 
-My desire is to become a poet laureate of complex emergent systems, blending
-my growing analytic/critical/technical toolkit alongside the embodied intuitions
+My desire is to become a poet of complex emergent systems, blending
+my growing critical/technical/creative toolkit alongside the embodied intuitions
 and communal practices of care I participate in. That our minds are situated at 
 particular 3D vantage points on the waves of 
 a multidimensional ocean motivates my enthusiasm for computing. 
 My mind's preocupation with my organism prevents me from seeing events 
 rising across subsets of the population, which is what I'm intereted in 
 addressing to alleviave suffering in systems. I can't sense the 
-population, so I collaborate with computing systems. From my perspective, this 
+population, so I collaborate with computing systems.
+
+From my perspective, this 
 is the core purpose of software engineering. Scan society. Find the wounds. 
 Build human-computer systems to gather data, 
 intercept information flows, propose new actions based on batch and streaming 
-data analysis, and iterate until the "water" runs clean. Machine learning is a 
-critical component of this, but for most ventures I'd say is not the bottleneck. 
+data analysis, and iterate until the "water" runs clean. I see this as 
+reiki at the human system level. Machine learning is a critical component, 
+but for most ventures I'd say is not the bottleneck. 
 Exploring how we gather and store high-quality, relevant data in a performant, 
 scalable infrastructure, and empower a diverse, creative engineering culture 
 to build systems of moving and deriving insights from data to solve problems
@@ -81,16 +81,12 @@ in which I choose to innovate.
 
 I'm interested in nuturting communities of engineering practice that embrace 
 what artists have long known to be true - imagination is a portal 
-to the powerhouse of the subconcsious. There are rich human cultural traditions 
-that challenge and exite the mind-body, leading to innovation. We can dance
-the joy of witnessing beauty. We can draw our demons. We can blend our voices
-in song and feel our mutual resonance.
-Why do keep such pratices so far from engineers? 
-Why are offices not set up to prioritize the human body? Why are designers 
-the only one's allowed to have creative practice in the engineering ecosystem, 
-while engineers are creatively solving problems every day? I will continue to 
-dedicate my management practice to addressing these questions, and weaving in 
-more and more humanity and creativity into our conception of what it means to build technical systems.
+to the powerhouse of the subconcsious. The body has a role in ideation. 
+There are rich human cultural traditions that challenge and exite the mind-body, 
+leading to innovation. We can dance the joy of witnessing beauty. 
+We can draw our demons. We can blend our voices in song and feel our mutual resonance.
+This is a theme I explore with my partner Carl Tashian, and we are brewing
+some programming to suppor this development. 
 
 That I am at this point where I believe I can articulate the connections between my 
 studio practice (self), network practice (community), and the teams and systems
