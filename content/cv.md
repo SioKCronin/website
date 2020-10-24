@@ -53,5 +53,5 @@ Overy, Dr. Gottfried Schlaug and Dr. Ellen Winner.
 Processing of space-time metaphor in children with Dr. Laura Wagner and
 linguistic detection of plurality with Dr. Sid Kouider.
 
-**Boston College - Department of Psychology | 2000-2001**</br>
+**[Boston College - Department of Psychology](https://lisafeldmanbarrett.com/) | 2000-2001**</br>
 Affect research with Dr. Lisa Feldman Barrett.
