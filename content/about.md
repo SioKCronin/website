@@ -4,8 +4,8 @@ date = "2018-04-24T11:53:47-07:00"
 draft = false
 
 +++
-Siobhán is an engineer and artist with a passion for 
-platform engineering, machine learning, and building strong communities of practice.
+Siobhán is an engineer, writer and artist with a passion for 
+platform engineering and building strong communities of practice.
 
 She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies, spent several years working as a contemporary dancer
