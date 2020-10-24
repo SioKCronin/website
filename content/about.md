@@ -11,7 +11,7 @@ She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies, spent several years working as a contemporary dancer
 and arts manager, and now stewards human-computer ecosystems 
 solving problems that matter. She is currently the Engineering Manager at Landed, 
-where she leads a team of engineers helping support the financial well-being of 
+where she leads a team of engineers helping support the financial security of 
 essential professionals.
 
 Siobhán has published research in Brain & Cognition, Neuroreport, and
