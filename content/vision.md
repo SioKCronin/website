@@ -7,23 +7,22 @@ draft = false
 ![waves](waves.jpg)
 
 
-My studio practice is honing in on practices of marrying embodied practice 
+My studio this season is excited about marrying embodiment 
 with conceptual scaffolding in service of self and community actualization.
-The focal point of my studio practice is care.
+The focal point is care.
 
-I cultivate a well of material from my practices and lived experiences.
-I then meet others in the present moment, listen deeply, and draw from my
-well in the ways I feel will be of service. And I ask for feedback and track
-progress over time, as I track my own. I frame it as art because I believe
-in human cultural technology and its trasnmission, and lifestyle and art 
-practice as fantastic delivery mechanisms.
+I cultivate a well of material from my practices and lived experiences,
+and then meet others in the present moment, listen deeply, and draw from my
+well in ways I feel will be of service. I ask for feedback and track
+progress. I periodically frame it as art to invoke an air of special, of theater,
+of divine, and because I believe in human cultural technology.
 
-Practices right now include:
+My studio ractices right now include:
 
-* gaga (with a Sio twist from previous movement research)
+* gaga (with a Sio twist from my historical movement research)
 * WhatsApp voice memos
 * This Fountain of Being (meditation podcast)
-* poetry
+* poetry (reading and writing)
 * drawing
 * engineering management
 
@@ -38,7 +37,7 @@ a concept of self and understanding reality, and now I chose to layer networks
 of self identification (holiobiont, chosen family, watershed, etc.). 
 To reference style culture, my signature scent is a layering of multiple scents. 
 
-My desire is to become a poet of complex emergent systems, blending
+My desire is to become a poet and gardener of complex emergent systems, blending
 my growing critical/technical/creative toolkit alongside the embodied intuitions
 and communal practices of care I participate in. That our minds are situated at 
 particular 3D vantage points on the waves of 
