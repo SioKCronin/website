@@ -16,7 +16,7 @@ draft = false
 
 ### Service
 
-**[Hackbright Academy]** | Mentor | Apr 2020 - Present</br>
+**[Hackbright Academy](https://hackbrightacademy.com/)** | Mentor | Apr 2020 - Present</br>
 **[This Fountain of Being](https://podcasts.apple.com/us/podcast/this-fountain-of-being/id1485854868)** | Meditation facilitator | Nov 2019 - Present</br>
 **devMission** | Youth Mentor | Sep 2018 - Present</br>
 **BAASICS** | Advisor | Feb 2014 - Dec 2016</br>
