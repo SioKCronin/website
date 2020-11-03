@@ -27,9 +27,6 @@ draft = false
 **[Slow Research Lab](https://www.slowlab.net/) | 2016-Present**</br> 
 Independent research on collective intelligence.
 
-**Yerba Buena Center for the Arts | 2016-2017**</br>
-Network models of institutionalized oppression with [Ray Gilstrap](https://www.linkedin.com/in/rgilstrap/) and [Pia Zaragoza](https://www.linkedin.com/in/piazaragoza/).
-
 **[Somatic Natural History Archive](https://www.youtube.com/user/dancingecologist/videos) | 2009-2013**</br>
 Longitudinal study on the phenomenology of non-human movement systems.
 
