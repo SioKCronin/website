@@ -7,9 +7,7 @@ draft = false
 ![waves](waves.jpg)
 
 
-My studio this season is excited about marrying embodiment 
-with conceptual scaffolding in service of self and community actualization.
-The focal point is care.
+My studio practice is dedicated to care.
 
 I cultivate a well of material from my practices and lived experiences,
 and then meet others in the present moment, listen deeply, and draw from my
@@ -17,12 +15,12 @@ well in ways I feel will be of service. I ask for feedback and track
 progress. I periodically frame it as art to invoke an air of special, of theater,
 of divine, and because I believe in human cultural technology.
 
-My studio ractices right now include:
+My studio practices right now include:
 
 * gaga (with a Sio twist from my historical movement research)
 * WhatsApp voice memos
 * This Fountain of Being (meditation podcast)
-* poetry (reading and writing)
+* poetry
 * drawing
 * engineering management
 
