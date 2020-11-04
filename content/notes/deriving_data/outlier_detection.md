@@ -2,7 +2,7 @@
 title: Outlier Detection
 menu:
     ai_notes:
-        parent: Swarm Intelligence
+        parent: Deriving Data 
 draft: False
 ---
 
