@@ -8,8 +8,7 @@ Siobhán is an engineering leader with a passion for
 platform engineering and building strong communities of practice.
 
 She began her career researching how humans learn at Harvard's Lab for
-Developmental Studies, spent several years working as a contemporary dancer
-and arts manager, and now stewards human-computer ecosystems 
+Developmental Studies, and now stewards human-computer ecosystems 
 solving problems that matter. She is currently the Engineering Manager at Landed, 
 where she leads a team of engineers helping support the financial security of 
 essential professionals.
