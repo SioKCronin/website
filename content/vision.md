@@ -56,7 +56,7 @@ Exploring how we gather and store high-quality, relevant data in a performant,
 scalable infrastructure, and empower a diverse, creative engineering culture 
 to build systems of moving and deriving insights from data to solve problems
 that matter is the unsolved question I'm tackling. I loosely operationalize 
-this a practice of platform engineering with the following pillars:
+this as a practice of platform engineering with the following pillars:
 
 * Gathering data
 * Storing data
@@ -92,16 +92,3 @@ love and care of my communities. My colleagues, partners, and friends have
 never shamed me for my feral use of metaphors or how I wiggle and check in 
 with my body to source networks of knowledge. I am grateful for their belief 
 in me and in us.
-
-## Geoflora MVP
-
-![mvp](mvp.jpg)
-
-![mvp1](mvp1.jpg)
-
-I'm working on a non-linear poem that tracks key
-moments of connection across my chosen family, friends, and colleagues. I am 
-interested in the information we exchange that bolsters feelings of safety,
-creativity, insight, connection, agency, peace, and non-dualist identification.
-I am starting by collecting data from WhatsApp voice memos I've shared and 
-received; nuggets of care we've exchanged with one another. 
