@@ -24,19 +24,17 @@ This lineage of research began with
 my work with Deborah Hay and continued with Deborah Black and Bryan Campbell 
 in NYC through our Experiential Geography research. The research continued
 with a host of non-human collaborators and ecosystems through the 
-Somatic Natural History Archive. This led to my study of bkakti yoga with 
+Somatic Natural History Archive. This led to my study of bhakti yoga with 
 Jasmine Tarkeshi (2013), which led to my non-dualist "eureka" in 2016. 
-I stopped gripping the life raft of my organism as the origin of organizing 
+I stopped gripping the life raft of my organism as the origin for organizing 
 a concept of self and understanding reality, and now I chose to layer networks 
-of self identification (holiobiont, chosen family, watershed, etc.). 
-To reference style culture, my signature scent is a layering of multiple scents. 
+of self identifications (holiobiont, chosen family, watershed, etc.),
+and navigate through them to build generative systems of care.
 
-My desire is to become a gardener of complex emergent systems, blending
-my growing critical/technical/creative toolkit alongside the embodied intuitions
-and communal practices of care I participate in. That our minds are situated at 
-particular 3D vantage points on the waves of 
+My desire is to become a gardener of such systems. That our minds are 
+situated at particular 3D vantage points on the waves of 
 a multidimensional ocean motivates my enthusiasm for computing. 
-My mind's preocupation with my organism prevents me from seeing events 
+My mind's predeliction to prioritize my organism prevents me from seeing events 
 rising across subsets of the population, which is what I'm intereted in 
 addressing to alleviave suffering in systems. I can't sense the 
 population, so I collaborate with computing systems.
@@ -64,13 +62,12 @@ this as a practice of platform engineering with the following pillars:
 Yet the technical system is only part of the story. Engineering is a human enterprise.
 If we care about finding engigneering solutions, we must care deeply about the human
 cultures that foster their emergence. For me, this is rooted both in
-nuturing communities of practice as well as supporting the actualization
-of indiviudal engineers. As an engineering manager I am brought face to face
-with this awesome challenge of tracking the shape of our collective imagination
-as a team over time, and running experiments to either speed up our existing 
-solution-finding practices or expand the surface area of solutions we perceive
-as possible. Mapping our collective neural cloud. This is the arena of engineering
-in which I choose to innovate.
+nuturing communities of practice as well as supporting the personal actualization
+of indiviudal engineers. As an engineering manager I track the shape of 
+our collective imagination as a team over time, and run experiments to either 
+optimize our existing solution-finding practices or expand the surface area of 
+solutions we deem possible. A cartographer of our collective neural cloud. This 
+is the arena of engineering in which I choose to innovate.
 
 I'm interested in nuturting communities of engineering practice that embrace 
 what artists have long known to be true - imagination is a portal 
