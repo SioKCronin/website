@@ -115,6 +115,15 @@ Fun fact - the intersection of all convex sets containing a given subset A of Eu
     </item>
     
     <item>
+      <title>Laplace Equation</title>
+      <link>https://siobhankcronin.com/notes/math/laplace_equation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/math/laplace_equation/</guid>
+      <description>Laplace&amp;rsquo;s equation describes situations of equilibrium.</description>
+    </item>
+    
+    <item>
       <title>Linear Algebra Basics</title>
       <link>https://siobhankcronin.com/notes/math/linear_algebra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -163,6 +172,17 @@ I find Mulder &amp;amp; Bicaconi&amp;rsquo;s 2018 paper Network Geometry and Com
     </item>
     
     <item>
+      <title>Networks - an Introduction</title>
+      <link>https://siobhankcronin.com/notes/books/networks_an_introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/books/networks_an_introduction/</guid>
+      <description>by M.E.J. Newman
+Chapter 2: Technological Networks I&amp;rsquo;m interested in bolstering my understanding of the internet as a packet-switching network, and how this compares to other networks (circuit-switching, and otherwise). What does network science have to teach us about network congestion?
+The topic kicks off with a reminder that there is no cartographer approving new vertices or edges in the network, but rather the Border Gateway Protocol (BGP) implemented by the world&amp;rsquo;s routers.</description>
+    </item>
+    
+    <item>
       <title>Parrallelogram is convex</title>
       <link>https://siobhankcronin.com/notes/math/convex_parrallelogram/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -171,6 +191,17 @@ I find Mulder &amp;amp; Bicaconi&amp;rsquo;s 2018 paper Network Geometry and Com
       <description>Let $S$ be the parallelogram consisting of all linear combinations of $t_{1}v_{1} + t_{2}v_{2}$ with $0 \leq t_{1} \leq $ and $0 \leq t_{2} \leq $, or equivlently $0 \leq t_{i} \leq $.
 We remember that the line segment $PQ$ consists of all points $(1-t)P + tQ$ with $0\leq t \leq 1$, and that $PQ$ exists in vector space $S$ if all points $P, Q$ exist in $S$.
 Proof. Let $P=t_{1}v_{1} + t_{2}v_{2}$ and $Q=t_{1}v_{1} + t_{2}v_{2}$ be points in $S$.</description>
+    </item>
+    
+    <item>
+      <title>Phase Transitions</title>
+      <link>https://siobhankcronin.com/notes/books/phase_transitions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/books/phase_transitions/</guid>
+      <description>by Ricard V. Sole
+Bifurcations and Catastrophes Let&amp;rsquo;s explore a few key concepts.
+We can study the behavior of complex systems in terms of changes in their stability. We kick things off with a discussion of bifurcation, which is a concept attributed to our friend Poincare. Bifurcations are qualitative changes that occur as we make continous changes to a variable. I like the example of shifting from vegetation to desert (think Sahara expansion in Africa).</description>
     </item>
     
     <item>
@@ -285,6 +316,15 @@ For example, today&amp;rsquo;s cars are equipped with a data storage device, the
       <guid>https://siobhankcronin.com/notes/books/supersizing_the_mind/</guid>
       <description>Supersizing the Mind: Embodiment, Action, and Cognitive Extension by Andy Clark
 1. The Active Body I think a lot of us hold a general sense that there is something called embodied intelligence. In my case, I know I hold a somewhat limited idea of what this means. I remmeber reading that there are feedback mechanisms in the nervous system for some cognition that is not situated in the cerebral cortex, or is perhaps involved in bundling up the information in a more meaningful way before sending it on up to the brain.</description>
+    </item>
+    
+    <item>
+      <title>Taylor Series</title>
+      <link>https://siobhankcronin.com/notes/math/taylor_series/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/math/taylor_series/</guid>
+      <description></description>
     </item>
     
     <item>

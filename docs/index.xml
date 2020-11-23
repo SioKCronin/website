@@ -50,7 +50,7 @@ Key concepts  system logs: A file that records the system states and significant
       <pubDate>Tue, 24 Apr 2018 11:53:47 -0700</pubDate>
       
       <guid>https://siobhankcronin.com/about/</guid>
-      <description>Siobhán is an engineering leader with a passion for platform engineering and building strong communities of practice.
+      <description>Siobhán is an engineering leader with a passion for platform engineering and nurturing strong communities.
 She began her career researching how humans learn at Harvard&amp;rsquo;s Lab for Developmental Studies, and now stewards human-computer ecosystems solving problems that matter. She is currently the Engineering Manager at Landed, where she leads a team of engineers helping support the financial security of essential professionals.
 Siobhán has published research in Brain &amp;amp; Cognition, Neuroreport, and Model View Culture, and presented at the Conference on Complex Systems, Conference on Cognitive Neuroscience, AlterConf, PyLadies, Metis, and Temple University.</description>
     </item>
@@ -70,10 +70,10 @@ Siobhán has published research in Brain &amp;amp; Cognition, Neuroreport, and M
       <pubDate>Tue, 24 Apr 2018 11:53:47 -0700</pubDate>
       
       <guid>https://siobhankcronin.com/service/</guid>
-      <description>This Fountain of Being
-I lead guided meditation sessions based on my ongoing study of bhakti yoga, complex systems, and care. These offerings are opportunities to drop in, remember our interconnected nature, find some stillness and peace, and stoke the fire of care and service that emerges when our core needs are met, including the need to feel deeply seen and loved.
-Hackbright Academy
-I mentor women entering tech, as they bring their energy, vision, and intelligence to solve problems that matter in the field.</description>
+      <description>Aunty Sio [COMING SOON!]
+Web series sharing stories, songs, recipes, meditations, and movement practices for every day mindful living.
+This Fountain of Being
+Guided meditation sessions based on ongoing study of bhakti yoga, nature, and care. These offerings are opportunities to drop in, remember our interconnected nature, find some stillness and peace, and stoke the fire of care and service that emerges when our core needs are met, including the need to feel deeply seen and loved.</description>
     </item>
     
     <item>
@@ -360,6 +360,15 @@ Distance Euclidean As the name suggests, this is the square root of the sum of s
     </item>
     
     <item>
+      <title>Laplace Equation</title>
+      <link>https://siobhankcronin.com/notes/math/laplace_equation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/math/laplace_equation/</guid>
+      <description>Laplace&amp;rsquo;s equation describes situations of equilibrium.</description>
+    </item>
+    
+    <item>
       <title>Linear Algebra Basics</title>
       <link>https://siobhankcronin.com/notes/math/linear_algebra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -419,6 +428,17 @@ I find Mulder &amp;amp; Bicaconi&amp;rsquo;s 2018 paper Network Geometry and Com
     </item>
     
     <item>
+      <title>Networks - an Introduction</title>
+      <link>https://siobhankcronin.com/notes/books/networks_an_introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/books/networks_an_introduction/</guid>
+      <description>by M.E.J. Newman
+Chapter 2: Technological Networks I&amp;rsquo;m interested in bolstering my understanding of the internet as a packet-switching network, and how this compares to other networks (circuit-switching, and otherwise). What does network science have to teach us about network congestion?
+The topic kicks off with a reminder that there is no cartographer approving new vertices or edges in the network, but rather the Border Gateway Protocol (BGP) implemented by the world&amp;rsquo;s routers.</description>
+    </item>
+    
+    <item>
       <title>Outlier Detection</title>
       <link>https://siobhankcronin.com/notes/deriving_data/outlier_detection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -437,6 +457,17 @@ As the authors established the outlier problem, I realized that I carry with me 
       <description>Let $S$ be the parallelogram consisting of all linear combinations of $t_{1}v_{1} + t_{2}v_{2}$ with $0 \leq t_{1} \leq $ and $0 \leq t_{2} \leq $, or equivlently $0 \leq t_{i} \leq $.
 We remember that the line segment $PQ$ consists of all points $(1-t)P + tQ$ with $0\leq t \leq 1$, and that $PQ$ exists in vector space $S$ if all points $P, Q$ exist in $S$.
 Proof. Let $P=t_{1}v_{1} + t_{2}v_{2}$ and $Q=t_{1}v_{1} + t_{2}v_{2}$ be points in $S$.</description>
+    </item>
+    
+    <item>
+      <title>Phase Transitions</title>
+      <link>https://siobhankcronin.com/notes/books/phase_transitions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/books/phase_transitions/</guid>
+      <description>by Ricard V. Sole
+Bifurcations and Catastrophes Let&amp;rsquo;s explore a few key concepts.
+We can study the behavior of complex systems in terms of changes in their stability. We kick things off with a discussion of bifurcation, which is a concept attributed to our friend Poincare. Bifurcations are qualitative changes that occur as we make continous changes to a variable. I like the example of shifting from vegetation to desert (think Sahara expansion in Africa).</description>
     </item>
     
     <item>
@@ -551,6 +582,15 @@ For example, today&amp;rsquo;s cars are equipped with a data storage device, the
       <guid>https://siobhankcronin.com/notes/books/supersizing_the_mind/</guid>
       <description>Supersizing the Mind: Embodiment, Action, and Cognitive Extension by Andy Clark
 1. The Active Body I think a lot of us hold a general sense that there is something called embodied intelligence. In my case, I know I hold a somewhat limited idea of what this means. I remmeber reading that there are feedback mechanisms in the nervous system for some cognition that is not situated in the cerebral cortex, or is perhaps involved in bundling up the information in a more meaningful way before sending it on up to the brain.</description>
+    </item>
+    
+    <item>
+      <title>Taylor Series</title>
+      <link>https://siobhankcronin.com/notes/math/taylor_series/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://siobhankcronin.com/notes/math/taylor_series/</guid>
+      <description></description>
     </item>
     
     <item>

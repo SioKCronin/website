@@ -5,7 +5,7 @@ draft = false
 
 +++
 Siobhán is an engineering leader with a passion for 
-platform engineering and building strong communities of practice.
+platform engineering and nurturing strong communities.
 
 She began her career researching how humans learn at Harvard's Lab for
 Developmental Studies, and now stewards human-computer ecosystems 
