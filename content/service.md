@@ -5,11 +5,6 @@ draft = false
 
 +++
 
-Aunty Sio [COMING SOON!]
-
-Web series sharing stories, songs, recipes, meditations, and movement practices
-for every day mindful living. 
-
 [This Fountain of Being](https://podcasts.apple.com/us/podcast/this-fountain-of-being/id1485854868)
 
 Guided meditation sessions based on ongoing study of bhakti yoga, 
