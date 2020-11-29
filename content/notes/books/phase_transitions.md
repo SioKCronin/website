@@ -7,7 +7,7 @@ draft: false
 ---
 by Ricard V. Sole
 
-# Bifurcations and Catastrophes
+## Bifurcations and Catastrophes
 
 Let's explore a few key concepts. 
 
@@ -42,4 +42,20 @@ The author reminds us that in the real world, multiple bifurcations
 cascade around one another, yielding that hard to model thing we call
 life. 
 
+## Percolation
 
+What is a system in the first place? What makes something a part of the system
+vs. not? This chapter kicks off with this core clarification, concluding 
+that a system is a set of items in which there is a path connecting any two 
+elements. 
+
+I had never before considered that for something to percolate through a system,
+there needs to be a connected path. My mind anchors on the air bubble that
+percolates up through a liquid. There is a continuous path that the bubble follows.
+We can swap in the example the author gives of the burning forest, with fire
+spreading from burning trees to their closest neighbors. For a fire to spread
+from one side of the forest to the other there needs to be a connected path
+of adjascent trees close enough to catch embers. 
+
+Bethe lattices provide a model of percolation that grants us the ability to
+calculate a percolation probability. 
