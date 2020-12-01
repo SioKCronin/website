@@ -4,7 +4,7 @@ date = "2018-04-24T11:53:47-07:00"
 draft = false
 
 +++
-Siobhán is an engineering leader and media artist with a passion for 
+Siobhán is an engineering leader and artist with a passion for 
 platform engineering and nurturing strong communities.
 
 She began her career researching how humans learn at Harvard's Lab for
@@ -20,7 +20,7 @@ Temple University. She is the lead developer of SwarmOpt (an open-source swarm
 intelligence algorithm library), a guest researcher at Slow Research Lab,
 and an engineering mentor at Hackbright Academy. 
 
-As an artist, Siobhán weaves threads of fashion, photography, and
+As an artist, Siobhán weaves fashion, photography, music, and
 economic empowerment to center trans experience in a broader cultural
 narrative of economic and ecological sustainability. 
 
