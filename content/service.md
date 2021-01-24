@@ -5,6 +5,13 @@ draft = false
 
 +++
 
+[Maitri](https://www.youtube.com/channel/UCfdCBSPKmDcm0hM4rX2uvZQ)
+
+Loving kindness exists at the center for thriving communities. My work
+is dedicated to stoking and maintaining unconditional positive self
+regard and extending this to broader and broader concentric rings
+of affinity networks. 
+
 [This Fountain of Being](https://podcasts.apple.com/us/podcast/this-fountain-of-being/id1485854868)
 
 Guided meditation sessions based on ongoing study of bhakti yoga, 
